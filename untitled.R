@@ -202,17 +202,6 @@ AHS_m3 = subset(AHS_m2, select=c(1:10))
 # -------->> Conclusion : Only Feature names are same, data is not same
 # -------->> NO DATA IS COMMON AMONG DATASETS
 
-
-AHS_mort_clean = remove_yellow_fields(AHS_mort, mort_field_list[[1]])
-AHS_wps_clean = remove_yellow_fields(AHS_wps, wps_field_list[[1]])
-
-# Making dataset state-wise then district-wise
-AHS_mort_clean_sorted = arrange(AHS_mort_clean, state, district, house_no, house_hold_no)
-AHS_wps_clean_sorted = arrange(AHS_wps_clean, state, district, house_no, house_hold_no)
-
-# mort_sorted_districts = sort(unique(AHS_mort_clean[,"district"]))
-# wps_sorted_districts = sort(unique(AHS_wps_clean[,"district"]))
-
 district_wise_dataset = function(dataset_state_wise) {
 	final_list = list()
 	sorted_districts = sort(unique(dataset_state_wise[,"district"]))
@@ -226,15 +215,6 @@ district_wise_dataset = function(dataset_state_wise) {
 	}
 	return(final_list)	
 }
-
-mort_22_1 = district_wise_dataset(AHS_mort_clean_sorted)[[1]][[2]]
-wps_22_1 = district_wise_dataset(AHS_wps_clean_sorted)[[1]][[2]]
-
-write.csv(mort_22_1, file="~/Downloads/22_1_MORT.csv")
-write.csv(wps_22_1, file="~/Downloads/22_1_WPS.csv")
-
-# Find columns to apply one-hot encoding and then calculate mean and std deviation
-# sapply(wps_22_1, function(cl) list(means=mean(cl,na.rm=TRUE), sds=sd(cl,na.rm=TRUE)))
 
 one_hot_df = function(new_data, one_hot_columns) {
 
@@ -251,8 +231,107 @@ one_hot_df = function(new_data, one_hot_columns) {
 	return(new_data)
 }
 
-mort_22_1_onehot = one_hot_df(mort_22_1, mort_field_list[[5]])
+not_one_hot_colnames = function(data_frame, not_one_hot_col) {
+	colnames = names(data_frame)
+	i = 1
+	out = list()
 
+	for(f in not_one_hot_col) {
+		if (f %in% colnames) {
+			out[[i]] = f
+			i = i + 1
+		}
+	}
+	return(out)
+}
+
+one_hot_colnames = function(data_frame, not_one_hot_df_colnames) {
+	return (find_uncommon_fields(colnames(data_frame), not_one_hot_df_colnames))
+}
+
+house_no_wise_dataset = function(dataset_district_wise) {
+	final_list = list()
+	sorted_houses = sort(unique(dataset_district_wise[,"house_no"]))
+	# dataset_state_wise = arrange(dataset_state_wise, state, district, house_no, house_hold_no)
+
+	i = 1
+	for (house_code in sorted_houses) {
+		house_sort = subset(dataset_district_wise, house_no == house_code)
+		final_list[[i]] = list(house_code, house_sort)
+		i = i + 1
+	}
+	return(final_list)	
+}
+
+apply_stats_on_house_no = function(data_frame) {
+	# Assuming house_no is on Index-1
+	# Not calculating mean, max, etc, on house_no 
+	l = length(colnames(data_frame))
+	# d_f = na.omit(subset(data_frame, select=c(2:l)))
+	d_f = na.omit(data_frame)
+	# df = data.frame(lapply(d_f, function(cl) list(means=mean(cl,na.rm=TRUE), sds=sd(cl,na.rm=TRUE), min=min(cl,na.rm=TRUE), max=max(cl,na.rm=TRUE))))
+	df = data.frame(lapply(d_f, function(cl) list(means=mean(cl,na.rm=TRUE), sds=sd(cl,na.rm=TRUE))))
+	# Data[1:2] <- list(NULL)
+	# df[2:4] = list(NULL)
+	df[2] = NULL    # Deleting 'house_no.sds'
+	return(df)
+}
+
+apply_stats_on_district = function(data_set_house_no_list) {
+	data = data_set_house_no_list
+	# data[[i]][[1]] -> will give house no
+	# data[[i]][[2]] -> will give dataframe for that house
+	l = length(data)
+
+	for (i in (1:l)) {
+		data[[i]][[2]] = apply_stats_on_house_no(data[[i]][[2]])
+	}
+	return (data)
+}
+
+recompile_district_dataset = function(data_set){
+	l = length(data_set)
+	df_list = list()
+
+	for (i in (1:l)) {
+		df_list[[i]] = data_set[[i]][[2]]
+	}
+
+	data_out = do.call("rbind", df_list)
+	rownames(data_out) = 1:nrow(data_out)
+	return(data_out)
+}
+
+
+AHS_mort_clean = remove_yellow_fields(AHS_mort, mort_field_list[[1]])
+AHS_mort_clean_sorted = arrange(AHS_mort_clean, state, district, house_no, house_hold_no)
+
+AHS_wps_clean = remove_yellow_fields(AHS_wps, wps_field_list[[1]])
+AHS_wps_clean_sorted = arrange(AHS_wps_clean, state, district, house_no, house_hold_no)
+
+#### ------ District wise test START ----
+mort_22_1 = district_wise_dataset(AHS_mort_clean_sorted)[[1]][[2]]
+wps_22_1 = district_wise_dataset(AHS_wps_clean_sorted)[[1]][[2]]
+
+write.csv(mort_22_1, file="~/Downloads/22_1_MORT.csv")
+write.csv(wps_22_1, file="~/Downloads/22_1_WPS.csv")
+
+mort_22_1_onehot = one_hot_df(mort_22_1, mort_field_list[[5]])
+mort_22_1_onehot_house_no = house_no_wise_dataset(mort_22_1_onehot)
+mort_22_1_house_no_stats = apply_stats_on_district(mort_22_1_onehot_house_no)
+mort_22_1_final = recompile_district_dataset(mort_22_1_house_no_stats)
+write.csv(mort_22_1_final, file="~/Downloads/22_1_MORT_FINAL.csv")
+
+wps_22_1_onehot = one_hot_df(wps_22_1, wps_field_list[[5]])
+wps_22_1_onehot_house_no = house_no_wise_dataset(wps_22_1_onehot)
+wps_22_1_house_no_stats = apply_stats_on_district(wps_22_1_onehot_house_no)
+wps_22_1_final = recompile_district_dataset(wps_22_1_house_no_stats)
+write.csv(wps_22_1_final, file="~/Downloads/22_1_WPS_FINAL.csv")
+
+mort_wps_22_1_merge = merge(x = mort_22_1_final, y = wps_22_1_final, by = "house_no.means", all = TRUE)
+# To Merge a lot of data frames
+# Reduce(function(x, y) merge(x, y, all=TRUE), list(df1, df2, df3))
+#### ------ District wise test ENDS ----
 
 
 
