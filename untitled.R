@@ -5,6 +5,9 @@ library(microbenchmark)
 library(matrixStats)
 library(qdapTools)
 library(ade4)
+library(xlsx)
+
+library(CatEncoders)
 
 # Trying to find which cells are coloured
 AHS_struct_workbook = loadWorkbook("~/Downloads/Data_structure_AHS.xlsx")
@@ -175,10 +178,11 @@ common_fields_all = Reduce(intersect, list(mort_field_list[[2]], women_field_lis
 # CAB = read.csv("~/Downloads/22_CAB.csv", sep="|", nrows=2)
 # col_cab = colnames(CAB)
 
-### Trying to find out if any data is common among two datasets
+
 AHS_mort = read.csv("~/Downloads/22_AHS_MORT.csv", sep="|")
 AHS_wps = read.csv("~/Downloads/22_AHS_WPS.csv", sep="|")
 
+### Trying to find out if any data is common among two datasets
 AHS_mort_col = lowercase_30Char(colnames(AHS_mort))
 mort_field_col = mort_field_list[[2]]
 mort_field_col = remove_uncommon_fields(mort_field_col, AHS_mort_col)
@@ -268,8 +272,11 @@ apply_stats_on_house_no = function(data_frame) {
 	# Not calculating mean, max, etc, on house_no 
 	l = length(colnames(data_frame))
 	# d_f = na.omit(subset(data_frame, select=c(2:l)))
-	d_f = na.omit(data_frame)
+	# d_f = na.omit(data_frame)
 	# df = data.frame(lapply(d_f, function(cl) list(means=mean(cl,na.rm=TRUE), sds=sd(cl,na.rm=TRUE), min=min(cl,na.rm=TRUE), max=max(cl,na.rm=TRUE))))
+
+	d_f = data_frame
+
 	df = data.frame(lapply(d_f, function(cl) list(means=mean(cl,na.rm=TRUE), sds=sd(cl,na.rm=TRUE))))
 	# Data[1:2] <- list(NULL)
 	# df[2:4] = list(NULL)
@@ -281,9 +288,8 @@ apply_stats_on_district = function(data_set_house_no_list) {
 	data = data_set_house_no_list
 	# data[[i]][[1]] -> will give house no
 	# data[[i]][[2]] -> will give dataframe for that house
-	l = length(data)
 
-	for (i in (1:l)) {
+	for (i in (1:length(data))) {
 		data[[i]][[2]] = apply_stats_on_house_no(data[[i]][[2]])
 	}
 	return (data)
@@ -333,6 +339,122 @@ mort_wps_22_1_merge = merge(x = mort_22_1_final, y = wps_22_1_final, by = "house
 # Reduce(function(x, y) merge(x, y, all=TRUE), list(df1, df2, df3))
 #### ------ District wise test ENDS ----
 
+#### ------ State Wise data merging ----
+
+mort_district_wise_dataset_list = district_wise_dataset(AHS_mort_clean_sorted)
+wps_district_wise_dataset_list = district_wise_dataset(AHS_wps_clean_sorted)
+
+#### **** Assumption -> Dataset Order -> MORT, WPS, WOMAN, COMB
+make_dataset_district_wise = function(all_datasets_list){
+    all_datasets_list_length = length(all_datasets_list)
+    field_list = list(mort_field_list, wps_field_list, women_field_list, comb_field_list)
+    dataset_clean_sorted_list = list()
+    
+    for (i in (1:all_datasets_list_length)) {
+        dataset = all_datasets_list[[i]]
+
+        print(dim(dataset))
+
+        fields = field_list[[i]]
+
+        print(length(fields[[1]]))
+        
+        dataset_clean = remove_yellow_fields(dataset, fields[[1]] )
+        dataset_clean_sorted = arrange(dataset_clean, state, district, house_no, house_hold_no)
+        # AHS_mort_clean = remove_yellow_fields(AHS_mort, mort_field_list[[1]])
+        # AHS_mort_clean_sorted = arrange(AHS_mort_clean, state, district, house_no, house_hold_no)
+
+        print(dim(dataset_clean_sorted))
+        
+        dataset_clean_sorted_list[[i]] = dataset_clean_sorted
+    }
+    
+    print(length(dataset_clean_sorted_list))
+    print(dim(dataset_clean_sorted_list[[1]]))
+    
+    
+    dataset_wise_district_list = list()
+    
+    for (i in (1:all_datasets_list_length)) {
+        district_list = unique(dataset_clean_sorted_list[[i]][,"district"])
+        
+        print(district_list)
+        
+        dataset = as.data.frame(dataset_clean_sorted_list[[i]])
+
+        print(dim(dataset))
+
+        fields = field_list[[i]]
+        dist_final_list = list()
+        
+        # wps_22_1 = district_wise_dataset(AHS_wps_clean_sorted)[[1]][[2]]
+        dist_dataset_list = district_wise_dataset(dataset)
+        
+        print(length(dist_dataset_list))
+        print(dim(dist_dataset_list[[1]][[2]]))
+        
+        j = 1
+        for (dist in district_list) {
+        	print(j)
+            dist_i = as.data.frame(dist_dataset_list[[j]][[2]])
+
+            
+            
+            # wps_22_1_onehot = one_hot_df(wps_22_1, wps_field_list[[5]])
+            # wps_22_1_onehot_house_no = house_no_wise_dataset(wps_22_1_onehot)
+            # wps_22_1_house_no_stats = apply_stats_on_district(wps_22_1_onehot_house_no)
+            # wps_22_1_final = recompile_district_dataset(wps_22_1_house_no_stats)
+            # write.csv(wps_22_1_final, file="~/Downloads/22_1_WPS_FINAL.csv")
+            
+            print(dim(dist_i))
+          
+            # write.csv(dist_i, file="~/Downloads/test1.csv")
+            dist_i_onehot = one_hot_df(dist_i, fields[[5]])
+            # write.csv(dist_i_onehot, file="~/Downloads/test2.csv")
+            dist_i_onehot_house_no = house_no_wise_dataset(dist_i_onehot)
+            # write.csv(dist_i_onehot_house_no, file="~/Downloads/test3.csv")
+            dist_i_house_no_stats = apply_stats_on_district(dist_i_onehot_house_no)
+            # write.csv(dist_i_house_no_stats, file="~/Downloads/test4.csv")
+            dist_i_final = recompile_district_dataset(dist_i_house_no_stats)
+            # write.csv(dist_i_final, file="~/Downloads/test5.csv")
+            
+            csv_name = paste(c( i, "_", 22, "_", dist), collapse = "")
+            file_name = paste(c("~/Downloads/", csv_name, ".csv"), collapse = "")
+            print(file_name)
+            write.csv(dist_i_final, file=file_name)
+            
+            dist_final_list[[j]] = dist_i_final
+            j = j+1
+        }
+        dataset_wise_district_list[[i]] = dist_final_list
+    }
+    return(dataset_wise_district_list)
+}
+
+
+test_ds = head(AHS_mort_clean_sorted,2000)
+test_dist_wise = district_wise_dataset(test_ds)
+dim(test_dist_wise[[1]][[2]])
+
+# Adding dtring and int
+# d = paste(c("str_", 1), collapse = "")
+# and -> "str_1"
+
+merge_dataset_wise_dist_list = function(dataset_wise_district_list){
+
+}
+
+
+coln = colnames(mort_22_1)
+
+ll = list()
+i = 1
+for (c in mort_field_list[[5]]){
+	if (c %in% coln) {
+		ll[[i]] = c
+		i = i + 1
+	}
+}
 
 
 
@@ -340,15 +462,7 @@ mort_wps_22_1_merge = merge(x = mort_22_1_final, y = wps_22_1_final, by = "house
 
 
 
-
-
-
-
-
-
-
-
-
+do.call(cbind, lapply(df, function(x) table(sequence(nrow(df)), factor(x, levels = allLevels))))
 
 
 
