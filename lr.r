@@ -5,6 +5,11 @@ setwd("C:\\Users\\Rishab\\Dropbox\\AHS-ML-Project")
 source("helper.r")
 source("plot.r")
 
+main_dir = getwd()
+sub_dir = "plots"
+ifelse(!dir.exists(file.path(main_dir, sub_dir)), dir.create(file.path(main_dir, sub_dir)), FALSE)
+
+
 max_category_size = 3
 target_vars = c("sex")
 uniformative_vars = c("psu_id", "identification_code", "age_code", "house_hold_no", "state_code", "v54")
@@ -19,9 +24,9 @@ pre_process_object = preProcess(data[,(names(data) %in% categorical_vars)], meth
 # s = do.call("cbind",predict(pre_process_object, data[,(names(data) %in% categorical_vars)]))
 data[,(names(data) %in% categorical_vars)] = predict(pre_process_object, data[,(names(data) %in% categorical_vars)])
 data[is.na(data)] = 0
-a = apply(as.matrix(target_vars), 1 , analyse_feature, data)
-# model = lm(as.formula("weight_in_kg~."),data)
-
+# a = apply(as.matrix(target_vars), 1 , analyse_feature, data)
+model = lm(as.formula("weight_in_kg~."),data)
+generate_plots(model, "weight_in_kg")
 
 # g<-ggplot(data, aes("sex", "treatment_type"))
 # g+geom_bar()
