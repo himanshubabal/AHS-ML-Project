@@ -5,6 +5,11 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 import math
 
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Activation
+from keras.optimizers import SGD
+from keras.utils.np_utils import to_categorical
+
 # Comb data is located in '3'
 dataset_path = '/Users/himanshubabal/Documents/External_Disk_Link_WD_HDD/AHS_Data/22/3/'
 
@@ -85,7 +90,7 @@ dist_p = dist_n[np.isfinite(dist_n['diagnosed_for'])]
 # dist_p = pd.DataFrame.reset_index(dist_p).drop(['index'],inplace=False,axis=1,errors='ignore')
 dist_p = dist_p.reset_index(drop=True)
 
-# Dropping 'pus_id' from main dataframe and storing it in a seperate dataframe
+# Dropping 'psu_id' from main dataframe and storing it in a seperate dataframe
 dist_psu = dist_p[['psu_id']]
 dist_p.drop(['psu_id'],inplace=True,axis=1,errors='ignore')
 
@@ -240,7 +245,7 @@ accuracy_score(test_label, nn_pred)
 
 
 
-from keras.utils.np_utils import to_categorical
+
 
 categorical_labels = to_categorical(lab_data.astype('int32'), nb_classes=None)
 
@@ -253,9 +258,6 @@ lab_data = np.copy(label_data)
 for j in ar_99:
     lab_data[j] = 32
 
-from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation
-from keras.optimizers import SGD
 
 model = Sequential()
 # Dense(64) is a fully-connected layer with 64 hidden units.
@@ -289,6 +291,36 @@ to_categorical(test_label, nb_classes=None).shape
 model.evaluate(test_data, to_categorical(test_label.astype('int32'), nb_classes=None))
 
 
+
+model = Sequential()
+# Input Layer
+model.add(Dense(1000, input_dim=1208, init='uniform'))
+model.add(Activation('relu'))
+model.add(Dropout(0.5))
+# Hidden Layer - 1
+model.add(Dense(750, init='uniform'))
+model.add(Activation('relu'))
+model.add(Dropout(0.5))
+# Hidden Layer - 2
+model.add(Dense(500, init='uniform'))
+model.add(Activation('relu'))
+model.add(Dropout(0.5))
+# Hidden Layer - 3
+model.add(Dense(250, init='uniform'))
+model.add(Activation('relu'))
+model.add(Dropout(0.5))
+# Hidden Layer - 4
+model.add(Dense(100, init='uniform'))
+model.add(Activation('relu'))
+model.add(Dropout(0.5))
+# Output Layer
+model.add(Dense(33, init='uniform'))
+model.add(Activation('softmax'))
+
+sgd = SGD(lr=0.001, decay=1e-6, momentum=0.9, nesterov=True)
+model.compile(loss='categorical_crossentropy',
+              optimizer=sgd,
+              metrics=['accuracy'])
 
 
 

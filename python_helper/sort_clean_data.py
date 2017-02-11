@@ -79,18 +79,15 @@ def sort_dataset_state_dist_house(data_frame) :
     return (data_frame.sort(['state', 'district', 'house_no', 'house_hold_no'])).reset_index(drop=True)
 
 
-AHS_struct_workbook = pd.ExcelFile("Data_structure_AHS.xlsx")
-AHS_struct_sheets_names = AHS_struct_workbook.sheet_names
+# AHS_struct_workbook = pd.ExcelFile("Data_structure_AHS.xlsx")
+# AHS_struct_sheets_names = AHS_struct_workbook.sheet_names
 
+# comb_field_list = lowercase_32Char_list(get_sheet_field_names(AHS_struct_workbook, "COMB"))
 
+# data_clean = remove_yellow_fields(data, comb_field_list[0])
+# data_clean_sorted = sort_dataset_state_dist_house(data_clean)
 
-comb_field_list = lowercase_32Char_list(get_sheet_field_names(AHS_struct_workbook, "COMB"))
-
-data_clean = remove_yellow_fields(data, comb_field_list[0])
-data_clean_sorted = sort_dataset_state_dist_house(data_clean)
-
-data_clean_sorted.to_csv('22_AHS_COMB_Clean_Sorted.csv')
-
+# data_clean_sorted.to_csv('22_AHS_COMB_Clean_Sorted.csv')
 
 
 
