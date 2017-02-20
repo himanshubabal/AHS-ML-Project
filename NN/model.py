@@ -29,3 +29,4 @@ class FFNN():
 		output = tf.matmul(hidden_layer, W_final) + b_final
 		return output
 
+FFNN()
