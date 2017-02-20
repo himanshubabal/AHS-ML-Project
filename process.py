@@ -201,10 +201,10 @@ def check_if_exists(force=False):
 	file_path_1 = data_path + '22_COMB_diag_col.csv'
 	file_path_2 = data_path + '22_COMB_diag_hotData.csv'
 	if (not os.path.exists(file_path_1)) and (not os.path.exists(file_path_2)):
-		remove_yellow_df()
+		prep_for_analysis()
 	else:
 		if force:
-			remove_yellow_df()
+			prep_for_analysis()
 		else:
 			print('Data already Processed. Moving to the next part')
 
