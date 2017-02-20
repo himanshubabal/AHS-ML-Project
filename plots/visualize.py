@@ -19,46 +19,50 @@ Diagnosed_for is an containing the class name in order that the model predicts
 Diagnosed_for = ["None","Diabetes","Hypertension","Chronic heart disease/failure","Asthma/chronic respiratory failure","Tuberculosis","Rheumatoid arthritis /  osteoarthritis","Others (Hernia, hydrocele , peptic ulcer etc)","Others (Hernia, hydrocele , peptic ulcer etc)"]
 
 
-def plot_confusion_matrix(test_labels, prediciton, name = "confusion_matrix"):
+def plot_confusion_matrix(test_labels, prediciton, var_name = "",name = "confusion_matrix", output_names = ["None","Diabetes","Hypertension","Chronic heart disease/failure","Asthma/chronic respiratory failure","Tuberculosis","Rheumatoid arthritis /  osteoarthritis","Others (Hernia, hydrocele , peptic ulcer etc)","Others (Hernia, hydrocele , peptic ulcer etc)"]):
 	"""
 	test_labels : output labels of the test samples (not one-hot) (num_test_samples)
 	predction : prediciton of the model (not one-hot) (num_test_samples)
 	"""
-	print test_labels.shape, prediciton.shape
+	print "hi", name
+	# print test_labels.shape, prediciton.shape
 	c_mat = confusion_matrix(test_labels, prediciton)
-	df_cm = pd.DataFrame(c_mat, index = [i for i in Diagnosed_for], columns = [i for i in Diagnosed_for])
+	df_cm = pd.DataFrame(c_mat, index = [i for i in output_names], columns = [i for i in output_names])
 	# Plot a heat map for confusion matrix
 	fig, ax = plt.subplots()
 	fig.set_size_inches(11.7, 8.27)
 	s = sns.heatmap(df_cm,  annot =True)
-	ax.set_title("Confusion Matrix for 9 classes of Diagnosed_for variable")
+	ax.set_title("Confusion Matrix for {} classes of %s variable".format(len(output_names), var_name))
 	ax.figure.tight_layout()
 	s.figure.savefig(name + ".png")
 
-def plot_precision_recall_curve(test_labels, y_score, name = "prc", colors = ["r","b","#eeefff","y","cyan","g","k","w","m"]):
+def plot_precision_recall_curve(test_labels, y_score, var_name = "", name = "prc", colors = ["r","b","#eeefff","y","cyan","g","k","w","m"], output_names = ["None","Diabetes","Hypertension","Chronic heart disease/failure","Asthma/chronic respiratory failure","Tuberculosis","Rheumatoid arthritis /  osteoarthritis","Others (Hernia, hydrocele , peptic ulcer etc)","Others (Hernia, hydrocele , peptic ulcer etc)"]):
 	"""
 	y_score : obtained from the decision_function(test_X) in case of Logistic Regression or y_score is the probability distribution
 	over all the output classes. its dimension is (num_samples, n_output_classes)
 	test_labels : one hot vector of the test sample. its dimension is (num_samples, n_output_classes)
 	"""
-	
+	# print "hi", name
+	plt.figure(0)
 	for i in range(y_score.shape[1]):
 		precision, recall, _ = precision_recall_curve(test_labels[:,i], y_score[:,i])
-		plt.plot(recall, precision, color = colors[i], label  =  Diagnosed_for[i])
+		plt.plot(recall, precision, color = colors[i], label  =  output_names[i])
 		plt.ylabel("Precision")
 		plt.xlabel("Recall")
 		plt.legend(bbox_to_anchor=(1.05, 1), loc=y_score.shape[1], borderaxespad=0.)
-		plt.title("Precision Recall curve")
+		plt.title("Precision Recall curve for %s".format(var_name))
 	plt.savefig(name + ".png", bbox_inches="tight")
 	plt.show()
 
-def get_important_features(model_coeffs, col_names, name = "hist"):
+def get_important_features(model_coeffs, col_names, var_name = "", name = "hist"):
 	"""
 	Currently this is useful for regression only
 	model_coeffs : (n_classes, n_features)
 	col_name : feature name
 	"""
+	# print "go", name
 
+	plt.figure(1)
 	coeffs = list(model_coeffs)
 	important_features = []
 	for weights_id in range(len(coeffs)):
@@ -77,8 +81,10 @@ def get_important_features(model_coeffs, col_names, name = "hist"):
 	# plt.xticks(feat_dist.keys(), colnames_present)
 	plt.title("Feature Importance for predicting Diagnosed_for")
 	plt.savefig(name + ".png", bbox_inches="tight")
+	plt.show()
 
-
+def visualize_data(data, routine = "PCA", dimensions = 2):
+	pass
 
 
 
