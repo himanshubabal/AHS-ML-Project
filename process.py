@@ -23,6 +23,7 @@ from python_helper.sort_clean_data import lowercase_32Char_list
 from python_helper.sort_clean_data import get_sheet_field_names
 from python_helper.sort_clean_data import remove_yellow_fields
 from python_helper.sort_clean_data import sort_dataset_state_dist_house
+from python_helper.sort_clean_data import create_balanced_classes
 
 def remove_yellow_df():
 	AHS_struct_workbook = pd.ExcelFile(data_path + "Data_structure_AHS.xlsx")
@@ -152,7 +153,8 @@ def prep_for_analysis():
 	# dist_p = dist_p.reset_index(drop=True)
 
 	# Removing rows with 'diagnosed_for' = 0.0
-	dist_p = dist_p[dist_p['diagnosed_for'] != 0.0]
+	# dist_p = dist_p[dist_p['diagnosed_for'] != 0.0]
+	dist_p = create_balanced_classes(dist_p, [1.0,2.0,3.0,7.0,9.0,19.0,20.0,99.0],"diagnosed_for")
 	# dist_p = dist_p.reset_index(drop=True)
 
 	# Shuffling the dataset and reset index
