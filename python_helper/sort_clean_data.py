@@ -89,6 +89,16 @@ def sort_dataset_state_dist_house(data_frame) :
 
 # data_clean_sorted.to_csv('22_AHS_COMB_Clean_Sorted.csv')
 
+def create_balanced_classes(data, classes_of_interest, var):
+    columns = list(data[var].unique())
+    data_filtered = data[data[var].isin(classes_of_interest)]
+    sample_no_min_class = 1e6
+    for i in classes_of_interest:
+        if sample_no_min_class > data[data[var] == i].shape[0]:
+            sample_no_min_class = data[data[var] == i].shape[0]
+    data_none_class = data[~data[var].isin(classes_of_interest)].sample(n = sample_no_min_class)
+    data_none_class[var] = 0.0
+    return pd.concat([data_filtered,data_none_class])
 
 
 
