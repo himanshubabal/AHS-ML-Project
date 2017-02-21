@@ -1,16 +1,14 @@
-import tensorflow as tf
-
-# import pandas as pd
+import pandas as pd
 import numpy as np
 import h5py
 import matplotlib.pyplot as plt
-
+import tensorflow as tf
 import math
 import os
-from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation
-from keras.optimizers import SGD
-from keras.utils.np_utils import to_categorical
+# from keras.models import Sequential
+# from keras.layers import Dense, Dropout, Activation
+# from keras.optimizers import SGD
+# from keras.utils.np_utils import to_categorical
 
 data_path = 'data/'
 
@@ -219,75 +217,75 @@ print('    ')
 
 print('PART - 3 : Applying Machine Learning on the data')
 
-diagnosed_data = pd.read_csv(data_path + '22_COMB_diag_hotData.csv', low_memory=False)
-diagnosed_col = pd.read_csv(data_path + '22_COMB_diag_col.csv', low_memory=False)
+# diagnosed_data = pd.read_csv(data_path + '22_COMB_diag_hotData.csv', low_memory=False)
+# diagnosed_col = pd.read_csv(data_path + '22_COMB_diag_col.csv', low_memory=False)
 
-if 'Unnamed: 0' in list(diagnosed_col):
-	diagnosed_col = diagnosed_col.drop('Unnamed: 0',axis=1,errors='ignore')
+# if 'Unnamed: 0' in list(diagnosed_col):
+# 	diagnosed_col = diagnosed_col.drop('Unnamed: 0',axis=1,errors='ignore')
 
-assert (diagnosed_data.shape[0] == diagnosed_col.shape[0])
-split_index = int(diagnosed_data.shape[0] * 0.85)
+# assert (diagnosed_data.shape[0] == diagnosed_col.shape[0])
+# split_index = int(diagnosed_data.shape[0] * 0.85)
 
-print('   ')
-print('Splitting train and test data in ratio 85:15')
-train_data = np.array(diagnosed_data.astype(float))[:split_index]
-train_label = np.array(diagnosed_col.astype(float))[:split_index][:,0]
+# print('   ')
+# print('Splitting train and test data in ratio 85:15')
+# train_data = np.array(diagnosed_data.astype(float))[:split_index]
+# train_label = np.array(diagnosed_col.astype(float))[:split_index][:,0]
 
-test_data = np.array(diagnosed_data.astype(float))[split_index:]
-test_label = np.array(diagnosed_col.astype(float))[split_index:][:,0]
-
-
-# Replace Label No 99 by 32
-# Label No 99 causes 'to_categorical' to make 100 one-hot values
-# Replacing it by 33 leads to only 33 values
-def replace_99_labes(label_data):
-	for i in range(len(label_data)):
-		if label_data[i] == 99.0 :
-			label_data[i] = 32.0
-
-	return label_data
-
-train_rep = replace_99_labes(train_label)
-test_rep = replace_99_labes(test_label)
-
-train_label = to_categorical(train_rep.astype('int32'), nb_classes=None)
-test_label = to_categorical(test_rep.astype('int32'), nb_classes=None)
+# test_data = np.array(diagnosed_data.astype(float))[split_index:]
+# test_label = np.array(diagnosed_col.astype(float))[split_index:][:,0]
 
 
-# Fully-Connected Neural network with 4 Hidden layers
-model = Sequential()
-# Input Layer
-model.add(Dense(1000, input_dim=test_data.shape[1], init='uniform'))
-model.add(Activation('relu'))
-model.add(Dropout(0.5))
-# Hidden Layer - 1
-model.add(Dense(750, init='uniform'))
-model.add(Activation('relu'))
-model.add(Dropout(0.5))
-# Hidden Layer - 2
-model.add(Dense(500, init='uniform'))
-model.add(Activation('relu'))
-model.add(Dropout(0.5))
-# Hidden Layer - 3
-model.add(Dense(250, init='uniform'))
-model.add(Activation('relu'))
-model.add(Dropout(0.5))
-# Hidden Layer - 4
-model.add(Dense(100, init='uniform'))
-model.add(Activation('relu'))
-model.add(Dropout(0.5))
-# Output Layer
-model.add(Dense(test_label.shape[1], init='uniform'))
-model.add(Activation('softmax'))
+# # Replace Label No 99 by 32
+# # Label No 99 causes 'to_categorical' to make 100 one-hot values
+# # Replacing it by 33 leads to only 33 values
+# def replace_99_labes(label_data):
+# 	for i in range(len(label_data)):
+# 		if label_data[i] == 99.0 :
+# 			label_data[i] = 32.0
 
-sgd = SGD(lr=0.001, decay=1e-6, momentum=0.9, nesterov=True)
-model.compile(loss='categorical_crossentropy',
-              optimizer=sgd,
-              metrics=['accuracy'])
+# 	return label_data
+
+# train_rep = replace_99_labes(train_label)
+# test_rep = replace_99_labes(test_label)
+
+# train_label = to_categorical(train_rep.astype('int32'), nb_classes=None)
+# test_label = to_categorical(test_rep.astype('int32'), nb_classes=None)
 
 
-model.fit(train_data, train_label,
-          nb_epoch=200,
-          batch_size=128)
+# # Fully-Connected Neural network with 4 Hidden layers
+# model = Sequential()
+# # Input Layer
+# model.add(Dense(1000, input_dim=test_data.shape[1], init='uniform'))
+# model.add(Activation('relu'))
+# model.add(Dropout(0.5))
+# # Hidden Layer - 1
+# model.add(Dense(750, init='uniform'))
+# model.add(Activation('relu'))
+# model.add(Dropout(0.5))
+# # Hidden Layer - 2
+# model.add(Dense(500, init='uniform'))
+# model.add(Activation('relu'))
+# model.add(Dropout(0.5))
+# # Hidden Layer - 3
+# model.add(Dense(250, init='uniform'))
+# model.add(Activation('relu'))
+# model.add(Dropout(0.5))
+# # Hidden Layer - 4
+# model.add(Dense(100, init='uniform'))
+# model.add(Activation('relu'))
+# model.add(Dropout(0.5))
+# # Output Layer
+# model.add(Dense(test_label.shape[1], init='uniform'))
+# model.add(Activation('softmax'))
 
-model.evaluate(test_data, test_label)
+# sgd = SGD(lr=0.001, decay=1e-6, momentum=0.9, nesterov=True)
+# model.compile(loss='categorical_crossentropy',
+#               optimizer=sgd,
+#               metrics=['accuracy'])
+
+
+# model.fit(train_data, train_label,
+#           nb_epoch=200,
+#           batch_size=128)
+
+# model.evaluate(test_data, to_categorical(test_label.astype('int32'), nb_classes=None))
