@@ -7,7 +7,7 @@ import argparse
 # Global variables
 BATCH_SIZE = 100
 NUMBATCHES = 740
-EPOCHS = 25
+EPOCHS = 50
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--dims", default = 302, help = "reduce dimension of the input")
@@ -55,8 +55,13 @@ class Autoencoder():
 				h = self.activation(tf.matmul(prev_layer, W) + b)
 				prev_layer = h
 				prev_layer_shape = prev_layer.get_shape().as_list()
-		W = tf.get_variable("W", [prev_layer_shape[1], X.get_shape().as_list()[1]], initializer = self.weigth_initialisation)
-		b = tf.get_variable("b", [X.get_shape().as_list()[1]], initializer = self.weigth_initialisation)
+
+		# W = tf.get_variable("W", [prev_layer_shape[1], X.get_shape().as_list()[1]], initializer = self.weigth_initialisation)
+		# b = tf.get_variable("b", [X.get_shape().as_list()[1]], initializer = self.weigth_initialisation)
+		
+		W = get_scope_variable('', "W", [prev_layer_shape[1], X.get_shape().as_list()[1]])
+		b = get_scope_variable('', "b", [X.get_shape().as_list()[1]])
+		
 		h = self.activation(tf.matmul(prev_layer, W) + b)
 
 		return h, prev_layer

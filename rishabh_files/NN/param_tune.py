@@ -3,6 +3,7 @@ import random
 import json
 from FFNN import *
 from Autoencoders import *
+import tensorflow as tf
 
 outputs = open("results_rs1.txt","w")
 num_layers = [2, 4, 6, 8, 12, 15, 20]
@@ -20,14 +21,15 @@ full_dropout = [0, 1]
 gradient_clipping = [0, 1]
 autoencoded = [0, 1]
 initializations = []
-epochs = [10, 100, 1000, 100000]
+# epochs = [10, 100, 1000]
+epochs = [100, 1000]
 optimizers = [tf.train.AdadeltaOptimizer, tf.train.AdagradOptimizer, tf.train.MomentumOptimizer, tf.train.AdamOptimizer, tf.train.RMSPropOptimizer, tf.train.FtrlOptimizer]
 input_dims = [30, 10, 50, 100]
 regularization = ["l1", "l2", "both", "None"]
 
 max_perf = 100.0
 idx = 202
-for i in range(200):
+for i in range(100):
 
 	model_params = {
 		"layers" : random.sample(num_layers, 1)[0],
@@ -61,4 +63,9 @@ for i in range(200):
 	print model_params
 	print "experiment no",i
 	# break
+
+	# Reset the graph
+	tf.reset_default_graph()
+	print('--------------------------------------')
+
 outputs.close()
