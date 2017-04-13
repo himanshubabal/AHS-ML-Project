@@ -1,0 +1,15 @@
+#!/bin/sh
+#PBS -N testjob
+#PBS -P physics
+#PBS -l select=1:ncpus=1:ngpus=1
+#PBS -l walltime=00:02:00
+#PBS -q low
+#PBS -M ph1140797@iitd.ac.in
+#PBS -o out_job
+#PBS -e error_job
+
+module load apps/anaconda/4.1.1/gnu
+module load apps/tensorflow/0.11/gnu
+
+cd $PBS_O_WORKDIR
+python process_hpc.py

@@ -1,3 +1,10 @@
+import numpy as np
+import tensorflow as tf
+from process import *
+from evaluation import *
+from tensorflow.python import debug as tf_debug
+
+
 keep_prob_arr = [0.01, 0.2, 0.5, 0.8]
 class FFNN():
 	def __init__(self, hidden_layers = 2, num_hidded_units = [200,300,200,300,200,300,200,300,200,300,200,300,200,300,200,300,200,300,200,300], activation = activations[0], l_r = 0.001, lr_decay = 0.01, weigth_initialisation = tf.contrib.layers.xavier_initializer()):
