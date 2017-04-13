@@ -2,7 +2,21 @@ import pandas as pd
 import numpy as np
 import os
 from keras.utils.np_utils import to_categorical
-from process import check_unnamed, replace_labes
+
+def replace_labes(label_data):
+	    dict_map = {0.0 : 0.0, 1.0 : 1.0, 2.0 : 2.0, 3.0 : 3.0, 7.0 : 4.0, 9.0 : 5.0,
+	                19.0 : 6.0, 21.0 : 7.0, 99.0 : 7.0}
+	    for i in range(len(label_data)):
+	        if label_data[i] in dict_map:
+	            label_data[i] = dict_map[label_data[i]]-1
+	        else :
+	            label_data[i] = 0.0
+	    return label_data
+
+def check_unnamed(dataframe):
+	if 'Unnamed: 0' in list(dataframe):
+		dataframe = dataframe.drop('Unnamed: 0',axis=1,errors='ignore')
+	return dataframe
 
 def find_hot_matches(col_index_list_to_remove, hot_col_names_list):
     hot_index_list = list()
