@@ -1,0 +1,12 @@
+Precision Recall - debug
+Full data - 10k epoch, hyp tune
+Each state, and variables
+Hyp tuning 
+
+
+
+
+
+KANPUR
+
+Facts in Data 

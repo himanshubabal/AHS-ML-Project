@@ -1,15 +1,8 @@
-import tensorflow as tf
-
 import pandas as pd
 import numpy as np
-import h5py
-import matplotlib.pyplot as plt
 
-import math
 import os
-from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation
-from keras.optimizers import SGD
+import tensorflow as tf
 from keras.utils.np_utils import to_categorical
 
 data_path = '/home/physics/btech/ph1140797/AHS-ML-Project/data/'
@@ -157,7 +150,7 @@ def prep_for_analysis():
 
 	# Removing rows with 'diagnosed_for' = 0.0
 	# dist_p = dist_p[dist_p['diagnosed_for'] != 0.0]
-	dist_p = create_balanced_classes(dist_p, [1.0,2.0,3.0,7.0,9.0,19.0,20.0,99.0],"diagnosed_for")
+	dist_p = create_balanced_classes(dist_p, [1.0,2.0,3.0,7.0,9.0,19.0,21.0,99.0],"diagnosed_for")
 	# dist_p = dist_p.reset_index(drop=True)
 
 	# Shuffling the dataset and reset index
@@ -212,7 +205,7 @@ def check_if_preped(force=False):
 			print('Data already Processed. Moving to the next part')
 
 # Set force = True  to force it to redo even if it exists
-check_if_preped(True)
+check_if_preped()
 
 def check_if_colnames_onDisk(force=False):
 	file_path = data_path + 'diagnosed_for_col_names.csv'
@@ -223,7 +216,7 @@ def check_if_colnames_onDisk(force=False):
 		pd.DataFrame(list(dist)).to_csv(data_path + 'diagnosed_for_col_names.csv', index=False)
 		del dist
 
-check_if_colnames_onDisk(True)
+check_if_colnames_onDisk()
 print('------------------------------------------------------')
 
 ################### PART - 3 : Apply Machine Learning on the data ###################
@@ -232,7 +225,7 @@ print('------------------------------------------------------')
 print('PART - 3 : Dividing Data in train-test split and making categorical variables')
 
 def replace_labes(label_data):
-	    dict_map = {0.0 : 0.0, 1.0 : 1.0, 2.0 : 2.0, 3.0 : 3.0, 7.0 : 4.0, 9.0 : 5.0,
+	    dict_map = {1.0 : 1.0, 2.0 : 2.0, 3.0 : 3.0, 7.0 : 4.0, 9.0 : 5.0,
 	                19.0 : 6.0, 21.0 : 7.0, 99.0 : 7.0}
 	    for i in range(len(label_data)):
 	        if label_data[i] in dict_map:
@@ -252,10 +245,6 @@ def split_data():
 
 	diagnosed_col = check_unnamed(diagnosed_col)
 	diagnosed_data = check_unnamed(diagnosed_data)
-	# if 'Unnamed: 0' in list(diagnosed_col):
-	# 	diagnosed_col = diagnosed_col.drop('Unnamed: 0',axis=1,errors='ignore')
-	# if 'Unnamed: 0' in list(diagnosed_data):
-	# 	diagnosed_data = diagnosed_data.drop('Unnamed: 0',axis=1,errors='ignore')
 
 	assert (diagnosed_data.shape[0] == diagnosed_col.shape[0])
 	split_index = int(diagnosed_data.shape[0] * 0.75)
@@ -286,6 +275,7 @@ def split_data():
 	np.save(data_path + '22_COMB_diag_test_data.npy', test_data)
 	np.save(data_path + '22_COMB_diag_train_label.npy', train_label)
 	np.save(data_path + '22_COMB_diag_test_label.npy', test_label)
+	del train_label, train_data, test_label, test_data
 
 def check_if_splitted(force=False):
 	file_path_1 = data_path + '22_COMB_diag_train_data.npy'
@@ -300,7 +290,7 @@ def check_if_splitted(force=False):
 			split_data()
 		
 		
-check_if_splitted(True)
+check_if_splitted()
 
 train_data = np.load(data_path + '22_COMB_diag_train_data.npy')
 test_data = np.load(data_path + '22_COMB_diag_test_data.npy')

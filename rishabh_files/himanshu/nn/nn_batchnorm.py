@@ -91,7 +91,7 @@ _error = tf.reduce_mean(tf.cast(mistakes, tf.float32))
 print train_data.shape
 BATCH_SIZE = 100
 
-output_file = open("dl_fi141.txt","w")
+output_file = open("nn_batchnorm.txt","w")
 
 # for k in range(train_data.shape[1]):
 for k in range(1):
@@ -117,7 +117,7 @@ for k in range(1):
 		for epoch in range(600):
 			print "epoch no is ", epoch
 		# for epoch in range(1):
-			prev_labels = sess.run(y_, feed_dict = {X : test_data1, y : test_label, keep_prob : keep_prob_arr[2]})
+			prev_labels = sess.run(y_, feed_dict = {X : test_data1, y : test_label, keep_prob : keep_prob_arr[2], tst : False, iter : epoch})
 			# print list(labels),"gfdgjdgjdfio"
 			for i in range(num_batches-1):
 

@@ -1,0 +1,1123 @@
+===============================
+324971.hn1.hpc.iitd.ac.in
+gpu090.hpc.iitd.ac.in
+===============================
+------------------------------------------------------
+PART - 1 : Remove Yellow Field Columns form CSV File
+Yellow Fields already removed. Proceeding further
+------------------------------------------------------
+PART - 2 : Preparing Data for the analysis
+Data already Processed. Moving to the next part
+------------------------------------------------------
+PART - 3 : Dividing Data in train-test split and making categorical variables
+('LABEL : ', 1.0)
+('EPOCHS : ', 1001, '  BATCH_SIZE : ', 1024)
+
+
+Now testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'district')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['district'])
+('Train : ', (73221, 301), (73221, 2))
+('Test : ', (30509, 301), (30509, 2))
+('Valid : ', (18306, 301), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : district
+Time taken : 9.51023486455 minutes
+
+('Train Error : ', 0.012270528021086058)
+('Test Error : ', 0.12504288467851196)
+('Full Dataset Validation error is : ', 0.10788812)
+('Accuracy : ', 0.8921118825674057)
+('MACRO - Precision, Recall and F-score : ', (0.2371, 0.2303, 0.2335))
+('MICRO - Precision, Recall and F-score : ', (0.8921, 0.8921, 0.8921))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8889, 0.8921, 0.8901))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'rural')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['rural'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : rural
+Time taken : 9.4818955183 minutes
+
+('Train Error : ', 0.012126029662301984)
+('Test Error : ', 0.12260859655393111)
+('Full Dataset Validation error is : ', 0.11182126)
+('Accuracy : ', 0.8881787434220314)
+('MACRO - Precision, Recall and F-score : ', (0.2357, 0.2272, 0.2311))
+('MICRO - Precision, Recall and F-score : ', (0.8882, 0.8882, 0.8882))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8841, 0.8882, 0.8855))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'sex')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['sex'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : sex
+Time taken : 9.47619954745 minutes
+
+('Train Error : ', 0.011550962987904952)
+('Test Error : ', 0.11917396525403003)
+('Full Dataset Validation error is : ', 0.10816126)
+('Accuracy : ', 0.8918387442827225)
+('MACRO - Precision, Recall and F-score : ', (0.2377, 0.2287, 0.2328))
+('MICRO - Precision, Recall and F-score : ', (0.8918, 0.8918, 0.8918))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8878, 0.8918, 0.8892))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'usual_residance')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['usual_residance'])
+('Train : ', (73221, 301), (73221, 2))
+('Test : ', (30509, 301), (30509, 2))
+('Valid : ', (18306, 301), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : usual_residance
+Time taken : 9.49686758121 minutes
+
+('Train Error : ', 0.012224870553553589)
+('Test Error : ', 0.12239647801820334)
+('Full Dataset Validation error is : ', 0.10816126)
+('Accuracy : ', 0.8918387442827225)
+('MACRO - Precision, Recall and F-score : ', (0.2383, 0.2274, 0.2322))
+('MICRO - Precision, Recall and F-score : ', (0.8918, 0.8918, 0.8918))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8872, 0.8918, 0.8886))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'age')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['age'])
+('Train : ', (73221, 301), (73221, 2))
+('Test : ', (30509, 301), (30509, 2))
+('Valid : ', (18306, 301), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : age
+Time taken : 9.46472166777 minutes
+
+('Train Error : ', 0.0061642737842514629)
+('Test Error : ', 0.1224853787180427)
+('Full Dataset Validation error is : ', 0.10941768)
+('Accuracy : ', 0.8905823230743408)
+('MACRO - Precision, Recall and F-score : ', (0.2368, 0.2285, 0.2323))
+('MICRO - Precision, Recall and F-score : ', (0.8906, 0.8906, 0.8906))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8867, 0.8906, 0.8881))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'religion')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['religion'])
+('Train : ', (73221, 295), (73221, 2))
+('Test : ', (30509, 295), (30509, 2))
+('Valid : ', (18306, 295), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : religion
+Time taken : 9.37520866394 minutes
+
+('Train Error : ', 0.012009865134865134)
+('Test Error : ', 0.12459346697434083)
+('Full Dataset Validation error is : ', 0.10870752)
+('Accuracy : ', 0.8912924751639366)
+('MACRO - Precision, Recall and F-score : ', (0.2379, 0.2274, 0.2321))
+('MICRO - Precision, Recall and F-score : ', (0.8913, 0.8913, 0.8913))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8868, 0.8913, 0.8881))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'social_group_code')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['social_group_code'])
+('Train : ', (73221, 299), (73221, 2))
+('Test : ', (30509, 299), (30509, 2))
+('Valid : ', (18306, 299), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : social_group_code
+Time taken : 9.37912091811 minutes
+
+('Train Error : ', 0.012127158555729984)
+('Test Error : ', 0.12027096980577939)
+('Full Dataset Validation error is : ', 0.11040094)
+('Accuracy : ', 0.8895990550518036)
+('MACRO - Precision, Recall and F-score : ', (0.2351, 0.2311, 0.233))
+('MICRO - Precision, Recall and F-score : ', (0.8896, 0.8896, 0.8896))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8874, 0.8896, 0.8884))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'marital_status')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['marital_status'])
+('Train : ', (73221, 294), (73221, 2))
+('Test : ', (30509, 294), (30509, 2))
+('Valid : ', (18306, 294), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : marital_status
+Time taken : 9.32936056455 minutes
+
+('Train Error : ', 0.011797730729092336)
+('Test Error : ', 0.12102694119457956)
+('Full Dataset Validation error is : ', 0.10756035)
+('Accuracy : ', 0.8924396485090256)
+('MACRO - Precision, Recall and F-score : ', (0.2376, 0.2298, 0.2334))
+('MICRO - Precision, Recall and F-score : ', (0.8924, 0.8924, 0.8924))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8889, 0.8924, 0.8901))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'currently_attending_school')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['currently_attending_school'])
+('Train : ', (73221, 299), (73221, 2))
+('Test : ', (30509, 299), (30509, 2))
+('Valid : ', (18306, 299), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : currently_attending_school
+Time taken : 9.38485008081 minutes
+
+('Train Error : ', 0.011320626917725132)
+('Test Error : ', 0.11959892291795243)
+('Full Dataset Validation error is : ', 0.10914453)
+('Accuracy : ', 0.8908554688096046)
+('MACRO - Precision, Recall and F-score : ', (0.2376, 0.2273, 0.2319))
+('MICRO - Precision, Recall and F-score : ', (0.8909, 0.8909, 0.8909))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8863, 0.8909, 0.8877))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'reason_for_not_attending_school')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['reason_for_not_attending_school'])
+('Train : ', (73221, 293), (73221, 2))
+('Test : ', (30509, 293), (30509, 2))
+('Valid : ', (18306, 293), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : reason_for_not_attending_school
+Time taken : 9.32388118505 minutes
+
+('Train Error : ', 0.011672047260774939)
+('Test Error : ', 0.12035748035787465)
+('Full Dataset Validation error is : ', 0.11067409)
+('Accuracy : ', 0.8893259093165398)
+('MACRO - Precision, Recall and F-score : ', (0.2364, 0.2275, 0.2315))
+('MICRO - Precision, Recall and F-score : ', (0.8893, 0.8893, 0.8893))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8851, 0.8893, 0.8866))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'highest_qualification')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['highest_qualification'])
+('Train : ', (73221, 292), (73221, 2))
+('Test : ', (30509, 292), (30509, 2))
+('Valid : ', (18306, 292), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : highest_qualification
+Time taken : 9.3301094691 minutes
+
+('Train Error : ', 0.01240695688240331)
+('Test Error : ', 0.12337327764911966)
+('Full Dataset Validation error is : ', 0.11231291)
+('Accuracy : ', 0.8876870945096016)
+('MACRO - Precision, Recall and F-score : ', (0.2338, 0.2316, 0.2326))
+('MICRO - Precision, Recall and F-score : ', (0.8877, 0.8877, 0.8877))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8864, 0.8877, 0.887))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'occupation_status')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['occupation_status'])
+('Train : ', (73221, 287), (73221, 2))
+('Test : ', (30509, 287), (30509, 2))
+('Valid : ', (18306, 287), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : occupation_status
+Time taken : 9.31256033182 minutes
+
+('Train Error : ', 0.012517044897067219)
+('Test Error : ', 0.12450692327051134)
+('Full Dataset Validation error is : ', 0.11165737)
+('Accuracy : ', 0.8883426338434219)
+('MACRO - Precision, Recall and F-score : ', (0.2354, 0.2283, 0.2316))
+('MICRO - Precision, Recall and F-score : ', (0.8883, 0.8883, 0.8883))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8848, 0.8883, 0.8861))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'disability_status')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['disability_status'])
+('Train : ', (73221, 294), (73221, 2))
+('Test : ', (30509, 294), (30509, 2))
+('Valid : ', (18306, 294), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : disability_status
+Time taken : 9.41284856796 minutes
+
+('Train Error : ', 0.011359441339910089)
+('Test Error : ', 0.12131817031514038)
+('Full Dataset Validation error is : ', 0.10766961)
+('Accuracy : ', 0.8923303931951523)
+('MACRO - Precision, Recall and F-score : ', (0.2374, 0.2301, 0.2335))
+('MICRO - Precision, Recall and F-score : ', (0.8923, 0.8923, 0.8923))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8889, 0.8923, 0.8902))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'injury_treatment_type')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['injury_treatment_type'])
+('Train : ', (73221, 294), (73221, 2))
+('Test : ', (30509, 294), (30509, 2))
+('Valid : ', (18306, 294), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : injury_treatment_type
+Time taken : 9.40085354646 minutes
+
+('Train Error : ', 0.011688325625267589)
+('Test Error : ', 0.12148022250487255)
+('Full Dataset Validation error is : ', 0.10772423)
+('Accuracy : ', 0.8922757655382156)
+('MACRO - Precision, Recall and F-score : ', (0.2401, 0.2249, 0.2313))
+('MICRO - Precision, Recall and F-score : ', (0.8923, 0.8923, 0.8923))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8869, 0.8923, 0.8877))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'illness_type')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['illness_type'])
+('Train : ', (73221, 292), (73221, 2))
+('Test : ', (30509, 292), (30509, 2))
+('Valid : ', (18306, 292), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : illness_type
+Time taken : 9.34893988371 minutes
+
+('Train Error : ', 0.012200885052447553)
+('Test Error : ', 0.12033992930576876)
+('Full Dataset Validation error is : ', 0.1074511)
+('Accuracy : ', 0.8925489038228989)
+('MACRO - Precision, Recall and F-score : ', (0.2386, 0.2279, 0.2327))
+('MICRO - Precision, Recall and F-score : ', (0.8925, 0.8925, 0.8925))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8881, 0.8925, 0.8894))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'treatment_source')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['treatment_source'])
+('Train : ', (73221, 273), (73221, 2))
+('Test : ', (30509, 273), (30509, 2))
+('Valid : ', (18306, 273), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : treatment_source
+Time taken : 9.05474520127 minutes
+
+('Train Error : ', 0.012469742868738405)
+('Test Error : ', 0.11884786281641666)
+('Full Dataset Validation error is : ', 0.10319021)
+('Accuracy : ', 0.8968097940087318)
+('MACRO - Precision, Recall and F-score : ', (0.2396, 0.2323, 0.2357))
+('MICRO - Precision, Recall and F-score : ', (0.8968, 0.8968, 0.8968))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8936, 0.8968, 0.8948))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'symptoms_pertaining_illness')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['symptoms_pertaining_illness'])
+('Train : ', (73221, 288), (73221, 2))
+('Test : ', (30509, 288), (30509, 2))
+('Valid : ', (18306, 288), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : symptoms_pertaining_illness
+Time taken : 9.19333468278 minutes
+
+('Train Error : ', 0.013386808503996005)
+('Test Error : ', 0.12531820005112951)
+('Full Dataset Validation error is : ', 0.10400961)
+('Accuracy : ', 0.8959903866052628)
+('MACRO - Precision, Recall and F-score : ', (0.2406, 0.2292, 0.2342))
+('MICRO - Precision, Recall and F-score : ', (0.896, 0.896, 0.896))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8916, 0.896, 0.8928))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'sought_medical_care')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['sought_medical_care'])
+('Train : ', (73221, 299), (73221, 2))
+('Test : ', (30509, 299), (30509, 2))
+('Valid : ', (18306, 299), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : sought_medical_care
+Time taken : 9.30380616585 minutes
+
+('Train Error : ', 0.011183529082524618)
+('Test Error : ', 0.12208894212226887)
+('Full Dataset Validation error is : ', 0.10996394)
+('Accuracy : ', 0.8900360614061356)
+('MACRO - Precision, Recall and F-score : ', (0.2397, 0.2224, 0.2295))
+('MICRO - Precision, Recall and F-score : ', (0.89, 0.89, 0.89))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8841, 0.89, 0.8847))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'diagnosed_for')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', [])
+('Train : ', (73221, 302), (73221, 2))
+('Test : ', (30509, 302), (30509, 2))
+('Valid : ', (18306, 302), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : diagnosed_for
+Time taken : 9.44858208497 minutes
+
+('Train Error : ', 0.011993140787783645)
+('Test Error : ', 0.12298198134362043)
+('Full Dataset Validation error is : ', 0.10750573)
+('Accuracy : ', 0.8924942687153816)
+('MACRO - Precision, Recall and F-score : ', (0.237, 0.2312, 0.234))
+('MICRO - Precision, Recall and F-score : ', (0.8925, 0.8925, 0.8925))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8897, 0.8925, 0.8908))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'diagnosis_source')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['diagnosis_source'])
+('Train : ', (73221, 288), (73221, 2))
+('Test : ', (30509, 288), (30509, 2))
+('Valid : ', (18306, 288), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : diagnosis_source
+Time taken : 9.18127748171 minutes
+
+('Train Error : ', 0.011853241624446982)
+('Test Error : ', 0.12234081246040679)
+('Full Dataset Validation error is : ', 0.11247678)
+('Accuracy : ', 0.8875232189893723)
+('MACRO - Precision, Recall and F-score : ', (0.2365, 0.2245, 0.2297))
+('MICRO - Precision, Recall and F-score : ', (0.8875, 0.8875, 0.8875))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8823, 0.8875, 0.8837))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'regular_treatment')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['regular_treatment'])
+('Train : ', (73221, 284), (73221, 2))
+('Test : ', (30509, 284), (30509, 2))
+('Valid : ', (18306, 284), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : regular_treatment
+Time taken : 9.24924923182 minutes
+
+('Train Error : ', 0.01249719867186385)
+('Test Error : ', 0.12280044634710183)
+('Full Dataset Validation error is : ', 0.11362394)
+('Accuracy : ', 0.8863760605454445)
+('MACRO - Precision, Recall and F-score : ', (0.2335, 0.2299, 0.2316))
+('MICRO - Precision, Recall and F-score : ', (0.8864, 0.8864, 0.8864))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8843, 0.8864, 0.8852))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'regular_treatment_source')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['regular_treatment_source'])
+('Train : ', (73221, 287), (73221, 2))
+('Test : ', (30509, 287), (30509, 2))
+('Valid : ', (18306, 287), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : regular_treatment_source
+Time taken : 9.15633629958 minutes
+
+('Train Error : ', 0.012174599953617811)
+('Test Error : ', 0.12211589077552715)
+('Full Dataset Validation error is : ', 0.11214902)
+('Accuracy : ', 0.8878509849309921)
+('MACRO - Precision, Recall and F-score : ', (0.2354, 0.2274, 0.231))
+('MICRO - Precision, Recall and F-score : ', (0.8879, 0.8879, 0.8879))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8839, 0.8879, 0.8853))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'chew')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['chew'])
+('Train : ', (73221, 295), (73221, 2))
+('Test : ', (30509, 295), (30509, 2))
+('Valid : ', (18306, 295), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : chew
+Time taken : 9.32524383465 minutes
+
+('Train Error : ', 0.012117918353967461)
+('Test Error : ', 0.12314829021900683)
+('Full Dataset Validation error is : ', 0.11400633)
+('Accuracy : ', 0.8859936743974686)
+('MACRO - Precision, Recall and F-score : ', (0.2329, 0.2309, 0.2319))
+('MICRO - Precision, Recall and F-score : ', (0.886, 0.886, 0.886))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8848, 0.886, 0.8854))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'smoke')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['smoke'])
+('Train : ', (73221, 298), (73221, 2))
+('Test : ', (30509, 298), (30509, 2))
+('Valid : ', (18306, 298), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : smoke
+Time taken : 9.28838458459 minutes
+
+('Train Error : ', 0.0112708719851577)
+('Test Error : ', 0.11932432766888407)
+('Full Dataset Validation error is : ', 0.11193051)
+('Accuracy : ', 0.8880694881081581)
+('MACRO - Precision, Recall and F-score : ', (0.2345, 0.2301, 0.2322))
+('MICRO - Precision, Recall and F-score : ', (0.8881, 0.8881, 0.8881))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8857, 0.8881, 0.8867))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'alcohol')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['alcohol'])
+('Train : ', (73221, 298), (73221, 2))
+('Test : ', (30509, 298), (30509, 2))
+('Valid : ', (18306, 298), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : alcohol
+Time taken : 9.40407108466 minutes
+
+('Train Error : ', 0.011662598004673898)
+('Test Error : ', 0.12267585330225014)
+('Full Dataset Validation error is : ', 0.10340872)
+('Accuracy : ', 0.8965912759304047)
+('MACRO - Precision, Recall and F-score : ', (0.2399, 0.2315, 0.2353))
+('MICRO - Precision, Recall and F-score : ', (0.8966, 0.8966, 0.8966))
+('WEIGHTED - Precision, Recall and F-score : ', (0.893, 0.8966, 0.8943))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'house_status')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['house_status'])
+('Train : ', (73221, 298), (73221, 2))
+('Test : ', (30509, 298), (30509, 2))
+('Valid : ', (18306, 298), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : house_status
+Time taken : 9.27241530021 minutes
+
+('Train Error : ', 0.011864279693520765)
+('Test Error : ', 0.12166120116408173)
+('Full Dataset Validation error is : ', 0.11335081)
+('Accuracy : ', 0.8866491913795471)
+('MACRO - Precision, Recall and F-score : ', (0.2345, 0.2275, 0.2307))
+('MICRO - Precision, Recall and F-score : ', (0.8866, 0.8866, 0.8866))
+('WEIGHTED - Precision, Recall and F-score : ', (0.883, 0.8866, 0.8844))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'house_structure')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['house_structure'])
+('Train : ', (73221, 298), (73221, 2))
+('Test : ', (30509, 298), (30509, 2))
+('Valid : ', (18306, 298), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : house_structure
+Time taken : 9.36402728558 minutes
+
+('Train Error : ', 0.011316682759205081)
+('Test Error : ', 0.1213385045647502)
+('Full Dataset Validation error is : ', 0.10766961)
+('Accuracy : ', 0.8923303931951523)
+('MACRO - Precision, Recall and F-score : ', (0.237, 0.2311, 0.2339))
+('MICRO - Precision, Recall and F-score : ', (0.8923, 0.8923, 0.8923))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8895, 0.8923, 0.8906))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'owner_status')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['owner_status'])
+('Train : ', (73221, 299), (73221, 2))
+('Test : ', (30509, 299), (30509, 2))
+('Valid : ', (18306, 299), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : owner_status
+Time taken : 9.2651017189 minutes
+
+('Train Error : ', 0.011365894150492365)
+('Test Error : ', 0.12120415440776369)
+('Full Dataset Validation error is : ', 0.11149349)
+('Accuracy : ', 0.8885065093636513)
+('MACRO - Precision, Recall and F-score : ', (0.2353, 0.2288, 0.2318))
+('MICRO - Precision, Recall and F-score : ', (0.8885, 0.8885, 0.8885))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8852, 0.8885, 0.8865))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'drinking_water_source')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['drinking_water_source'])
+('Train : ', (73221, 293), (73221, 2))
+('Test : ', (30509, 293), (30509, 2))
+('Valid : ', (18306, 293), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : drinking_water_source
+Time taken : 9.28744071722 minutes
+
+('Train Error : ', 0.012311042751890966)
+('Test Error : ', 0.12339649336053418)
+('Full Dataset Validation error is : ', 0.11280453)
+('Accuracy : ', 0.8871954679489136)
+('MACRO - Precision, Recall and F-score : ', (0.2351, 0.2269, 0.2307))
+('MICRO - Precision, Recall and F-score : ', (0.8872, 0.8872, 0.8872))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8831, 0.8872, 0.8846))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_water_filter')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_water_filter'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : is_water_filter
+Time taken : 9.25748964945 minutes
+
+('Train Error : ', 0.011598362574925076)
+('Test Error : ', 0.12030047248233924)
+('Full Dataset Validation error is : ', 0.10630394)
+('Accuracy : ', 0.8936960622668266)
+('MACRO - Precision, Recall and F-score : ', (0.2392, 0.2283, 0.2332))
+('MICRO - Precision, Recall and F-score : ', (0.8937, 0.8937, 0.8937))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8893, 0.8937, 0.8905))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'water_filteration')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['water_filteration'])
+('Train : ', (73221, 294), (73221, 2))
+('Test : ', (30509, 294), (30509, 2))
+('Valid : ', (18306, 294), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : water_filteration
+Time taken : 9.32135799726 minutes
+
+('Train Error : ', 0.011217869741865278)
+('Test Error : ', 0.11925458228522605)
+('Full Dataset Validation error is : ', 0.11274991)
+('Accuracy : ', 0.8872500881552696)
+('MACRO - Precision, Recall and F-score : ', (0.2369, 0.2232, 0.2291))
+('MICRO - Precision, Recall and F-score : ', (0.8873, 0.8873, 0.8873))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8815, 0.8873, 0.8828))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'toilet_used')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['toilet_used'])
+('Train : ', (73221, 292), (73221, 2))
+('Test : ', (30509, 292), (30509, 2))
+('Valid : ', (18306, 292), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : toilet_used
+Time taken : 9.20058681568 minutes
+
+('Train Error : ', 0.011676088977986299)
+('Test Error : ', 0.12294534034096635)
+('Full Dataset Validation error is : ', 0.10952692)
+('Accuracy : ', 0.8904730826616287)
+('MACRO - Precision, Recall and F-score : ', (0.2362, 0.2299, 0.2328))
+('MICRO - Precision, Recall and F-score : ', (0.8905, 0.8905, 0.8905))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8874, 0.8905, 0.8886))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_toilet_shared')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_toilet_shared'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : is_toilet_shared
+Time taken : 9.40319856405 minutes
+
+('Train Error : ', 0.011500734198836878)
+('Test Error : ', 0.11972770633754673)
+('Full Dataset Validation error is : ', 0.10848901)
+('Accuracy : ', 0.8915109857916832)
+('MACRO - Precision, Recall and F-score : ', (0.237, 0.2296, 0.233))
+('MICRO - Precision, Recall and F-score : ', (0.8915, 0.8915, 0.8915))
+('WEIGHTED - Precision, Recall and F-score : ', (0.888, 0.8915, 0.8893))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'household_have_electricity')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['household_have_electricity'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : household_have_electricity
+Time taken : 9.31086598635 minutes
+
+('Train Error : ', 0.011689705383901813)
+('Test Error : ', 0.12137910769833671)
+('Full Dataset Validation error is : ', 0.10990931)
+('Accuracy : ', 0.8900906890630722)
+('MACRO - Precision, Recall and F-score : ', (0.2374, 0.2266, 0.2314))
+('MICRO - Precision, Recall and F-score : ', (0.8901, 0.8901, 0.8901))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8854, 0.8901, 0.8868))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'lighting_source')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['lighting_source'])
+('Train : ', (73221, 296), (73221, 2))
+('Test : ', (30509, 296), (30509, 2))
+('Valid : ', (18306, 296), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : lighting_source
+Time taken : 9.36163191795 minutes
+
+('Train Error : ', 0.011640424307835021)
+('Test Error : ', 0.12234680460287736)
+('Full Dataset Validation error is : ', 0.11149349)
+('Accuracy : ', 0.8885065093636513)
+('MACRO - Precision, Recall and F-score : ', (0.2351, 0.2292, 0.232))
+('MICRO - Precision, Recall and F-score : ', (0.8885, 0.8885, 0.8885))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8854, 0.8885, 0.8867))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'cooking_fuel')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['cooking_fuel'])
+('Train : ', (73221, 292), (73221, 2))
+('Test : ', (30509, 292), (30509, 2))
+('Valid : ', (18306, 292), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : cooking_fuel
+Time taken : 9.22807356914 minutes
+
+('Train Error : ', 0.011725397927964893)
+('Test Error : ', 0.11958788746928835)
+('Full Dataset Validation error is : ', 0.1111111)
+('Accuracy : ', 0.8888888955116272)
+('MACRO - Precision, Recall and F-score : ', (0.2363, 0.2269, 0.2311))
+('MICRO - Precision, Recall and F-score : ', (0.8889, 0.8889, 0.8889))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8845, 0.8889, 0.8859))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'kitchen_availability')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['kitchen_availability'])
+('Train : ', (73221, 297), (73221, 2))
+('Test : ', (30509, 297), (30509, 2))
+('Valid : ', (18306, 297), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : kitchen_availability
+Time taken : 9.3953276674 minutes
+
+('Train Error : ', 0.011438937736370771)
+('Test Error : ', 0.1214292067494783)
+('Full Dataset Validation error is : ', 0.11127499)
+('Accuracy : ', 0.8887250050902367)
+('MACRO - Precision, Recall and F-score : ', (0.2354, 0.2289, 0.2319))
+('MICRO - Precision, Recall and F-score : ', (0.8887, 0.8887, 0.8887))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8854, 0.8887, 0.8867))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_radio')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_radio'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : is_radio
+Time taken : 9.29822301865 minutes
+
+('Train Error : ', 0.011871206360603683)
+('Test Error : ', 0.12384849771872147)
+('Full Dataset Validation error is : ', 0.1119305)
+('Accuracy : ', 0.8880694955587387)
+('MACRO - Precision, Recall and F-score : ', (0.236, 0.2263, 0.2307))
+('MICRO - Precision, Recall and F-score : ', (0.8881, 0.8881, 0.8881))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8835, 0.8881, 0.885))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_television')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_television'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : is_television
+Time taken : 9.41305961609 minutes
+
+('Train Error : ', 0.011860516715427429)
+('Test Error : ', 0.1202582325209509)
+('Full Dataset Validation error is : ', 0.1096908)
+('Accuracy : ', 0.8903091996908188)
+('MACRO - Precision, Recall and F-score : ', (0.2362, 0.2296, 0.2327))
+('MICRO - Precision, Recall and F-score : ', (0.8903, 0.8903, 0.8903))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8871, 0.8903, 0.8883))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_computer')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_computer'])
+('Train : ', (73221, 299), (73221, 2))
+('Test : ', (30509, 299), (30509, 2))
+('Valid : ', (18306, 299), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : is_computer
+Time taken : 9.26562227011 minutes
+
+('Train Error : ', 0.010688836832810047)
+('Test Error : ', 0.12012604319608652)
+('Full Dataset Validation error is : ', 0.10985468)
+('Accuracy : ', 0.8901453167200089)
+('MACRO - Precision, Recall and F-score : ', (0.2354, 0.2314, 0.2333))
+('MICRO - Precision, Recall and F-score : ', (0.8901, 0.8901, 0.8901))
+('WEIGHTED - Precision, Recall and F-score : ', (0.888, 0.8901, 0.8889))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_telephone')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_telephone'])
+('Train : ', (73221, 298), (73221, 2))
+('Test : ', (30509, 298), (30509, 2))
+('Valid : ', (18306, 298), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : is_telephone
+Time taken : 9.3769531846 minutes
+
+('Train Error : ', 0.011288641603931783)
+('Test Error : ', 0.12136433992560927)
+('Full Dataset Validation error is : ', 0.11072871)
+('Accuracy : ', 0.8892712891101837)
+('MACRO - Precision, Recall and F-score : ', (0.2359, 0.2285, 0.2319))
+('MICRO - Precision, Recall and F-score : ', (0.8893, 0.8893, 0.8893))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8856, 0.8893, 0.887))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_washing_machine')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_washing_machine'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : is_washing_machine
+Time taken : 9.2739831686 minutes
+
+('Train Error : ', 0.011309170739974311)
+('Test Error : ', 0.12072284348480232)
+('Full Dataset Validation error is : ', 0.10450125)
+('Accuracy : ', 0.8954987525939941)
+('MACRO - Precision, Recall and F-score : ', (0.2395, 0.2305, 0.2346))
+('MICRO - Precision, Recall and F-score : ', (0.8955, 0.8955, 0.8955))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8917, 0.8955, 0.893))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_refrigerator')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_refrigerator'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : is_refrigerator
+Time taken : 9.39835004807 minutes
+
+('Train Error : ', 0.011509500544098758)
+('Test Error : ', 0.12151244305796199)
+('Full Dataset Validation error is : ', 0.11105647)
+('Accuracy : ', 0.8889435306191444)
+('MACRO - Precision, Recall and F-score : ', (0.2358, 0.2283, 0.2317))
+('MICRO - Precision, Recall and F-score : ', (0.8889, 0.8889, 0.8889))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8853, 0.8889, 0.8866))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_sewing_machine')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_sewing_machine'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : is_sewing_machine
+Time taken : 9.29342496792 minutes
+
+('Train Error : ', 0.011444958501320109)
+('Test Error : ', 0.1214138164029612)
+('Full Dataset Validation error is : ', 0.10958154)
+('Accuracy : ', 0.8904184550046921)
+('MACRO - Precision, Recall and F-score : ', (0.2369, 0.2281, 0.2321))
+('MICRO - Precision, Recall and F-score : ', (0.8904, 0.8904, 0.8904))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8864, 0.8904, 0.8877))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_bicycle')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_bicycle'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : is_bicycle
+Time taken : 9.41272243261 minutes
+
+('Train Error : ', 0.011850245178928215)
+('Test Error : ', 0.12110785252743073)
+('Full Dataset Validation error is : ', 0.10526601)
+('Accuracy : ', 0.8947339877486229)
+('MACRO - Precision, Recall and F-score : ', (0.2399, 0.2286, 0.2336))
+('MICRO - Precision, Recall and F-score : ', (0.8947, 0.8947, 0.8947))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8903, 0.8947, 0.8915))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_scooter')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_scooter'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : is_scooter
+Time taken : 9.30104853312 minutes
+
+('Train Error : ', 0.011115363431211646)
+('Test Error : ', 0.12037205214534963)
+('Full Dataset Validation error is : ', 0.10876215)
+('Accuracy : ', 0.8912378549575806)
+('MACRO - Precision, Recall and F-score : ', (0.2364, 0.2306, 0.2333))
+('MICRO - Precision, Recall and F-score : ', (0.8912, 0.8912, 0.8912))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8883, 0.8912, 0.8895))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_car')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_car'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : is_car
+Time taken : 9.43698251645 minutes
+
+('Train Error : ', 0.012590381159019552)
+('Test Error : ', 0.12350844675963456)
+('Full Dataset Validation error is : ', 0.10837975)
+('Accuracy : ', 0.8916202485561371)
+('MACRO - Precision, Recall and F-score : ', (0.2376, 0.2285, 0.2326))
+('MICRO - Precision, Recall and F-score : ', (0.8916, 0.8916, 0.8916))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8875, 0.8916, 0.8889))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_tractor')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_tractor'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : is_tractor
+Time taken : 9.31722566684 minutes
+
+('Train Error : ', 0.011595240696803196)
+('Test Error : ', 0.1196374628212783)
+('Full Dataset Validation error is : ', 0.1066317)
+('Accuracy : ', 0.8933683037757874)
+('MACRO - Precision, Recall and F-score : ', (0.2381, 0.2302, 0.2338))
+('MICRO - Precision, Recall and F-score : ', (0.8934, 0.8934, 0.8934))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8898, 0.8934, 0.8911))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_water_pump')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_water_pump'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : is_water_pump
+Time taken : 9.43980529706 minutes
+
+('Train Error : ', 0.011708645706971599)
+('Test Error : ', 0.1188743534413251)
+('Full Dataset Validation error is : ', 0.10471976)
+('Accuracy : ', 0.8952802419662476)
+('MACRO - Precision, Recall and F-score : ', (0.2392, 0.2309, 0.2347))
+('MICRO - Precision, Recall and F-score : ', (0.8953, 0.8953, 0.8953))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8917, 0.8953, 0.8929))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'cart')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['cart'])
+('Train : ', (73221, 298), (73221, 2))
+('Test : ', (30509, 298), (30509, 2))
+('Valid : ', (18306, 298), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : cart
+Time taken : 9.25922771692 minutes
+
+('Train Error : ', 0.011252098905558727)
+('Test Error : ', 0.12206310674652353)
+('Full Dataset Validation error is : ', 0.10859827)
+('Accuracy : ', 0.8914017304778099)
+('MACRO - Precision, Recall and F-score : ', (0.2388, 0.2258, 0.2314))
+('MICRO - Precision, Recall and F-score : ', (0.8914, 0.8914, 0.8914))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8863, 0.8914, 0.8875))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'land_possessed')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['land_possessed'])
+('Train : ', (73221, 296), (73221, 2))
+('Test : ', (30509, 296), (30509, 2))
+('Valid : ', (18306, 296), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : land_possessed
+Time taken : 9.38762844801 minutes
+
+('Train Error : ', 0.011733258371093193)
+('Test Error : ', 0.12171892940134674)
+('Full Dataset Validation error is : ', 0.11662842)
+('Accuracy : ', 0.883371576666832)
+('MACRO - Precision, Recall and F-score : ', (0.2336, 0.2239, 0.2283))
+('MICRO - Precision, Recall and F-score : ', (0.8834, 0.8834, 0.8834))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8784, 0.8834, 0.8801))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'residancial_status')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['residancial_status'])
+('Train : ', (73221, 298), (73221, 2))
+('Test : ', (30509, 298), (30509, 2))
+('Valid : ', (18306, 298), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : residancial_status
+Time taken : 9.26949150165 minutes
+
+('Train Error : ', 0.011539952792742971)
+('Test Error : ', 0.11940153928605708)
+('Full Dataset Validation error is : ', 0.10575768)
+('Accuracy : ', 0.8942423239350319)
+('MACRO - Precision, Recall and F-score : ', (0.2403, 0.2272, 0.2329))
+('MICRO - Precision, Recall and F-score : ', (0.8942, 0.8942, 0.8942))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8894, 0.8942, 0.8904))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'iscoveredbyhealthscheme')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['iscoveredbyhealthscheme'])
+('Train : ', (73221, 299), (73221, 2))
+('Test : ', (30509, 299), (30509, 2))
+('Valid : ', (18306, 299), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : iscoveredbyhealthscheme
+Time taken : 9.3884322842 minutes
+
+('Train Error : ', 0.011669357428286)
+('Test Error : ', 0.11678758154918145)
+('Full Dataset Validation error is : ', 0.10695946)
+('Accuracy : ', 0.8930405378341675)
+('MACRO - Precision, Recall and F-score : ', (0.237, 0.2322, 0.2345))
+('MICRO - Precision, Recall and F-score : ', (0.893, 0.893, 0.893))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8906, 0.893, 0.8916))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'healthscheme_1')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['healthscheme_1'])
+('Train : ', (73221, 294), (73221, 2))
+('Test : ', (30509, 294), (30509, 2))
+('Valid : ', (18306, 294), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : healthscheme_1
+Time taken : 9.21256080071 minutes
+
+('Train Error : ', 0.011995579755066363)
+('Test Error : ', 0.11779480143920049)
+('Full Dataset Validation error is : ', 0.10553916)
+('Accuracy : ', 0.8944608420133591)
+('MACRO - Precision, Recall and F-score : ', (0.2385, 0.2311, 0.2345))
+('MICRO - Precision, Recall and F-score : ', (0.8945, 0.8945, 0.8945))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8911, 0.8945, 0.8924))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'healthscheme_2')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['healthscheme_2'])
+('Train : ', (73221, 294), (73221, 2))
+('Test : ', (30509, 294), (30509, 2))
+('Valid : ', (18306, 294), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : healthscheme_2
+Time taken : 9.3189896663 minutes
+
+('Train Error : ', 0.011394534594869415)
+('Test Error : ', 0.11829199312211988)
+('Full Dataset Validation error is : ', 0.10652244)
+('Accuracy : ', 0.8934775590896606)
+('MACRO - Precision, Recall and F-score : ', (0.2386, 0.2293, 0.2335))
+('MICRO - Precision, Recall and F-score : ', (0.8935, 0.8935, 0.8935))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8895, 0.8935, 0.8908))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'housestatus')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['housestatus'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : housestatus
+Time taken : 9.27446301778 minutes
+
+('Train Error : ', 0.011324362021906665)
+('Test Error : ', 0.12132923769486414)
+('Full Dataset Validation error is : ', 0.10756036)
+('Accuracy : ', 0.892439641058445)
+('MACRO - Precision, Recall and F-score : ', (0.2375, 0.2301, 0.2335))
+('MICRO - Precision, Recall and F-score : ', (0.8924, 0.8924, 0.8924))
+('WEIGHTED - Precision, Recall and F-score : ', (0.889, 0.8924, 0.8903))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'householdstatus')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['householdstatus'])
+('Train : ', (73221, 296), (73221, 2))
+('Test : ', (30509, 296), (30509, 2))
+('Valid : ', (18306, 296), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : householdstatus
+Time taken : 9.23898355166 minutes
+
+('Train Error : ', 0.011510490067967746)
+('Test Error : ', 0.12080771709000553)
+('Full Dataset Validation error is : ', 0.11012782)
+('Accuracy : ', 0.8898721784353256)
+('MACRO - Precision, Recall and F-score : ', (0.2377, 0.2255, 0.2309))
+('MICRO - Precision, Recall and F-score : ', (0.8899, 0.8899, 0.8899))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8848, 0.8899, 0.8861))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-------------------------------------------------------
+('current feature to be ablated : ', 'as_binned')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['as_binned'])
+('Train : ', (73221, 297), (73221, 2))
+('Test : ', (30509, 297), (30509, 2))
+('Valid : ', (18306, 297), (18306, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Feature : as_binned
+Time taken : 9.36206976573 minutes
+
+('Train Error : ', 0.012357104391144571)
+('Test Error : ', 0.11845784393194077)
+('Full Dataset Validation error is : ', 0.10635857)
+('Accuracy : ', 0.89364143460989)
+('MACRO - Precision, Recall and F-score : ', (0.2393, 0.2281, 0.2331))
+('MICRO - Precision, Recall and F-score : ', (0.8936, 0.8936, 0.8936))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8891, 0.8936, 0.8903))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+-------------------------
+-------------------------
+{'water_filteration': 0.11274991, 'chew': 0.11400633, 'is_radio': 0.1119305, 'symptoms_pertaining_illness': 0.10400961, 'is_water_pump': 0.10471976, 'drinking_water_source': 0.11280453, 'is_toilet_shared': 0.10848901, 'sex': 0.10816126, 'reason_for_not_attending_school': 0.11067409, 'is_tractor': 0.1066317, 'household_have_electricity': 0.10990931, 'healthscheme_1': 0.10553916, 'alcohol': 0.10340872, 'district': 0.10788812, 'is_telephone': 0.11072871, 'land_possessed': 0.11662842, 'house_status': 0.11335081, 'social_group_code': 0.11040094, 'highest_qualification': 0.11231291, 'is_television': 0.1096908, 'religion': 0.10870752, 'residancial_status': 0.10575768, 'rural': 0.11182126, 'toilet_used': 0.10952692, 'iscoveredbyhealthscheme': 0.10695946, 'sought_medical_care': 0.10996394, 'injury_treatment_type': 0.10772423, 'housestatus': 0.10756036, 'is_computer': 0.10985468, 'is_scooter': 0.10876215, 'diagnosis_source': 0.11247678, 'healthscheme_2': 0.10652244, 'cart': 0.10859827, 'regular_treatment': 0.11362394, 'is_sewing_machine': 0.10958154, 'kitchen_availability': 0.11127499, 'illness_type': 0.1074511, 'is_bicycle': 0.10526601, 'is_water_filter': 0.10630394, 'lighting_source': 0.11149349, 'as_binned': 0.10635857, 'cooking_fuel': 0.1111111, 'owner_status': 0.11149349, 'treatment_source': 0.10319021, 'is_refrigerator': 0.11105647, 'householdstatus': 0.11012782, 'house_structure': 0.10766961, 'age': 0.10941768, 'marital_status': 0.10756035, 'currently_attending_school': 0.10914453, 'is_car': 0.10837975, 'diagnosed_for': 0.10750573, 'smoke': 0.11193051, 'occupation_status': 0.11165737, 'usual_residance': 0.10816126, 'disability_status': 0.10766961, 'is_washing_machine': 0.10450125, 'regular_treatment_source': 0.11214902}

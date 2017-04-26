@@ -1,0 +1,70 @@
+===============================
+324872.hn1.hpc.iitd.ac.in
+gpu025.hpc.iitd.ac.in
+===============================
+('EPOCHS : ', 1001, '  BATCH_SIZE : ', 1024)
+('Train : ', (91527, 303), (91527, 7))
+('Test : ', (30509, 303), (30509, 7))
+------------------------
+('Activation    : ', <function tanh at 0x2af9ad886848>)
+('Keep Prob     : ', 0.5)
+('learning Rate : ', 0.005)
+
+Full Dataset error is 0.824543
+------------------------
+------------------------
+('Activation    : ', <function tanh at 0x2af9ad886848>)
+('Keep Prob     : ', 0.5)
+('learning Rate : ', 0.001)
+
+Full Dataset error is 0.281327
+------------------------
+------------------------
+('Activation    : ', <function tanh at 0x2af9ad886848>)
+('Keep Prob     : ', 0.5)
+('learning Rate : ', 0.0002)
+
+Full Dataset error is 0.281163
+------------------------
+------------------------
+('Activation    : ', <function tanh at 0x2af9ad886848>)
+('Keep Prob     : ', 0.6)
+('learning Rate : ', 0.005)
+
+Full Dataset error is 0.824543
+------------------------
+------------------------
+('Activation    : ', <function tanh at 0x2af9ad886848>)
+('Keep Prob     : ', 0.6)
+('learning Rate : ', 0.001)
+
+Full Dataset error is 0.281851
+------------------------
+------------------------
+('Activation    : ', <function tanh at 0x2af9ad886848>)
+('Keep Prob     : ', 0.6)
+('learning Rate : ', 0.0002)
+
+Full Dataset error is 0.267954
+------------------------
+------------------------
+('Activation    : ', <function tanh at 0x2af9ad886848>)
+('Keep Prob     : ', 0.7)
+('learning Rate : ', 0.005)
+
+Full Dataset error is 0.824543
+------------------------
+------------------------
+('Activation    : ', <function tanh at 0x2af9ad886848>)
+('Keep Prob     : ', 0.7)
+('learning Rate : ', 0.001)
+
+Full Dataset error is 0.276148
+------------------------
+------------------------
+('Activation    : ', <function tanh at 0x2af9ad886848>)
+('Keep Prob     : ', 0.7)
+('learning Rate : ', 0.0002)
+
+Full Dataset error is 0.274116
+------------------------

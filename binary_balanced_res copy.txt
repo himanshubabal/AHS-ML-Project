@@ -1,0 +1,441 @@
+--------------------------------------------------------------
+----------------------- Label :	1 ----------------------------
+----------------------- Diabetes -----------------------------
+--------------------------------------------------------------
+Distribution of Data 			:					 50.0 %
+
+NONE							:					 0.16666666666666663
+_______________________________________________________________
+
+diagnosis_source                : 0.2528641571194763
+regular_treatment               : 0.2505910165484634
+drinking_water_source           : 0.248408801600291
+sex                             : 0.24768139661756683
+kitchen_availability            : 0.2462265866521186
+household_have_electricity      : 0.24422622294962726
+cart                            : 0.24377159483542465
+chew                            : 0.2435897435897436
+reason_for_not_attending_school : 0.24295326422985997
+disability_status               : 0.24286233860701945
+illness_type                    : 0.24249863611565736
+housestatus                     : 0.24231678486997632
+owner_status                    : 0.2422258592471358
+is_television                   : 0.24168030551009279
+symptoms_pertaining_illness     : 0.24149845426441174
+is_refrigerator                 : 0.24149845426441174
+rural                           : 0.2408619749045281
+cooking_fuel                    : 0.24077104928168758
+is_water_pump                   : 0.24058919803600654
+district                        : 0.24049827241316601
+house_structure                 : 0.2404073467903255
+currently_attending_school      : 0.2400436442989634
+is_scooter                      : 0.23986179305328237
+sought_medical_care             : 0.23986179305328237
+land_possessed                  : 0.23977086743044185
+regular_treatment_source        : 0.23977086743044185
+lighting_source                 : 0.23967994180760133
+residancial_status              : 0.23967994180760133
+is_toilet_shared                : 0.23958901618476092
+injury_treatment_type           : 0.23958901618476092
+iscoveredbyhealthscheme         : 0.23958901618476092
+is_bicycle                      : 0.23895253682487727
+is_water_filter                 : 0.23886161120203675
+is_washing_machine              : 0.23877068557919623
+occupation_status               : 0.2382251318421531
+is_car                          : 0.23813420621931258
+diagnosed_for                   : 0.23813420621931258
+healthscheme_2                  : 0.2377705037279505
+is_computer                     : 0.23749772685942894
+treatment_source                : 0.23740680123658842
+social_group_code               : 0.237315875613748
+toilet_used                     : 0.23722494999090749
+religion                        : 0.23722494999090749
+is_tractor                      : 0.23667939625386436
+water_filteration               : 0.23667939625386436
+as_binned                       : 0.23649754500818332
+healthscheme_1                  : 0.23631569376250228
+householdstatus                 : 0.23613384251682124
+age                             : 0.23613384251682124
+alcohol                         : 0.23604291689398071
+is_telephone                    : 0.2359519912711402
+is_sewing_machine               : 0.23586106564829967
+marital_status                  : 0.2355882887797781
+smoke                           : 0.23476995817421353
+usual_residance                 : 0.234679032551373
+highest_qualification           : 0.23440625568285145
+house_status                    : 0.2333151482087652
+is_radio                        : 0.23004182578650667
+
+
+
+
+--------------------------------------------------------------
+----------------------- Label : 2 ----------------------------
+--------------------- Hypertension ---------------------------
+--------------------------------------------------------------
+Distribution of Data 			:					 50.0 %
+c
+NONE							:					 0.18026532558744468
+_______________________________________________________________
+
+symptoms_pertaining_illness     : 0.28223359056620134
+cart                            : 0.25561432411341367
+chew                            : 0.2541402930720541
+kitchen_availability            : 0.2540535853637388
+district                        : 0.2539668776554236
+as_binned                       : 0.25362004682216244
+is_washing_machine              : 0.25353333911384723
+regular_treatment               : 0.2532732159889014
+sex                             : 0.25266626203069453
+is_television                   : 0.2524061389057487
+is_bicycle                      : 0.2522327234891182
+is_car                          : 0.25188589265585715
+rural                           : 0.2516257695309113
+disability_status               : 0.2516257695309113
+lighting_source                 : 0.2513656464059655
+diagnosed_for                   : 0.25119223098933496
+is_tractor                      : 0.25093210786438913
+house_structure                 : 0.2507586924477586
+cooking_fuel                    : 0.2505852770311281
+smoke                           : 0.25015173848955174
+diagnosis_source                : 0.25006503078123643
+religion                        : 0.2498049076562906
+householdstatus                 : 0.24954478453134488
+illness_type                    : 0.24919795369808373
+water_filteration               : 0.2489378305731379
+age                             : 0.2489378305731379
+regular_treatment_source        : 0.2489378305731379
+land_possessed                  : 0.2488511228648227
+owner_status                    : 0.2488511228648227
+is_water_pump                   : 0.2488511228648227
+highest_qualification           : 0.24867770744819218
+is_radio                        : 0.24841758432324634
+currently_attending_school      : 0.24833087661493103
+house_status                    : 0.24824416890661583
+healthscheme_1                  : 0.24824416890661583
+is_telephone                    : 0.24798404578167
+is_scooter                      : 0.24798404578167
+drinking_water_source           : 0.24789733807335468
+residancial_status              : 0.24755050724009364
+marital_status                  : 0.24737709182346312
+is_computer                     : 0.24703026099020198
+injury_treatment_type           : 0.24677013786525626
+is_refrigerator                 : 0.24677013786525626
+iscoveredbyhealthscheme         : 0.24659672244862574
+reason_for_not_attending_school : 0.24651001474031042
+treatment_source                : 0.2464233070319951
+occupation_status               : 0.2464233070319951
+is_toilet_shared                : 0.2463365993236799
+sought_medical_care             : 0.24598976849041876
+alcohol                         : 0.2453828145322119
+usual_residance                 : 0.24512269140726606
+housestatus                     : 0.24503598369895085
+is_water_filter                 : 0.24304170640769962
+household_have_electricity      : 0.24295499869938442
+is_sewing_machine               : 0.2428682909910691
+social_group_code               : 0.24234804474117744
+healthscheme_2                  : 0.2411341368247637
+toilet_used                     : 0.23966010578340413
+
+
+---------------------------------------------------------------
+----------------------- Label :	3 -----------------------------
+-------------- Chronic heart disease/failure ------------------
+---------------------------------------------------------------
+
+
+
+---------------------------------------------------------------
+----------------------- Label :	7 -----------------------------
+------------ Asthma/chronic respiratory failure ---------------
+---------------------------------------------------------------
+Distribution of Data 			:					 50.0 %
+
+NONE							:					 0.13102712948702755
+_______________________________________________________________
+
+symptoms_pertaining_illness     : 0.2299763033175355
+regular_treatment_source        : 0.19656398104265405
+is_sewing_machine               : 0.1945497630331754
+diagnosis_source                : 0.1930094786729858
+district                        : 0.1927725118483412
+rural                           : 0.19218009478672982
+disability_status               : 0.19040284360189574
+is_bicycle                      : 0.19016587677725116
+is_computer                     : 0.18957345971563977
+owner_status                    : 0.18909952606635072
+is_car                          : 0.18886255924170614
+household_have_electricity      : 0.1883886255924171
+healthscheme_2                  : 0.18827014218009475
+iscoveredbyhealthscheme         : 0.18827014218009475
+sought_medical_care             : 0.1881516587677725
+drinking_water_source           : 0.1877962085308057
+water_filteration               : 0.18767772511848346
+as_binned                       : 0.1872037914691943
+toilet_used                     : 0.18708530805687207
+diagnosed_for                   : 0.18672985781990525
+usual_residance                 : 0.1866113744075829
+cart                            : 0.18637440758293844
+smoke                           : 0.18637440758293844
+land_possessed                  : 0.18613744075829386
+occupation_status               : 0.18613744075829386
+alcohol                         : 0.18601895734597151
+housestatus                     : 0.18601895734597151
+illness_type                    : 0.18590047393364928
+house_status                    : 0.1856635071090047
+marital_status                  : 0.18542654028436023
+healthscheme_1                  : 0.18542654028436023
+house_structure                 : 0.18530805687203789
+sex                             : 0.18518957345971565
+kitchen_availability            : 0.18507109004739342
+is_scooter                      : 0.18459715639810426
+is_toilet_shared                : 0.18447867298578202
+chew                            : 0.18447867298578202
+residancial_status              : 0.18436018957345968
+lighting_source                 : 0.1841232227488152
+is_telephone                    : 0.18388625592417063
+religion                        : 0.18388625592417063
+injury_treatment_type           : 0.1837677725118484
+householdstatus                 : 0.18293838862559242
+currently_attending_school      : 0.1825829383886256
+regular_treatment               : 0.18246445497630337
+reason_for_not_attending_school : 0.1816350710900474
+social_group_code               : 0.18139810426540282
+is_water_pump                   : 0.18127962085308058
+is_tractor                      : 0.18116113744075835
+cooking_fuel                    : 0.18116113744075835
+treatment_source                : 0.1806872037914692
+is_television                   : 0.18056872037914695
+is_radio                        : 0.1804502369668246
+is_water_filter                 : 0.17997630331753556
+highest_qualification           : 0.17973933649289098
+is_washing_machine              : 0.17973933649289098
+is_refrigerator                 : 0.17784360189573456
+age                             : 0.17677725118483412
+
+
+
+
+
+---------------------------------------------------------------
+----------------------- Label :	9 -----------------------------
+---------------------- Tuberculosis ---------------------------
+---------------------------------------------------------------
+Distribution of Data 			:					 50.0 %
+
+
+
+
+
+
+--------------------------------------------------------------
+----------------------- Label :	19 ---------------------------
+---------- Rheumatoid arthritis / osteoarthritis -------------
+--------------------------------------------------------------
+Distribution of Data 			:					 50.0 %
+
+NONE		                    :					 0.12538226299694188
+_______________________________________________________________
+
+symptoms_pertaining_illness     : 0.2866217063989962
+district                        : 0.18044228356336256
+toilet_used                     : 0.18036386449184438
+diagnosis_source                : 0.1799717691342535
+lighting_source                 : 0.17910915934755334
+occupation_status               : 0.17871706398996234
+is_water_pump                   : 0.17801129234629864
+householdstatus                 : 0.17754077791718947
+illness_type                    : 0.17628607277289832
+regular_treatment               : 0.17620765370138014
+housestatus                     : 0.17612923462986196
+reason_for_not_attending_school : 0.1760508155583438
+residancial_status              : 0.17581555834378926
+is_car                          : 0.17573713927227097
+religion                        : 0.17542346298619826
+usual_residance                 : 0.17542346298619826
+treatment_source                : 0.1753450439146801
+is_sewing_machine               : 0.1752666248431619
+disability_status               : 0.1745608531994981
+injury_treatment_type           : 0.17448243412797992
+as_binned                       : 0.1742471769134254
+water_filteration               : 0.1742471769134254
+iscoveredbyhealthscheme         : 0.1741687578419071
+house_structure                 : 0.17409033877038893
+age                             : 0.17377666248431622
+rural                           : 0.17377666248431622
+is_tractor                      : 0.17369824341279805
+alcohol                         : 0.17369824341279805
+is_computer                     : 0.17369824341279805
+social_group_code               : 0.17330614805520705
+sought_medical_care             : 0.17330614805520705
+is_scooter                      : 0.17322772898368888
+sex                             : 0.17299247176913424
+is_radio                        : 0.17283563362609788
+is_washing_machine              : 0.1727572145545797
+is_telephone                    : 0.1724435382685069
+drinking_water_source           : 0.17236511919698871
+is_water_filter                 : 0.17212986198243407
+kitchen_availability            : 0.17189460476787954
+cooking_fuel                    : 0.17165934755332501
+is_bicycle                      : 0.17165934755332501
+marital_status                  : 0.17158092848180673
+regular_treatment_source        : 0.17158092848180673
+highest_qualification           : 0.17150250941028855
+is_toilet_shared                : 0.1713456712672522
+is_refrigerator                 : 0.17118883312421584
+chew                            : 0.17103199498117938
+smoke                           : 0.1709535759096612
+healthscheme_1                  : 0.17040464240903386
+healthscheme_2                  : 0.17016938519447933
+diagnosed_for                   : 0.17016938519447933
+currently_attending_school      : 0.1699341279799247
+household_have_electricity      : 0.16977728983688833
+is_television                   : 0.169228356336261
+cart                            : 0.16891468005018817
+house_status                    : 0.16711104140526978
+owner_status                    : 0.16711104140526978
+land_possessed                  : 0.16507214554579674
+
+
+
+--------------------------------------------------------------
+--------------------- Label : 21/99 --------------------------
+--------------- Hernia,Hydrocele,Peptic Ulcer ----------------
+--------------------------------------------------------------
+Distribution of Data 			:					 50.0 %
+
+NONE		                    :					 0.18040553344703425
+_______________________________________________________________
+
+symptoms_pertaining_illness     : 0.28551122903439785
+district                        : 0.24855491329479773
+is_sewing_machine               : 0.2404055718752961
+disability_status               : 0.2397422533876623
+rural                           : 0.23898417511608072
+is_washing_machine              : 0.2385103761963423
+marital_status                  : 0.23756277835686535
+water_filteration               : 0.23756277835686535
+is_radio                        : 0.23680470008528376
+householdstatus                 : 0.23670994030133607
+lighting_source                 : 0.2366151805173884
+is_computer                     : 0.23623614138159765
+owner_status                    : 0.23623614138159765
+diagnosis_source                : 0.23557282289396375
+regular_treatment_source        : 0.23538330332606838
+is_telephone                    : 0.23509902397422533
+is_scooter                      : 0.23509902397422533
+is_tractor                      : 0.23500426419027765
+is_water_filter                 : 0.23500426419027765
+house_status                    : 0.23481474462238228
+social_group_code               : 0.23358286743106227
+household_have_electricity      : 0.23348810764711458
+religion                        : 0.2333933478631669
+is_car                          : 0.23291954894342837
+treatment_source                : 0.23291954894342837
+currently_attending_school      : 0.23254050980763763
+is_bicycle                      : 0.23254050980763763
+sex                             : 0.23225623045579458
+highest_qualification           : 0.2320667108878992
+toilet_used                     : 0.23197195110395152
+age                             : 0.23197195110395152
+smoke                           : 0.23197195110395152
+housestatus                     : 0.23178243153605604
+drinking_water_source           : 0.23168767175210836
+regular_treatment               : 0.23111911304842225
+illness_type                    : 0.23092959348052688
+kitchen_availability            : 0.23092959348052688
+iscoveredbyhealthscheme         : 0.23064531412868383
+residancial_status              : 0.23055055434473615
+healthscheme_1                  : 0.23026627499289298
+cooking_fuel                    : 0.23026627499289298
+is_television                   : 0.2301715152089453
+is_toilet_shared                : 0.2301715152089453
+as_binned                       : 0.2301715152089453
+chew                            : 0.2301715152089453
+is_water_pump                   : 0.22979247607315456
+usual_residance                 : 0.22931867715341614
+healthscheme_2                  : 0.22922391736946834
+sought_medical_care             : 0.2289396380176253
+cart                            : 0.2282763195299915
+land_possessed                  : 0.22808679996209613
+alcohol                         : 0.2276130010423576
+is_refrigerator                 : 0.22713920212261918
+injury_treatment_type           : 0.2270444423386715
+occupation_status               : 0.2263811238510376
+reason_for_not_attending_school : 0.22619160428314222
+house_structure                 : 0.22429640860418842
+
+
+
+
+
+
+
+__________________________________________________
+__________________________________________________
+_____________Feature importance of _______________
+__________________full dataset____________________
+__________________________________________________
+__________________________________________________
+
+NONE                            :		0.34287763
+__________________________________________________
+
+symptoms_pertaining_illness     :		0.46871397
+
+illness_type                    : 		0.41007555
+householdstatus                 : 		0.40532288
+district                        : 		0.40070131
+healthscheme_2                  : 		0.39545697
+is_radio                        : 		0.39499804
+regular_treatment               : 		0.39437532
+cooking_fuel                    : 		0.39227754
+is_water_pump                   : 		0.39139259
+regular_treatment_source        : 		0.39073703
+diagnosis_source                : 		0.39044201
+is_scooter                      : 		0.38978648
+is_washing_machine              : 		0.38958985
+is_toilet_shared                : 		0.38844264
+currently_attending_school      : 		0.38818043
+alcohol                         : 		0.3881804
+is_bicycle                      : 		0.38781986
+is_computer                     : 		0.38775432
+house_structure                 : 		0.38732821
+rural                           : 		0.38703322
+treatment_source                : 		0.38582045
+disability_status               : 		0.38562378
+water_filteration               : 		0.38536155
+smoke                           : 		0.3846077
+usual_residance                 : 		0.38444379
+house_status                    : 		0.38441104
+owner_status                    : 		0.38421437
+lighting_source                 : 		0.38414881
+reason_for_not_attending_school : 		0.38401768
+is_refrigerator                 : 		0.38388661
+is_sewing_machine               : 		0.38378829
+is_telephone                    : 		0.38365713
+chew                            : 		0.38349327
+is_television                   : 		0.38319829
+drinking_water_source           : 		0.38306719
+highest_qualification           : 		0.3830016
+kitchen_availability            : 		0.38270664
+religion                        : 		0.38260829
+sex                             : 		0.38257551
+social_group_code               : 		0.38195273
+toilet_used                     : 		0.38178885
+occupation_status               : 		0.38152662
+cart                            : 		0.3812972
+land_possessed                  : 		0.38113332
+housestatus                     : 		0.38021559
+marital_status                  : 		0.37995332
+is_tractor                      : 		0.37992054
+is_water_filter                 : 		0.37992054
+household_have_electricity      : 	 	0.37942892
+residancial_status				: 		0.37939611
+is_car                          : 		0.37877336
+as_binned                       : 		0.37864226
+iscoveredbyhealthscheme         : 		0.37769166
+sought_medical_care             : 		0.3771345
+injury_treatment_type           : 		0.37300456
+healthscheme_1                  : 		0.36910406
+age                             : 		0.36208978

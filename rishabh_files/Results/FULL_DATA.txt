@@ -1,0 +1,19 @@
+FULL DATA
+
+('EPOCHS : ', 1001, '  BATCH_SIZE : ', 1024)
+('Read time : ', 167.59877395629883)
+('Train : ', (1861806, 370), (1861806, 7))
+('Test : ', (775752, 370), (775752, 7))
+('Valid : ', (465453, 370), (465453, 7))
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Train Error : ', 0.60240332920553574)
+('Test Error : ', 0.68160077348932047)
+('Validation error is : ', 0.72305471)
+('Validation Accuracy : ', 0.2769452929496765)
+('MACRO - Precision, Recall and F-score : ', (0.0396, 0.1429, 0.062))
+('MICRO - Precision, Recall and F-score : ', (0.2769, 0.2769, 0.2769))
+('WEIGHTED - Precision, Recall and F-score : ', (0.0767, 0.2769, 0.1201))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Time Full: ', 28090.42772912979)
+
