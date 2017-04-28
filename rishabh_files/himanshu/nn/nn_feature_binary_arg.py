@@ -17,7 +17,7 @@ from ..evaluation import *
 
 data_path = data_scratch
 activations = [tf.nn.relu]
-keep_prob_arr = [0.01, 0.2, 0.7, 0.5, 0.8]
+keep_prob = 0.7
 
 parser = argparse.ArgumentParser(description='Pass LABLE in -label which is to be removed')
 parser.add_argument('-label', default = 1,  type=int, help = 'State for which data is to be processed -- 5, 8, 9, 10, 18, 20, 21, 22, 23')
@@ -109,16 +109,20 @@ for k in range(len(cold_col_names_list)):
 	print('Original : ', diagnosed_data.shape, diagnosed_col.shape)
 
 	if (cold_col_names_list[k] == 'diagnosed_for'):
-		train_data, test_data, valid_data, label_dict, label_list = split_data_and_make_col_binary(diagnosed_d, diagnosed_c, [])
+		final_dict = split_data_and_make_col_binary(diagnosed_d, diagnosed_c, [], label_to_be_kept)
 	else :
-		train_data, test_data, valid_data, label_dict, label_list = split_data_and_make_col_binary(diagnosed_d, diagnosed_c, [cold_col_names_list[k]])
+		final_dict = split_data_and_make_col_binary(diagnosed_d, diagnosed_c, [cold_col_names_list[k]], label_to_be_kept)
 	
-	label_list = [0,1,2,3,4,5,6,7]
+	label_list = [0,1]
 	label = label_to_be_kept
+
+	train_data = final_dict['data']['train']
+	test_data = final_dict['data']['test']
+	valid_data = final_dict['data']['valid']
 	
-	train_label = label_dict[label]['train']
-	test_label = label_dict[label]['test']
-	valid_label = label_dict[label]['valid']
+	train_label = final_dict['label']['train']
+	test_label = final_dict['label']['test']
+	valid_label = final_dict['label']['valid']
 
 	print('Train : ', train_data.shape, train_label.shape)
 	print('Test : ', test_data.shape, test_label.shape)
