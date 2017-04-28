@@ -9,24 +9,43 @@ import operator
 
 import tensorflow as tf
 from keras.utils.np_utils import to_categorical
+from ..variables import data_path, data_scratch
 
-# data_path = '/home/physics/btech/ph1140797/AHS-ML-Project/data/'
-data_path = '/home/physics/btech/ph1140797/scratch/AHS_data/'
-NaN_TOLRENCE = 50.0			# In %
+data_path = data_scratch
 
-parser = argparse.ArgumentParser(description='Pass STATE in -state and DTYPE in -dtype')
-parser.add_argument('-state', default = 22,  type=int, help = 'State for which data is to be processed -- 5, 8, 9, 10, 18, 20, 21, 22, 23')
-parser.add_argument('-dtype', default = 'COMB',  type=str, help = 'Type of Dataset -- COMB, MORT, WOMEN, WPS, CAB')
-parser.add_argument('-col', default = 'diagnosed_for',  type=str, help = 'Column to be predicted -- diagnosed_for, illness_type, symptoms_pertaining_to_illness')
+parser = argparse.ArgumentParser(description='-state, -dtype, -col, -remove_nan, ' +
+												'nan_tolerence, include_0')
+parser.add_argument('-state', default=22, type=int, help = 'State for which data ' + 
+								'is to be processed -- 5, 8, 9, 10, 18, 20, 21, 22, 23')
+parser.add_argument('-dtype', default='COMB', type=str, help = 'Type of Dataset - ' +
+														  'COMB, MORT, WOMEN, WPS, CAB')
+parser.add_argument('-col', default='diagnosed_for', type=str, help = 'Column to ' +
+		  'be predicted -- diagnosed_for, illness_type, symptoms_pertaining_to_illness')
+
+parser.add_argument('-remove_nan', default=True, type=bool, help='True | False, ' +
+				  'whether or not remove columns with more then nan_tolerence % NaN')
+parser.add_argument('-nan_tolerence', default=50, type=int, help='Tolerence for  ' + 
+											'maximum Nan entries in any given column')
+parser.add_argument('-include_0', default=False, type=bool, help='To include 0(false ' +
+											  ' cases) in to-be-predicted column or not')
+parser.add_argument('-force_all', default=False, type=bool, help='Redo all processed ' +
+									' after Data cleaning even if file already present')
+
 args = parser.parse_args()
 
 states_list = [5, 8, 9, 10, 18, 20, 21, 22, 23]
 dtypes_list = ['COMB', 'MORT', 'WOMEN', 'WPS', 'CAB']
 pred_col_list = ['diagnosed_for', 'illness_type', 'symptoms_pertaining_to_illness']
+bool_list = ['True', 'False']
 
 state = int(args.state)
 dtype = str(args.dtype)
 pred_col = str(args.col)
+
+NaN_TOLRENCE = int(args.nan_tolerence)
+REMOVE_NAN = str(args.remove_nan)
+INCLUDE_0 = str(args.include_0)
+FORCE_ALL = str(args.force_all)
 
 if state not in states_list :
 	print('Please enter -state from [5, 8, 9, 10, 18, 20, 21, 22, 23]')
@@ -35,22 +54,49 @@ if dtype not in dtypes_list :
 	print('Please enter -dtype from [COMB, MORT, WOMEN, WPS, CAB]')
 	sys.exit()
 if pred_col not in pred_col_list :
-	print('Please enter -dtype from [diagnosed_for, illness_type, symptoms_pertaining_to_illness]')
+	print('Please enter -col from [diagnosed_for, illness_type, ' +
+									'symptoms_pertaining_to_illness]')
+	sys.exit()
+if ((REMOVE_NAN not in bool_list) or (INCLUDE_0 not in bool_list) or (FORCE_ALL not in bool_list)):
+	print('Please enter -remove_nan and -include_0 as True or False')
+	sys.exit()
+if (NaN_TOLRENCE < 0) or (NaN_TOLRENCE > 100):
+	print('Please enter -nan_tolerence from 0 to 100 (integer)')
 	sys.exit()
 
+# Convert String to Bool
+def _to_bool(str):
+	if str == 'True':
+		return True
+	else :
+		return False
+
+REMOVE_NAN = _to_bool(REMOVE_NAN)
+INCLUDE_0 = _to_bool(INCLUDE_0)
+FORCE_ALL = _to_bool(FORCE_ALL)
+
+# Default file names
 dataset_name = str(state) + '_AHS_' + dtype
+dataset_save_path = str(int(state)) + '/'
 default_data_csv = dataset_name + '.csv'
-clean_csv_name = dataset_name + '_Clean' + '.csv'
-diag_col_csv_name = dataset_name + '_' + pred_col[0:4] + '_col' + '.csv'
-diag_hot_csv_name = dataset_name + '_' + pred_col[0:4] + '_hotData' + '.csv'
+clean_csv_name = dataset_save_path + dataset_name + '_Clean' + '.csv'
+if not INCLUDE_0 :
+	diag_col_csv_name = dataset_save_path + dataset_name + '_' + pred_col[0:4] + '_col' + '.csv'
+	diag_hot_csv_name = dataset_save_path + dataset_name + '_' + pred_col[0:4] + '_hotData' + '.csv'
+else :
+	diag_col_csv_name = dataset_save_path + dataset_name + '_' + pred_col[0:4] + '_col' + '_with_0' + '.csv'
+	diag_hot_csv_name = dataset_save_path + dataset_name + '_' + pred_col[0:4] + '_hotData' + '_with_0' + '.csv'
+
+# Create directory if not present
+path = data_path + dataset_save_path
+if not os.path.exists(path):
+	os.makedirs(path)
 
 print('Dataset Used : ', dataset_name)
 
-from python_helper.sort_clean_data import lowercase_32Char_list
-from python_helper.sort_clean_data import get_sheet_field_names
-from python_helper.sort_clean_data import remove_yellow_fields
-from python_helper.sort_clean_data import sort_dataset_state_dist_house
-from python_helper.sort_clean_data import create_balanced_classes
+from ..utility.sort_clean_data import lowercase_32Char_list, get_sheet_field_names
+from ..utility.sort_clean_data import remove_yellow_fields
+from ..utility.sort_clean_data import sort_dataset_state_dist_house, create_balanced_classes
 
 # Make dataframe One-Hot Encoded
 # one_hot_colnames -> Columns which we wanted to be
@@ -143,7 +189,7 @@ def missing_values_table(df):
 # It will also convert all entries into 'float'
 # The entries which can't be converted to float, will be
 # converted to NaN
-def get_clean_data()
+def get_clean_data():
 	file_path = data_path + clean_csv_name
 	if not os.path.exists(file_path):
 		field_list_pickle = data_path + dtype + '_fields_list' + '.pickle'
@@ -209,6 +255,22 @@ def drop_nan_col(dataframe):
 	print('After Dropping Nan Col Shape : ', dataframe.shape)
 	return(dataframe)
 
+
+# Before One-Hot Encoding, we convert NaN -> 0.0
+# So, after One-Hot encoding, seperate column is
+# formed containing just 0.0/NaN values, 
+# In this method, we remove them
+def drop_col_formed_by_nan(dataframe):
+	df_col_list = list(dataframe)
+	df_nan_col = list()
+
+	for col in df_col_list:
+		if '_0.0' in col :
+			df_nan_col.append(col)
+
+	dataframe = dataframe.drop(df_nan_col, axis=1, errors='ignore')
+	return dataframe
+
 # Set drop_col_with_almost_nan = True
 # if you want columns with more then NaN_TOLRENCE %
 # of Nan values to be removed from dataframe
@@ -216,8 +278,8 @@ def drop_nan_col(dataframe):
 # much difference on accuracy, so False by default
 #
 # PRED_COLNAME -> Name to column which we want to predict
-# Fetched from argument parser, defalut = 'diagnosed_for'
-def prep_for_analysis(drop_col_with_almost_nan=False, PRED_COLNAME=pred_col):
+# Fetched from argument parser, default = 'diagnosed_for'
+def prep_for_analysis(drop_col_with_almost_nan=REMOVE_NAN, PRED_COLNAME=pred_col):
 	data_clean = get_clean_data()
 	print('Clean Data shape : ', data_clean.shape)
 	print('  ')
@@ -236,7 +298,8 @@ def prep_for_analysis(drop_col_with_almost_nan=False, PRED_COLNAME=pred_col):
 
 	# Balance the dataframe labels, So as 
 	# every label contains almost equal data
-	data_clean = create_balanced_classes(data_clean, [1.0,2.0,3.0,7.0,9.0,19.0,21.0,99.0],PRED_COLNAME)
+	data_clean = create_balanced_classes(data_clean, [1.0,2.0,3.0,7.0,9.0,19.0,21.0,99.0], 
+										PRED_COLNAME ,to_keep_0=0.20, include_0=INCLUDE_0)
 	print('After balance : ', data_clean.shape)
 
 	# If drop_col_with_almost_nan = True
@@ -248,8 +311,14 @@ def prep_for_analysis(drop_col_with_almost_nan=False, PRED_COLNAME=pred_col):
 	data_clean = data_clean.fillna(0)
 	data_clean = data_clean.astype(float)
 
+	# Randomly Shuffle the data
 	data_clean = data_clean.iloc[np.random.permutation(len(data_clean))]
 	data_clean = data_clean.reset_index(drop=True)
+
+
+	file_path_col = data_path + dataset_save_path + dataset_name + '_' + str(pred_col) + '_col_names.csv'
+	pd.DataFrame(list(data_clean)).to_csv(file_path_col, index=False)
+
 
 	print('Splitting to-predict column')
 	# Seperating 'diagnosed_for' variable for prediction
@@ -284,7 +353,9 @@ def prep_for_analysis(drop_col_with_almost_nan=False, PRED_COLNAME=pred_col):
 			hot_df_list.append(one_hot_df(df))
 		diagnosed_data = pd.concat(hot_df_list)
 
-	diagnosed_data = diagnosed_data.fillna(0)
+	# Drop col formed by NaN
+	diagnosed_data = drop_col_formed_by_nan(diagnosed_data)
+	# diagnosed_data = diagnosed_data.fillna(0)
 
 	print('Hot Encoded shape : ', diagnosed_data.shape)
 	print('Saving One-Hot Columns to ' + diag_hot_csv_name)
@@ -292,7 +363,7 @@ def prep_for_analysis(drop_col_with_almost_nan=False, PRED_COLNAME=pred_col):
 	diagnosed_data.to_csv(data_path + diag_hot_csv_name, index=False)
 	del diagnosed_data
 
-def check_if_preped(force=False):
+def check_if_preped(force=FORCE_ALL):
 	file_path_1 = data_path + diag_col_csv_name
 	file_path_2 = data_path + diag_hot_csv_name
 	if (not os.path.exists(file_path_1)) and (not os.path.exists(file_path_2)):
@@ -304,3 +375,15 @@ def check_if_preped(force=False):
 			print('Data already Processed. Moving to the next part')
 
 check_if_preped()
+
+
+def check_if_colnames_onDisk(force=False):
+	file_path = data_path + pred_col + '_col_names.csv'
+	if ((not os.path.exists(file_path)) or force):
+		dist = pd.read_csv(data_path + clean_csv_name, nrows=5)
+		dist = dist.drop(col_to_be_removed, axis=1, errors='ignore')
+
+		pd.DataFrame(list(dist)).to_csv(data_path + pred_col + '_col_names.csv', index=False)
+		del dist
+
+check_if_colnames_onDisk()

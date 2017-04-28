@@ -5,8 +5,13 @@ import argparse
 
 import tensorflow as tf
 from keras.utils.np_utils import to_categorical
+from ..variables import data_path, data_scratch
 
-data_path = '/home/physics/btech/ph1140797/scratch/AHS_data/'
+data_path = data_scratch + 'all/'
+ 
+if not os.path.exists(data_path):
+	os.makedirs(data_path)
+
 diag_hot_csv_name = 'All_states_COMB_diagHot.csv'
 diag_col_csv_name = 'All_states_COMB_col.csv'
 

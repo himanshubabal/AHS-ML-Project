@@ -79,19 +79,20 @@ def sort_dataset_state_dist_house(data_frame) :
     return (data_frame.sort(['state', 'district', 'house_no', 'house_hold_no'])).reset_index(drop=True)
 
 
-def create_balanced_classes(data, classes_of_interest, var):
+def create_balanced_classes(data, classes_of_interest, var, to_keep_0=0.20, include_0=False):
+    if 0.0 in classes_of_interest:
+        classes_of_interest.remove(0.0)
+
     columns = list(data[var].unique())
     data_filtered = data[data[var].isin(classes_of_interest)]
 
-    # sample_no_min_class = 1e6
-    # for i in classes_of_interest:
-    #     if sample_no_min_class > data[data[var] == i].shape[0]:
-    #         sample_no_min_class = data[data[var] == i].shape[0]
-    # data_none_class = data[~data[var].isin(classes_of_interest)].sample(n = sample_no_min_class)
-    # data_none_class[var] = 0.0
-    # return pd.concat([data_filtered,data_none_class])
-    
-    return data_filtered
+    if include_0 :
+        to_keep = int(to_keep_0 * data_filtered.shape[0])
+        zero_data = data[data[var].isin([0.0])].sample(n=to_keep)
+        return pd.concat([data_filtered,zero_data])
+
+    else :
+        return data_filtered
 
 
 
