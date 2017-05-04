@@ -22,7 +22,7 @@ parser.add_argument('-dtype', default='COMB', type=str, help = 'Type of Dataset 
 parser.add_argument('-col', default='diagnosed_for', type=str, help = 'Column to ' +
 		  'be predicted -- diagnosed_for, illness_type, symptoms_pertaining_to_illness')
 
-parser.add_argument('-remove_nan', default=True, type=bool, help='True | False, ' +
+parser.add_argument('-remove_nan', default=False, type=bool, help='True | False, ' +
 				  'whether or not remove columns with more then nan_tolerence % NaN')
 parser.add_argument('-nan_tolerence', default=50, type=int, help='Tolerence for  ' + 
 											'maximum Nan entries in any given column')

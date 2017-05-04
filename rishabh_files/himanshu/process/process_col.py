@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import os
-
+import time
 import tensorflow as tf
 from keras.utils.np_utils import to_categorical
 
@@ -12,9 +12,27 @@ from keras.utils.np_utils import to_categorical
 # in the mixture
 BALANCE_THRESHOLD = 50.0
 
-def replace_labes(label_data, process_0=True):
-		if 0.0 not in np.unique(label_data):
-			process_0 = False
+# def replace_labels(label_data, process_0=True):
+# 		if 0.0 not in np.unique(label_data):
+# 			process_0 = False
+# 		dict_map = {0.0 : 0.0, 1.0 : 1.0, 2.0 : 2.0, 3.0 : 3.0, 7.0 : 4.0, 9.0 : 5.0,
+# 					19.0 : 6.0, 21.0 : 7.0, 99.0 : 7.0}
+# 		cols = list(label_data)
+# 		data = np.array(label_data.astype(float))[:,0]
+# 		for i in range(len(label_data)):
+# 			# element = label_data.iat[i,0]
+# 			if data[i] in dict_map:
+# 				data[i] = dict_map[float(label_data.iat[i,0])]
+# 				# if process_0:
+# 				# 	data[i] = dict_map[float(label_data.iat[i,0])]
+# 				# else:
+# 				# 	data[i] = dict_map[float(label_data.iat[i,0])]-1
+# 		df = pd.DataFrame(data, columns=cols)
+# 		return df
+
+def replace_labels(label_data):
+		# if 0.0 not in np.unique(label_data):
+		# 	process_0 = False
 		dict_map = {0.0 : 0.0, 1.0 : 1.0, 2.0 : 2.0, 3.0 : 3.0, 7.0 : 4.0, 9.0 : 5.0,
 					19.0 : 6.0, 21.0 : 7.0, 99.0 : 7.0}
 		cols = list(label_data)
@@ -22,29 +40,13 @@ def replace_labes(label_data, process_0=True):
 		for i in range(len(label_data)):
 			# element = label_data.iat[i,0]
 			if data[i] in dict_map:
-				if process_0:
-					data[i] = dict_map[float(label_data.iat[i,0])]
-				else:
-					data[i] = dict_map[float(label_data.iat[i,0])]-1
-		df = pd.DataFrame(data, columns=cols)
-		return df
-
-# def replace_labes(label_data, process_0=True):
-# 		if 0.0 not in np.unique(label_data):
-# 			process_0 = False
-# 		dict_map = {0.0 : 0.0, 1.0 : 1.0, 2.0 : 2.0, 3.0 : 3.0, 7.0 : 4.0, 9.0 : 5.0,
-# 					19.0 : 6.0, 21.0 : 7.0, 99.0 : 7.0}
-# 		col = list(label_data)[0]
-# 		for i in range(len(label_data)):
-# 			# element = label_data.iat[i,0]
-# 			if float(label_data.loc[i][0]) in dict_map:
-# 				if process_0:
-# 					label_data.set_value(i, col, dict_map[float(label_data.loc[i][0])])
-# 					# label_data.loc[i][0] = dict_map[float(label_data.loc[i][0])]
-# 				else:
-# 					label_data.set_value(i, col, dict_map[float(label_data.loc[i][0])]-1)
-# 					# label_data.loc[i][0] = dict_map[float(label_data.loc[i][0])]-1
-# 		return label_data
+				data[i] = dict_map[data[i]]
+				# if process_0:
+				# 	data[i] = dict_map[float(label_data.iat[i,0])]
+				# else:
+				# 	data[i] = dict_map[float(label_data.iat[i,0])]-1
+		data = data[:,np.newaxis]
+		return data
 
 def check_unnamed(dataframe):
 	if 'Unnamed: 0' in list(dataframe):
@@ -63,7 +65,7 @@ def find_hot_matches(col_index_list_to_remove, hot_col_names_list):
 	return (hot_index_list)
 
 
-def split_data_in_train_test_valid(diagnosed_data, diagnosed_col):
+def split_data_in_train_test_valid(diagnosed_data, diagnosed_col, to_catg=True):
 	assert (diagnosed_data.shape[0] == diagnosed_col.shape[0])
 
 	# Split train-test-valid in ratio 60:25:15
@@ -72,11 +74,13 @@ def split_data_in_train_test_valid(diagnosed_data, diagnosed_col):
 
 	# Convert dataset from pd dataframe to numpy arrays for further processing
 	diagnosed_data = np.array(diagnosed_data.astype(float))
-	diagnosed_col = np.array(diagnosed_col.astype(float))[:,0]
 
 	# Replace certain labels and then one-hot encode 'diagnosed_for' column
-	diagnosed_col = replace_labes(diagnosed_col)
-	diagnosed_col = to_categorical(diagnosed_col.astype('int32'))
+	diagnosed_col = replace_labels(diagnosed_col)
+	diagnosed_col = np.array(diagnosed_col.astype(float))[:,0]
+
+	if to_catg:
+		diagnosed_col = to_categorical(diagnosed_col.astype('int32'))
 
 	# Split train, test and validation datasets
 	train_data = diagnosed_data[:split_train]
@@ -96,7 +100,7 @@ def split_data_in_train_test_valid(diagnosed_data, diagnosed_col):
 
 
 # Pass 'list' of columns to be removed, not individual columns
-def split_data_by_features(diagnosed_data, diagnosed_col, col_index_list_to_remove):
+def split_data_by_features(diagnosed_data, diagnosed_col, col_index_list_to_remove, to_catg=True):
 	# Checking if column 'Unnamed : 0' is in the dataframe, if present, remove it
 	diagnosed_col = check_unnamed(diagnosed_col)
 	diagnosed_data = check_unnamed(diagnosed_data)
@@ -118,11 +122,14 @@ def split_data_by_features(diagnosed_data, diagnosed_col, col_index_list_to_remo
 
 	# Convert dataset from pd dataframe to numpy arrays for further processing
 	diagnosed_data = np.array(diagnosed_data.astype(float))
-	diagnosed_col = np.array(diagnosed_col.astype(float))[:,0]
+	
 
 	# Replace certain labels and then one-hot encode 'diagnosed_for' column
-	diagnosed_col = replace_labes(diagnosed_col)
-	diagnosed_col = to_categorical(diagnosed_col.astype('int32'))
+	diagnosed_col = replace_labels(diagnosed_col)
+	diagnosed_col = np.array(diagnosed_col.astype(float))[:,0]
+
+	if to_catg:
+		diagnosed_col = to_categorical(diagnosed_col.astype('int32'))
 
 	# Split train, test and validation datasets
 	train_data = diagnosed_data[:split_train]
@@ -153,35 +160,58 @@ def keep_only_one_label(diagnosed_data, diagnosed_col, label, balance_classes):
 		return (diagnosed_data, modified_col)
 	
 	else :		# Balance the classes
-		data_full = pd.concat([diagnosed_data, diagnosed_col], axis=1)
+		# data_full = pd.concat([diagnosed_data, diagnosed_col], axis=1)
 
-		assert(len(list(data_full)) == len(list(diagnosed_data)) + len(list(diagnosed_col)))
-		col_name = list(diagnosed_col)[0]
-		assert(col_name in list(data_full))
+		# assert(len(list(data_full)) == len(list(diagnosed_data)) + len(list(diagnosed_col)))
+		# col_name = list(diagnosed_col)[0]
+		# assert(col_name in list(data_full))
 
-		label_data = data_full[data_full[col_name].isin([label])]
-		label_data[col_name] = 1
+		# label_data = data_full[data_full[col_name].isin([label])]
+		# label_data[col_name] = 1
 
-		other_size = int(((100.0/BALANCE_THRESHOLD)-1) * label_data.shape[0])
-   		other_data = data_full[~data_full[col_name].isin([label])].sample(n=other_size)
-   		other_data[col_name] = 0
-    	
-    	final_data = pd.concat([label_data, other_data])
-    	# Shuffling the data
-    	final_data = final_data.sample(frac=1).reset_index(drop=True)
-    	
-    	column_data = final_data[[col_name]]
-    	hot_data = final_data.drop([col_name], inplace=False, axis=1, errors='ignore')
+		# other_size = int(((100.0/BALANCE_THRESHOLD)-1) * label_data.shape[0])
+		# other_data = data_full[~data_full[col_name].isin([label])].sample(n=other_size)
+		# other_data[col_name] = 0
+		
+		# final_data = pd.concat([label_data, other_data])
+		# # Shuffling the data
+		# final_data = final_data.sample(frac=1).reset_index(drop=True)
+		
+		# column_data = final_data[[col_name]]
+		# hot_data = final_data.drop([col_name], inplace=False, axis=1, errors='ignore')
 
-    	assert(hot_data.shape[1] == diagnosed_data.shape[1])
-    	assert(column_data.shape[1] == diagnosed_col.shape[1])
-    	assert(col_name in list(column_data))
+		# assert(hot_data.shape[1] == diagnosed_data.shape[1])
+		# assert(column_data.shape[1] == diagnosed_col.shape[1])
+		# assert(col_name in list(column_data))
 
-    	return(hot_data, column_data)
+		# return(hot_data, column_data)
+
+		data_np = np.array(diagnosed_data)
+		labels_np = np.array(diagnosed_col)
+
+		full_np = np.concatenate((data_np, labels_np), axis=1)
+
+		np_pos = full_np[full_np[:,-1] == label]
+		np_neg = full_np[np.logical_not(full_np[:,-1] == label)]
+
+		np_pos[:,-1] = 1
+		np_neg[:,-1] = 0
+
+		other_size = int(((100.0/BALANCE_THRESHOLD)-1) * np_pos.shape[0])
+		np_neg_new = np_neg[np.random.choice(np_neg.shape[0], other_size, replace=False)]
+
+		np_new = np.concatenate((np_pos, np_neg_new), axis=0)
+		np.random.shuffle(np_new)
+
+		labels_new = np_new[:,-1]
+		data_new = np.delete(np.copy(np_new), -1, axis=1)
+
+		del np_new, np_pos, np_neg, np_neg_new, full_np
+		return(data_new, labels_new)
 
 
 
-def split_data_and_make_col_binary(diagnosed_data, diagnosed_col, col_index_list_to_remove, label, balance_classes=True):
+def split_data_and_make_col_binary(diagnosed_data, diagnosed_col, col_index_list_to_remove, label, balance_classes=True, to_catg=True):
 	diagnosed_col = check_unnamed(diagnosed_col)
 	diagnosed_data = check_unnamed(diagnosed_data)
 
@@ -194,14 +224,18 @@ def split_data_and_make_col_binary(diagnosed_data, diagnosed_col, col_index_list
 
 	assert (diagnosed_data.shape[0] == diagnosed_col.shape[0])
 
+	t1 = time.time()
 	# Replace certain labels 
-	diagnosed_col = replace_labes(diagnosed_col)
+	diagnosed_col = replace_labels(diagnosed_col)
+	print('Replace Labels time taken : ', time.time() - t1)
 
-	diagnosed_col = pd.DataFrame(diagnosed_col)
-	diagnosed_data = pd.DataFrame(diagnosed_data)
+	# diagnosed_col = pd.DataFrame(diagnosed_col)
+	# diagnosed_data = pd.DataFrame(diagnosed_data)
 
+	t1 = time.time()
 	diagnosed_data, new_col = keep_only_one_label(diagnosed_data, diagnosed_col, label, 
 														balance_classes=balance_classes)
+	print('Keep one Label time taken : ', time.time() - t1)
 
 	# Split train-test-valid in ratio 70:20:10
 	split_train = int(diagnosed_data.shape[0] * 0.70)
@@ -209,10 +243,11 @@ def split_data_and_make_col_binary(diagnosed_data, diagnosed_col, col_index_list
 
 	# Convert dataset from pd dataframe to numpy arrays for further processing
 	diagnosed_data = np.array(diagnosed_data.astype(float))
-	new_col = np.array(new_col.astype(float))[:,0]
+	new_col = np.array(new_col.astype(float))
 
 	# one-hot encode 'diagnosed_for' column
-	new_col = to_categorical(new_col.astype('int32'))
+	if to_catg:
+		new_col = to_categorical(new_col.astype('int32'))
 
 	final_dict = {}
 	hot_dict = {}

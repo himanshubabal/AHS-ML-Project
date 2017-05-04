@@ -1,5 +1,7 @@
 import tensorflow as tf
 import time
+import os
+import sys
 import numpy as np
 from evaluation import get_precision_recall_fscore
 
@@ -56,15 +58,24 @@ class TRAIN_NN():
 			num_batches = (self.train_data.shape[0])//self.BATCH_SIZE
 
 			for epoch in range(self.EPOCHS):
+				if epoch % 100 == 0:
+					print('Epoch : ', epoch)
 				for i in range(num_batches - 1):
-					x_batch = self.train_data[i * self.BATCH_SIZE:(i + 1) * self.BATCH_SIZE]
-					y_batch = self.train_label[i * self.BATCH_SIZE:(i + 1) * self.BATCH_SIZE]
+
+					idx = np.random.choice(np.arange(len(self.train_data)), self.BATCH_SIZE, replace=False)
+					x_batch = self.train_data[idx]
+					y_batch = self.train_label[idx]
+
+					# x_batch = self.train_data[i * self.BATCH_SIZE:(i + 1) * self.BATCH_SIZE]
+					# y_batch = self.train_label[i * self.BATCH_SIZE:(i + 1) * self.BATCH_SIZE]
 					
 					_, train_err = sess.run([_optimize, _error], feed_dict = {X : x_batch, y : y_batch, keep_prob : self.keep_prob})
 					train_error.append(train_err)
 
 				test_err = sess.run(_error, feed_dict = {X : self.test_data, y : self.test_label, keep_prob : self.keep_prob})
 				test_error.append(test_err)
+
+			print('Training Completed in ' + str((time.time()-t1)/60) + ' minute')
 
 			if ((self.valid_label is not None) and (self.valid_data is not None)):
 				valid_err, y_pred, y_true = sess.run([_error,y_pred, y_true], feed_dict = {X : self.valid_data, y : self.valid_label, keep_prob : self.keep_prob})
