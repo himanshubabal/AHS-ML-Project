@@ -1,0 +1,312 @@
+
+Call:
+lm(formula = diagnosed_for ~ ., data = data_comb)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.46472 -0.06497 -0.02692 -0.00182  1.06290 
+
+Coefficients: (36 not defined because of singularities)
+                                      Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                         -5.215e-02  1.454e-01  -0.359 0.719832    
+state                                       NA         NA      NA       NA    
+district                             1.455e-04  1.426e-04   1.020 0.307619    
+age                                 -4.015e-04  5.255e-05  -7.641 2.17e-14 ***
+rural_1.0                           -4.805e-04  1.924e-03  -0.250 0.802783    
+rural_2.0                                   NA         NA      NA       NA    
+sex_1.0                              5.190e-03  1.361e-03   3.815 0.000136 ***
+sex_2.0                                     NA         NA      NA       NA    
+usual_residance_1.0                  1.506e-02  5.410e-03   2.783 0.005381 ** 
+religion_1.0                        -1.806e-02  2.744e-02  -0.658 0.510271    
+religion_2.0                        -1.423e-02  2.761e-02  -0.515 0.606264    
+religion_3.0                        -1.672e-02  2.764e-02  -0.605 0.545334    
+religion_4.0                        -1.591e-02  2.822e-02  -0.564 0.572939    
+religion_5.0                        -2.562e-02  3.018e-02  -0.849 0.396066    
+religion_6.0                        -1.156e-02  2.981e-02  -0.388 0.698333    
+religion_7.0                                NA         NA      NA       NA    
+social_group_code_1.0               -2.600e-03  1.630e-03  -1.596 0.110588    
+social_group_code_2.0               -8.664e-03  1.416e-03  -6.119 9.46e-10 ***
+social_group_code_3.0                       NA         NA      NA       NA    
+marital_status_1.0                   4.267e-02  3.963e-02   1.077 0.281612    
+marital_status_2.0                   3.995e-02  4.414e-02   0.905 0.365376    
+marital_status_3.0                   3.808e-02  3.961e-02   0.961 0.336386    
+marital_status_4.0                   3.365e-02  3.973e-02   0.847 0.397062    
+marital_status_5.0                   3.049e-02  3.963e-02   0.769 0.441796    
+marital_status_6.0                   1.708e-02  4.037e-02   0.423 0.672218    
+marital_status_7.0                   3.110e-02  3.993e-02   0.779 0.436010    
+marital_status_8.0                          NA         NA      NA       NA    
+currently_attending_school_1.0      -8.195e-03  3.850e-03  -2.129 0.033277 *  
+currently_attending_school_2.0      -5.250e-03  1.885e-02  -0.279 0.780576    
+currently_attending_school_3.0      -1.068e-02  2.047e-02  -0.522 0.601808    
+reason_for_not_attending_school_1.0 -1.276e-02  4.344e-02  -0.294 0.768893    
+reason_for_not_attending_school_2.0 -6.618e-04  2.796e-02  -0.024 0.981118    
+reason_for_not_attending_school_3.0 -1.051e-02  2.052e-02  -0.512 0.608334    
+reason_for_not_attending_school_4.0 -1.317e-02  3.009e-02  -0.438 0.661561    
+reason_for_not_attending_school_5.0 -4.301e-03  2.037e-02  -0.211 0.832820    
+reason_for_not_attending_school_6.0 -1.540e-02  2.760e-02  -0.558 0.577029    
+reason_for_not_attending_school_7.0 -2.053e-03  3.048e-02  -0.067 0.946302    
+reason_for_not_attending_school_8.0 -2.199e-02  5.188e-02  -0.424 0.671634    
+reason_for_not_attending_school_9.0         NA         NA      NA       NA    
+highest_qualification_1.0            3.946e-03  2.244e-03   1.759 0.078643 .  
+highest_qualification_2.0            2.681e-05  1.827e-03   0.015 0.988294    
+highest_qualification_3.0           -1.338e-03  1.775e-03  -0.754 0.450937    
+highest_qualification_4.0            3.599e-03  1.974e-03   1.823 0.068318 .  
+highest_qualification_5.0           -2.640e-03  2.323e-03  -1.136 0.255932    
+highest_qualification_6.0           -5.636e-03  2.653e-03  -2.124 0.033659 *  
+highest_qualification_7.0           -1.384e-02  3.069e-03  -4.509 6.53e-06 ***
+highest_qualification_8.0           -1.675e-02  3.833e-03  -4.369 1.25e-05 ***
+highest_qualification_9.0           -7.045e-03  8.373e-03  -0.841 0.400165    
+occupation_status_1.0                2.586e-02  5.283e-03   4.895 9.85e-07 ***
+occupation_status_2.0                2.354e-02  5.148e-03   4.574 4.79e-06 ***
+occupation_status_3.0                2.247e-02  5.105e-03   4.402 1.07e-05 ***
+occupation_status_4.0                1.739e-02  5.512e-03   3.154 0.001608 ** 
+occupation_status_5.0                3.497e-02  9.854e-03   3.548 0.000388 ***
+occupation_status_6.0                3.869e-02  6.466e-03   5.984 2.18e-09 ***
+occupation_status_7.0                1.735e-02  5.503e-03   3.153 0.001618 ** 
+occupation_status_8.0                2.087e-02  7.861e-03   2.655 0.007941 ** 
+occupation_status_9.0                2.601e-02  5.062e-03   5.139 2.76e-07 ***
+occupation_status_10.0               1.992e-02  5.116e-03   3.893 9.89e-05 ***
+occupation_status_11.0               1.942e-02  2.267e-02   0.857 0.391635    
+occupation_status_13.0               1.948e-02  5.568e-03   3.499 0.000467 ***
+occupation_status_14.0               1.051e-02  8.046e-03   1.306 0.191629    
+occupation_status_15.0               3.068e-02  5.559e-03   5.519 3.42e-08 ***
+occupation_status_16.0               1.793e-02  6.103e-03   2.939 0.003298 ** 
+disability_status_1.0                8.267e-03  9.332e-03   0.886 0.375736    
+disability_status_2.0               -1.003e-02  5.842e-03  -1.716 0.086112 .  
+disability_status_3.0               -4.140e-03  7.624e-03  -0.543 0.587069    
+disability_status_4.0               -2.548e-02  1.468e-02  -1.735 0.082711 .  
+disability_status_5.0               -4.390e-03  4.995e-03  -0.879 0.379494    
+disability_status_6.0                3.158e-02  7.684e-03   4.110 3.96e-05 ***
+disability_status_7.0                2.030e-02  1.384e-02   1.467 0.142493    
+injury_treatment_type_1.0           -1.278e-02  8.517e-03  -1.501 0.133418    
+injury_treatment_type_2.0           -8.728e-03  6.926e-03  -1.260 0.207643    
+injury_treatment_type_3.0           -6.952e-03  8.763e-03  -0.793 0.427596    
+injury_treatment_type_4.0           -1.657e-02  8.787e-03  -1.886 0.059319 .  
+injury_treatment_type_5.0           -2.029e-02  4.909e-03  -4.134 3.57e-05 ***
+injury_treatment_type_6.0            1.048e-02  1.413e-02   0.741 0.458513    
+injury_treatment_type_7.0            7.549e-03  8.929e-03   0.845 0.397904    
+illness_type_1.0                    -4.429e-02  9.183e-03  -4.823 1.42e-06 ***
+illness_type_2.0                    -1.720e-02  1.128e-02  -1.525 0.127315    
+illness_type_3.0                    -3.433e-03  8.051e-03  -0.426 0.669794    
+illness_type_4.0                    -2.090e-02  1.224e-02  -1.707 0.087839 .  
+illness_type_5.0                     6.607e-03  8.623e-03   0.766 0.443522    
+illness_type_6.0                    -2.226e-04  1.077e-02  -0.021 0.983516    
+illness_type_7.0                    -1.313e-02  8.301e-03  -1.582 0.113672    
+illness_type_8.0                     7.941e-02  1.849e-02   4.295 1.75e-05 ***
+illness_type_9.0                    -1.044e-02  8.832e-03  -1.182 0.237075    
+treatment_source_1.0                 2.438e-02  1.036e-02   2.354 0.018579 *  
+treatment_source_2.0                 2.358e-02  9.866e-03   2.390 0.016841 *  
+treatment_source_3.0                 1.771e-02  9.039e-03   1.959 0.050089 .  
+treatment_source_4.0                 3.578e-02  1.269e-02   2.819 0.004823 ** 
+treatment_source_5.0                 5.468e-02  1.647e-02   3.319 0.000904 ***
+treatment_source_6.0                 4.298e-03  9.253e-03   0.465 0.642257    
+treatment_source_7.0                 6.682e-03  1.930e-02   0.346 0.729192    
+treatment_source_8.0                 2.100e-02  8.157e-03   2.574 0.010050 *  
+treatment_source_9.0                 6.363e-03  9.433e-03   0.675 0.499941    
+treatment_source_10.0               -9.933e-03  2.058e-02  -0.483 0.629425    
+treatment_source_11.0                8.881e-03  2.053e-02   0.433 0.665328    
+treatment_source_13.0                1.526e-02  8.776e-03   1.739 0.082123 .  
+treatment_source_99.0                1.281e-02  8.821e-03   1.452 0.146575    
+symptoms_pertaining_illness_1.0      4.732e-02  8.731e-03   5.419 5.99e-08 ***
+symptoms_pertaining_illness_2.0      1.540e-01  8.865e-03  17.372  < 2e-16 ***
+symptoms_pertaining_illness_3.0      2.671e-02  9.126e-03   2.926 0.003430 ** 
+symptoms_pertaining_illness_4.0     -6.263e-03  8.724e-03  -0.718 0.472801    
+symptoms_pertaining_illness_5.0      3.035e-03  9.240e-03   0.328 0.742561    
+symptoms_pertaining_illness_6.0      1.727e-02  9.361e-03   1.845 0.065092 .  
+symptoms_pertaining_illness_7.0     -8.779e-03  1.038e-02  -0.846 0.397452    
+symptoms_pertaining_illness_8.0      3.433e-02  1.850e-02   1.855 0.063561 .  
+symptoms_pertaining_illness_9.0     -1.793e-03  1.180e-02  -0.152 0.879246    
+symptoms_pertaining_illness_10.0    -8.452e-03  9.030e-03  -0.936 0.349262    
+symptoms_pertaining_illness_11.0     5.375e-04  2.505e-03   0.215 0.830103    
+symptoms_pertaining_illness_12.0     4.088e-02  1.645e-02   2.485 0.012955 *  
+symptoms_pertaining_illness_13.0     1.731e-02  8.719e-03   1.986 0.047083 *  
+symptoms_pertaining_illness_99.0            NA         NA      NA       NA    
+sought_medical_care_1.0             -4.920e-02  8.498e-03  -5.790 7.04e-09 ***
+sought_medical_care_2.0             -5.085e-02  8.450e-03  -6.018 1.77e-09 ***
+sought_medical_care_3.0             -3.250e-02  8.738e-03  -3.719 0.000200 ***
+diagnosis_source_1.0                 7.402e-02  5.325e-03  13.901  < 2e-16 ***
+diagnosis_source_2.0                 8.415e-02  4.446e-03  18.925  < 2e-16 ***
+diagnosis_source_3.0                 6.048e-02  3.835e-03  15.771  < 2e-16 ***
+diagnosis_source_4.0                 6.438e-02  1.069e-02   6.023 1.72e-09 ***
+diagnosis_source_5.0                 1.124e-01  9.667e-03  11.627  < 2e-16 ***
+diagnosis_source_6.0                 7.362e-02  3.783e-03  19.463  < 2e-16 ***
+diagnosis_source_7.0                 8.208e-02  1.034e-02   7.935 2.12e-15 ***
+diagnosis_source_8.0                 5.287e-02  2.918e-03  18.120  < 2e-16 ***
+diagnosis_source_9.0                 7.885e-02  3.445e-03  22.886  < 2e-16 ***
+diagnosis_source_10.0                9.475e-02  6.906e-03  13.719  < 2e-16 ***
+diagnosis_source_11.0                9.408e-02  8.965e-03  10.494  < 2e-16 ***
+diagnosis_source_13.0                7.588e-02  4.503e-03  16.853  < 2e-16 ***
+diagnosis_source_99.0                6.330e-02  4.380e-03  14.451  < 2e-16 ***
+regular_treatment_1.0                1.409e-02  5.888e-03   2.392 0.016752 *  
+regular_treatment_2.0                1.414e-02  5.940e-03   2.380 0.017307 *  
+regular_treatment_3.0                2.261e-03  2.252e-03   1.004 0.315503    
+regular_treatment_source_1.0         7.357e-03  7.682e-03   0.958 0.338228    
+regular_treatment_source_2.0        -1.226e-02  6.722e-03  -1.824 0.068203 .  
+regular_treatment_source_3.0         2.950e-02  6.465e-03   4.564 5.03e-06 ***
+regular_treatment_source_4.0         9.709e-03  1.326e-02   0.732 0.464168    
+regular_treatment_source_5.0         2.640e-03  1.061e-02   0.249 0.803473    
+regular_treatment_source_6.0        -4.117e-03  6.109e-03  -0.674 0.500394    
+regular_treatment_source_7.0        -1.706e-02  1.007e-02  -1.694 0.090280 .  
+regular_treatment_source_8.0         3.018e-03  5.648e-03   0.534 0.593136    
+regular_treatment_source_9.0         2.610e-03  5.929e-03   0.440 0.659792    
+regular_treatment_source_10.0       -6.643e-03  8.835e-03  -0.752 0.452092    
+regular_treatment_source_11.0       -7.265e-03  1.102e-02  -0.659 0.509667    
+regular_treatment_source_12.0       -6.458e-02  1.877e-02  -3.440 0.000581 ***
+regular_treatment_source_13.0       -1.925e-02  6.904e-03  -2.788 0.005298 ** 
+regular_treatment_source_99.0       -2.121e-03  6.753e-03  -0.314 0.753516    
+chew_1.0                             1.465e-02  7.599e-03   1.928 0.053798 .  
+chew_2.0                             1.102e-02  7.993e-03   1.378 0.168106    
+chew_3.0                             7.910e-03  4.309e-03   1.836 0.066386 .  
+chew_4.0                             3.725e-02  7.673e-03   4.854 1.21e-06 ***
+chew_5.0                             4.866e-03  3.690e-03   1.319 0.187224    
+chew_6.0                             2.328e-03  6.204e-03   0.375 0.707477    
+chew_7.0                             1.025e-02  3.513e-03   2.919 0.003513 ** 
+smoke_1.0                            2.134e-03  2.985e-03   0.715 0.474573    
+smoke_2.0                           -1.395e-03  3.016e-03  -0.462 0.643752    
+smoke_3.0                            1.300e-02  5.363e-03   2.423 0.015395 *  
+smoke_4.0                                   NA         NA      NA       NA    
+alcohol_1.0                         -3.689e-03  4.690e-03  -0.787 0.431466    
+alcohol_2.0                          3.132e-03  1.808e-03   1.732 0.083211 .  
+alcohol_3.0                          1.227e-02  4.076e-03   3.012 0.002598 ** 
+alcohol_4.0                                 NA         NA      NA       NA    
+house_status_1.0                    -1.028e-02  6.251e-03  -1.644 0.100137    
+house_status_2.0                    -3.999e-05  2.396e-02  -0.002 0.998669    
+house_status_3.0                     7.219e-03  1.467e-02   0.492 0.622550    
+house_status_4.0                    -1.669e-02  1.541e-02  -1.083 0.278609    
+house_structure_1.0                 -5.976e-03  2.139e-02  -0.279 0.779968    
+house_structure_2.0                 -5.141e-03  2.140e-02  -0.240 0.810203    
+house_structure_3.0                  3.423e-03  2.136e-02   0.160 0.872702    
+house_structure_4.0                  3.467e-02  2.678e-02   1.295 0.195451    
+owner_status_1.0                    -5.318e-03  3.540e-03  -1.502 0.133061    
+owner_status_2.0                     1.552e-03  3.988e-03   0.389 0.697231    
+owner_status_3.0                            NA         NA      NA       NA    
+drinking_water_source_1.0           -4.871e-03  9.301e-03  -0.524 0.600478    
+drinking_water_source_2.0           -2.694e-03  9.111e-03  -0.296 0.767470    
+drinking_water_source_3.0            2.535e-03  9.000e-03   0.282 0.778214    
+drinking_water_source_4.0           -3.998e-03  9.149e-03  -0.437 0.662127    
+drinking_water_source_5.0           -1.374e-03  1.144e-02  -0.120 0.904363    
+drinking_water_source_6.0            2.907e-03  9.131e-03   0.318 0.750236    
+drinking_water_source_7.0           -1.914e-02  1.942e-02  -0.986 0.324245    
+drinking_water_source_8.0            4.341e-03  1.123e-02   0.387 0.699063    
+drinking_water_source_9.0                   NA         NA      NA       NA    
+is_water_filter_1.0                 -1.427e-02  7.370e-03  -1.936 0.052857 .  
+is_water_filter_2.0                         NA         NA      NA       NA    
+water_filteration_1.0                1.071e-02  8.056e-03   1.329 0.183771    
+water_filteration_2.0                3.394e-02  8.342e-03   4.069 4.73e-05 ***
+water_filteration_3.0                2.651e-02  1.026e-02   2.584 0.009774 ** 
+water_filteration_4.0                1.915e-02  7.402e-03   2.587 0.009679 ** 
+water_filteration_5.0                5.924e-03  7.824e-03   0.757 0.448985    
+water_filteration_6.0                2.521e-02  8.484e-03   2.971 0.002967 ** 
+water_filteration_7.0                2.330e-02  1.008e-02   2.310 0.020883 *  
+water_filteration_8.0                       NA         NA      NA       NA    
+toilet_used_1.0                     -1.118e-03  4.423e-03  -0.253 0.800390    
+toilet_used_2.0                     -2.245e-03  1.911e-03  -1.175 0.239919    
+toilet_used_3.0                      6.633e-03  2.364e-03   2.806 0.005017 ** 
+toilet_used_4.0                      2.147e-02  8.259e-03   2.599 0.009339 ** 
+toilet_used_5.0                     -8.873e-03  3.787e-03  -2.343 0.019132 *  
+toilet_used_6.0                     -1.359e-02  3.591e-03  -3.784 0.000154 ***
+toilet_used_7.0                     -1.345e-02  6.440e-03  -2.089 0.036675 *  
+toilet_used_8.0                     -2.956e-02  1.606e-02  -1.841 0.065679 .  
+toilet_used_9.0                     -1.058e-02  5.815e-03  -1.820 0.068815 .  
+is_toilet_shared_1.0                -5.844e-03  2.220e-03  -2.632 0.008491 ** 
+is_toilet_shared_2.0                        NA         NA      NA       NA    
+household_have_electricity_1.0      -1.456e-03  2.452e-03  -0.594 0.552746    
+household_have_electricity_2.0              NA         NA      NA       NA    
+lighting_source_1.0                 -2.921e-02  1.007e-02  -2.900 0.003729 ** 
+lighting_source_2.0                 -2.644e-02  1.011e-02  -2.616 0.008905 ** 
+lighting_source_3.0                 -3.427e-02  1.061e-02  -3.229 0.001244 ** 
+lighting_source_4.0                 -3.846e-02  1.541e-02  -2.497 0.012538 *  
+lighting_source_5.0                 -3.590e-02  1.214e-02  -2.959 0.003091 ** 
+lighting_source_6.0                         NA         NA      NA       NA    
+cooking_fuel_1.0                     8.239e-03  8.450e-03   0.975 0.329516    
+cooking_fuel_2.0                     1.387e-02  9.940e-03   1.395 0.163061    
+cooking_fuel_3.0                     2.337e-02  8.862e-03   2.637 0.008367 ** 
+cooking_fuel_4.0                     1.235e-02  9.184e-03   1.344 0.178864    
+cooking_fuel_5.0                    -5.369e-03  1.178e-02  -0.456 0.648690    
+cooking_fuel_6.0                     9.232e-03  8.699e-03   1.061 0.288593    
+cooking_fuel_7.0                     2.791e-03  1.422e-02   0.196 0.844337    
+cooking_fuel_8.0                     1.896e-02  1.258e-02   1.507 0.131713    
+cooking_fuel_9.0                    -3.619e-03  1.131e-02  -0.320 0.748941    
+kitchen_availability_1.0             2.752e-02  1.303e-02   2.112 0.034720 *  
+kitchen_availability_2.0             2.826e-02  1.304e-02   2.167 0.030206 *  
+kitchen_availability_3.0             4.839e-02  1.361e-02   3.556 0.000376 ***
+kitchen_availability_4.0             3.554e-02  1.377e-02   2.581 0.009841 ** 
+kitchen_availability_5.0                    NA         NA      NA       NA    
+is_radio_1.0                        -5.123e-03  1.689e-03  -3.033 0.002420 ** 
+is_radio_2.0                                NA         NA      NA       NA    
+is_television_1.0                    1.866e-03  1.371e-03   1.361 0.173511    
+is_television_2.0                           NA         NA      NA       NA    
+is_computer_1.0                     -1.119e-02  3.847e-03  -2.908 0.003634 ** 
+is_computer_2.0                     -2.031e-03  2.487e-03  -0.817 0.414149    
+is_computer_3.0                             NA         NA      NA       NA    
+is_telephone_1.0                    -7.429e-03  4.007e-03  -1.854 0.063759 .  
+is_telephone_2.0                    -4.485e-03  1.405e-03  -3.193 0.001409 ** 
+is_telephone_3.0                     1.661e-03  3.206e-03   0.518 0.604284    
+is_telephone_4.0                            NA         NA      NA       NA    
+is_washing_machine_1.0              -8.155e-03  2.585e-03  -3.155 0.001607 ** 
+is_washing_machine_2.0                      NA         NA      NA       NA    
+is_refrigerator_1.0                  2.922e-03  2.247e-03   1.300 0.193495    
+is_refrigerator_2.0                         NA         NA      NA       NA    
+is_sewing_machine_1.0               -1.574e-03  1.603e-03  -0.982 0.326173    
+is_sewing_machine_2.0                       NA         NA      NA       NA    
+is_bicycle_1.0                      -4.003e-03  1.194e-03  -3.352 0.000802 ***
+is_bicycle_2.0                              NA         NA      NA       NA    
+is_scooter_1.0                      -7.379e-03  1.655e-03  -4.457 8.30e-06 ***
+is_scooter_2.0                              NA         NA      NA       NA    
+is_car_1.0                          -9.786e-03  2.601e-03  -3.763 0.000168 ***
+is_car_2.0                                  NA         NA      NA       NA    
+is_tractor_1.0                      -7.621e-03  3.759e-03  -2.027 0.042641 *  
+is_tractor_2.0                              NA         NA      NA       NA    
+is_water_pump_1.0                    6.261e-03  2.339e-03   2.676 0.007445 ** 
+is_water_pump_2.0                           NA         NA      NA       NA    
+cart_1.0                             3.579e-03  2.219e-03   1.613 0.106744    
+cart_2.0                            -2.552e-03  3.979e-03  -0.641 0.521266    
+cart_3.0                            -7.387e-03  9.467e-03  -0.780 0.435215    
+cart_4.0                                    NA         NA      NA       NA    
+land_possessed_1.0                  -4.103e-03  1.652e-03  -2.484 0.012993 *  
+land_possessed_2.0                  -8.705e-04  1.599e-03  -0.544 0.586157    
+land_possessed_3.0                   7.012e-05  2.036e-03   0.034 0.972520    
+land_possessed_4.0                  -5.736e-03  3.634e-03  -1.579 0.114447    
+land_possessed_5.0                   1.828e-02  5.324e-03   3.434 0.000595 ***
+land_possessed_6.0                          NA         NA      NA       NA    
+residancial_status_1.0               4.849e-01  1.938e-01   2.501 0.012375 *  
+residancial_status_3.0               4.919e-01  1.939e-01   2.537 0.011196 *  
+residancial_status_4.0               4.866e-01  1.939e-01   2.509 0.012109 *  
+residancial_status_5.0               4.741e-01  1.940e-01   2.444 0.014545 *  
+iscoveredbyhealthscheme_1.0         -8.419e-03  5.024e-03  -1.676 0.093760 .  
+iscoveredbyhealthscheme_2.0         -5.869e-03  4.535e-03  -1.294 0.195674    
+iscoveredbyhealthscheme_3.0                 NA         NA      NA       NA    
+healthscheme_1_1.0                  -7.774e-03  4.037e-03  -1.926 0.054133 .  
+healthscheme_1_2.0                   1.062e-02  2.649e-03   4.009 6.11e-05 ***
+healthscheme_1_3.0                   2.314e-02  6.423e-03   3.603 0.000314 ***
+healthscheme_1_4.0                   5.908e-03  6.733e-03   0.877 0.380224    
+healthscheme_1_5.0                   1.180e-02  8.089e-03   1.459 0.144493    
+healthscheme_1_6.0                   2.685e-02  1.213e-02   2.214 0.026835 *  
+healthscheme_1_7.0                          NA         NA      NA       NA    
+healthscheme_2_1.0                  -3.990e-02  1.769e-02  -2.256 0.024057 *  
+healthscheme_2_2.0                  -1.271e-03  1.429e-02  -0.089 0.929111    
+healthscheme_2_3.0                  -4.843e-02  1.952e-02  -2.481 0.013100 *  
+healthscheme_2_4.0                  -4.043e-02  5.601e-02  -0.722 0.470391    
+healthscheme_2_5.0                  -4.759e-02  1.119e-01  -0.425 0.670598    
+healthscheme_2_6.0                   2.014e-02  3.746e-02   0.538 0.590791    
+healthscheme_2_7.0                  -6.362e-02  6.132e-02  -1.037 0.299514    
+housestatus_1.0                     -5.012e-01  1.417e-01  -3.536 0.000406 ***
+housestatus_3.0                             NA         NA      NA       NA    
+householdstatus_1.0                  3.896e-02  3.612e-02   1.078 0.280838    
+householdstatus_2.0                  2.121e-02  3.736e-02   0.568 0.570229    
+householdstatus_3.0                  2.527e-02  3.833e-02   0.659 0.509696    
+householdstatus_4.0                  2.914e-02  3.654e-02   0.797 0.425228    
+householdstatus_5.0                  3.436e-02  3.641e-02   0.944 0.345384    
+householdstatus_6.0                         NA         NA      NA       NA    
+as_binned_1.0                        7.520e-03  1.370e-01   0.055 0.956236    
+as_binned_2.0                        8.656e-03  1.370e-01   0.063 0.949634    
+as_binned_3.0                        1.229e-02  1.370e-01   0.090 0.928557    
+as_binned_4.0                        1.047e-02  1.370e-01   0.076 0.939094    
+as_binned_5.0                        9.579e-03  1.370e-01   0.070 0.944269    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1937 on 146184 degrees of freedom
+Multiple R-squared:  0.06269,	Adjusted R-squared:  0.06103 
+F-statistic: 37.89 on 258 and 146184 DF,  p-value: < 2.2e-16
+
