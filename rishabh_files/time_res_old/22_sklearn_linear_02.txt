@@ -1,0 +1,1072 @@
+Using TensorFlow backend.
+Using Logistic Regression Classifier
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.07707095146179199)
+('Keep one Label time taken : ', 30.830955028533936)
+('Features Removed : ', ['state'])
+('Train : ', (32292, 239), (32292,))
+('Test : ', (9226, 239), (9226,))
+('Valid : ', (4614, 239), (4614,))
+Model Training Time taken : 0.0386227528254 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.2460437892911338)
+('Test Accuracy : ', 0.7539562107088662)
+('MACRO - Precision, Recall and F-score : ', (0.7561, 0.7542, 0.7536))
+('MICRO - Precision, Recall and F-score : ', (0.754, 0.754, 0.754))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7563, 0.754, 0.7535))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.677543636163 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'district')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05852389335632324)
+('Keep one Label time taken : ', 12.436419010162354)
+('Features Removed : ', ['district'])
+('Train : ', (32292, 239), (32292,))
+('Test : ', (9226, 239), (9226,))
+('Valid : ', (4614, 239), (4614,))
+Model Training Time taken : 0.0358193993568 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24214177324951225)
+('Test Accuracy : ', 0.7578582267504878)
+('MACRO - Precision, Recall and F-score : ', (0.7605, 0.7578, 0.7572))
+('MICRO - Precision, Recall and F-score : ', (0.7579, 0.7579, 0.7579))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7605, 0.7579, 0.7572))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.365059316158 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'rural')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.07404923439025879)
+('Keep one Label time taken : ', 23.34673810005188)
+('Features Removed : ', ['rural'])
+('Train : ', (32292, 238), (32292,))
+('Test : ', (9226, 238), (9226,))
+('Valid : ', (4614, 238), (4614,))
+Model Training Time taken : 0.0494404673576 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.2452850639497074)
+('Test Accuracy : ', 0.7547149360502926)
+('MACRO - Precision, Recall and F-score : ', (0.7568, 0.7547, 0.7542))
+('MICRO - Precision, Recall and F-score : ', (0.7547, 0.7547, 0.7547))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7568, 0.7547, 0.7542))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.556908734639 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'sex')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.4163799285888672)
+('Keep one Label time taken : ', 17.503900051116943)
+('Features Removed : ', ['sex'])
+('Train : ', (32292, 238), (32292,))
+('Test : ', (9226, 238), (9226,))
+('Valid : ', (4614, 238), (4614,))
+Model Training Time taken : 0.0421190857887 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.23379579449382182)
+('Test Accuracy : ', 0.7662042055061782)
+('MACRO - Precision, Recall and F-score : ', (0.7681, 0.7659, 0.7656))
+('MICRO - Precision, Recall and F-score : ', (0.7662, 0.7662, 0.7662))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7679, 0.7662, 0.7657))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.498512832324 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'usual_residance')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.056694984436035156)
+('Keep one Label time taken : ', 2.339937925338745)
+('Features Removed : ', ['usual_residance'])
+('Train : ', (32292, 239), (32292,))
+('Test : ', (9226, 239), (9226,))
+('Valid : ', (4614, 239), (4614,))
+Model Training Time taken : 0.0220815340678 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.2397572078907435)
+('Test Accuracy : ', 0.7602427921092565)
+('MACRO - Precision, Recall and F-score : ', (0.7621, 0.76, 0.7597))
+('MICRO - Precision, Recall and F-score : ', (0.7602, 0.7602, 0.7602))
+('WEIGHTED - Precision, Recall and F-score : ', (0.762, 0.7602, 0.7598))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0950033863386 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'age')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.056487083435058594)
+('Keep one Label time taken : ', 1.4356718063354492)
+('Features Removed : ', ['age'])
+('Train : ', (32292, 239), (32292,))
+('Test : ', (9226, 239), (9226,))
+('Valid : ', (4614, 239), (4614,))
+Model Training Time taken : 0.0274715344111 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.2475612399739866)
+('Test Accuracy : ', 0.7524387600260134)
+('MACRO - Precision, Recall and F-score : ', (0.754, 0.7521, 0.7519))
+('MICRO - Precision, Recall and F-score : ', (0.7524, 0.7524, 0.7524))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7539, 0.7524, 0.752))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0573187152545 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'religion')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.056281089782714844)
+('Keep one Label time taken : ', 1.20927095413208)
+('Features Removed : ', ['religion'])
+('Train : ', (32292, 233), (32292,))
+('Test : ', (9226, 233), (9226,))
+('Valid : ', (4614, 233), (4614,))
+Model Training Time taken : 0.022108566761 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.25178842401907653)
+('Test Accuracy : ', 0.7482115759809235)
+('MACRO - Precision, Recall and F-score : ', (0.7506, 0.7485, 0.7477))
+('MICRO - Precision, Recall and F-score : ', (0.7482, 0.7482, 0.7482))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7507, 0.7482, 0.7477))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0492943167686 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'social_group_code')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05626511573791504)
+('Keep one Label time taken : ', 4.652311086654663)
+('Features Removed : ', ['social_group_code'])
+('Train : ', (32292, 237), (32292,))
+('Test : ', (9226, 237), (9226,))
+('Valid : ', (4614, 237), (4614,))
+Model Training Time taken : 0.0223091006279 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24333405592889656)
+('Test Accuracy : ', 0.7566659440711034)
+('MACRO - Precision, Recall and F-score : ', (0.7588, 0.7564, 0.756))
+('MICRO - Precision, Recall and F-score : ', (0.7567, 0.7567, 0.7567))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7587, 0.7567, 0.7561))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.106258352598 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'marital_status')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05629920959472656)
+('Keep one Label time taken : ', 6.9982850551605225)
+('Features Removed : ', ['marital_status'])
+('Train : ', (32292, 232), (32292,))
+('Test : ', (9226, 232), (9226,))
+('Valid : ', (4614, 232), (4614,))
+Model Training Time taken : 0.0262681523959 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24799479731194451)
+('Test Accuracy : ', 0.7520052026880555)
+('MACRO - Precision, Recall and F-score : ', (0.7551, 0.7522, 0.7513))
+('MICRO - Precision, Recall and F-score : ', (0.752, 0.752, 0.752))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7552, 0.752, 0.7513))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.148064231873 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'currently_attending_school')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.056633949279785156)
+('Keep one Label time taken : ', 5.653326034545898)
+('Features Removed : ', ['currently_attending_school'])
+('Train : ', (32292, 240), (32292,))
+('Test : ', (9226, 240), (9226,))
+('Valid : ', (4614, 240), (4614,))
+Model Training Time taken : 0.0273138682048 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24062432256665944)
+('Test Accuracy : ', 0.7593756774333406)
+('MACRO - Precision, Recall and F-score : ', (0.7621, 0.7597, 0.7589))
+('MICRO - Precision, Recall and F-score : ', (0.7594, 0.7594, 0.7594))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7622, 0.7594, 0.7588))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.127879500389 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'reason_for_not_attending_school')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05618715286254883)
+('Keep one Label time taken : ', 5.173036098480225)
+('Features Removed : ', ['reason_for_not_attending_school'])
+('Train : ', (32292, 240), (32292,))
+('Test : ', (9226, 240), (9226,))
+('Valid : ', (4614, 240), (4614,))
+Model Training Time taken : 0.0212044000626 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24322566659440714)
+('Test Accuracy : ', 0.7567743334055929)
+('MACRO - Precision, Recall and F-score : ', (0.7607, 0.7569, 0.7559))
+('MICRO - Precision, Recall and F-score : ', (0.7568, 0.7568, 0.7568))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7608, 0.7568, 0.7559))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.112546332677 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'highest_qualification')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05628800392150879)
+('Keep one Label time taken : ', 0.7536270618438721)
+('Features Removed : ', ['highest_qualification'])
+('Train : ', (32292, 231), (32292,))
+('Test : ', (9226, 231), (9226,))
+('Valid : ', (4614, 231), (4614,))
+Model Training Time taken : 0.0308510343234 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.25081292000867117)
+('Test Accuracy : ', 0.7491870799913288)
+('MACRO - Precision, Recall and F-score : ', (0.7509, 0.7488, 0.7486))
+('MICRO - Precision, Recall and F-score : ', (0.7492, 0.7492, 0.7492))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7508, 0.7492, 0.7487))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0484682679176 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'occupation_status')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05632901191711426)
+('Keep one Label time taken : ', 2.1048219203948975)
+('Features Removed : ', ['occupation_status'])
+('Train : ', (32292, 225), (32292,))
+('Test : ', (9226, 225), (9226,))
+('Valid : ', (4614, 225), (4614,))
+Model Training Time taken : 0.0212432821592 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24474311727725995)
+('Test Accuracy : ', 0.75525688272274)
+('MACRO - Precision, Recall and F-score : ', (0.7567, 0.7546, 0.7546))
+('MICRO - Precision, Recall and F-score : ', (0.7553, 0.7553, 0.7553))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7565, 0.7553, 0.7548))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0619646151861 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'disability_status')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05639505386352539)
+('Keep one Label time taken : ', 2.528784990310669)
+('Features Removed : ', ['disability_status'])
+('Train : ', (32292, 233), (32292,))
+('Test : ', (9226, 233), (9226,))
+('Valid : ', (4614, 233), (4614,))
+Model Training Time taken : 0.0232414325078 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.2426837199219597)
+('Test Accuracy : ', 0.7573162800780403)
+('MACRO - Precision, Recall and F-score : ', (0.7614, 0.7583, 0.7568))
+('MICRO - Precision, Recall and F-score : ', (0.7573, 0.7573, 0.7573))
+('WEIGHTED - Precision, Recall and F-score : ', (0.762, 0.7573, 0.7566))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0705084999402 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'injury_treatment_type')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05668306350708008)
+('Keep one Label time taken : ', 7.8751420974731445)
+('Features Removed : ', ['injury_treatment_type'])
+('Train : ', (32292, 233), (32292,))
+('Test : ', (9226, 233), (9226,))
+('Valid : ', (4614, 233), (4614,))
+Model Training Time taken : 0.0260717511177 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24864513331888138)
+('Test Accuracy : ', 0.7513548666811186)
+('MACRO - Precision, Recall and F-score : ', (0.7534, 0.7511, 0.7507))
+('MICRO - Precision, Recall and F-score : ', (0.7514, 0.7514, 0.7514))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7533, 0.7514, 0.7508))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.165512430668 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'illness_type')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.056474924087524414)
+('Keep one Label time taken : ', 9.873051881790161)
+('Features Removed : ', ['illness_type'])
+('Train : ', (32292, 231), (32292,))
+('Test : ', (9226, 231), (9226,))
+('Valid : ', (4614, 231), (4614,))
+Model Training Time taken : 0.0273853143056 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.251680034684587)
+('Test Accuracy : ', 0.748319965315413)
+('MACRO - Precision, Recall and F-score : ', (0.7511, 0.749, 0.7479))
+('MICRO - Precision, Recall and F-score : ', (0.7483, 0.7483, 0.7483))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7516, 0.7483, 0.7478))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.211490686735 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'treatment_source')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.056596994400024414)
+('Keep one Label time taken : ', 1.6640760898590088)
+('Features Removed : ', ['treatment_source'])
+('Train : ', (32292, 226), (32292,))
+('Test : ', (9226, 226), (9226,))
+('Valid : ', (4614, 226), (4614,))
+Model Training Time taken : 0.028526365757 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24181660524604376)
+('Test Accuracy : ', 0.7581833947539562)
+('MACRO - Precision, Recall and F-score : ', (0.7602, 0.7576, 0.7574))
+('MICRO - Precision, Recall and F-score : ', (0.7582, 0.7582, 0.7582))
+('WEIGHTED - Precision, Recall and F-score : ', (0.76, 0.7582, 0.7576))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.177572548389 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'symptoms_pertaining_illness')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05602884292602539)
+('Keep one Label time taken : ', 1.8459360599517822)
+('Features Removed : ', ['symptoms_pertaining_illness'])
+('Train : ', (32292, 226), (32292,))
+('Test : ', (9226, 226), (9226,))
+('Valid : ', (4614, 226), (4614,))
+Model Training Time taken : 0.0284899512927 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.28734012573162804)
+('Test Accuracy : ', 0.712659874268372)
+('MACRO - Precision, Recall and F-score : ', (0.7146, 0.7128, 0.7121))
+('MICRO - Precision, Recall and F-score : ', (0.7127, 0.7127, 0.7127))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7146, 0.7127, 0.7121))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.06479626894 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'sought_medical_care')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.056199073791503906)
+('Keep one Label time taken : ', 2.095038890838623)
+('Features Removed : ', ['sought_medical_care'])
+('Train : ', (32292, 237), (32292,))
+('Test : ', (9226, 237), (9226,))
+('Valid : ', (4614, 237), (4614,))
+Model Training Time taken : 0.0260397354762 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.2460437892911338)
+('Test Accuracy : ', 0.7539562107088662)
+('MACRO - Precision, Recall and F-score : ', (0.7562, 0.7531, 0.7529))
+('MICRO - Precision, Recall and F-score : ', (0.754, 0.754, 0.754))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7559, 0.754, 0.7532))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.065950802962 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'diagnosed_for')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05594301223754883)
+('Keep one Label time taken : ', 0.9482290744781494)
+('Features Removed : ', [])
+('Train : ', (32292, 240), (32292,))
+('Test : ', (9226, 240), (9226,))
+('Valid : ', (4614, 240), (4614,))
+Model Training Time taken : 0.0304938356082 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24019076522870153)
+('Test Accuracy : ', 0.7598092347712985)
+('MACRO - Precision, Recall and F-score : ', (0.7625, 0.7598, 0.7592))
+('MICRO - Precision, Recall and F-score : ', (0.7598, 0.7598, 0.7598))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7625, 0.7598, 0.7592))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0516402641932 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'diagnosis_source')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05590701103210449)
+('Keep one Label time taken : ', 0.973578929901123)
+('Features Removed : ', ['diagnosis_source'])
+('Train : ', (32292, 227), (32292,))
+('Test : ', (9226, 227), (9226,))
+('Valid : ', (4614, 227), (4614,))
+Model Training Time taken : 0.0292291164398 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24875352265337092)
+('Test Accuracy : ', 0.7512464773466291)
+('MACRO - Precision, Recall and F-score : ', (0.7536, 0.7519, 0.751))
+('MICRO - Precision, Recall and F-score : ', (0.7512, 0.7512, 0.7512))
+('WEIGHTED - Precision, Recall and F-score : ', (0.754, 0.7512, 0.7508))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0506306012472 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'regular_treatment')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05588197708129883)
+('Keep one Label time taken : ', 0.5559771060943604)
+('Features Removed : ', ['regular_treatment'])
+('Train : ', (32292, 223), (32292,))
+('Test : ', (9226, 223), (9226,))
+('Valid : ', (4614, 223), (4614,))
+Model Training Time taken : 0.0269606510798 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.23639713852156952)
+('Test Accuracy : ', 0.7636028614784305)
+('MACRO - Precision, Recall and F-score : ', (0.7682, 0.7638, 0.7627))
+('MICRO - Precision, Recall and F-score : ', (0.7636, 0.7636, 0.7636))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7683, 0.7636, 0.7626))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0411394000053 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'regular_treatment_source')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05592203140258789)
+('Keep one Label time taken : ', 0.5644650459289551)
+('Features Removed : ', ['regular_treatment_source'])
+('Train : ', (32292, 226), (32292,))
+('Test : ', (9226, 226), (9226,))
+('Valid : ', (4614, 226), (4614,))
+Model Training Time taken : 0.0263743678729 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24626056796011275)
+('Test Accuracy : ', 0.7537394320398872)
+('MACRO - Precision, Recall and F-score : ', (0.7563, 0.7539, 0.7532))
+('MICRO - Precision, Recall and F-score : ', (0.7537, 0.7537, 0.7537))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7564, 0.7537, 0.7532))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0405752023061 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'chew')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05606198310852051)
+('Keep one Label time taken : ', 3.5776538848876953)
+('Features Removed : ', ['chew'])
+('Train : ', (32292, 233), (32292,))
+('Test : ', (9226, 233), (9226,))
+('Valid : ', (4614, 233), (4614,))
+Model Training Time taken : 0.0303592165311 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24485150661174937)
+('Test Accuracy : ', 0.7551484933882506)
+('MACRO - Precision, Recall and F-score : ', (0.7577, 0.7565, 0.755))
+('MICRO - Precision, Recall and F-score : ', (0.7551, 0.7551, 0.7551))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7587, 0.7551, 0.7549))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0948950688044 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'smoke')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05598187446594238)
+('Keep one Label time taken : ', 6.115494966506958)
+('Features Removed : ', ['smoke'])
+('Train : ', (32292, 236), (32292,))
+('Test : ', (9226, 236), (9226,))
+('Valid : ', (4614, 236), (4614,))
+Model Training Time taken : 0.0283031185468 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.23769781053544337)
+('Test Accuracy : ', 0.7623021894645566)
+('MACRO - Precision, Recall and F-score : ', (0.7659, 0.7626, 0.7617))
+('MICRO - Precision, Recall and F-score : ', (0.7623, 0.7623, 0.7623))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7661, 0.7623, 0.7616))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.135383248329 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'alcohol')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05589890480041504)
+('Keep one Label time taken : ', 2.617102861404419)
+('Features Removed : ', ['alcohol'])
+('Train : ', (32292, 236), (32292,))
+('Test : ', (9226, 236), (9226,))
+('Valid : ', (4614, 236), (4614,))
+Model Training Time taken : 0.0257259647051 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24669412529807067)
+('Test Accuracy : ', 0.7533058747019293)
+('MACRO - Precision, Recall and F-score : ', (0.7564, 0.753, 0.7524))
+('MICRO - Precision, Recall and F-score : ', (0.7533, 0.7533, 0.7533))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7562, 0.7533, 0.7525))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0743743697802 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'house_status')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05602717399597168)
+('Keep one Label time taken : ', 1.7838530540466309)
+('Features Removed : ', ['house_status'])
+('Train : ', (32292, 236), (32292,))
+('Test : ', (9226, 236), (9226,))
+('Valid : ', (4614, 236), (4614,))
+Model Training Time taken : 0.0210914333661 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24029915456319095)
+('Test Accuracy : ', 0.759700845436809)
+('MACRO - Precision, Recall and F-score : ', (0.7631, 0.7595, 0.7588))
+('MICRO - Precision, Recall and F-score : ', (0.7597, 0.7597, 0.7597))
+('WEIGHTED - Precision, Recall and F-score : ', (0.763, 0.7597, 0.7589))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.055751033624 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'house_structure')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.056056976318359375)
+('Keep one Label time taken : ', 3.5829808712005615)
+('Features Removed : ', ['house_structure'])
+('Train : ', (32292, 236), (32292,))
+('Test : ', (9226, 236), (9226,))
+('Valid : ', (4614, 236), (4614,))
+Model Training Time taken : 0.02590508461 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24636895729460218)
+('Test Accuracy : ', 0.7536310427053978)
+('MACRO - Precision, Recall and F-score : ', (0.7572, 0.7549, 0.7533))
+('MICRO - Precision, Recall and F-score : ', (0.7536, 0.7536, 0.7536))
+('WEIGHTED - Precision, Recall and F-score : ', (0.758, 0.7536, 0.7531))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0905506332715 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'owner_status')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.055938005447387695)
+('Keep one Label time taken : ', 3.3954460620880127)
+('Features Removed : ', ['owner_status'])
+('Train : ', (32292, 237), (32292,))
+('Test : ', (9226, 237), (9226,))
+('Valid : ', (4614, 237), (4614,))
+Model Training Time taken : 0.0211384137472 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.2452850639497074)
+('Test Accuracy : ', 0.7547149360502926)
+('MACRO - Precision, Recall and F-score : ', (0.7571, 0.7549, 0.7543))
+('MICRO - Precision, Recall and F-score : ', (0.7547, 0.7547, 0.7547))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7572, 0.7547, 0.7542))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0826968510946 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'drinking_water_source')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.056047916412353516)
+('Keep one Label time taken : ', 1.581791877746582)
+('Features Removed : ', ['drinking_water_source'])
+('Train : ', (32292, 231), (32292,))
+('Test : ', (9226, 231), (9226,))
+('Valid : ', (4614, 231), (4614,))
+Model Training Time taken : 0.0254089991252 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24333405592889656)
+('Test Accuracy : ', 0.7566659440711034)
+('MACRO - Precision, Recall and F-score : ', (0.7584, 0.7563, 0.7561))
+('MICRO - Precision, Recall and F-score : ', (0.7567, 0.7567, 0.7567))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7583, 0.7567, 0.7562))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0566589156787 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_water_filter')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05614805221557617)
+('Keep one Label time taken : ', 3.1216728687286377)
+('Features Removed : ', ['is_water_filter'])
+('Train : ', (32292, 238), (32292,))
+('Test : ', (9226, 238), (9226,))
+('Valid : ', (4614, 238), (4614,))
+Model Training Time taken : 0.0289292176565 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24105787990461736)
+('Test Accuracy : ', 0.7589421200953826)
+('MACRO - Precision, Recall and F-score : ', (0.7613, 0.7587, 0.7582))
+('MICRO - Precision, Recall and F-score : ', (0.7589, 0.7589, 0.7589))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7612, 0.7589, 0.7583))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0858905355136 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'water_filteration')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05591988563537598)
+('Keep one Label time taken : ', 3.387392044067383)
+('Features Removed : ', ['water_filteration'])
+('Train : ', (32292, 240), (32292,))
+('Test : ', (9226, 240), (9226,))
+('Valid : ', (4614, 240), (4614,))
+Model Training Time taken : 0.0233938336372 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24149143724257538)
+('Test Accuracy : ', 0.7585085627574246)
+('MACRO - Precision, Recall and F-score : ', (0.7615, 0.7587, 0.7579))
+('MICRO - Precision, Recall and F-score : ', (0.7585, 0.7585, 0.7585))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7616, 0.7585, 0.7578))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0852126320203 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'toilet_used')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.055917978286743164)
+('Keep one Label time taken : ', 0.786492109298706)
+('Features Removed : ', ['toilet_used'])
+('Train : ', (32292, 231), (32292,))
+('Test : ', (9226, 231), (9226,))
+('Valid : ', (4614, 231), (4614,))
+Model Training Time taken : 0.0208223025004 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.23401257316280077)
+('Test Accuracy : ', 0.7659874268371992)
+('MACRO - Precision, Recall and F-score : ', (0.7688, 0.7666, 0.7656))
+('MICRO - Precision, Recall and F-score : ', (0.766, 0.766, 0.766))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7691, 0.766, 0.7655))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0388279000918 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_toilet_shared')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.0560457706451416)
+('Keep one Label time taken : ', 2.952949047088623)
+('Features Removed : ', ['is_toilet_shared'])
+('Train : ', (32292, 240), (32292,))
+('Test : ', (9226, 240), (9226,))
+('Valid : ', (4614, 240), (4614,))
+Model Training Time taken : 0.0283875028292 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24203338391502272)
+('Test Accuracy : ', 0.7579666160849773)
+('MACRO - Precision, Recall and F-score : ', (0.7604, 0.7575, 0.7572))
+('MICRO - Precision, Recall and F-score : ', (0.758, 0.758, 0.758))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7602, 0.758, 0.7573))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0825706164042 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'household_have_electricity')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05601000785827637)
+('Keep one Label time taken : ', 2.968799114227295)
+('Features Removed : ', ['household_have_electricity'])
+('Train : ', (32292, 238), (32292,))
+('Test : ', (9226, 238), (9226,))
+('Valid : ', (4614, 238), (4614,))
+Model Training Time taken : 0.0307598829269 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24170821591155434)
+('Test Accuracy : ', 0.7582917840884457)
+('MACRO - Precision, Recall and F-score : ', (0.761, 0.7585, 0.7577))
+('MICRO - Precision, Recall and F-score : ', (0.7583, 0.7583, 0.7583))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7611, 0.7583, 0.7577))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0857065637906 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'lighting_source')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05578494071960449)
+('Keep one Label time taken : ', 3.3225510120391846)
+('Features Removed : ', ['lighting_source'])
+('Train : ', (32292, 234), (32292,))
+('Test : ', (9226, 234), (9226,))
+('Valid : ', (4614, 234), (4614,))
+Model Training Time taken : 0.0287275830905 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24409278127032297)
+('Test Accuracy : ', 0.755907218729677)
+('MACRO - Precision, Recall and F-score : ', (0.7585, 0.7557, 0.7552))
+('MICRO - Precision, Recall and F-score : ', (0.7559, 0.7559, 0.7559))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7584, 0.7559, 0.7552))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.089047729969 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'cooking_fuel')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05574607849121094)
+('Keep one Label time taken : ', 1.6899731159210205)
+('Features Removed : ', ['cooking_fuel'])
+('Train : ', (32292, 231), (32292,))
+('Test : ', (9226, 231), (9226,))
+('Valid : ', (4614, 231), (4614,))
+Model Training Time taken : 0.0278786818186 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.23433774116626926)
+('Test Accuracy : ', 0.7656622588337307)
+('MACRO - Precision, Recall and F-score : ', (0.7674, 0.7653, 0.7651))
+('MICRO - Precision, Recall and F-score : ', (0.7657, 0.7657, 0.7657))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7673, 0.7657, 0.7652))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0609098156293 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'kitchen_availability')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.055928945541381836)
+('Keep one Label time taken : ', 4.200941801071167)
+('Features Removed : ', ['kitchen_availability'])
+('Train : ', (32292, 235), (32292,))
+('Test : ', (9226, 235), (9226,))
+('Valid : ', (4614, 235), (4614,))
+Model Training Time taken : 0.0302872657776 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24409278127032297)
+('Test Accuracy : ', 0.755907218729677)
+('MACRO - Precision, Recall and F-score : ', (0.7573, 0.7558, 0.7555))
+('MICRO - Precision, Recall and F-score : ', (0.7559, 0.7559, 0.7559))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7572, 0.7559, 0.7556))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.105286200841 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_radio')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05609393119812012)
+('Keep one Label time taken : ', 3.0642619132995605)
+('Features Removed : ', ['is_radio'])
+('Train : ', (32292, 238), (32292,))
+('Test : ', (9226, 238), (9226,))
+('Valid : ', (4614, 238), (4614,))
+Model Training Time taken : 0.0208499828974 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.2502709733362237)
+('Test Accuracy : ', 0.7497290266637763)
+('MACRO - Precision, Recall and F-score : ', (0.7516, 0.7491, 0.7489))
+('MICRO - Precision, Recall and F-score : ', (0.7497, 0.7497, 0.7497))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7514, 0.7497, 0.7491))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0768842816353 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_television')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.055934906005859375)
+('Keep one Label time taken : ', 1.7699317932128906)
+('Features Removed : ', ['is_television'])
+('Train : ', (32292, 238), (32292,))
+('Test : ', (9226, 238), (9226,))
+('Valid : ', (4614, 238), (4614,))
+Model Training Time taken : 0.0291972835859 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.23964881855625408)
+('Test Accuracy : ', 0.7603511814437459)
+('MACRO - Precision, Recall and F-score : ', (0.7629, 0.7606, 0.7599))
+('MICRO - Precision, Recall and F-score : ', (0.7604, 0.7604, 0.7604))
+('WEIGHTED - Precision, Recall and F-score : ', (0.763, 0.7604, 0.7598))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0636378685633 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_computer')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05574488639831543)
+('Keep one Label time taken : ', 2.0434532165527344)
+('Features Removed : ', ['is_computer'])
+('Train : ', (32292, 237), (32292,))
+('Test : ', (9226, 237), (9226,))
+('Valid : ', (4614, 237), (4614,))
+Model Training Time taken : 0.0243470152219 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24929546932581836)
+('Test Accuracy : ', 0.7507045306741816)
+('MACRO - Precision, Recall and F-score : ', (0.7532, 0.7511, 0.7503))
+('MICRO - Precision, Recall and F-score : ', (0.7507, 0.7507, 0.7507))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7534, 0.7507, 0.7502))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0635510842005 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_telephone')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.056448936462402344)
+('Keep one Label time taken : ', 0.6935548782348633)
+('Features Removed : ', ['is_telephone'])
+('Train : ', (32292, 236), (32292,))
+('Test : ', (9226, 236), (9226,))
+('Valid : ', (4614, 236), (4614,))
+Model Training Time taken : 0.0281748493512 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.2389984825493171)
+('Test Accuracy : ', 0.7610015174506829)
+('MACRO - Precision, Recall and F-score : ', (0.7636, 0.7608, 0.7603))
+('MICRO - Precision, Recall and F-score : ', (0.761, 0.761, 0.761))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7635, 0.761, 0.7604))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0446888844172 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_washing_machine')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.056304931640625)
+('Keep one Label time taken : ', 0.6217150688171387)
+('Features Removed : ', ['is_washing_machine'])
+('Train : ', (32292, 238), (32292,))
+('Test : ', (9226, 238), (9226,))
+('Valid : ', (4614, 238), (4614,))
+Model Training Time taken : 0.0325099825859 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24626056796011275)
+('Test Accuracy : ', 0.7537394320398872)
+('MACRO - Precision, Recall and F-score : ', (0.7562, 0.7532, 0.7529))
+('MICRO - Precision, Recall and F-score : ', (0.7537, 0.7537, 0.7537))
+('WEIGHTED - Precision, Recall and F-score : ', (0.756, 0.7537, 0.753))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0478800853093 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_refrigerator')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05643296241760254)
+('Keep one Label time taken : ', 0.6210269927978516)
+('Features Removed : ', ['is_refrigerator'])
+('Train : ', (32292, 238), (32292,))
+('Test : ', (9226, 238), (9226,))
+('Valid : ', (4614, 238), (4614,))
+Model Training Time taken : 0.0238833149274 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24246694125298074)
+('Test Accuracy : ', 0.7575330587470193)
+('MACRO - Precision, Recall and F-score : ', (0.7604, 0.7573, 0.7567))
+('MICRO - Precision, Recall and F-score : ', (0.7575, 0.7575, 0.7575))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7602, 0.7575, 0.7568))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0391760508219 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_sewing_machine')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05640602111816406)
+('Keep one Label time taken : ', 2.443182945251465)
+('Features Removed : ', ['is_sewing_machine'])
+('Train : ', (32292, 238), (32292,))
+('Test : ', (9226, 238), (9226,))
+('Valid : ', (4614, 238), (4614,))
+Model Training Time taken : 0.0241492350896 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24430955993930192)
+('Test Accuracy : ', 0.7556904400606981)
+('MACRO - Precision, Recall and F-score : ', (0.7579, 0.7556, 0.7551))
+('MICRO - Precision, Recall and F-score : ', (0.7557, 0.7557, 0.7557))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7579, 0.7557, 0.7551))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.069943233331 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_bicycle')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.056632041931152344)
+('Keep one Label time taken : ', 2.036569833755493)
+('Features Removed : ', ['is_bicycle'])
+('Train : ', (32292, 238), (32292,))
+('Test : ', (9226, 238), (9226,))
+('Valid : ', (4614, 238), (4614,))
+Model Training Time taken : 0.0228843530019 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24138304790808585)
+('Test Accuracy : ', 0.7586169520919142)
+('MACRO - Precision, Recall and F-score : ', (0.7613, 0.7582, 0.7578))
+('MICRO - Precision, Recall and F-score : ', (0.7586, 0.7586, 0.7586))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7611, 0.7586, 0.7579))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0617928981781 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_scooter')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05647587776184082)
+('Keep one Label time taken : ', 1.8865599632263184)
+('Features Removed : ', ['is_scooter'])
+('Train : ', (32292, 238), (32292,))
+('Test : ', (9226, 238), (9226,))
+('Valid : ', (4614, 238), (4614,))
+Model Training Time taken : 0.0273419817289 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24409278127032297)
+('Test Accuracy : ', 0.755907218729677)
+('MACRO - Precision, Recall and F-score : ', (0.7589, 0.7566, 0.7555))
+('MICRO - Precision, Recall and F-score : ', (0.7559, 0.7559, 0.7559))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7593, 0.7559, 0.7554))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0639798800151 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_car')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05646181106567383)
+('Keep one Label time taken : ', 3.542106866836548)
+('Features Removed : ', ['is_car'])
+('Train : ', (32292, 238), (32292,))
+('Test : ', (9226, 238), (9226,))
+('Valid : ', (4614, 238), (4614,))
+Model Training Time taken : 0.0235162973404 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24398439193583354)
+('Test Accuracy : ', 0.7560156080641665)
+('MACRO - Precision, Recall and F-score : ', (0.7594, 0.7564, 0.7554))
+('MICRO - Precision, Recall and F-score : ', (0.756, 0.756, 0.756))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7596, 0.756, 0.7553))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0875443498294 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_tractor')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.056549072265625)
+('Keep one Label time taken : ', 1.310007095336914)
+('Features Removed : ', ['is_tractor'])
+('Train : ', (32292, 238), (32292,))
+('Test : ', (9226, 238), (9226,))
+('Valid : ', (4614, 238), (4614,))
+Model Training Time taken : 0.0247090657552 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.2468025146325602)
+('Test Accuracy : ', 0.7531974853674398)
+('MACRO - Precision, Recall and F-score : ', (0.7562, 0.7537, 0.7527))
+('MICRO - Precision, Recall and F-score : ', (0.7532, 0.7532, 0.7532))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7565, 0.7532, 0.7526))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0516239841779 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_water_pump')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05647397041320801)
+('Keep one Label time taken : ', 2.075186014175415)
+('Features Removed : ', ['is_water_pump'])
+('Train : ', (32292, 238), (32292,))
+('Test : ', (9226, 238), (9226,))
+('Valid : ', (4614, 238), (4614,))
+Model Training Time taken : 0.0209903677305 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.252330370691524)
+('Test Accuracy : ', 0.747669629308476)
+('MACRO - Precision, Recall and F-score : ', (0.7509, 0.7482, 0.7471))
+('MICRO - Precision, Recall and F-score : ', (0.7477, 0.7477, 0.7477))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7512, 0.7477, 0.747))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0608577330907 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'cart')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.055973052978515625)
+('Keep one Label time taken : ', 1.0702629089355469)
+('Features Removed : ', ['cart'])
+('Train : ', (32292, 236), (32292,))
+('Test : ', (9226, 236), (9226,))
+('Valid : ', (4614, 236), (4614,))
+Model Training Time taken : 0.0292518655459 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24322566659440714)
+('Test Accuracy : ', 0.7567743334055929)
+('MACRO - Precision, Recall and F-score : ', (0.7601, 0.7574, 0.7563))
+('MICRO - Precision, Recall and F-score : ', (0.7568, 0.7568, 0.7568))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7605, 0.7568, 0.7561))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0520701487859 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'land_possessed')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05628204345703125)
+('Keep one Label time taken : ', 1.800611972808838)
+('Features Removed : ', ['land_possessed'])
+('Train : ', (32292, 234), (32292,))
+('Test : ', (9226, 234), (9226,))
+('Valid : ', (4614, 234), (4614,))
+Model Training Time taken : 0.0200002511342 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24365922393236505)
+('Test Accuracy : ', 0.756340776067635)
+('MACRO - Precision, Recall and F-score : ', (0.759, 0.7565, 0.7558))
+('MICRO - Precision, Recall and F-score : ', (0.7563, 0.7563, 0.7563))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7591, 0.7563, 0.7557))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0549920002619 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'residancial_status')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05608487129211426)
+('Keep one Label time taken : ', 1.1789448261260986)
+('Features Removed : ', ['residancial_status'])
+('Train : ', (32292, 236), (32292,))
+('Test : ', (9226, 236), (9226,))
+('Valid : ', (4614, 236), (4614,))
+Model Training Time taken : 0.028187918663 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24788640797745498)
+('Test Accuracy : ', 0.752113592022545)
+('MACRO - Precision, Recall and F-score : ', (0.7544, 0.7515, 0.7513))
+('MICRO - Precision, Recall and F-score : ', (0.7521, 0.7521, 0.7521))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7541, 0.7521, 0.7514))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0528070847193 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'iscoveredbyhealthscheme')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.056077003479003906)
+('Keep one Label time taken : ', 3.9872360229492188)
+('Features Removed : ', ['iscoveredbyhealthscheme'])
+('Train : ', (32292, 237), (32292,))
+('Test : ', (9226, 237), (9226,))
+('Valid : ', (4614, 237), (4614,))
+Model Training Time taken : 0.028089316686 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.2393236505527856)
+('Test Accuracy : ', 0.7606763494472144)
+('MACRO - Precision, Recall and F-score : ', (0.7629, 0.7607, 0.7602))
+('MICRO - Precision, Recall and F-score : ', (0.7607, 0.7607, 0.7607))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7629, 0.7607, 0.7602))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0997042179108 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'healthscheme_1')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05601310729980469)
+('Keep one Label time taken : ', 1.9014019966125488)
+('Features Removed : ', ['healthscheme_1'])
+('Train : ', (32292, 239), (32292,))
+('Test : ', (9226, 239), (9226,))
+('Valid : ', (4614, 239), (4614,))
+Model Training Time taken : 0.022095199426 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24257533058747016)
+('Test Accuracy : ', 0.7574246694125298)
+('MACRO - Precision, Recall and F-score : ', (0.759, 0.7565, 0.7565))
+('MICRO - Precision, Recall and F-score : ', (0.7574, 0.7574, 0.7574))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7587, 0.7574, 0.7568))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.059031701088 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'healthscheme_2')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05586886405944824)
+('Keep one Label time taken : ', 2.0981829166412354)
+('Features Removed : ', ['healthscheme_2'])
+('Train : ', (32292, 239), (32292,))
+('Test : ', (9226, 239), (9226,))
+('Valid : ', (4614, 239), (4614,))
+Model Training Time taken : 0.0328746358554 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24875352265337092)
+('Test Accuracy : ', 0.7512464773466291)
+('MACRO - Precision, Recall and F-score : ', (0.7522, 0.7508, 0.7508))
+('MICRO - Precision, Recall and F-score : ', (0.7512, 0.7512, 0.7512))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7521, 0.7512, 0.7509))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0730483810107 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'housestatus')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05584406852722168)
+('Keep one Label time taken : ', 1.3434510231018066)
+('Features Removed : ', ['housestatus'])
+('Train : ', (32292, 238), (32292,))
+('Test : ', (9226, 238), (9226,))
+('Valid : ', (4614, 238), (4614,))
+Model Training Time taken : 0.0271523157756 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.2374810318664643)
+('Test Accuracy : ', 0.7625189681335357)
+('MACRO - Precision, Recall and F-score : ', (0.7665, 0.7637, 0.7621))
+('MICRO - Precision, Recall and F-score : ', (0.7625, 0.7625, 0.7625))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7673, 0.7625, 0.7619))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0545357147853 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'householdstatus')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.0559689998626709)
+('Keep one Label time taken : ', 1.8285338878631592)
+('Features Removed : ', ['householdstatus'])
+('Train : ', (32292, 234), (32292,))
+('Test : ', (9226, 234), (9226,))
+('Valid : ', (4614, 234), (4614,))
+Model Training Time taken : 0.0211036324501 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24203338391502272)
+('Test Accuracy : ', 0.7579666160849773)
+('MACRO - Precision, Recall and F-score : ', (0.7605, 0.758, 0.7574))
+('MICRO - Precision, Recall and F-score : ', (0.758, 0.758, 0.758))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7605, 0.758, 0.7574))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0565041661263 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'as_binned')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05611896514892578)
+('Keep one Label time taken : ', 1.789137840270996)
+('Features Removed : ', ['as_binned'])
+('Train : ', (32292, 240), (32292,))
+('Test : ', (9226, 240), (9226,))
+('Valid : ', (4614, 240), (4614,))
+Model Training Time taken : 0.0254151980082 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.24485150661174937)
+('Test Accuracy : ', 0.7551484933882506)
+('MACRO - Precision, Recall and F-score : ', (0.757, 0.7551, 0.7547))
+('MICRO - Precision, Recall and F-score : ', (0.7551, 0.7551, 0.7551))
+('WEIGHTED - Precision, Recall and F-score : ', (0.757, 0.7551, 0.7547))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0607300162315 minutes
+
+-------------------------
+-------------------------
+{'water_filteration': 0.24149143724257538, 'chew': 0.24485150661174937, 'is_radio': 0.2502709733362237, 'symptoms_pertaining_illness': 0.28734012573162804, 'is_water_pump': 0.252330370691524, 'drinking_water_source': 0.24333405592889656, 'is_toilet_shared': 0.24203338391502272, 'sex': 0.23379579449382182, 'reason_for_not_attending_school': 0.24322566659440714, 'is_tractor': 0.2468025146325602, 'household_have_electricity': 0.24170821591155434, 'healthscheme_1': 0.24257533058747016, 'alcohol': 0.24669412529807067, 'district': 0.24214177324951225, 'is_telephone': 0.2389984825493171, 'land_possessed': 0.24365922393236505, 'house_status': 0.24029915456319095, 'social_group_code': 0.24333405592889656, 'highest_qualification': 0.25081292000867117, 'is_television': 0.23964881855625408, 'religion': 0.25178842401907653, 'state': 0.2460437892911338, 'rural': 0.2452850639497074, 'toilet_used': 0.23401257316280077, 'iscoveredbyhealthscheme': 0.2393236505527856, 'residancial_status': 0.24788640797745498, 'sought_medical_care': 0.2460437892911338, 'injury_treatment_type': 0.24864513331888138, 'housestatus': 0.2374810318664643, 'is_computer': 0.24929546932581836, 'is_scooter': 0.24409278127032297, 'diagnosis_source': 0.24875352265337092, 'healthscheme_2': 0.24875352265337092, 'cart': 0.24322566659440714, 'regular_treatment': 0.23639713852156952, 'is_sewing_machine': 0.24430955993930192, 'kitchen_availability': 0.24409278127032297, 'illness_type': 0.251680034684587, 'is_bicycle': 0.24138304790808585, 'is_water_filter': 0.24105787990461736, 'lighting_source': 0.24409278127032297, 'as_binned': 0.24485150661174937, 'cooking_fuel': 0.23433774116626926, 'owner_status': 0.2452850639497074, 'treatment_source': 0.24181660524604376, 'is_refrigerator': 0.24246694125298074, 'householdstatus': 0.24203338391502272, 'house_structure': 0.24636895729460218, 'age': 0.2475612399739866, 'marital_status': 0.24799479731194451, 'currently_attending_school': 0.24062432256665944, 'is_car': 0.24398439193583354, 'diagnosed_for': 0.24019076522870153, 'smoke': 0.23769781053544337, 'occupation_status': 0.24474311727725995, 'usual_residance': 0.2397572078907435, 'disability_status': 0.2426837199219597, 'is_washing_machine': 0.24626056796011275, 'regular_treatment_source': 0.24626056796011275}

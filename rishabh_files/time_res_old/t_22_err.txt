@@ -1,0 +1,434 @@
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: Tesla K40m
+major: 3 minor: 5 memoryClockRate (GHz) 0.745
+pciBusID 0000:84:00.0
+Total memory: 11.25GiB
+Free memory: 11.12GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+/home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+*** glibc detected *** python: free(): invalid next size (normal): 0x0000000001b35300 ***
+======= Backtrace: =========
+/lib64/libc.so.6[0x30c6675e66]
+/lib64/libc.so.6[0x30c66789b3]
+python[0x44b7e7]
+python(PyDict_SetItem+0x89)[0x44ede9]
+python(_PyModule_Clear+0x14e)[0x45061e]
+python(PyImport_Cleanup+0x437)[0x4bd9e7]
+python(Py_Finalize+0xff)[0x4cb9ef]
+python(Py_Main+0x533)[0x414b23]
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x30c661ed5d]
+python[0x4141f9]
+======= Memory map: ========
+
+/var/spool/PBS/mom_priv/jobs/335233.hn1.hpc.iitd.ac.in.SC: line 43: 14988 Aborted                 (core dumped) python -m himanshu.nn.nn_features_hotcold -state=22
+
+
+
+
+
+
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+*** glibc detected *** python: free(): invalid next size (normal): 0x00000000012ef300 ***
+======= Backtrace: =========
+/lib64/libc.so.6[0x30c6675e66]
+/lib64/libc.so.6[0x30c66789b3]
+python[0x44b7e7]
+python(PyDict_SetItem+0x89)[0x44ede9]
+python(_PyModule_Clear+0x14e)[0x45061e]
+python(PyImport_Cleanup+0x437)[0x4bd9e7]
+python(Py_Finalize+0xff)[0x4cb9ef]
+python(Py_Main+0x533)[0x414b23]
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x30c661ed5d]
+python[0x4141f9]
+======= Memory map: ========
+
+/var/spool/PBS/mom_priv/jobs/335233.hn1.hpc.iitd.ac.in.SC: line 76: 26120 Aborted                 (core dumped) python -m himanshu.nn.sklearn_train -state=22 -label=1
+
+
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+*** glibc detected *** python: free(): invalid next size (normal): 0x00000000024c9300 ***
+======= Backtrace: =========
+/lib64/libc.so.6[0x30c6675e66]
+/lib64/libc.so.6[0x30c66789b3]
+python[0x44b7e7]
+python(PyDict_SetItem+0x89)[0x44ede9]
+python(_PyModule_Clear+0x14e)[0x45061e]
+python(PyImport_Cleanup+0x437)[0x4bd9e7]
+python(Py_Finalize+0xff)[0x4cb9ef]
+python(Py_Main+0x533)[0x414b23]
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x30c661ed5d]
+python[0x4141f9]
+======= Memory map: ========
+
+/var/spool/PBS/mom_priv/jobs/335233.hn1.hpc.iitd.ac.in.SC: line 79: 26340 Aborted                 (core dumped) python -m himanshu.nn.sklearn_train -state=22 -label=2
+
+
+
+
+
+
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+*** glibc detected *** python: free(): invalid next size (normal): 0x000000000089c300 ***
+======= Backtrace: =========
+
+/var/spool/PBS/mom_priv/jobs/335233.hn1.hpc.iitd.ac.in.SC: line 82: 26539 Aborted                 (core dumped) python -m himanshu.nn.sklearn_train -state=22 -label=3
+
+
+
+
+
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+*** glibc detected *** python: free(): invalid next size (normal): 0x0000000000dca300 ***
+======= Backtrace: =========
+/lib64/libc.so.6[0x30c6675e66]
+/lib64/libc.so.6[0x30c66789b3]
+python[0x44b7e7]
+python(PyDict_SetItem+0x89)[0x44ede9]
+python(_PyModule_Clear+0x14e)[0x45061e]
+python(PyImport_Cleanup+0x437)[0x4bd9e7]
+python(Py_Finalize+0xff)[0x4cb9ef]
+python(Py_Main+0x533)[0x414b23]
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x30c661ed5d]
+python[0x4141f9]
+======= Memory map: ========
+
+/var/spool/PBS/mom_priv/jobs/335233.hn1.hpc.iitd.ac.in.SC: line 85: 26707 Aborted                 (core dumped) python -m himanshu.nn.sklearn_train -state=22 -label=4
+
+
+
+
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+*** glibc detected *** python: free(): invalid next size (normal): 0x0000000001a8c300 ***
+======= Backtrace: =========
+
+/var/spool/PBS/mom_priv/jobs/335233.hn1.hpc.iitd.ac.in.SC: line 91: 26924 Aborted                 (core dumped) python -m himanshu.nn.sklearn_train -state=22 -label=6
+
+
+
+
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+*** glibc detected *** python: free(): invalid next size (normal): 0x000000000216c300 ***
+======= Backtrace: =========
+/lib64/libc.so.6[0x30c6675e66]
+/lib64/libc.so.6[0x30c66789b3]
+python[0x44b7e7]
+python(PyDict_SetItem+0x89)[0x44ede9]
+python(_PyModule_Clear+0x14e)[0x45061e]
+python(PyImport_Cleanup+0x437)[0x4bd9e7]
+python(Py_Finalize+0xff)[0x4cb9ef]
+python(Py_Main+0x533)[0x414b23]
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x30c661ed5d]
+python[0x4141f9]
+======= Memory map: ========
+
+/var/spool/PBS/mom_priv/jobs/335233.hn1.hpc.iitd.ac.in.SC: line 94: 27003 Aborted                 (core dumped) python -m himanshu.nn.sklearn_train -state=22 -label=7
+
+
+
+
+
+
+
+
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: Tesla K40m
+major: 3 minor: 5 memoryClockRate (GHz) 0.745
+pciBusID 0000:84:00.0
+Total memory: 11.25GiB
+Free memory: 11.12GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+/var/spool/PBS/mom_priv/jobs/335233.hn1.hpc.iitd.ac.in.SC: line 113: 29051 Segmentation fault      (core dumped) python -m himanshu.nn.nn_feature_binary_arg -state=22 -label=1
+
+
+
+
+
+
+
+
+
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: Tesla K40m
+major: 3 minor: 5 memoryClockRate (GHz) 0.745
+pciBusID 0000:84:00.0
+Total memory: 11.25GiB
+Free memory: 11.12GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+/var/spool/PBS/mom_priv/jobs/335233.hn1.hpc.iitd.ac.in.SC: line 116: 29355 Segmentation fault      (core dumped) python -m himanshu.nn.nn_feature_binary_arg -state=22 -label=2
+
+
+
+
+
+
+
+
+
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: Tesla K40m
+major: 3 minor: 5 memoryClockRate (GHz) 0.745
+pciBusID 0000:84:00.0
+Total memory: 11.25GiB
+Free memory: 11.12GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+/var/spool/PBS/mom_priv/jobs/335233.hn1.hpc.iitd.ac.in.SC: line 119: 29393 Segmentation fault      (core dumped) python -m himanshu.nn.nn_feature_binary_arg -state=22 -label=3
+
+
+
+
+
+
+
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: Tesla K40m
+major: 3 minor: 5 memoryClockRate (GHz) 0.745
+pciBusID 0000:84:00.0
+Total memory: 11.25GiB
+Free memory: 11.12GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+/var/spool/PBS/mom_priv/jobs/335233.hn1.hpc.iitd.ac.in.SC: line 122: 29557 Segmentation fault      (core dumped) python -m himanshu.nn.nn_feature_binary_arg -state=22 -label=4
+
+
+
+
+
+
+
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: Tesla K40m
+major: 3 minor: 5 memoryClockRate (GHz) 0.745
+pciBusID 0000:84:00.0
+Total memory: 11.25GiB
+Free memory: 11.12GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+/var/spool/PBS/mom_priv/jobs/335233.hn1.hpc.iitd.ac.in.SC: line 125: 29619 Segmentation fault      (core dumped) python -m himanshu.nn.nn_feature_binary_arg -state=22 -label=5
+
+
+
+
+
+
+
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: Tesla K40m
+major: 3 minor: 5 memoryClockRate (GHz) 0.745
+pciBusID 0000:84:00.0
+Total memory: 11.25GiB
+Free memory: 11.12GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+/var/spool/PBS/mom_priv/jobs/335233.hn1.hpc.iitd.ac.in.SC: line 128: 29885 Segmentation fault      (core dumped) python -m himanshu.nn.nn_feature_binary_arg -state=22 -label=6
+
+
+
+
+
+
+
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: Tesla K40m
+major: 3 minor: 5 memoryClockRate (GHz) 0.745
+pciBusID 0000:84:00.0
+Total memory: 11.25GiB
+Free memory: 11.12GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+/var/spool/PBS/mom_priv/jobs/335233.hn1.hpc.iitd.ac.in.SC: line 131: 29955 Segmentation fault      (core dumped) python -m himanshu.nn.nn_feature_binary_arg -state=22 -label=7

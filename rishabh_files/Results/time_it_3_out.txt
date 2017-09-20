@@ -1,0 +1,298 @@
+===============================
+334662.hn1.hpc.iitd.ac.in
+cn094.hpc.iitd.ac.in
+===============================
+----------------------------
+python -m himanshu.nn.sklearn_train -state=9 -label=4 --rand_forest
+Using Random Forest Classifier
+('Dataset Used : ', '9/9_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '9/9_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (906372, 357), (906372, 1))
+('Replace Labels time taken : ', 0.4635469913482666)
+('Keep one Label time taken : ', 28.95379400253296)
+('Features Removed : ', ['state'])
+('Train : ', (135039, 356), (135039,))
+('Test : ', (38582, 356), (38582,))
+('Valid : ', (19293, 356), (19293,))
+Model Training Time taken : 0.232860533396 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.91521953242444665)
+('Test Accuracy : ', 0.08478046757555335)
+('MACRO - Precision, Recall and F-score : ', (0.9153, 0.9152, 0.9152))
+('MICRO - Precision, Recall and F-score : ', (0.9152, 0.9152, 0.9152))
+('WEIGHTED - Precision, Recall and F-score : ', (0.9153, 0.9152, 0.9152))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.784378282229 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'district')
+('Original : ', (906372, 357), (906372, 1))
+('Replace Labels time taken : ', 0.46204400062561035)
+('Keep one Label time taken : ', 33.736948013305664)
+('Features Removed : ', ['district'])
+('Train : ', (135039, 356), (135039,))
+('Test : ', (38582, 356), (38582,))
+('Valid : ', (19293, 356), (19293,))
+Model Training Time taken : 0.237864414851 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.91042455030843394)
+('Test Accuracy : ', 0.08957544969156606)
+('MACRO - Precision, Recall and F-score : ', (0.9105, 0.9104, 0.9104))
+('MICRO - Precision, Recall and F-score : ', (0.9104, 0.9104, 0.9104))
+('WEIGHTED - Precision, Recall and F-score : ', (0.9105, 0.9104, 0.9104))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.869781867663 minutes
+
+-------------------------
+-------------------------
+{'state': 0.91521953242444665, 'district': 0.91042455030843394}
+----------------------------
+python -m himanshu.nn.sklearn_train -state=9 -label=4
+----------------------------
+python -m himanshu.nn.sklearn_train -state=9 -label=5 --include_0 --rand_forest
+Using Random Forest Classifier
+('Dataset Used : ', '9/9_AHS_COMB_diag_hotData_with_0.csv')
+('Labels Used : ', '9/9_AHS_COMB_diag_col_with_0.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (1133702, 312), (1133702, 1))
+('Replace Labels time taken : ', 0.5740659236907959)
+('Keep one Label time taken : ', 101.39097213745117)
+('Features Removed : ', ['state'])
+('Train : ', (62766, 311), (62766,))
+('Test : ', (17933, 311), (17933,))
+('Valid : ', (8967, 311), (8967,))
+Model Training Time taken : 0.0976927200953 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.77834160486254389)
+('Test Accuracy : ', 0.2216583951374561)
+('MACRO - Precision, Recall and F-score : ', (0.7783, 0.7783, 0.7783))
+('MICRO - Precision, Recall and F-score : ', (0.7783, 0.7783, 0.7783))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7783, 0.7783, 0.7783))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 1.84658661683 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'district')
+('Original : ', (1133702, 312), (1133702, 1))
+('Replace Labels time taken : ', 0.5759899616241455)
+('Keep one Label time taken : ', 36.18536591529846)
+('Features Removed : ', ['district'])
+('Train : ', (62766, 311), (62766,))
+('Test : ', (17933, 311), (17933,))
+('Valid : ', (8967, 311), (8967,))
+Model Training Time taken : 0.0964390993118 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.77109239948697927)
+('Test Accuracy : ', 0.22890760051302073)
+('MACRO - Precision, Recall and F-score : ', (0.7712, 0.7711, 0.7711))
+('MICRO - Precision, Recall and F-score : ', (0.7711, 0.7711, 0.7711))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7712, 0.7711, 0.7711))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.758873184522 minutes
+
+-------------------------
+-------------------------
+{'state': 0.77834160486254389, 'district': 0.77109239948697927}
+----------------------------
+python -m himanshu.nn.sklearn_train -state=9 -label=5 --include_0
+----------------------------
+python -m himanshu.nn.sklearn_train -state=9 -label=5 --rand_forest
+Using Random Forest Classifier
+('Dataset Used : ', '9/9_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '9/9_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (906372, 357), (906372, 1))
+('Replace Labels time taken : ', 0.46616315841674805)
+('Keep one Label time taken : ', 6.100856065750122)
+('Features Removed : ', ['state'])
+('Train : ', (59646, 356), (59646,))
+('Test : ', (17042, 356), (17042,))
+('Valid : ', (8522, 356), (8522,))
+Model Training Time taken : 0.0950823664665 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.75366740992841219)
+('Test Accuracy : ', 0.2463325900715878)
+('MACRO - Precision, Recall and F-score : ', (0.7538, 0.7536, 0.7536))
+('MICRO - Precision, Recall and F-score : ', (0.7537, 0.7537, 0.7537))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7537, 0.7537, 0.7536))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.250384815534 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'district')
+('Original : ', (906372, 357), (906372, 1))
+('Replace Labels time taken : ', 0.46143507957458496)
+('Keep one Label time taken : ', 12.732742071151733)
+('Features Removed : ', ['district'])
+('Train : ', (59646, 356), (59646,))
+('Test : ', (17042, 356), (17042,))
+('Valid : ', (8522, 356), (8522,))
+Model Training Time taken : 0.0969449003537 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.75026405351484571)
+('Test Accuracy : ', 0.2497359464851543)
+('MACRO - Precision, Recall and F-score : ', (0.7506, 0.7503, 0.7502))
+('MICRO - Precision, Recall and F-score : ', (0.7503, 0.7503, 0.7503))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7506, 0.7503, 0.7502))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.362859332561 minutes
+
+-------------------------
+-------------------------
+{'state': 0.75366740992841219, 'district': 0.75026405351484571}
+----------------------------
+python -m himanshu.nn.sklearn_train -state=9 -label=5
+----------------------------
+python -m himanshu.nn.sklearn_train -state=9 -label=6 --include_0 --rand_forest
+Using Random Forest Classifier
+('Dataset Used : ', '9/9_AHS_COMB_diag_hotData_with_0.csv')
+('Labels Used : ', '9/9_AHS_COMB_diag_col_with_0.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (1133702, 312), (1133702, 1))
+('Replace Labels time taken : ', 0.574944019317627)
+('Keep one Label time taken : ', 148.50982093811035)
+('Features Removed : ', ['state'])
+('Train : ', (268912, 311), (268912,))
+('Test : ', (76832, 311), (76832,))
+('Valid : ', (38416, 311), (38416,))
+Model Training Time taken : 0.560519532363 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.90727821740941272)
+('Test Accuracy : ', 0.09272178259058728)
+('MACRO - Precision, Recall and F-score : ', (0.9073, 0.9073, 0.9073))
+('MICRO - Precision, Recall and F-score : ', (0.9073, 0.9073, 0.9073))
+('WEIGHTED - Precision, Recall and F-score : ', (0.9073, 0.9073, 0.9073))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 3.1408115983 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'district')
+('Original : ', (1133702, 312), (1133702, 1))
+('Replace Labels time taken : ', 0.5794758796691895)
+('Keep one Label time taken : ', 136.96533012390137)
+('Features Removed : ', ['district'])
+('Train : ', (268912, 311), (268912,))
+('Test : ', (76832, 311), (76832,))
+('Valid : ', (38416, 311), (38416,))
+Model Training Time taken : 0.561036384106 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.9015774677217826)
+('Test Accuracy : ', 0.0984225322782174)
+('MACRO - Precision, Recall and F-score : ', (0.9017, 0.9016, 0.9016))
+('MICRO - Precision, Recall and F-score : ', (0.9016, 0.9016, 0.9016))
+('WEIGHTED - Precision, Recall and F-score : ', (0.9018, 0.9016, 0.9016))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 2.95019266605 minutes
+
+-------------------------
+-------------------------
+{'state': 0.90727821740941272, 'district': 0.9015774677217826}
+----------------------------
+python -m himanshu.nn.sklearn_train -state=9 -label=6 --include_0
+----------------------------
+python -m himanshu.nn.sklearn_train -state=9 -label=6 --rand_forest
+Using Random Forest Classifier
+('Dataset Used : ', '9/9_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '9/9_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (906372, 357), (906372, 1))
+('Replace Labels time taken : ', 0.46685099601745605)
+('Keep one Label time taken : ', 153.91689085960388)
+('Features Removed : ', ['state'])
+('Train : ', (259972, 356), (259972,))
+('Test : ', (74278, 356), (74278,))
+('Valid : ', (37140, 356), (37140,))
+Model Training Time taken : 0.582968183359 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.89556800129244196)
+('Test Accuracy : ', 0.10443199870755804)
+('MACRO - Precision, Recall and F-score : ', (0.8957, 0.8956, 0.8956))
+('MICRO - Precision, Recall and F-score : ', (0.8956, 0.8956, 0.8956))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8957, 0.8956, 0.8956))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 3.25334378481 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'district')
+('Original : ', (906372, 357), (906372, 1))
+('Replace Labels time taken : ', 0.4615309238433838)
+('Keep one Label time taken : ', 121.62489795684814)
+('Features Removed : ', ['district'])
+('Train : ', (259972, 356), (259972,))
+('Test : ', (74278, 356), (74278,))
+('Valid : ', (37140, 356), (37140,))
+Model Training Time taken : 0.573470302423 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.88893077358033334)
+('Test Accuracy : ', 0.11106922641966666)
+('MACRO - Precision, Recall and F-score : ', (0.8891, 0.889, 0.8889))
+('MICRO - Precision, Recall and F-score : ', (0.8889, 0.8889, 0.8889))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8891, 0.8889, 0.8889))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 2.70783580144 minutes
+
+-------------------------
+-------------------------
+{'state': 0.89556800129244196, 'district': 0.88893077358033334}
+----------------------------
+python -m himanshu.nn.sklearn_train -state=9 -label=6
+----------------------------
+python -m himanshu.nn.sklearn_train -state=9 -label=7 --include_0 --rand_forest
+Using Random Forest Classifier
+('Dataset Used : ', '9/9_AHS_COMB_diag_hotData_with_0.csv')
+('Labels Used : ', '9/9_AHS_COMB_diag_col_with_0.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (1133702, 312), (1133702, 1))
+('Replace Labels time taken : ', 0.5741829872131348)
+('Keep one Label time taken : ', 290.4492781162262)
+('Features Removed : ', ['state'])
+('Train : ', (636440, 311), (636440,))
+('Test : ', (181840, 311), (181840,))
+('Valid : ', (90920, 311), (90920,))
+Model Training Time taken : 1.68782449961 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.85514188297404314)
+('Test Accuracy : ', 0.14485811702595686)
+('MACRO - Precision, Recall and F-score : ', (0.8552, 0.8551, 0.8551))
+('MICRO - Precision, Recall and F-score : ', (0.8551, 0.8551, 0.8551))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8552, 0.8551, 0.8551))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 6.7612265865 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'district')
+('Original : ', (1133702, 312), (1133702, 1))
+('Replace Labels time taken : ', 0.5736539363861084)
+('Keep one Label time taken : ', 317.0661988258362)
+('Features Removed : ', ['district'])
+('Train : ', (636440, 311), (636440,))
+('Test : ', (181840, 311), (181840,))
+('Valid : ', (90920, 311), (90920,))
+Model Training Time taken : 1.430267934 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.84447316322041355)
+('Test Accuracy : ', 0.15552683677958645)
+('MACRO - Precision, Recall and F-score : ', (0.8445, 0.8445, 0.8445))
+('MICRO - Precision, Recall and F-score : ', (0.8445, 0.8445, 0.8445))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8445, 0.8445, 0.8445))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 6.94607944886 minutes
+
+-------------------------
+-------------------------
+{'state': 0.85514188297404314, 'district': 0.84447316322041355}
+----------------------------
+python -m himanshu.nn.sklearn_train -state=9 -label=7 --include_0

@@ -1,0 +1,162 @@
+22 Linear include_0
+
+SelectKBest(chi2, 200)
+
+('Train dataset : ', (87865, 200), (87865,))
+('Test dataset : ', (36610, 200), (36610,))
+('Validation Dataset : ', (21968, 200), (21968,))
+Model Training Time taken : 1.11879381736 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.39328052444687245)
+('Test Accuracy : ', 0.6067194755531276)
+('MACRO - Precision, Recall and F-score : ', (0.5599, 0.5157, 0.5124))
+('MICRO - Precision, Recall and F-score : ', (0.6067, 0.6067, 0.6067))
+('WEIGHTED - Precision, Recall and F-score : ', (0.5969, 0.6067, 0.5881))
+
+
+
+
+SelectKBest(chi2, 150)
+
+('Train dataset : ', (87865, 150), (87865,))
+('Test dataset : ', (36610, 150), (36610,))
+('Validation Dataset : ', (21968, 150), (21968,))
+Model Training Time taken : 1.0430518349 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.3959847036328872)
+('Test Accuracy : ', 0.6040152963671128)
+('MACRO - Precision, Recall and F-score : ', (0.56, 0.5128, 0.5091))
+('MICRO - Precision, Recall and F-score : ', (0.604, 0.604, 0.604))
+('WEIGHTED - Precision, Recall and F-score : ', (0.5944, 0.604, 0.5853))
+
+
+
+
+SelectKBest(chi2, 100)
+
+('Train dataset : ', (87865, 100), (87865,))
+('Test dataset : ', (36610, 100), (36610,))
+('Validation Dataset : ', (21968, 100), (21968,))
+Model Training Time taken : 0.664851967494 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.3998361103523628)
+('Test Accuracy : ', 0.6001638896476372)
+('MACRO - Precision, Recall and F-score : ', (0.5687, 0.5081, 0.5043))
+('MICRO - Precision, Recall and F-score : ', (0.6002, 0.6002, 0.6002))
+('WEIGHTED - Precision, Recall and F-score : ', (0.5946, 0.6002, 0.5812))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+SelectKBest(chi2, 50)
+
+('Train dataset : ', (87865, 50), (87865,))
+('Test dataset : ', (36610, 50), (36610,))
+('Validation Dataset : ', (21968, 50), (21968,))
+Model Training Time taken : 0.289353481929 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.4173723026495493)
+('Test Accuracy : ', 0.5826276973504507)
+('MACRO - Precision, Recall and F-score : ', (0.5415, 0.4881, 0.4796))
+('MICRO - Precision, Recall and F-score : ', (0.5826, 0.5826, 0.5826))
+('WEIGHTED - Precision, Recall and F-score : ', (0.5742, 0.5826, 0.561))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+
+
+SelectKBest(chi2, 25)
+
+('Train dataset : ', (87865, 25), (87865,))
+('Test dataset : ', (36610, 25), (36610,))
+('Validation Dataset : ', (21968, 25), (21968,))
+Model Training Time taken : 0.123114748796 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.430019120458891)
+('Test Accuracy : ', 0.569980879541109)
+('MACRO - Precision, Recall and F-score : ', (0.511, 0.4765, 0.4633))
+('MICRO - Precision, Recall and F-score : ', (0.57, 0.57, 0.57))
+('WEIGHTED - Precision, Recall and F-score : ', (0.5535, 0.57, 0.5452))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+
+SelectKBest(chi2, 10)
+
+('Train dataset : ', (87865, 10), (87865,))
+('Test dataset : ', (36610, 10), (36610,))
+('Validation Dataset : ', (21968, 10), (21968,))
+Model Training Time taken : 0.0551460981369 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.5159519257033598)
+('Test Accuracy : ', 0.4840480742966402)
+('MACRO - Precision, Recall and F-score : ', (0.4833, 0.4061, 0.3797))
+('MICRO - Precision, Recall and F-score : ', (0.484, 0.484, 0.484))
+('WEIGHTED - Precision, Recall and F-score : ', (0.4815, 0.484, 0.4453))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+state - 21, selectKBest
+('Train dataset : ', (272073, 100), (272073,))
+('Test dataset : ', (113364, 100), (113364,))
+('Validation Dataset : ', (68019, 100), (68019,))
+Model Training Time taken : 2.95092929999 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.3111569810521859)
+('Test Accuracy : ', 0.6888430189478141)
+('MACRO - Precision, Recall and F-score : ', (0.7072, 0.5969, 0.607))
+('MICRO - Precision, Recall and F-score : ', (0.6888, 0.6888, 0.6888))
+('WEIGHTED - Precision, Recall and F-score : ', (0.6954, 0.6888, 0.6822))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+22, select from model
+('Train dataset : ', (87865, 97), (87865,))
+('Test dataset : ', (36610, 97), (36610,))
+('Validation Dataset : ', (21968, 97), (21968,))
+Model Training Time taken : 0.986343685786 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.41021578803605574)
+('Test Accuracy : ', 0.5897842119639443)
+('MACRO - Precision, Recall and F-score : ', (0.5367, 0.4977, 0.4916))
+('MICRO - Precision, Recall and F-score : ', (0.5898, 0.5898, 0.5898))
+('WEIGHTED - Precision, Recall and F-score : ', (0.5778, 0.5898, 0.5715))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+state - 9, selectKBest
+('Train dataset : ', (680221, 100), (680221,))
+('Test dataset : ', (283425, 100), (283425,))
+('Validation Dataset : ', (170056, 100), (170056,))
+Model Training Time taken : 6.36604763667 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.2351839110875893)
+('Test Accuracy : ', 0.7648160889124107)
+('MACRO - Precision, Recall and F-score : ', (0.6517, 0.5477, 0.5564))
+('MICRO - Precision, Recall and F-score : ', (0.7648, 0.7648, 0.7648))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7484, 0.7648, 0.7419))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+Replace everything with random data
+('Train : ', (30794, 343), (30794, 1))
+('Test : ', (8798, 343), (8798, 1))
+('Valid : ', (4400, 343), (4400, 1))
+Model Training Time taken : 0.0848363161087 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.4909070243237099)
+('Test Accuracy : ', 0.5090929756762901)
+('MACRO - Precision, Recall and F-score : ', (0.5092, 0.5092, 0.5091))
+('MICRO - Precision, Recall and F-score : ', (0.5091, 0.5091, 0.5091))
+('WEIGHTED - Precision, Recall and F-score : ', (0.5092, 0.5091, 0.5091))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+

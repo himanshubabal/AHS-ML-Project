@@ -1,0 +1,80 @@
+===============================
+324461.hn1.hpc.iitd.ac.in
+gpu090.hpc.iitd.ac.in
+===============================
+------------------------------------------------------
+PART - 1 : Remove Yellow Field Columns form CSV File
+Yellow Fields already removed. Proceeding further
+------------------------------------------------------
+PART - 2 : Preparing Data for the analysis
+  
+Removing not-so-useful columns
+Splitting to-predict column
+  
+Saving diagnosed_for column to data/22_COMB_diag_col.csv
+One Hot Encoding Data
+Saving One-Hot Columns to data/22_COMB_diag_hotData.csv
+------------------------------------------------------
+PART - 3 : Dividing Data in train-test split and making categorical variables
+   
+Splitting train and test data in ratio 75:25
+((84342, 302), (84342, 7), (28115, 302), (28115, 7))
+Saving test and train data
+
+Working with full dataset initially
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Full Dataset error is 0.327548
+
+
+Now testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'district')
+('Features Removed : ', ['district'])
+('Train dataset : ', (67474, 301), (67474, 7))
+('Test dataset : ', (28114, 301), (28114, 7))
+('Validation Dataset : ', (16869, 301), (16869, 7))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : district : 0.388276
+Time taken : 7.5500677824 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'rural')
+('Features Removed : ', ['rural'])
+('Train dataset : ', (67474, 299), (67474, 7))
+('Test dataset : ', (28114, 299), (28114, 7))
+('Validation Dataset : ', (16869, 299), (16869, 7))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : rural : 0.376325
+Time taken : 7.42509326935 minutes
+
+
+-------------------------
+-------------------------
+{'rural': 0.37632486, 'NONE': 0.3275477, 'district': 0.38827619}

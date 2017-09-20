@@ -1,0 +1,1134 @@
+===============================
+332736.hn1.hpc.iitd.ac.in
+gpu057.hpc.iitd.ac.in
+===============================
+('LABEL : ', 6.0)
+('EPOCHS : ', 1001, '  BATCH_SIZE : ', 1024)
+
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['state'])
+('Train : ', (35707, 293), (35707, 2))
+('Test : ', (10202, 293), (10202, 2))
+('Valid : ', (5101, 293), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.18363836606 minutes
+
+('Train Error : ', 0.012556365272984591)
+('Test Error : ', 0.13424372821897418)
+('Validation error is : ', 0.12732798)
+('Validation Accuracy : ', 0.8726720213890076)
+('MACRO - Precision, Recall and F-score : ', (0.8737, 0.8728, 0.8726))
+('MICRO - Precision, Recall and F-score : ', (0.8727, 0.8727, 0.8727))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8738, 0.8727, 0.8726))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8738, 0.8727, 0.8726), 'valid_error': 0.12732798, 'train_error': 0.012556365272984591, 'macro': (0.8737, 0.8728, 0.8726), 'time_taken': 4.183638366063436, 'micro': (0.8727, 0.8727, 0.8727), 'test_error': 0.13424372821897418}
+-------------------------------------------------------
+('current feature to be ablated : ', 'district')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['district'])
+('Train : ', (35707, 293), (35707, 2))
+('Test : ', (10202, 293), (10202, 2))
+('Valid : ', (5101, 293), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.11835543315 minutes
+
+('Train Error : ', 0.013681778685329821)
+('Test Error : ', 0.13713135295635931)
+('Validation error is : ', 0.13007253)
+('Validation Accuracy : ', 0.8699274659156799)
+('MACRO - Precision, Recall and F-score : ', (0.8712, 0.8698, 0.8698))
+('MICRO - Precision, Recall and F-score : ', (0.8699, 0.8699, 0.8699))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8711, 0.8699, 0.8698))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8711, 0.8699, 0.8698), 'valid_error': 0.13007253, 'train_error': 0.013681778685329821, 'macro': (0.8712, 0.8698, 0.8698), 'time_taken': 4.118355433146159, 'micro': (0.8699, 0.8699, 0.8699), 'test_error': 0.13713135295635931}
+-------------------------------------------------------
+('current feature to be ablated : ', 'rural')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['rural'])
+('Train : ', (35707, 292), (35707, 2))
+('Test : ', (10202, 292), (10202, 2))
+('Valid : ', (5101, 292), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.12125068506 minutes
+
+('Train Error : ', 0.012942668127327217)
+('Test Error : ', 0.13138352365760536)
+('Validation error is : ', 0.12468144)
+('Validation Accuracy : ', 0.8753185570240021)
+('MACRO - Precision, Recall and F-score : ', (0.8771, 0.8751, 0.8751))
+('MICRO - Precision, Recall and F-score : ', (0.8753, 0.8753, 0.8753))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8769, 0.8753, 0.8752))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8769, 0.8753, 0.8752), 'valid_error': 0.12468144, 'train_error': 0.012942668127327217, 'macro': (0.8771, 0.8751, 0.8751), 'time_taken': 4.121250685056051, 'micro': (0.8753, 0.8753, 0.8753), 'test_error': 0.13138352365760536}
+-------------------------------------------------------
+('current feature to be ablated : ', 'sex')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['sex'])
+('Train : ', (35707, 292), (35707, 2))
+('Test : ', (10202, 292), (10202, 2))
+('Valid : ', (5101, 292), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.15825045109 minutes
+
+('Train Error : ', 0.013268809788696153)
+('Test Error : ', 0.13391617987003479)
+('Validation error is : ', 0.12458342)
+('Validation Accuracy : ', 0.8754165768623352)
+('MACRO - Precision, Recall and F-score : ', (0.8773, 0.8758, 0.8753))
+('MICRO - Precision, Recall and F-score : ', (0.8754, 0.8754, 0.8754))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8776, 0.8754, 0.8753))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8776, 0.8754, 0.8753), 'valid_error': 0.12458342, 'train_error': 0.013268809788696153, 'macro': (0.8773, 0.8758, 0.8753), 'time_taken': 4.158250451087952, 'micro': (0.8754, 0.8754, 0.8754), 'test_error': 0.13391617987003479}
+-------------------------------------------------------
+('current feature to be ablated : ', 'usual_residance')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['usual_residance'])
+('Train : ', (35707, 293), (35707, 2))
+('Test : ', (10202, 293), (10202, 2))
+('Valid : ', (5101, 293), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.16287391583 minutes
+
+('Train Error : ', 0.012516720968425514)
+('Test Error : ', 0.13192365994373639)
+('Validation error is : ', 0.12272104)
+('Validation Accuracy : ', 0.8772789612412453)
+('MACRO - Precision, Recall and F-score : ', (0.8794, 0.8771, 0.8771))
+('MICRO - Precision, Recall and F-score : ', (0.8773, 0.8773, 0.8773))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8793, 0.8773, 0.8771))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8793, 0.8773, 0.8771), 'valid_error': 0.12272104, 'train_error': 0.012516720968425514, 'macro': (0.8794, 0.8771, 0.8771), 'time_taken': 4.1628739158312476, 'micro': (0.8773, 0.8773, 0.8773), 'test_error': 0.13192365994373639}
+-------------------------------------------------------
+('current feature to be ablated : ', 'age')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['age'])
+('Train : ', (35707, 293), (35707, 2))
+('Test : ', (10202, 293), (10202, 2))
+('Valid : ', (5101, 293), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.12850498358 minutes
+
+('Train Error : ', 0.0099818800990675999)
+('Test Error : ', 0.13475302355987329)
+('Validation error is : ', 0.13222899)
+('Validation Accuracy : ', 0.8677710145711899)
+('MACRO - Precision, Recall and F-score : ', (0.8688, 0.8677, 0.8677))
+('MICRO - Precision, Recall and F-score : ', (0.8678, 0.8678, 0.8678))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8688, 0.8678, 0.8677))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8688, 0.8678, 0.8677), 'valid_error': 0.13222899, 'train_error': 0.0099818800990675999, 'macro': (0.8688, 0.8677, 0.8677), 'time_taken': 4.128504983584086, 'micro': (0.8678, 0.8678, 0.8678), 'test_error': 0.13475302355987329}
+-------------------------------------------------------
+('current feature to be ablated : ', 'religion')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['religion'])
+('Train : ', (35707, 287), (35707, 2))
+('Test : ', (10202, 287), (10202, 2))
+('Valid : ', (5101, 287), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.08895874818 minutes
+
+('Train Error : ', 0.013188752535343445)
+('Test Error : ', 0.13860997904490283)
+('Validation error is : ', 0.13036661)
+('Validation Accuracy : ', 0.8696333914995193)
+('MACRO - Precision, Recall and F-score : ', (0.8714, 0.8694, 0.8694))
+('MICRO - Precision, Recall and F-score : ', (0.8696, 0.8696, 0.8696))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8712, 0.8696, 0.8695))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8712, 0.8696, 0.8695), 'valid_error': 0.13036661, 'train_error': 0.013188752535343445, 'macro': (0.8714, 0.8694, 0.8694), 'time_taken': 4.088958748181661, 'micro': (0.8696, 0.8696, 0.8696), 'test_error': 0.13860997904490283}
+-------------------------------------------------------
+('current feature to be ablated : ', 'social_group_code')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['social_group_code'])
+('Train : ', (35707, 291), (35707, 2))
+('Test : ', (10202, 291), (10202, 2))
+('Valid : ', (5101, 291), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.10688793262 minutes
+
+('Train Error : ', 0.014661947900584265)
+('Test Error : ', 0.13634552997904462)
+('Validation error is : ', 0.13085671)
+('Validation Accuracy : ', 0.8691432923078537)
+('MACRO - Precision, Recall and F-score : ', (0.8705, 0.8692, 0.869))
+('MICRO - Precision, Recall and F-score : ', (0.8691, 0.8691, 0.8691))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8706, 0.8691, 0.869))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8706, 0.8691, 0.869), 'valid_error': 0.13085671, 'train_error': 0.014661947900584265, 'macro': (0.8705, 0.8692, 0.869), 'time_taken': 4.106887932618459, 'micro': (0.8691, 0.8691, 0.8691), 'test_error': 0.13634552997904462}
+-------------------------------------------------------
+('current feature to be ablated : ', 'marital_status')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['marital_status'])
+('Train : ', (35707, 286), (35707, 2))
+('Test : ', (10202, 286), (10202, 2))
+('Valid : ', (5101, 286), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.0682341973 minutes
+
+('Train Error : ', 0.012697115857627221)
+('Test Error : ', 0.14030246826616319)
+('Validation error is : ', 0.13712999)
+('Validation Accuracy : ', 0.8628700077533722)
+('MACRO - Precision, Recall and F-score : ', (0.8646, 0.8628, 0.8627))
+('MICRO - Precision, Recall and F-score : ', (0.8629, 0.8629, 0.8629))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8646, 0.8629, 0.8627))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8646, 0.8629, 0.8627), 'valid_error': 0.13712999, 'train_error': 0.012697115857627221, 'macro': (0.8646, 0.8628, 0.8627), 'time_taken': 4.068234197298685, 'micro': (0.8629, 0.8629, 0.8629), 'test_error': 0.14030246826616319}
+-------------------------------------------------------
+('current feature to be ablated : ', 'currently_attending_school')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['currently_attending_school'])
+('Train : ', (35707, 291), (35707, 2))
+('Test : ', (10202, 291), (10202, 2))
+('Valid : ', (5101, 291), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.12325816949 minutes
+
+('Train Error : ', 0.01188489540762268)
+('Test Error : ', 0.13458821750604189)
+('Validation error is : ', 0.12772006)
+('Validation Accuracy : ', 0.872279942035675)
+('MACRO - Precision, Recall and F-score : ', (0.8732, 0.8721, 0.8722))
+('MICRO - Precision, Recall and F-score : ', (0.8723, 0.8723, 0.8723))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8731, 0.8723, 0.8722))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8731, 0.8723, 0.8722), 'valid_error': 0.12772006, 'train_error': 0.01188489540762268, 'macro': (0.8732, 0.8721, 0.8722), 'time_taken': 4.123258169492086, 'micro': (0.8723, 0.8723, 0.8723), 'test_error': 0.13458821750604189}
+-------------------------------------------------------
+('current feature to be ablated : ', 'reason_for_not_attending_school')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['reason_for_not_attending_school'])
+('Train : ', (35707, 285), (35707, 2))
+('Test : ', (10202, 285), (10202, 2))
+('Valid : ', (5101, 285), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.10437496503 minutes
+
+('Train Error : ', 0.013091725982350982)
+('Test Error : ', 0.13318636714221238)
+('Validation error is : ', 0.12477946)
+('Validation Accuracy : ', 0.875220537185669)
+('MACRO - Precision, Recall and F-score : ', (0.8768, 0.8754, 0.8751))
+('MICRO - Precision, Recall and F-score : ', (0.8752, 0.8752, 0.8752))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8769, 0.8752, 0.8751))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8769, 0.8752, 0.8751), 'valid_error': 0.12477946, 'train_error': 0.013091725982350982, 'macro': (0.8768, 0.8754, 0.8751), 'time_taken': 4.104374965031941, 'micro': (0.8752, 0.8752, 0.8752), 'test_error': 0.13318636714221238}
+-------------------------------------------------------
+('current feature to be ablated : ', 'highest_qualification')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['highest_qualification'])
+('Train : ', (35707, 285), (35707, 2))
+('Test : ', (10202, 285), (10202, 2))
+('Valid : ', (5101, 285), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.1270642519 minutes
+
+('Train Error : ', 0.014415449607210971)
+('Test Error : ', 0.13203372546545156)
+('Validation error is : ', 0.12585768)
+('Validation Accuracy : ', 0.8741423189640045)
+('MACRO - Precision, Recall and F-score : ', (0.8746, 0.8743, 0.8741))
+('MICRO - Precision, Recall and F-score : ', (0.8741, 0.8741, 0.8741))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8748, 0.8741, 0.8741))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8748, 0.8741, 0.8741), 'valid_error': 0.12585768, 'train_error': 0.014415449607210971, 'macro': (0.8746, 0.8743, 0.8741), 'time_taken': 4.12706425189972, 'micro': (0.8741, 0.8741, 0.8741), 'test_error': 0.13203372546545156}
+-------------------------------------------------------
+('current feature to be ablated : ', 'occupation_status')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['occupation_status'])
+('Train : ', (35707, 279), (35707, 2))
+('Test : ', (10202, 279), (10202, 2))
+('Valid : ', (5101, 279), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.10436988274 minutes
+
+('Train Error : ', 0.014449979471286289)
+('Test Error : ', 0.13347503983533823)
+('Validation error is : ', 0.12458342)
+('Validation Accuracy : ', 0.8754165768623352)
+('MACRO - Precision, Recall and F-score : ', (0.8771, 0.8751, 0.8752))
+('MICRO - Precision, Recall and F-score : ', (0.8754, 0.8754, 0.8754))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8769, 0.8754, 0.8752))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8769, 0.8754, 0.8752), 'valid_error': 0.12458342, 'train_error': 0.014449979471286289, 'macro': (0.8771, 0.8751, 0.8752), 'time_taken': 4.104369882742564, 'micro': (0.8754, 0.8754, 0.8754), 'test_error': 0.13347503983533823}
+-------------------------------------------------------
+('current feature to be ablated : ', 'disability_status')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['disability_status'])
+('Train : ', (35707, 287), (35707, 2))
+('Test : ', (10202, 287), (10202, 2))
+('Valid : ', (5101, 287), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.10950876872 minutes
+
+('Train Error : ', 0.013939658826022463)
+('Test Error : ', 0.13626337183879447)
+('Validation error is : ', 0.12870026)
+('Validation Accuracy : ', 0.8712997436523438)
+('MACRO - Precision, Recall and F-score : ', (0.8738, 0.871, 0.871))
+('MICRO - Precision, Recall and F-score : ', (0.8713, 0.8713, 0.8713))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8736, 0.8713, 0.8711))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8736, 0.8713, 0.8711), 'valid_error': 0.12870026, 'train_error': 0.013939658826022463, 'macro': (0.8738, 0.871, 0.871), 'time_taken': 4.109508768717448, 'micro': (0.8713, 0.8713, 0.8713), 'test_error': 0.13626337183879447}
+-------------------------------------------------------
+('current feature to be ablated : ', 'injury_treatment_type')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['injury_treatment_type'])
+('Train : ', (35707, 287), (35707, 2))
+('Test : ', (10202, 287), (10202, 2))
+('Valid : ', (5101, 287), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.0677492857 minutes
+
+('Train Error : ', 0.014313722499091817)
+('Test Error : ', 0.13631282657474189)
+('Validation error is : ', 0.12938641)
+('Validation Accuracy : ', 0.8706135898828506)
+('MACRO - Precision, Recall and F-score : ', (0.8718, 0.8708, 0.8705))
+('MICRO - Precision, Recall and F-score : ', (0.8706, 0.8706, 0.8706))
+('WEIGHTED - Precision, Recall and F-score : ', (0.872, 0.8706, 0.8705))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.872, 0.8706, 0.8705), 'valid_error': 0.12938641, 'train_error': 0.014313722499091817, 'macro': (0.8718, 0.8708, 0.8705), 'time_taken': 4.067749285697937, 'micro': (0.8706, 0.8706, 0.8706), 'test_error': 0.13631282657474189}
+-------------------------------------------------------
+('current feature to be ablated : ', 'illness_type')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['illness_type'])
+('Train : ', (35707, 285), (35707, 2))
+('Test : ', (10202, 285), (10202, 2))
+('Valid : ', (5101, 285), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.10288661718 minutes
+
+('Train Error : ', 0.012567421924666243)
+('Test Error : ', 0.13737400583215764)
+('Validation error is : ', 0.13193493)
+('Validation Accuracy : ', 0.8680650740861893)
+('MACRO - Precision, Recall and F-score : ', (0.8693, 0.8677, 0.8679))
+('MICRO - Precision, Recall and F-score : ', (0.8681, 0.8681, 0.8681))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8691, 0.8681, 0.8679))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8691, 0.8681, 0.8679), 'valid_error': 0.13193493, 'train_error': 0.012567421924666243, 'macro': (0.8693, 0.8677, 0.8679), 'time_taken': 4.102886617183685, 'micro': (0.8681, 0.8681, 0.8681), 'test_error': 0.13737400583215764}
+-------------------------------------------------------
+('current feature to be ablated : ', 'treatment_source')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['treatment_source'])
+('Train : ', (35707, 267), (35707, 2))
+('Test : ', (10202, 267), (10202, 2))
+('Valid : ', (5101, 267), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.91000341574 minutes
+
+('Train Error : ', 0.01289137590629068)
+('Test Error : ', 0.13335028816234101)
+('Validation error is : ', 0.12272104)
+('Validation Accuracy : ', 0.8772789612412453)
+('MACRO - Precision, Recall and F-score : ', (0.8789, 0.8771, 0.8771))
+('MICRO - Precision, Recall and F-score : ', (0.8773, 0.8773, 0.8773))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8788, 0.8773, 0.8771))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8788, 0.8773, 0.8771), 'valid_error': 0.12272104, 'train_error': 0.01289137590629068, 'macro': (0.8789, 0.8771, 0.8771), 'time_taken': 3.91000341574351, 'micro': (0.8773, 0.8773, 0.8773), 'test_error': 0.13335028816234101}
+-------------------------------------------------------
+('current feature to be ablated : ', 'symptoms_pertaining_illness')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['symptoms_pertaining_illness'])
+('Train : ', (35707, 280), (35707, 2))
+('Test : ', (10202, 280), (10202, 2))
+('Valid : ', (5101, 280), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.94369628429 minutes
+
+('Train Error : ', 0.024104328436714801)
+('Test Error : ', 0.20623094946533055)
+('Validation error is : ', 0.19241327)
+('Validation Accuracy : ', 0.8075867295265198)
+('MACRO - Precision, Recall and F-score : ', (0.8106, 0.8079, 0.8072))
+('MICRO - Precision, Recall and F-score : ', (0.8076, 0.8076, 0.8076))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8108, 0.8076, 0.8072))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8108, 0.8076, 0.8072), 'valid_error': 0.19241327, 'train_error': 0.024104328436714801, 'macro': (0.8106, 0.8079, 0.8072), 'time_taken': 3.9436962842941283, 'micro': (0.8076, 0.8076, 0.8076), 'test_error': 0.20623094946533055}
+-------------------------------------------------------
+('current feature to be ablated : ', 'sought_medical_care')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['sought_medical_care'])
+('Train : ', (35707, 291), (35707, 2))
+('Test : ', (10202, 291), (10202, 2))
+('Valid : ', (5101, 291), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.01696448326 minutes
+
+('Train Error : ', 0.0135743458719311)
+('Test Error : ', 0.13514098877107705)
+('Validation error is : ', 0.12458342)
+('Validation Accuracy : ', 0.8754165768623352)
+('MACRO - Precision, Recall and F-score : ', (0.8766, 0.8755, 0.8753))
+('MICRO - Precision, Recall and F-score : ', (0.8754, 0.8754, 0.8754))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8766, 0.8754, 0.8753))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8766, 0.8754, 0.8753), 'valid_error': 0.12458342, 'train_error': 0.0135743458719311, 'macro': (0.8766, 0.8755, 0.8753), 'time_taken': 4.016964483261108, 'micro': (0.8754, 0.8754, 0.8754), 'test_error': 0.13514098877107705}
+-------------------------------------------------------
+('current feature to be ablated : ', 'diagnosed_for')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', [])
+('Train : ', (35707, 294), (35707, 2))
+('Test : ', (10202, 294), (10202, 2))
+('Valid : ', (5101, 294), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.03450383345 minutes
+
+('Train Error : ', 0.013828589734129508)
+('Test Error : ', 0.13660394584203694)
+('Validation error is : ', 0.13085669)
+('Validation Accuracy : ', 0.8691433072090149)
+('MACRO - Precision, Recall and F-score : ', (0.8705, 0.8693, 0.869))
+('MICRO - Precision, Recall and F-score : ', (0.8691, 0.8691, 0.8691))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8706, 0.8691, 0.869))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8706, 0.8691, 0.869), 'valid_error': 0.13085669, 'train_error': 0.013828589734129508, 'macro': (0.8705, 0.8693, 0.869), 'time_taken': 4.0345038334528605, 'micro': (0.8691, 0.8691, 0.8691), 'test_error': 0.13660394584203694}
+-------------------------------------------------------
+('current feature to be ablated : ', 'diagnosis_source')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['diagnosis_source'])
+('Train : ', (35707, 281), (35707, 2))
+('Test : ', (10202, 281), (10202, 2))
+('Valid : ', (5101, 281), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.95476864974 minutes
+
+('Train Error : ', 0.015044289280794963)
+('Test Error : ', 0.13827880270235784)
+('Validation error is : ', 0.13056263)
+('Validation Accuracy : ', 0.8694373667240143)
+('MACRO - Precision, Recall and F-score : ', (0.8705, 0.8689, 0.8692))
+('MICRO - Precision, Recall and F-score : ', (0.8694, 0.8694, 0.8694))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8702, 0.8694, 0.8693))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8702, 0.8694, 0.8693), 'valid_error': 0.13056263, 'train_error': 0.015044289280794963, 'macro': (0.8705, 0.8689, 0.8692), 'time_taken': 3.9547686497370402, 'micro': (0.8694, 0.8694, 0.8694), 'test_error': 0.13827880270235784}
+-------------------------------------------------------
+('current feature to be ablated : ', 'regular_treatment')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['regular_treatment'])
+('Train : ', (35707, 277), (35707, 2))
+('Test : ', (10202, 277), (10202, 2))
+('Valid : ', (5101, 277), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.95412268241 minutes
+
+('Train Error : ', 0.015835519830548241)
+('Test Error : ', 0.1297159101162757)
+('Validation error is : ', 0.12076064)
+('Validation Accuracy : ', 0.8792393580079079)
+('MACRO - Precision, Recall and F-score : ', (0.8806, 0.8791, 0.8791))
+('MICRO - Precision, Recall and F-score : ', (0.8792, 0.8792, 0.8792))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8805, 0.8792, 0.8791))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8805, 0.8792, 0.8791), 'valid_error': 0.12076064, 'train_error': 0.015835519830548241, 'macro': (0.8806, 0.8791, 0.8791), 'time_taken': 3.9541226824124656, 'micro': (0.8792, 0.8792, 0.8792), 'test_error': 0.1297159101162757}
+-------------------------------------------------------
+('current feature to be ablated : ', 'regular_treatment_source')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['regular_treatment_source'])
+('Train : ', (35707, 280), (35707, 2))
+('Test : ', (10202, 280), (10202, 2))
+('Valid : ', (5101, 280), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.97271000147 minutes
+
+('Train Error : ', 0.015183147818091)
+('Test Error : ', 0.13576319112584784)
+('Validation error is : ', 0.127426)
+('Validation Accuracy : ', 0.8725740015506744)
+('MACRO - Precision, Recall and F-score : ', (0.8733, 0.8723, 0.8724))
+('MICRO - Precision, Recall and F-score : ', (0.8726, 0.8726, 0.8726))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8732, 0.8726, 0.8725))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8732, 0.8726, 0.8725), 'valid_error': 0.127426, 'train_error': 0.015183147818091, 'macro': (0.8733, 0.8723, 0.8724), 'time_taken': 3.9727100014686583, 'micro': (0.8726, 0.8726, 0.8726), 'test_error': 0.13576319112584784}
+-------------------------------------------------------
+('current feature to be ablated : ', 'chew')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['chew'])
+('Train : ', (35707, 287), (35707, 2))
+('Test : ', (10202, 287), (10202, 2))
+('Valid : ', (5101, 287), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.99399221738 minutes
+
+('Train Error : ', 0.015192814997502498)
+('Test Error : ', 0.13611178500549895)
+('Validation error is : ', 0.12919036)
+('Validation Accuracy : ', 0.8708096444606781)
+('MACRO - Precision, Recall and F-score : ', (0.8717, 0.8707, 0.8707))
+('MICRO - Precision, Recall and F-score : ', (0.8708, 0.8708, 0.8708))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8716, 0.8708, 0.8707))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8716, 0.8708, 0.8707), 'valid_error': 0.12919036, 'train_error': 0.015192814997502498, 'macro': (0.8717, 0.8707, 0.8707), 'time_taken': 3.993992217381795, 'micro': (0.8708, 0.8708, 0.8708), 'test_error': 0.13611178500549895}
+-------------------------------------------------------
+('current feature to be ablated : ', 'smoke')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['smoke'])
+('Train : ', (35707, 290), (35707, 2))
+('Test : ', (10202, 290), (10202, 2))
+('Valid : ', (5101, 290), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.983745567 minutes
+
+('Train Error : ', 0.013275372827929646)
+('Test Error : ', 0.13329389057197533)
+('Validation error is : ', 0.12722997)
+('Validation Accuracy : ', 0.8727700263261795)
+('MACRO - Precision, Recall and F-score : ', (0.8738, 0.8731, 0.8727))
+('MICRO - Precision, Recall and F-score : ', (0.8728, 0.8728, 0.8728))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8741, 0.8728, 0.8727))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8741, 0.8728, 0.8727), 'valid_error': 0.12722997, 'train_error': 0.013275372827929646, 'macro': (0.8738, 0.8731, 0.8727), 'time_taken': 3.983745567003886, 'micro': (0.8728, 0.8728, 0.8728), 'test_error': 0.13329389057197533}
+-------------------------------------------------------
+('current feature to be ablated : ', 'alcohol')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['alcohol'])
+('Train : ', (35707, 290), (35707, 2))
+('Test : ', (10202, 290), (10202, 2))
+('Valid : ', (5101, 290), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.02716631889 minutes
+
+('Train Error : ', 0.013584397373459874)
+('Test Error : ', 0.13411202091169167)
+('Validation error is : ', 0.12409332)
+('Validation Accuracy : ', 0.8759066835045815)
+('MACRO - Precision, Recall and F-score : ', (0.8768, 0.8758, 0.8758))
+('MICRO - Precision, Recall and F-score : ', (0.8759, 0.8759, 0.8759))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8767, 0.8759, 0.8758))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8767, 0.8759, 0.8758), 'valid_error': 0.12409332, 'train_error': 0.013584397373459874, 'macro': (0.8768, 0.8758, 0.8758), 'time_taken': 4.027166318893433, 'micro': (0.8759, 0.8759, 0.8759), 'test_error': 0.13411202091169167}
+-------------------------------------------------------
+('current feature to be ablated : ', 'house_status')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['house_status'])
+('Train : ', (35707, 290), (35707, 2))
+('Test : ', (10202, 290), (10202, 2))
+('Valid : ', (5101, 290), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.01049744685 minutes
+
+('Train Error : ', 0.013254323801198802)
+('Test Error : ', 0.1299338830889879)
+('Validation error is : ', 0.12115272)
+('Validation Accuracy : ', 0.8788472786545753)
+('MACRO - Precision, Recall and F-score : ', (0.8802, 0.8786, 0.8787))
+('MICRO - Precision, Recall and F-score : ', (0.8788, 0.8788, 0.8788))
+('WEIGHTED - Precision, Recall and F-score : ', (0.88, 0.8788, 0.8787))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.88, 0.8788, 0.8787), 'valid_error': 0.12115272, 'train_error': 0.013254323801198802, 'macro': (0.8802, 0.8786, 0.8787), 'time_taken': 4.0104974468549095, 'micro': (0.8788, 0.8788, 0.8788), 'test_error': 0.1299338830889879}
+-------------------------------------------------------
+('current feature to be ablated : ', 'house_structure')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['house_structure'])
+('Train : ', (35707, 290), (35707, 2))
+('Test : ', (10202, 290), (10202, 2))
+('Valid : ', (5101, 290), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.00138778289 minutes
+
+('Train Error : ', 0.013900901418657101)
+('Test Error : ', 0.13475596423927957)
+('Validation error is : ', 0.12781808)
+('Validation Accuracy : ', 0.8721819221973419)
+('MACRO - Precision, Recall and F-score : ', (0.8741, 0.8722, 0.872))
+('MICRO - Precision, Recall and F-score : ', (0.8722, 0.8722, 0.8722))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8741, 0.8722, 0.872))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8741, 0.8722, 0.872), 'valid_error': 0.12781808, 'train_error': 0.013900901418657101, 'macro': (0.8741, 0.8722, 0.872), 'time_taken': 4.001387782891592, 'micro': (0.8722, 0.8722, 0.8722), 'test_error': 0.13475596423927957}
+-------------------------------------------------------
+('current feature to be ablated : ', 'owner_status')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['owner_status'])
+('Train : ', (35707, 291), (35707, 2))
+('Test : ', (10202, 291), (10202, 2))
+('Valid : ', (5101, 291), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.00906296571 minutes
+
+('Train Error : ', 0.012968861157781612)
+('Test Error : ', 0.13337613859555342)
+('Validation error is : ', 0.12517154)
+('Validation Accuracy : ', 0.8748284578323364)
+('MACRO - Precision, Recall and F-score : ', (0.8756, 0.875, 0.8748))
+('MICRO - Precision, Recall and F-score : ', (0.8748, 0.8748, 0.8748))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8757, 0.8748, 0.8748))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8757, 0.8748, 0.8748), 'valid_error': 0.12517154, 'train_error': 0.012968861157781612, 'macro': (0.8756, 0.875, 0.8748), 'time_taken': 4.0090629657109575, 'micro': (0.8748, 0.8748, 0.8748), 'test_error': 0.13337613859555342}
+-------------------------------------------------------
+('current feature to be ablated : ', 'drinking_water_source')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['drinking_water_source'])
+('Train : ', (35707, 285), (35707, 2))
+('Test : ', (10202, 285), (10202, 2))
+('Valid : ', (5101, 285), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.97884804805 minutes
+
+('Train Error : ', 0.013990182402824448)
+('Test Error : ', 0.14089694635553673)
+('Validation error is : ', 0.1352676)
+('Validation Accuracy : ', 0.8647323995828629)
+('MACRO - Precision, Recall and F-score : ', (0.8676, 0.8643, 0.8644))
+('MICRO - Precision, Recall and F-score : ', (0.8647, 0.8647, 0.8647))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8673, 0.8647, 0.8644))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8673, 0.8647, 0.8644), 'valid_error': 0.1352676, 'train_error': 0.013990182402824448, 'macro': (0.8676, 0.8643, 0.8644), 'time_taken': 3.9788480480511983, 'micro': (0.8647, 0.8647, 0.8647), 'test_error': 0.14089694635553673}
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_water_filter')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['is_water_filter'])
+('Train : ', (35707, 292), (35707, 2))
+('Test : ', (10202, 292), (10202, 2))
+('Valid : ', (5101, 292), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.01160931587 minutes
+
+('Train Error : ', 0.013674535691581146)
+('Test Error : ', 0.13441538747463311)
+('Validation error is : ', 0.1254656)
+('Validation Accuracy : ', 0.874534398317337)
+('MACRO - Precision, Recall and F-score : ', (0.8757, 0.8742, 0.8744))
+('MICRO - Precision, Recall and F-score : ', (0.8745, 0.8745, 0.8745))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8755, 0.8745, 0.8744))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8755, 0.8745, 0.8744), 'valid_error': 0.1254656, 'train_error': 0.013674535691581146, 'macro': (0.8757, 0.8742, 0.8744), 'time_taken': 4.011609315872192, 'micro': (0.8745, 0.8745, 0.8745), 'test_error': 0.13441538747463311}
+-------------------------------------------------------
+('current feature to be ablated : ', 'water_filteration')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['water_filteration'])
+('Train : ', (35707, 286), (35707, 2))
+('Test : ', (10202, 286), (10202, 2))
+('Valid : ', (5101, 286), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.99382341703 minutes
+
+('Train Error : ', 0.012760735949656404)
+('Test Error : ', 0.13784099871164315)
+('Validation error is : ', 0.13056265)
+('Validation Accuracy : ', 0.8694373518228531)
+('MACRO - Precision, Recall and F-score : ', (0.8702, 0.8694, 0.8694))
+('MICRO - Precision, Recall and F-score : ', (0.8694, 0.8694, 0.8694))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8702, 0.8694, 0.8694))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8702, 0.8694, 0.8694), 'valid_error': 0.13056265, 'train_error': 0.012760735949656404, 'macro': (0.8702, 0.8694, 0.8694), 'time_taken': 3.9938234170277913, 'micro': (0.8694, 0.8694, 0.8694), 'test_error': 0.13784099871164315}
+-------------------------------------------------------
+('current feature to be ablated : ', 'toilet_used')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['toilet_used'])
+('Train : ', (35707, 285), (35707, 2))
+('Test : ', (10202, 285), (10202, 2))
+('Valid : ', (5101, 285), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.99108543396 minutes
+
+('Train Error : ', 0.014188196982941301)
+('Test Error : ', 0.13401958524257868)
+('Validation error is : ', 0.127426)
+('Validation Accuracy : ', 0.8725740015506744)
+('MACRO - Precision, Recall and F-score : ', (0.8737, 0.8726, 0.8725))
+('MICRO - Precision, Recall and F-score : ', (0.8726, 0.8726, 0.8726))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8737, 0.8726, 0.8725))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8737, 0.8726, 0.8725), 'valid_error': 0.127426, 'train_error': 0.014188196982941301, 'macro': (0.8737, 0.8726, 0.8725), 'time_taken': 3.991085433959961, 'micro': (0.8726, 0.8726, 0.8726), 'test_error': 0.13401958524257868}
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_toilet_shared')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['is_toilet_shared'])
+('Train : ', (35707, 292), (35707, 2))
+('Test : ', (10202, 292), (10202, 2))
+('Valid : ', (5101, 292), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.01587384939 minutes
+
+('Train Error : ', 0.013568167154814882)
+('Test Error : ', 0.13443144581296465)
+('Validation error is : ', 0.12928839)
+('Validation Accuracy : ', 0.8707116097211838)
+('MACRO - Precision, Recall and F-score : ', (0.8711, 0.8709, 0.8707))
+('MICRO - Precision, Recall and F-score : ', (0.8707, 0.8707, 0.8707))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8713, 0.8707, 0.8707))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8713, 0.8707, 0.8707), 'valid_error': 0.12928839, 'train_error': 0.013568167154814882, 'macro': (0.8711, 0.8709, 0.8707), 'time_taken': 4.015873849391937, 'micro': (0.8707, 0.8707, 0.8707), 'test_error': 0.13443144581296465}
+-------------------------------------------------------
+('current feature to be ablated : ', 'household_have_electricity')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['household_have_electricity'])
+('Train : ', (35707, 292), (35707, 2))
+('Test : ', (10202, 292), (10202, 2))
+('Valid : ', (5101, 292), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.01718041499 minutes
+
+('Train Error : ', 0.012444113651500015)
+('Test Error : ', 0.13310313387052877)
+('Validation error is : ', 0.127426)
+('Validation Accuracy : ', 0.8725740015506744)
+('MACRO - Precision, Recall and F-score : ', (0.8731, 0.8725, 0.8725))
+('MICRO - Precision, Recall and F-score : ', (0.8726, 0.8726, 0.8726))
+('WEIGHTED - Precision, Recall and F-score : ', (0.873, 0.8726, 0.8725))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.873, 0.8726, 0.8725), 'valid_error': 0.127426, 'train_error': 0.012444113651500015, 'macro': (0.8731, 0.8725, 0.8725), 'time_taken': 4.017180414994558, 'micro': (0.8726, 0.8726, 0.8726), 'test_error': 0.13310313387052877}
+-------------------------------------------------------
+('current feature to be ablated : ', 'lighting_source')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['lighting_source'])
+('Train : ', (35707, 288), (35707, 2))
+('Test : ', (10202, 288), (10202, 2))
+('Valid : ', (5101, 288), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.00647283395 minutes
+
+('Train Error : ', 0.014003042412133321)
+('Test Error : ', 0.1378445223375753)
+('Validation error is : ', 0.13036661)
+('Validation Accuracy : ', 0.8696333914995193)
+('MACRO - Precision, Recall and F-score : ', (0.8706, 0.8697, 0.8696))
+('MICRO - Precision, Recall and F-score : ', (0.8696, 0.8696, 0.8696))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8707, 0.8696, 0.8696))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8707, 0.8696, 0.8696), 'valid_error': 0.13036661, 'train_error': 0.014003042412133321, 'macro': (0.8706, 0.8697, 0.8696), 'time_taken': 4.006472833951315, 'micro': (0.8696, 0.8696, 0.8696), 'test_error': 0.1378445223375753}
+-------------------------------------------------------
+('current feature to be ablated : ', 'cooking_fuel')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['cooking_fuel'])
+('Train : ', (35707, 285), (35707, 2))
+('Test : ', (10202, 285), (10202, 2))
+('Valid : ', (5101, 285), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.99320026636 minutes
+
+('Train Error : ', 0.013234043418702509)
+('Test Error : ', 0.13691670851750332)
+('Validation error is : ', 0.13056265)
+('Validation Accuracy : ', 0.8694373518228531)
+('MACRO - Precision, Recall and F-score : ', (0.8707, 0.8699, 0.8694))
+('MICRO - Precision, Recall and F-score : ', (0.8694, 0.8694, 0.8694))
+('WEIGHTED - Precision, Recall and F-score : ', (0.871, 0.8694, 0.8694))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.871, 0.8694, 0.8694), 'valid_error': 0.13056265, 'train_error': 0.013234043418702509, 'macro': (0.8707, 0.8699, 0.8694), 'time_taken': 3.9932002663612365, 'micro': (0.8694, 0.8694, 0.8694), 'test_error': 0.13691670851750332}
+-------------------------------------------------------
+('current feature to be ablated : ', 'kitchen_availability')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['kitchen_availability'])
+('Train : ', (35707, 289), (35707, 2))
+('Test : ', (10202, 289), (10202, 2))
+('Valid : ', (5101, 289), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.02087570031 minutes
+
+('Train Error : ', 0.014281823763357853)
+('Test Error : ', 0.13306220316446268)
+('Validation error is : ', 0.12389728)
+('Validation Accuracy : ', 0.8761027231812477)
+('MACRO - Precision, Recall and F-score : ', (0.8774, 0.8761, 0.876))
+('MICRO - Precision, Recall and F-score : ', (0.8761, 0.8761, 0.8761))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8774, 0.8761, 0.876))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8774, 0.8761, 0.876), 'valid_error': 0.12389728, 'train_error': 0.014281823763357853, 'macro': (0.8774, 0.8761, 0.876), 'time_taken': 4.02087570031484, 'micro': (0.8761, 0.8761, 0.8761), 'test_error': 0.13306220316446268}
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_radio')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['is_radio'])
+('Train : ', (35707, 292), (35707, 2))
+('Test : ', (10202, 292), (10202, 2))
+('Valid : ', (5101, 292), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.01544894775 minutes
+
+('Train Error : ', 0.013209565056155965)
+('Test Error : ', 0.13498940539884044)
+('Validation error is : ', 0.12654382)
+('Validation Accuracy : ', 0.8734561800956726)
+('MACRO - Precision, Recall and F-score : ', (0.8751, 0.8733, 0.8733))
+('MICRO - Precision, Recall and F-score : ', (0.8735, 0.8735, 0.8735))
+('WEIGHTED - Precision, Recall and F-score : ', (0.875, 0.8735, 0.8733))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.875, 0.8735, 0.8733), 'valid_error': 0.12654382, 'train_error': 0.013209565056155965, 'macro': (0.8751, 0.8733, 0.8733), 'time_taken': 4.015448947747548, 'micro': (0.8735, 0.8735, 0.8735), 'test_error': 0.13498940539884044}
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_television')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['is_television'])
+('Train : ', (35707, 292), (35707, 2))
+('Test : ', (10202, 292), (10202, 2))
+('Valid : ', (5101, 292), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.00245651801 minutes
+
+('Train Error : ', 0.013632585454318408)
+('Test Error : ', 0.13753410905867547)
+('Validation error is : ', 0.12928839)
+('Validation Accuracy : ', 0.8707116097211838)
+('MACRO - Precision, Recall and F-score : ', (0.8714, 0.8706, 0.8706))
+('MICRO - Precision, Recall and F-score : ', (0.8707, 0.8707, 0.8707))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8714, 0.8707, 0.8706))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8714, 0.8707, 0.8706), 'valid_error': 0.12928839, 'train_error': 0.013632585454318408, 'macro': (0.8714, 0.8706, 0.8706), 'time_taken': 4.002456518014272, 'micro': (0.8707, 0.8707, 0.8707), 'test_error': 0.13753410905867547}
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_computer')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['is_computer'])
+('Train : ', (35707, 291), (35707, 2))
+('Test : ', (10202, 291), (10202, 2))
+('Valid : ', (5101, 291), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.00450833241 minutes
+
+('Train Error : ', 0.013495678090848546)
+('Test Error : ', 0.1384637818916456)
+('Validation error is : ', 0.13164087)
+('Validation Accuracy : ', 0.8683591336011887)
+('MACRO - Precision, Recall and F-score : ', (0.8702, 0.8691, 0.8683))
+('MICRO - Precision, Recall and F-score : ', (0.8684, 0.8684, 0.8684))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8708, 0.8684, 0.8683))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8708, 0.8684, 0.8683), 'valid_error': 0.13164087, 'train_error': 0.013495678090848546, 'macro': (0.8702, 0.8691, 0.8683), 'time_taken': 4.004508332411448, 'micro': (0.8684, 0.8684, 0.8684), 'test_error': 0.1384637818916456}
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_telephone')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['is_telephone'])
+('Train : ', (35707, 290), (35707, 2))
+('Test : ', (10202, 290), (10202, 2))
+('Valid : ', (5101, 290), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.00630141497 minutes
+
+('Train Error : ', 0.013486099601156419)
+('Test Error : ', 0.13382902795767093)
+('Validation error is : ', 0.12379926)
+('Validation Accuracy : ', 0.8762007430195808)
+('MACRO - Precision, Recall and F-score : ', (0.877, 0.8759, 0.876))
+('MICRO - Precision, Recall and F-score : ', (0.8762, 0.8762, 0.8762))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8768, 0.8762, 0.8761))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8768, 0.8762, 0.8761), 'valid_error': 0.12379926, 'train_error': 0.013486099601156419, 'macro': (0.877, 0.8759, 0.876), 'time_taken': 4.006301414966583, 'micro': (0.8762, 0.8762, 0.8762), 'test_error': 0.13382902795767093}
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_washing_machine')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['is_washing_machine'])
+('Train : ', (35707, 292), (35707, 2))
+('Test : ', (10202, 292), (10202, 2))
+('Valid : ', (5101, 292), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.00161063671 minutes
+
+('Train Error : ', 0.013593266345397027)
+('Test Error : ', 0.13543730113026384)
+('Validation error is : ', 0.12879828)
+('Validation Accuracy : ', 0.8712017238140106)
+('MACRO - Precision, Recall and F-score : ', (0.8717, 0.8711, 0.8711))
+('MICRO - Precision, Recall and F-score : ', (0.8712, 0.8712, 0.8712))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8716, 0.8712, 0.8711))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8716, 0.8712, 0.8711), 'valid_error': 0.12879828, 'train_error': 0.013593266345397027, 'macro': (0.8717, 0.8711, 0.8711), 'time_taken': 4.001610636711121, 'micro': (0.8712, 0.8712, 0.8712), 'test_error': 0.13543730113026384}
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_refrigerator')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['is_refrigerator'])
+('Train : ', (35707, 292), (35707, 2))
+('Test : ', (10202, 292), (10202, 2))
+('Valid : ', (5101, 292), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.02693719864 minutes
+
+('Train Error : ', 0.013280930717010262)
+('Test Error : ', 0.13373639474024662)
+('Validation error is : ', 0.12281907)
+('Validation Accuracy : ', 0.8771809339523315)
+('MACRO - Precision, Recall and F-score : ', (0.8788, 0.8766, 0.8769))
+('MICRO - Precision, Recall and F-score : ', (0.8772, 0.8772, 0.8772))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8785, 0.8772, 0.877))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8785, 0.8772, 0.877), 'valid_error': 0.12281907, 'train_error': 0.013280930717010262, 'macro': (0.8788, 0.8766, 0.8769), 'time_taken': 4.026937198638916, 'micro': (0.8772, 0.8772, 0.8772), 'test_error': 0.13373639474024662}
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_sewing_machine')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['is_sewing_machine'])
+('Train : ', (35707, 292), (35707, 2))
+('Test : ', (10202, 292), (10202, 2))
+('Valid : ', (5101, 292), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.03555626869 minutes
+
+('Train Error : ', 0.013233097395029213)
+('Test Error : ', 0.13604735248870067)
+('Validation error is : ', 0.13007253)
+('Validation Accuracy : ', 0.8699274659156799)
+('MACRO - Precision, Recall and F-score : ', (0.8703, 0.8699, 0.8699))
+('MICRO - Precision, Recall and F-score : ', (0.8699, 0.8699, 0.8699))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8703, 0.8699, 0.8699))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8703, 0.8699, 0.8699), 'valid_error': 0.13007253, 'train_error': 0.013233097395029213, 'macro': (0.8703, 0.8699, 0.8699), 'time_taken': 4.035556268692017, 'micro': (0.8699, 0.8699, 0.8699), 'test_error': 0.13604735248870067}
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_bicycle')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['is_bicycle'])
+('Train : ', (35707, 292), (35707, 2))
+('Test : ', (10202, 292), (10202, 2))
+('Valid : ', (5101, 292), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.03742601871 minutes
+
+('Train Error : ', 0.01310893178790906)
+('Test Error : ', 0.13614939508976398)
+('Validation error is : ', 0.12732799)
+('Validation Accuracy : ', 0.8726720064878464)
+('MACRO - Precision, Recall and F-score : ', (0.8735, 0.8723, 0.8725))
+('MICRO - Precision, Recall and F-score : ', (0.8727, 0.8727, 0.8727))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8733, 0.8727, 0.8726))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8733, 0.8727, 0.8726), 'valid_error': 0.12732799, 'train_error': 0.01310893178790906, 'macro': (0.8735, 0.8723, 0.8725), 'time_taken': 4.037426018714905, 'micro': (0.8727, 0.8727, 0.8727), 'test_error': 0.13614939508976398}
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_scooter')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['is_scooter'])
+('Train : ', (35707, 292), (35707, 2))
+('Test : ', (10202, 292), (10202, 2))
+('Valid : ', (5101, 292), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.02443523407 minutes
+
+('Train Error : ', 0.012816285277222778)
+('Test Error : ', 0.13061375620511623)
+('Validation error is : ', 0.11880024)
+('Validation Accuracy : ', 0.8811997622251511)
+('MACRO - Precision, Recall and F-score : ', (0.8819, 0.8813, 0.8812))
+('MICRO - Precision, Recall and F-score : ', (0.8812, 0.8812, 0.8812))
+('WEIGHTED - Precision, Recall and F-score : ', (0.882, 0.8812, 0.8812))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.882, 0.8812, 0.8812), 'valid_error': 0.11880024, 'train_error': 0.012816285277222778, 'macro': (0.8819, 0.8813, 0.8812), 'time_taken': 4.024435234069824, 'micro': (0.8812, 0.8812, 0.8812), 'test_error': 0.13061375620511623}
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_car')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['is_car'])
+('Train : ', (35707, 292), (35707, 2))
+('Test : ', (10202, 292), (10202, 2))
+('Valid : ', (5101, 292), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.03453512987 minutes
+
+('Train Error : ', 0.012554414099158417)
+('Test Error : ', 0.13479385516056411)
+('Validation error is : ', 0.12801412)
+('Validation Accuracy : ', 0.8719858825206757)
+('MACRO - Precision, Recall and F-score : ', (0.8736, 0.872, 0.8719))
+('MICRO - Precision, Recall and F-score : ', (0.872, 0.872, 0.872))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8736, 0.872, 0.8719))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8736, 0.872, 0.8719), 'valid_error': 0.12801412, 'train_error': 0.012554414099158417, 'macro': (0.8736, 0.872, 0.8719), 'time_taken': 4.03453512986501, 'micro': (0.872, 0.872, 0.872), 'test_error': 0.13479385516056411}
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_tractor')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['is_tractor'])
+('Train : ', (35707, 292), (35707, 2))
+('Test : ', (10202, 292), (10202, 2))
+('Valid : ', (5101, 292), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.00827566385 minutes
+
+('Train Error : ', 0.013300353765552629)
+('Test Error : ', 0.14047255348432791)
+('Validation error is : ', 0.13213097)
+('Validation Accuracy : ', 0.867869034409523)
+('MACRO - Precision, Recall and F-score : ', (0.8704, 0.8674, 0.8675))
+('MICRO - Precision, Recall and F-score : ', (0.8679, 0.8679, 0.8679))
+('WEIGHTED - Precision, Recall and F-score : ', (0.87, 0.8679, 0.8676))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.87, 0.8679, 0.8676), 'valid_error': 0.13213097, 'train_error': 0.013300353765552629, 'macro': (0.8704, 0.8674, 0.8675), 'time_taken': 4.008275663852691, 'micro': (0.8679, 0.8679, 0.8679), 'test_error': 0.14047255348432791}
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_water_pump')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['is_water_pump'])
+('Train : ', (35707, 292), (35707, 2))
+('Test : ', (10202, 292), (10202, 2))
+('Valid : ', (5101, 292), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.00832554897 minutes
+
+('Train Error : ', 0.013420646588260225)
+('Test Error : ', 0.13637706296486812)
+('Validation error is : ', 0.12928839)
+('Validation Accuracy : ', 0.8707116097211838)
+('MACRO - Precision, Recall and F-score : ', (0.8722, 0.8706, 0.8706))
+('MICRO - Precision, Recall and F-score : ', (0.8707, 0.8707, 0.8707))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8721, 0.8707, 0.8706))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8721, 0.8707, 0.8706), 'valid_error': 0.12928839, 'train_error': 0.013420646588260225, 'macro': (0.8722, 0.8706, 0.8706), 'time_taken': 4.0083255489667255, 'micro': (0.8707, 0.8707, 0.8707), 'test_error': 0.13637706296486812}
+-------------------------------------------------------
+('current feature to be ablated : ', 'cart')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['cart'])
+('Train : ', (35707, 290), (35707, 2))
+('Test : ', (10202, 290), (10202, 2))
+('Valid : ', (5101, 290), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.98662778139 minutes
+
+('Train Error : ', 0.012779065158326521)
+('Test Error : ', 0.13809529650997329)
+('Validation error is : ', 0.12752402)
+('Validation Accuracy : ', 0.8724759817123413)
+('MACRO - Precision, Recall and F-score : ', (0.8737, 0.8722, 0.8723))
+('MICRO - Precision, Recall and F-score : ', (0.8725, 0.8725, 0.8725))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8736, 0.8725, 0.8723))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8736, 0.8725, 0.8723), 'valid_error': 0.12752402, 'train_error': 0.012779065158326521, 'macro': (0.8737, 0.8722, 0.8723), 'time_taken': 3.9866277813911437, 'micro': (0.8725, 0.8725, 0.8725), 'test_error': 0.13809529650997329}
+-------------------------------------------------------
+('current feature to be ablated : ', 'land_possessed')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['land_possessed'])
+('Train : ', (35707, 288), (35707, 2))
+('Test : ', (10202, 288), (10202, 2))
+('Valid : ', (5101, 288), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.99615800381 minutes
+
+('Train Error : ', 0.014538343995020131)
+('Test Error : ', 0.12885017970671783)
+('Validation error is : ', 0.12183885)
+('Validation Accuracy : ', 0.878161147236824)
+('MACRO - Precision, Recall and F-score : ', (0.8793, 0.8782, 0.8781))
+('MICRO - Precision, Recall and F-score : ', (0.8782, 0.8782, 0.8782))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8793, 0.8782, 0.8781))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8793, 0.8782, 0.8781), 'valid_error': 0.12183885, 'train_error': 0.014538343995020131, 'macro': (0.8793, 0.8782, 0.8781), 'time_taken': 3.996158003807068, 'micro': (0.8782, 0.8782, 0.8782), 'test_error': 0.12885017970671783}
+-------------------------------------------------------
+('current feature to be ablated : ', 'residancial_status')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['residancial_status'])
+('Train : ', (35707, 290), (35707, 2))
+('Test : ', (10202, 290), (10202, 2))
+('Valid : ', (5101, 290), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.99947308302 minutes
+
+('Train Error : ', 0.013902793466003694)
+('Test Error : ', 0.13520669819532216)
+('Validation error is : ', 0.12860225)
+('Validation Accuracy : ', 0.8713977485895157)
+('MACRO - Precision, Recall and F-score : ', (0.8726, 0.8712, 0.8712))
+('MICRO - Precision, Recall and F-score : ', (0.8714, 0.8714, 0.8714))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8725, 0.8714, 0.8713))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8725, 0.8714, 0.8713), 'valid_error': 0.12860225, 'train_error': 0.013902793466003694, 'macro': (0.8726, 0.8712, 0.8712), 'time_taken': 3.9994730830192564, 'micro': (0.8714, 0.8714, 0.8714), 'test_error': 0.13520669819532216}
+-------------------------------------------------------
+('current feature to be ablated : ', 'iscoveredbyhealthscheme')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['iscoveredbyhealthscheme'])
+('Train : ', (35707, 291), (35707, 2))
+('Test : ', (10202, 291), (10202, 2))
+('Valid : ', (5101, 291), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.98050425053 minutes
+
+('Train Error : ', 0.013940161401098902)
+('Test Error : ', 0.13370065178934273)
+('Validation error is : ', 0.12683788)
+('Validation Accuracy : ', 0.8731621205806732)
+('MACRO - Precision, Recall and F-score : ', (0.875, 0.8729, 0.8729))
+('MICRO - Precision, Recall and F-score : ', (0.8732, 0.8732, 0.8732))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8748, 0.8732, 0.873))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8748, 0.8732, 0.873), 'valid_error': 0.12683788, 'train_error': 0.013940161401098902, 'macro': (0.875, 0.8729, 0.8729), 'time_taken': 3.9805042505264283, 'micro': (0.8732, 0.8732, 0.8732), 'test_error': 0.13370065178934273}
+-------------------------------------------------------
+('current feature to be ablated : ', 'healthscheme_1')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['healthscheme_1'])
+('Train : ', (35707, 286), (35707, 2))
+('Test : ', (10202, 286), (10202, 2))
+('Valid : ', (5101, 286), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.9878649354 minutes
+
+('Train Error : ', 0.014247766911119184)
+('Test Error : ', 0.13161363740722379)
+('Validation error is : ', 0.12399529)
+('Validation Accuracy : ', 0.8760047107934952)
+('MACRO - Precision, Recall and F-score : ', (0.8769, 0.8755, 0.8758))
+('MICRO - Precision, Recall and F-score : ', (0.876, 0.876, 0.876))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8766, 0.876, 0.8759))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8766, 0.876, 0.8759), 'valid_error': 0.12399529, 'train_error': 0.014247766911119184, 'macro': (0.8769, 0.8755, 0.8758), 'time_taken': 3.9878649353981017, 'micro': (0.876, 0.876, 0.876), 'test_error': 0.13161363740722379}
+-------------------------------------------------------
+('current feature to be ablated : ', 'healthscheme_2')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['healthscheme_2'])
+('Train : ', (35707, 286), (35707, 2))
+('Test : ', (10202, 286), (10202, 2))
+('Valid : ', (5101, 286), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.97460491657 minutes
+
+('Train Error : ', 0.013443025960781643)
+('Test Error : ', 0.13996178654583541)
+('Validation error is : ', 0.13164085)
+('Validation Accuracy : ', 0.8683591485023499)
+('MACRO - Precision, Recall and F-score : ', (0.8694, 0.869, 0.8683))
+('MICRO - Precision, Recall and F-score : ', (0.8684, 0.8684, 0.8684))
+('WEIGHTED - Precision, Recall and F-score : ', (0.87, 0.8684, 0.8683))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.87, 0.8684, 0.8683), 'valid_error': 0.13164085, 'train_error': 0.013443025960781643, 'macro': (0.8694, 0.869, 0.8683), 'time_taken': 3.974604916572571, 'micro': (0.8684, 0.8684, 0.8684), 'test_error': 0.13996178654583541}
+-------------------------------------------------------
+('current feature to be ablated : ', 'housestatus')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['housestatus'])
+('Train : ', (35707, 292), (35707, 2))
+('Test : ', (10202, 292), (10202, 2))
+('Valid : ', (5101, 292), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.01531623205 minutes
+
+('Train Error : ', 0.013677965027396845)
+('Test Error : ', 0.13091095093336258)
+('Validation error is : ', 0.12242697)
+('Validation Accuracy : ', 0.8775730282068253)
+('MACRO - Precision, Recall and F-score : ', (0.8788, 0.8782, 0.8776))
+('MICRO - Precision, Recall and F-score : ', (0.8776, 0.8776, 0.8776))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8794, 0.8776, 0.8775))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8794, 0.8776, 0.8775), 'valid_error': 0.12242697, 'train_error': 0.013677965027396845, 'macro': (0.8788, 0.8782, 0.8776), 'time_taken': 4.015316232045492, 'micro': (0.8776, 0.8776, 0.8776), 'test_error': 0.13091095093336258}
+-------------------------------------------------------
+('current feature to be ablated : ', 'householdstatus')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['householdstatus'])
+('Train : ', (35707, 288), (35707, 2))
+('Test : ', (10202, 288), (10202, 2))
+('Valid : ', (5101, 288), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.994188416 minutes
+
+('Train Error : ', 0.01176945095624073)
+('Test Error : ', 0.13051681680517357)
+('Validation error is : ', 0.12624978)
+('Validation Accuracy : ', 0.8737502247095108)
+('MACRO - Precision, Recall and F-score : ', (0.8751, 0.8739, 0.8737))
+('MICRO - Precision, Recall and F-score : ', (0.8738, 0.8738, 0.8738))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8751, 0.8738, 0.8736))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8751, 0.8738, 0.8736), 'valid_error': 0.12624978, 'train_error': 0.01176945095624073, 'macro': (0.8751, 0.8739, 0.8737), 'time_taken': 3.9941884160041807, 'micro': (0.8738, 0.8738, 0.8738), 'test_error': 0.13051681680517357}
+-------------------------------------------------------
+('current feature to be ablated : ', 'as_binned')
+('Original : ', (146443, 294), (146443, 1))
+('Features Removed : ', ['as_binned'])
+('Train : ', (35707, 289), (35707, 2))
+('Test : ', (10202, 289), (10202, 2))
+('Valid : ', (5101, 289), (5101, 2))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 4.09279439847 minutes
+
+('Train Error : ', 0.014751731459828051)
+('Test Error : ', 0.13402232590255203)
+('Validation error is : ', 0.1249755)
+('Validation Accuracy : ', 0.8750244975090027)
+('MACRO - Precision, Recall and F-score : ', (0.8759, 0.8751, 0.875))
+('MICRO - Precision, Recall and F-score : ', (0.875, 0.875, 0.875))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8759, 0.875, 0.875))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{'weighted': (0.8759, 0.875, 0.875), 'valid_error': 0.1249755, 'train_error': 0.014751731459828051, 'macro': (0.8759, 0.8751, 0.875), 'time_taken': 4.092794398466746, 'micro': (0.875, 0.875, 0.875), 'test_error': 0.13402232590255203}
+
+-------------------------
+-------------------------
+{}

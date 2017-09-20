@@ -1,0 +1,1144 @@
+===============================
+324641.hn1.hpc.iitd.ac.in
+gpu023.hpc.iitd.ac.in
+===============================
+------------------------------------------------------
+PART - 1 : Remove Yellow Field Columns form CSV File
+Yellow Fields already removed. Proceeding further
+------------------------------------------------------
+PART - 2 : Preparing Data for the analysis
+  
+Removing not-so-useful columns
+Splitting to-predict column
+  
+Saving diagnosed_for column to data/22_COMB_diag_col.csv
+One Hot Encoding Data
+Saving One-Hot Columns to data/22_COMB_diag_hotData.csv
+------------------------------------------------------
+PART - 3 : Dividing Data in train-test split and making categorical variables
+   
+Splitting train and test data in ratio 75:25
+((31660, 302), (31660, 2), (10554, 302), (10554, 2))
+Saving test and train data
+
+Working with full dataset initially
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Full Dataset error is 0.214516
+
+
+Now testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'district')
+('Features Removed : ', ['district'])
+('Train dataset : ', (25328, 301), (25328, 2))
+('Test dataset : ', (10553, 301), (10553, 2))
+('Validation Dataset : ', (6333, 301), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : district : 0.222212
+Time taken : 2.8677971681 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'rural')
+('Features Removed : ', ['rural'])
+('Train dataset : ', (25328, 300), (25328, 2))
+('Test dataset : ', (10553, 300), (10553, 2))
+('Validation Dataset : ', (6333, 300), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : rural : 0.221075
+Time taken : 2.86185239951 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'sex')
+('Features Removed : ', ['sex'])
+('Train dataset : ', (25328, 300), (25328, 2))
+('Test dataset : ', (10553, 300), (10553, 2))
+('Validation Dataset : ', (6333, 300), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : sex : 0.219274
+Time taken : 2.86110278368 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'usual_residance')
+('Features Removed : ', ['usual_residance'])
+('Train dataset : ', (25328, 301), (25328, 2))
+('Test dataset : ', (10553, 301), (10553, 2))
+('Validation Dataset : ', (6333, 301), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : usual_residance : 0.221264
+Time taken : 2.85993413528 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'age')
+('Features Removed : ', ['age'])
+('Train dataset : ', (25328, 301), (25328, 2))
+('Test dataset : ', (10553, 301), (10553, 2))
+('Validation Dataset : ', (6333, 301), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : age : 0.247797
+Time taken : 2.85863625209 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'religion')
+('Features Removed : ', ['religion'])
+('Train dataset : ', (25328, 295), (25328, 2))
+('Test dataset : ', (10553, 295), (10553, 2))
+('Validation Dataset : ', (6333, 295), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : religion : 0.214631
+Time taken : 2.85243791739 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'social_group_code')
+('Features Removed : ', ['social_group_code'])
+('Train dataset : ', (25328, 299), (25328, 2))
+('Test dataset : ', (10553, 299), (10553, 2))
+('Validation Dataset : ', (6333, 299), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : social_group_code : 0.219748
+Time taken : 2.86168680191 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'marital_status')
+('Features Removed : ', ['marital_status'])
+('Train dataset : ', (25328, 294), (25328, 2))
+('Test dataset : ', (10553, 294), (10553, 2))
+('Validation Dataset : ', (6333, 294), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : marital_status : 0.226571
+Time taken : 2.85340133111 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'currently_attending_school')
+('Features Removed : ', ['currently_attending_school'])
+('Train dataset : ', (25328, 299), (25328, 2))
+('Test dataset : ', (10553, 299), (10553, 2))
+('Validation Dataset : ', (6333, 299), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : currently_attending_school : 0.219748
+Time taken : 2.85742581685 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'reason_for_not_attending_school')
+('Features Removed : ', ['reason_for_not_attending_school'])
+('Train dataset : ', (25328, 293), (25328, 2))
+('Test dataset : ', (10553, 293), (10553, 2))
+('Validation Dataset : ', (6333, 293), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : reason_for_not_attending_school : 0.217948
+Time taken : 2.84347831806 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'highest_qualification')
+('Features Removed : ', ['highest_qualification'])
+('Train dataset : ', (25328, 292), (25328, 2))
+('Test dataset : ', (10553, 292), (10553, 2))
+('Validation Dataset : ', (6333, 292), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : highest_qualification : 0.226192
+Time taken : 2.83656458457 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'occupation_status')
+('Features Removed : ', ['occupation_status'])
+('Train dataset : ', (25328, 287), (25328, 2))
+('Test dataset : ', (10553, 287), (10553, 2))
+('Validation Dataset : ', (6333, 287), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : occupation_status : 0.215579
+Time taken : 2.82687278191 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'disability_status')
+('Features Removed : ', ['disability_status'])
+('Train dataset : ', (25328, 294), (25328, 2))
+('Test dataset : ', (10553, 294), (10553, 2))
+('Validation Dataset : ', (6333, 294), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : disability_status : 0.2188
+Time taken : 2.84471021891 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'injury_treatment_type')
+('Features Removed : ', ['injury_treatment_type'])
+('Train dataset : ', (25328, 294), (25328, 2))
+('Test dataset : ', (10553, 294), (10553, 2))
+('Validation Dataset : ', (6333, 294), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : injury_treatment_type : 0.204776
+Time taken : 2.84419920047 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'illness_type')
+('Features Removed : ', ['illness_type'])
+('Train dataset : ', (25328, 292), (25328, 2))
+('Test dataset : ', (10553, 292), (10553, 2))
+('Validation Dataset : ', (6333, 292), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : illness_type : 0.22297
+Time taken : 2.82044763565 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'treatment_source')
+('Features Removed : ', ['treatment_source'])
+('Train dataset : ', (25328, 273), (25328, 2))
+('Test dataset : ', (10553, 273), (10553, 2))
+('Validation Dataset : ', (6333, 273), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : treatment_source : 0.244101
+Time taken : 2.79328543345 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'symptoms_pertaining_illness')
+('Features Removed : ', ['symptoms_pertaining_illness'])
+('Train dataset : ', (25328, 288), (25328, 2))
+('Test dataset : ', (10553, 288), (10553, 2))
+('Validation Dataset : ', (6333, 288), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : symptoms_pertaining_illness : 0.274803
+Time taken : 2.82057716846 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'sought_medical_care')
+('Features Removed : ', ['sought_medical_care'])
+('Train dataset : ', (25328, 299), (25328, 2))
+('Test dataset : ', (10553, 299), (10553, 2))
+('Validation Dataset : ', (6333, 299), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : sought_medical_care : 0.22695
+Time taken : 2.85347230037 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'diagnosed_for')
+('Features Removed : ', ['diagnosed_for'])
+('Train dataset : ', (25328, 302), (25328, 2))
+('Test dataset : ', (10553, 302), (10553, 2))
+('Validation Dataset : ', (6333, 302), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : diagnosed_for : 0.216526
+Time taken : 2.85446233352 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'diagnosis_source')
+('Features Removed : ', ['diagnosis_source'])
+('Train dataset : ', (25328, 288), (25328, 2))
+('Test dataset : ', (10553, 288), (10553, 2))
+('Validation Dataset : ', (6333, 288), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : diagnosis_source : 0.224391
+Time taken : 2.82350310087 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'regular_treatment')
+('Features Removed : ', ['regular_treatment'])
+('Train dataset : ', (25328, 284), (25328, 2))
+('Test dataset : ', (10553, 284), (10553, 2))
+('Validation Dataset : ', (6333, 284), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : regular_treatment : 0.227139
+Time taken : 2.81469434897 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'regular_treatment_source')
+('Features Removed : ', ['regular_treatment_source'])
+('Train dataset : ', (25328, 287), (25328, 2))
+('Test dataset : ', (10553, 287), (10553, 2))
+('Validation Dataset : ', (6333, 287), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : regular_treatment_source : 0.217189
+Time taken : 2.82706288497 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'chew')
+('Features Removed : ', ['chew'])
+('Train dataset : ', (25328, 295), (25328, 2))
+('Test dataset : ', (10553, 295), (10553, 2))
+('Validation Dataset : ', (6333, 295), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : chew : 0.225907
+Time taken : 2.85007297993 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'smoke')
+('Features Removed : ', ['smoke'])
+('Train dataset : ', (25328, 298), (25328, 2))
+('Test dataset : ', (10553, 298), (10553, 2))
+('Validation Dataset : ', (6333, 298), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : smoke : 0.203544
+Time taken : 2.84745138089 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'alcohol')
+('Features Removed : ', ['alcohol'])
+('Train dataset : ', (25328, 298), (25328, 2))
+('Test dataset : ', (10553, 298), (10553, 2))
+('Validation Dataset : ', (6333, 298), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : alcohol : 0.215294
+Time taken : 2.85305209955 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'house_status')
+('Features Removed : ', ['house_status'])
+('Train dataset : ', (25328, 298), (25328, 2))
+('Test dataset : ', (10553, 298), (10553, 2))
+('Validation Dataset : ', (6333, 298), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : house_status : 0.217095
+Time taken : 2.85452121894 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'house_structure')
+('Features Removed : ', ['house_structure'])
+('Train dataset : ', (25328, 298), (25328, 2))
+('Test dataset : ', (10553, 298), (10553, 2))
+('Validation Dataset : ', (6333, 298), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : house_structure : 0.218516
+Time taken : 2.85239725113 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'owner_status')
+('Features Removed : ', ['owner_status'])
+('Train dataset : ', (25328, 299), (25328, 2))
+('Test dataset : ', (10553, 299), (10553, 2))
+('Validation Dataset : ', (6333, 299), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : owner_status : 0.224675
+Time taken : 2.85243821541 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'drinking_water_source')
+('Features Removed : ', ['drinking_water_source'])
+('Train dataset : ', (25328, 293), (25328, 2))
+('Test dataset : ', (10553, 293), (10553, 2))
+('Validation Dataset : ', (6333, 293), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : drinking_water_source : 0.224581
+Time taken : 2.84556948344 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_water_filter')
+('Features Removed : ', ['is_water_filter'])
+('Train dataset : ', (25328, 300), (25328, 2))
+('Test dataset : ', (10553, 300), (10553, 2))
+('Validation Dataset : ', (6333, 300), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : is_water_filter : 0.240879
+Time taken : 2.8490135471 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'water_filteration')
+('Features Removed : ', ['water_filteration'])
+('Train dataset : ', (25328, 294), (25328, 2))
+('Test dataset : ', (10553, 294), (10553, 2))
+('Validation Dataset : ', (6333, 294), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : water_filteration : 0.23472
+Time taken : 2.84171359936 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'toilet_used')
+('Features Removed : ', ['toilet_used'])
+('Train dataset : ', (25328, 292), (25328, 2))
+('Test dataset : ', (10553, 292), (10553, 2))
+('Validation Dataset : ', (6333, 292), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : toilet_used : 0.216526
+Time taken : 2.83938256502 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_toilet_shared')
+('Features Removed : ', ['is_toilet_shared'])
+('Train dataset : ', (25328, 300), (25328, 2))
+('Test dataset : ', (10553, 300), (10553, 2))
+('Validation Dataset : ', (6333, 300), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : is_toilet_shared : 0.218895
+Time taken : 2.85817359686 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'household_have_electricity')
+('Features Removed : ', ['household_have_electricity'])
+('Train dataset : ', (25328, 300), (25328, 2))
+('Test dataset : ', (10553, 300), (10553, 2))
+('Validation Dataset : ', (6333, 300), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : household_have_electricity : 0.227897
+Time taken : 2.86092773676 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'lighting_source')
+('Features Removed : ', ['lighting_source'])
+('Train dataset : ', (25328, 296), (25328, 2))
+('Test dataset : ', (10553, 296), (10553, 2))
+('Validation Dataset : ', (6333, 296), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : lighting_source : 0.217758
+Time taken : 2.84951046705 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'cooking_fuel')
+('Features Removed : ', ['cooking_fuel'])
+('Train dataset : ', (25328, 292), (25328, 2))
+('Test dataset : ', (10553, 292), (10553, 2))
+('Validation Dataset : ', (6333, 292), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : cooking_fuel : 0.218421
+Time taken : 2.84709801674 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'kitchen_availability')
+('Features Removed : ', ['kitchen_availability'])
+('Train dataset : ', (25328, 297), (25328, 2))
+('Test dataset : ', (10553, 297), (10553, 2))
+('Validation Dataset : ', (6333, 297), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : kitchen_availability : 0.226665
+Time taken : 2.8548132817 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_radio')
+('Features Removed : ', ['is_radio'])
+('Train dataset : ', (25328, 300), (25328, 2))
+('Test dataset : ', (10553, 300), (10553, 2))
+('Validation Dataset : ', (6333, 300), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : is_radio : 0.222496
+Time taken : 2.86222170194 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_television')
+('Features Removed : ', ['is_television'])
+('Train dataset : ', (25328, 300), (25328, 2))
+('Test dataset : ', (10553, 300), (10553, 2))
+('Validation Dataset : ', (6333, 300), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : is_television : 0.218137
+Time taken : 2.8613388141 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_computer')
+('Features Removed : ', ['is_computer'])
+('Train dataset : ', (25328, 299), (25328, 2))
+('Test dataset : ', (10553, 299), (10553, 2))
+('Validation Dataset : ', (6333, 299), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : is_computer : 0.220317
+Time taken : 2.85643270016 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_telephone')
+('Features Removed : ', ['is_telephone'])
+('Train dataset : ', (25328, 298), (25328, 2))
+('Test dataset : ', (10553, 298), (10553, 2))
+('Validation Dataset : ', (6333, 298), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : is_telephone : 0.226286
+Time taken : 2.853959167 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_washing_machine')
+('Features Removed : ', ['is_washing_machine'])
+('Train dataset : ', (25328, 300), (25328, 2))
+('Test dataset : ', (10553, 300), (10553, 2))
+('Validation Dataset : ', (6333, 300), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : is_washing_machine : 0.221927
+Time taken : 2.85648216804 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_refrigerator')
+('Features Removed : ', ['is_refrigerator'])
+('Train dataset : ', (25328, 300), (25328, 2))
+('Test dataset : ', (10553, 300), (10553, 2))
+('Validation Dataset : ', (6333, 300), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : is_refrigerator : 0.221264
+Time taken : 2.85722600222 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_sewing_machine')
+('Features Removed : ', ['is_sewing_machine'])
+('Train dataset : ', (25328, 300), (25328, 2))
+('Test dataset : ', (10553, 300), (10553, 2))
+('Validation Dataset : ', (6333, 300), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : is_sewing_machine : 0.22676
+Time taken : 2.85349669854 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_bicycle')
+('Features Removed : ', ['is_bicycle'])
+('Train dataset : ', (25328, 300), (25328, 2))
+('Test dataset : ', (10553, 300), (10553, 2))
+('Validation Dataset : ', (6333, 300), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : is_bicycle : 0.239742
+Time taken : 2.85871616602 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_scooter')
+('Features Removed : ', ['is_scooter'])
+('Train dataset : ', (25328, 300), (25328, 2))
+('Test dataset : ', (10553, 300), (10553, 2))
+('Validation Dataset : ', (6333, 300), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : is_scooter : 0.252061
+Time taken : 2.85274993181 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_car')
+('Features Removed : ', ['is_car'])
+('Train dataset : ', (25328, 300), (25328, 2))
+('Test dataset : ', (10553, 300), (10553, 2))
+('Validation Dataset : ', (6333, 300), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : is_car : 0.222591
+Time taken : 2.85888326565 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_tractor')
+('Features Removed : ', ['is_tractor'])
+('Train dataset : ', (25328, 300), (25328, 2))
+('Test dataset : ', (10553, 300), (10553, 2))
+('Validation Dataset : ', (6333, 300), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : is_tractor : 0.21899
+Time taken : 2.85523670117 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_water_pump')
+('Features Removed : ', ['is_water_pump'])
+('Train dataset : ', (25328, 300), (25328, 2))
+('Test dataset : ', (10553, 300), (10553, 2))
+('Validation Dataset : ', (6333, 300), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : is_water_pump : 0.212546
+Time taken : 2.8539645195 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'cart')
+('Features Removed : ', ['cart'])
+('Train dataset : ', (25328, 298), (25328, 2))
+('Test dataset : ', (10553, 298), (10553, 2))
+('Validation Dataset : ', (6333, 298), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : cart : 0.218421
+Time taken : 2.84991556406 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'land_possessed')
+('Features Removed : ', ['land_possessed'])
+('Train dataset : ', (25328, 296), (25328, 2))
+('Test dataset : ', (10553, 296), (10553, 2))
+('Validation Dataset : ', (6333, 296), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : land_possessed : 0.22496
+Time taken : 2.85482806365 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'residancial_status')
+('Features Removed : ', ['residancial_status'])
+('Train dataset : ', (25328, 298), (25328, 2))
+('Test dataset : ', (10553, 298), (10553, 2))
+('Validation Dataset : ', (6333, 298), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : residancial_status : 0.21501
+Time taken : 2.85516741673 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'iscoveredbyhealthscheme')
+('Features Removed : ', ['iscoveredbyhealthscheme'])
+('Train dataset : ', (25328, 299), (25328, 2))
+('Test dataset : ', (10553, 299), (10553, 2))
+('Validation Dataset : ', (6333, 299), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : iscoveredbyhealthscheme : 0.223444
+Time taken : 2.85390899976 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'healthscheme_1')
+('Features Removed : ', ['healthscheme_1'])
+('Train dataset : ', (25328, 294), (25328, 2))
+('Test dataset : ', (10553, 294), (10553, 2))
+('Validation Dataset : ', (6333, 294), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : healthscheme_1 : 0.21899
+Time taken : 2.84111404816 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'healthscheme_2')
+('Features Removed : ', ['healthscheme_2'])
+('Train dataset : ', (25328, 294), (25328, 2))
+('Test dataset : ', (10553, 294), (10553, 2))
+('Validation Dataset : ', (6333, 294), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : healthscheme_2 : 0.218895
+Time taken : 2.84689748685 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'housestatus')
+('Features Removed : ', ['housestatus'])
+('Train dataset : ', (25328, 300), (25328, 2))
+('Test dataset : ', (10553, 300), (10553, 2))
+('Validation Dataset : ', (6333, 300), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : housestatus : 0.229129
+Time taken : 2.85817568302 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'householdstatus')
+('Features Removed : ', ['householdstatus'])
+('Train dataset : ', (25328, 296), (25328, 2))
+('Test dataset : ', (10553, 296), (10553, 2))
+('Validation Dataset : ', (6333, 296), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : householdstatus : 0.223065
+Time taken : 2.84959880114 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'as_binned')
+('Features Removed : ', ['as_binned'])
+('Train dataset : ', (25328, 297), (25328, 2))
+('Test dataset : ', (10553, 297), (10553, 2))
+('Validation Dataset : ', (6333, 297), (6333, 2))
+('epoch no is ', 0)
+('epoch no is ', 100)
+('epoch no is ', 200)
+('epoch no is ', 300)
+('epoch no is ', 400)
+('epoch no is ', 500)
+('epoch no is ', 600)
+('epoch no is ', 700)
+('epoch no is ', 800)
+('epoch no is ', 900)
+Error for feature : as_binned : 0.222022
+Time taken : 2.85474160115 minutes
+
+
+-------------------------
+-------------------------
+{'water_filteration': 0.23471999, 'chew': 0.22590733, 'is_radio': 0.222496, 'symptoms_pertaining_illness': 0.2748034, 'is_water_pump': 0.21254621, 'drinking_water_source': 0.22458071, 'is_toilet_shared': 0.21889512, 'sex': 0.21927416, 'reason_for_not_attending_school': 0.21794754, 'is_tractor': 0.21898989, 'household_have_electricity': 0.22789732, 'NONE': 0.21451581, 'alcohol': 0.21529423, 'district': 0.22221169, 'is_telephone': 0.22628638, 'land_possessed': 0.22495973, 'house_status': 0.21709467, 'social_group_code': 0.21974796, 'highest_qualification': 0.22619164, 'is_television': 0.21813704, 'religion': 0.21463093, 'residancial_status': 0.21500996, 'rural': 0.2210746, 'toilet_used': 0.21652612, 'iscoveredbyhealthscheme': 0.2234436, 'sought_medical_care': 0.22694971, 'injury_treatment_type': 0.2047759, 'housestatus': 0.2291292, 'is_computer': 0.22031651, 'is_scooter': 0.25206104, 'diagnosis_source': 0.22439119, 'healthscheme_2': 0.21889514, 'cart': 0.21842134, 'regular_treatment': 0.22713922, 'is_sewing_machine': 0.22676018, 'kitchen_availability': 0.22666541, 'illness_type': 0.22296979, 'is_bicycle': 0.23974225, 'is_water_filter': 0.2408794, 'lighting_source': 0.217758, 'as_binned': 0.22202219, 'cooking_fuel': 0.21842134, 'owner_status': 0.22467546, 'treatment_source': 0.24410123, 'is_refrigerator': 0.22126412, 'householdstatus': 0.22306454, 'healthscheme_1': 0.21898988, 'house_structure': 0.21851608, 'age': 0.24779685, 'marital_status': 0.22657067, 'currently_attending_school': 0.21974798, 'is_car': 0.22259074, 'diagnosed_for': 0.21652614, 'smoke': 0.20354405, 'occupation_status': 0.21557853, 'usual_residance': 0.22126411, 'disability_status': 0.21880037, 'is_washing_machine': 0.22192743, 'regular_treatment_source': 0.21718945}

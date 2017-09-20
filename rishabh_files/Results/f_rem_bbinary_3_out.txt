@@ -1,0 +1,604 @@
+===============================
+324522.hn1.hpc.iitd.ac.in
+gpu012.hpc.iitd.ac.in
+===============================
+------------------------------------------------------
+PART - 1 : Remove Yellow Field Columns form CSV File
+Yellow Fields already removed. Proceeding further
+------------------------------------------------------
+PART - 2 : Preparing Data for the analysis
+Data already Processed. Moving to the next part
+------------------------------------------------------
+PART - 3 : Dividing Data in train-test split and making categorical variables
+('LABEL : ', 3.0)
+('EPOCHS : ', 1001, '  BATCH_SIZE : ', 1024)
+
+
+Now testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'district')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['district'])
+('Train : ', (73221, 301), (73221, 2))
+('Test : ', (30509, 301), (30509, 2))
+('Valid : ', (18306, 301), (18306, 2))
+Error for feature : district : 0.0761742
+Time taken : 8.6817794323 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'rural')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['rural'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+Error for feature : rural : 0.0767315
+Time taken : 8.65024715265 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'sex')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['sex'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+Error for feature : sex : 0.0968894
+Time taken : 8.64583489895 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'usual_residance')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['usual_residance'])
+('Train : ', (73221, 301), (73221, 2))
+('Test : ', (30509, 301), (30509, 2))
+('Valid : ', (18306, 301), (18306, 2))
+Error for feature : usual_residance : 0.0749615
+Time taken : 8.57081538439 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'age')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['age'])
+('Train : ', (73221, 301), (73221, 2))
+('Test : ', (30509, 301), (30509, 2))
+('Valid : ', (18306, 301), (18306, 2))
+Error for feature : age : 0.0656528
+Time taken : 8.60706128279 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'religion')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['religion'])
+('Train : ', (73221, 295), (73221, 2))
+('Test : ', (30509, 295), (30509, 2))
+('Valid : ', (18306, 295), (18306, 2))
+Error for feature : religion : 0.081058
+Time taken : 8.51943010092 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'social_group_code')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['social_group_code'])
+('Train : ', (73221, 299), (73221, 2))
+('Test : ', (30509, 299), (30509, 2))
+('Valid : ', (18306, 299), (18306, 2))
+Error for feature : social_group_code : 0.0730932
+Time taken : 9.73544743458 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'marital_status')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['marital_status'])
+('Train : ', (73221, 294), (73221, 2))
+('Test : ', (30509, 294), (30509, 2))
+('Valid : ', (18306, 294), (18306, 2))
+Error for feature : marital_status : 0.0763709
+Time taken : 10.6344587644 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'currently_attending_school')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['currently_attending_school'])
+('Train : ', (73221, 299), (73221, 2))
+('Test : ', (30509, 299), (30509, 2))
+('Valid : ', (18306, 299), (18306, 2))
+Error for feature : currently_attending_school : 0.071356
+Time taken : 11.1610578497 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'reason_for_not_attending_school')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['reason_for_not_attending_school'])
+('Train : ', (73221, 293), (73221, 2))
+('Test : ', (30509, 293), (30509, 2))
+('Valid : ', (18306, 293), (18306, 2))
+Error for feature : reason_for_not_attending_school : 0.0760759
+Time taken : 10.4993045171 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'highest_qualification')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['highest_qualification'])
+('Train : ', (73221, 292), (73221, 2))
+('Test : ', (30509, 292), (30509, 2))
+('Valid : ', (18306, 292), (18306, 2))
+Error for feature : highest_qualification : 0.0716182
+Time taken : 10.8417788148 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'occupation_status')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['occupation_status'])
+('Train : ', (73221, 287), (73221, 2))
+('Test : ', (30509, 287), (30509, 2))
+('Valid : ', (18306, 287), (18306, 2))
+Error for feature : occupation_status : 0.0755515
+Time taken : 11.0221930504 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'disability_status')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['disability_status'])
+('Train : ', (73221, 294), (73221, 2))
+('Test : ', (30509, 294), (30509, 2))
+('Valid : ', (18306, 294), (18306, 2))
+Error for feature : disability_status : 0.0749943
+Time taken : 11.0772363663 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'injury_treatment_type')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['injury_treatment_type'])
+('Train : ', (73221, 294), (73221, 2))
+('Test : ', (30509, 294), (30509, 2))
+('Valid : ', (18306, 294), (18306, 2))
+Error for feature : injury_treatment_type : 0.0717821
+Time taken : 11.0563613852 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'illness_type')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['illness_type'])
+('Train : ', (73221, 292), (73221, 2))
+('Test : ', (30509, 292), (30509, 2))
+('Valid : ', (18306, 292), (18306, 2))
+Error for feature : illness_type : 0.0723721
+Time taken : 11.1122434696 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'treatment_source')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['treatment_source'])
+('Train : ', (73221, 273), (73221, 2))
+('Test : ', (30509, 273), (30509, 2))
+('Valid : ', (18306, 273), (18306, 2))
+Error for feature : treatment_source : 0.0849913
+Time taken : 10.9868135134 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'symptoms_pertaining_illness')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['symptoms_pertaining_illness'])
+('Train : ', (73221, 288), (73221, 2))
+('Test : ', (30509, 288), (30509, 2))
+('Valid : ', (18306, 288), (18306, 2))
+Error for feature : symptoms_pertaining_illness : 0.0762398
+Time taken : 10.0370831688 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'sought_medical_care')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['sought_medical_care'])
+('Train : ', (73221, 299), (73221, 2))
+('Test : ', (30509, 299), (30509, 2))
+('Valid : ', (18306, 299), (18306, 2))
+Error for feature : sought_medical_care : 0.0720443
+Time taken : 10.5431418816 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'diagnosed_for')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', [])
+('Train : ', (73221, 302), (73221, 2))
+('Test : ', (30509, 302), (30509, 2))
+('Valid : ', (18306, 302), (18306, 2))
+Error for feature : diagnosed_for : 0.0721754
+Time taken : 8.55553756555 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'diagnosis_source')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['diagnosis_source'])
+('Train : ', (73221, 288), (73221, 2))
+('Test : ', (30509, 288), (30509, 2))
+('Valid : ', (18306, 288), (18306, 2))
+Error for feature : diagnosis_source : 0.0939067
+Time taken : 8.37176568508 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'regular_treatment')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['regular_treatment'])
+('Train : ', (73221, 284), (73221, 2))
+('Test : ', (30509, 284), (30509, 2))
+('Valid : ', (18306, 284), (18306, 2))
+Error for feature : regular_treatment : 0.0814842
+Time taken : 8.26807611783 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'regular_treatment_source')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['regular_treatment_source'])
+('Train : ', (73221, 287), (73221, 2))
+('Test : ', (30509, 287), (30509, 2))
+('Valid : ', (18306, 287), (18306, 2))
+Error for feature : regular_treatment_source : 0.0852208
+Time taken : 8.31659591595 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'chew')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['chew'])
+('Train : ', (73221, 295), (73221, 2))
+('Test : ', (30509, 295), (30509, 2))
+('Valid : ', (18306, 295), (18306, 2))
+Error for feature : chew : 0.0750598
+Time taken : 8.32034913301 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'smoke')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['smoke'])
+('Train : ', (73221, 298), (73221, 2))
+('Test : ', (30509, 298), (30509, 2))
+('Valid : ', (18306, 298), (18306, 2))
+Error for feature : smoke : 0.107018
+Time taken : 8.40134958426 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'alcohol')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['alcohol'])
+('Train : ', (73221, 298), (73221, 2))
+('Test : ', (30509, 298), (30509, 2))
+('Valid : ', (18306, 298), (18306, 2))
+Error for feature : alcohol : 0.0767642
+Time taken : 8.67381324768 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'house_status')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['house_status'])
+('Train : ', (73221, 298), (73221, 2))
+('Test : ', (30509, 298), (30509, 2))
+('Valid : ', (18306, 298), (18306, 2))
+Error for feature : house_status : 0.0780425
+Time taken : 9.26992066701 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'house_structure')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['house_structure'])
+('Train : ', (73221, 298), (73221, 2))
+('Test : ', (30509, 298), (30509, 2))
+('Valid : ', (18306, 298), (18306, 2))
+Error for feature : house_structure : 0.0821397
+Time taken : 8.61878733635 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'owner_status')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['owner_status'])
+('Train : ', (73221, 299), (73221, 2))
+('Test : ', (30509, 299), (30509, 2))
+('Valid : ', (18306, 299), (18306, 2))
+Error for feature : owner_status : 0.0758465
+Time taken : 8.60625329812 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'drinking_water_source')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['drinking_water_source'])
+('Train : ', (73221, 293), (73221, 2))
+('Test : ', (30509, 293), (30509, 2))
+('Valid : ', (18306, 293), (18306, 2))
+Error for feature : drinking_water_source : 0.0850241
+Time taken : 8.54977543354 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_water_filter')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_water_filter'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+Error for feature : is_water_filter : 0.0761087
+Time taken : 8.61339094639 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'water_filteration')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['water_filteration'])
+('Train : ', (73221, 294), (73221, 2))
+('Test : ', (30509, 294), (30509, 2))
+('Valid : ', (18306, 294), (18306, 2))
+Error for feature : water_filteration : 0.0760431
+Time taken : 8.56665988366 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'toilet_used')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['toilet_used'])
+('Train : ', (73221, 292), (73221, 2))
+('Test : ', (30509, 292), (30509, 2))
+('Valid : ', (18306, 292), (18306, 2))
+Error for feature : toilet_used : 0.077387
+Time taken : 8.54325596491 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_toilet_shared')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_toilet_shared'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+Error for feature : is_toilet_shared : 0.0720115
+Time taken : 8.96013661623 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'household_have_electricity')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['household_have_electricity'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+Error for feature : household_have_electricity : 0.0711593
+Time taken : 10.3094663858 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'lighting_source')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['lighting_source'])
+('Train : ', (73221, 296), (73221, 2))
+('Test : ', (30509, 296), (30509, 2))
+('Valid : ', (18306, 296), (18306, 2))
+Error for feature : lighting_source : 0.0735521
+Time taken : 10.6047848821 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'cooking_fuel')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['cooking_fuel'])
+('Train : ', (73221, 292), (73221, 2))
+('Test : ', (30509, 292), (30509, 2))
+('Valid : ', (18306, 292), (18306, 2))
+Error for feature : cooking_fuel : 0.0851552
+Time taken : 10.6070967476 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'kitchen_availability')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['kitchen_availability'])
+('Train : ', (73221, 297), (73221, 2))
+('Test : ', (30509, 297), (30509, 2))
+('Valid : ', (18306, 297), (18306, 2))
+Error for feature : kitchen_availability : 0.0752565
+Time taken : 10.6107183337 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_radio')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_radio'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+Error for feature : is_radio : 0.0718804
+Time taken : 9.44666966597 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_television')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_television'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+Error for feature : is_television : 0.0980039
+Time taken : 10.6787894805 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_computer')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_computer'])
+('Train : ', (73221, 299), (73221, 2))
+('Test : ', (30509, 299), (30509, 2))
+('Valid : ', (18306, 299), (18306, 2))
+Error for feature : is_computer : 0.0725032
+Time taken : 10.6260166168 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_telephone')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_telephone'])
+('Train : ', (73221, 298), (73221, 2))
+('Test : ', (30509, 298), (30509, 2))
+('Valid : ', (18306, 298), (18306, 2))
+Error for feature : is_telephone : 0.0743715
+Time taken : 9.36003044844 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_washing_machine')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_washing_machine'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+Error for feature : is_washing_machine : 0.0747648
+Time taken : 9.08097436428 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_refrigerator')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_refrigerator'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+Error for feature : is_refrigerator : 0.0995772
+Time taken : 10.6725368659 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_sewing_machine')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_sewing_machine'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+Error for feature : is_sewing_machine : 0.0718476
+Time taken : 10.7108280182 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_bicycle')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_bicycle'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+Error for feature : is_bicycle : 0.0776164
+Time taken : 10.6702507496 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_scooter')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_scooter'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+Error for feature : is_scooter : 0.0742732
+Time taken : 9.48875578245 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_car')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_car'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+Error for feature : is_car : 0.0715199
+Time taken : 10.634677732 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_tractor')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_tractor'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+Error for feature : is_tractor : 0.0700777
+Time taken : 10.6031327327 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'is_water_pump')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['is_water_pump'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+Error for feature : is_water_pump : 0.0850569
+Time taken : 10.568259418 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'cart')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['cart'])
+('Train : ', (73221, 298), (73221, 2))
+('Test : ', (30509, 298), (30509, 2))
+('Valid : ', (18306, 298), (18306, 2))
+Error for feature : cart : 0.0740437
+Time taken : 10.7072594643 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'land_possessed')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['land_possessed'])
+('Train : ', (73221, 296), (73221, 2))
+('Test : ', (30509, 296), (30509, 2))
+('Valid : ', (18306, 296), (18306, 2))
+Error for feature : land_possessed : 0.0706021
+Time taken : 10.7435327013 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'residancial_status')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['residancial_status'])
+('Train : ', (73221, 298), (73221, 2))
+('Test : ', (30509, 298), (30509, 2))
+('Valid : ', (18306, 298), (18306, 2))
+Error for feature : residancial_status : 0.0751909
+Time taken : 10.5777384996 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'iscoveredbyhealthscheme')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['iscoveredbyhealthscheme'])
+('Train : ', (73221, 299), (73221, 2))
+('Test : ', (30509, 299), (30509, 2))
+('Valid : ', (18306, 299), (18306, 2))
+Error for feature : iscoveredbyhealthscheme : 0.0729293
+Time taken : 10.38100245 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'healthscheme_1')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['healthscheme_1'])
+('Train : ', (73221, 294), (73221, 2))
+('Test : ', (30509, 294), (30509, 2))
+('Valid : ', (18306, 294), (18306, 2))
+Error for feature : healthscheme_1 : 0.0846635
+Time taken : 10.5736249169 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'healthscheme_2')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['healthscheme_2'])
+('Train : ', (73221, 294), (73221, 2))
+('Test : ', (30509, 294), (30509, 2))
+('Valid : ', (18306, 294), (18306, 2))
+Error for feature : healthscheme_2 : 0.0764037
+Time taken : 10.6920155009 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'housestatus')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['housestatus'])
+('Train : ', (73221, 300), (73221, 2))
+('Test : ', (30509, 300), (30509, 2))
+('Valid : ', (18306, 300), (18306, 2))
+Error for feature : housestatus : 0.072241
+Time taken : 10.6257418831 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'householdstatus')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['householdstatus'])
+('Train : ', (73221, 296), (73221, 2))
+('Test : ', (30509, 296), (30509, 2))
+('Valid : ', (18306, 296), (18306, 2))
+Error for feature : householdstatus : 0.0862368
+Time taken : 10.6153589686 minutes
+
+-------------------------------------------------------
+('current feature to be ablated : ', 'as_binned')
+('Original : ', (122036, 302), (122036, 1))
+('Features Removed : ', ['as_binned'])
+('Train : ', (73221, 297), (73221, 2))
+('Test : ', (30509, 297), (30509, 2))
+('Valid : ', (18306, 297), (18306, 2))
+Error for feature : as_binned : 0.078272
+Time taken : 10.624258101 minutes
+
+
+-------------------------
+-------------------------
+{'water_filteration': 0.076043129, 'chew': 0.075059816, 'is_radio': 0.071880423, 'symptoms_pertaining_illness': 0.076239802, 'is_water_pump': 0.085056871, 'drinking_water_source': 0.085024081, 'is_toilet_shared': 0.07201153, 'sex': 0.096889436, 'reason_for_not_attending_school': 0.076075912, 'is_tractor': 0.070077688, 'household_have_electricity': 0.071159326, 'healthscheme_1': 0.084663533, 'alcohol': 0.076764226, 'district': 0.076174237, 'is_telephone': 0.074371502, 'land_possessed': 0.070602119, 'house_status': 0.078042544, 'social_group_code': 0.073093191, 'highest_qualification': 0.071618207, 'is_television': 0.098003857, 'religion': 0.081058048, 'residancial_status': 0.075190917, 'rural': 0.076731458, 'toilet_used': 0.077386998, 'iscoveredbyhealthscheme': 0.072929293, 'sought_medical_care': 0.072044306, 'injury_treatment_type': 0.071782097, 'housestatus': 0.072240978, 'is_computer': 0.072503194, 'is_scooter': 0.074273162, 'diagnosis_source': 0.093906701, 'healthscheme_2': 0.076403685, 'cart': 0.074043721, 'regular_treatment': 0.081484154, 'is_sewing_machine': 0.071847647, 'kitchen_availability': 0.075256482, 'illness_type': 0.072372079, 'is_bicycle': 0.077616438, 'is_water_filter': 0.076108687, 'lighting_source': 0.073552065, 'as_binned': 0.078271985, 'cooking_fuel': 0.085155196, 'owner_status': 0.075846463, 'treatment_source': 0.084991314, 'is_refrigerator': 0.099577159, 'householdstatus': 0.086236842, 'house_structure': 0.082139693, 'age': 0.065652758, 'marital_status': 0.076370902, 'currently_attending_school': 0.071355999, 'is_car': 0.071519881, 'diagnosed_for': 0.072175421, 'smoke': 0.10701758, 'occupation_status': 0.075551473, 'usual_residance': 0.074961483, 'disability_status': 0.074994259, 'is_washing_machine': 0.074764825, 'regular_treatment_source': 0.085220754}
+
+
+[('smoke', 0.10701758), ('is_refrigerator', 0.099577159), ('is_television', 0.098003857), ('sex', 0.096889436), ('diagnosis_source', 0.093906701), ('householdstatus', 0.086236842), ('regular_treatment_source', 0.085220754), ('cooking_fuel', 0.085155196), ('is_water_pump', 0.085056871), ('drinking_water_source', 0.085024081), ('treatment_source', 0.084991314), ('healthscheme_1', 0.084663533), ('house_structure', 0.082139693), ('regular_treatment', 0.081484154), ('religion', 0.081058048), ('as_binned', 0.078271985), ('house_status', 0.078042544), ('is_bicycle', 0.077616438), ('toilet_used', 0.077386998), ('alcohol', 0.076764226), ('rural', 0.076731458), ('healthscheme_2', 0.076403685), ('marital_status', 0.076370902), ('symptoms_pertaining_illness', 0.076239802), ('district', 0.076174237), ('is_water_filter', 0.076108687), ('reason_for_not_attending_school', 0.076075912), ('water_filteration', 0.076043129), ('owner_status', 0.075846463), ('occupation_status', 0.075551473), ('kitchen_availability', 0.075256482), ('residancial_status', 0.075190917), ('chew', 0.075059816), ('disability_status', 0.074994259), ('usual_residance', 0.074961483), ('is_washing_machine', 0.074764825), ('is_telephone', 0.074371502), ('is_scooter', 0.074273162), ('cart', 0.074043721), ('lighting_source', 0.073552065), ('social_group_code', 0.073093191), ('iscoveredbyhealthscheme', 0.072929293), ('is_computer', 0.072503194), ('illness_type', 0.072372079), ('housestatus', 0.072240978), ('diagnosed_for', 0.072175421), ('sought_medical_care', 0.072044306), ('is_toilet_shared', 0.07201153), ('is_radio', 0.071880423), ('is_sewing_machine', 0.071847647), ('injury_treatment_type', 0.071782097), ('highest_qualification', 0.071618207), ('is_car', 0.071519881), ('currently_attending_school', 0.071355999), ('household_have_electricity', 0.071159326), ('land_possessed', 0.070602119), ('is_tractor', 0.070077688), ('age', 0.065652758)]

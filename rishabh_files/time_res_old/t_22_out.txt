@@ -1,0 +1,585 @@
+===============================
+
+gpu088.hpc.iitd.ac.in
+===============================
+python -m himanshu.nn.nn_features_hotcold -state=22
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+('EPOCHS : ', 1001, '  BATCH_SIZE : ', 1024)
+('Train dataset : ', (73221, 240), (73221, 8))
+('Test dataset : ', (30509, 240), (30509, 8))
+('Validation Dataset : ', (18306, 240), (18306, 8))
+
+Working with full dataset initially
+('Epoch : ', 0)
+('Epoch : ', 100)
+('Epoch : ', 200)
+('Epoch : ', 300)
+('Epoch : ', 400)
+('Epoch : ', 500)
+('Epoch : ', 600)
+('Epoch : ', 700)
+('Epoch : ', 800)
+('Epoch : ', 900)
+('Epoch : ', 1000)
+Training Completed in 9.97238805294 minute
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 9.98498273691 minutes
+
+('Train Error : ', 0.044968299000107036)
+('Test Error : ', 0.32951733717075238)
+('Validation error is : ', 0.31082696)
+('Validation Accuracy : ', 0.6891730427742004)
+('MACRO - Precision, Recall and F-score : ', (0.5692, 0.5607, 0.5644))
+('MICRO - Precision, Recall and F-score : ', (0.6948, 0.6944, 0.6946))
+('WEIGHTED - Precision, Recall and F-score : ', (0.6947, 0.6944, 0.6941))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Full Dataset Error : ', {'weighted': (0.6947, 0.6944, 0.6941), 'valid_error': 0.31082696, 'train_error': 0.044968299000107036, 'macro': (0.5692, 0.5607, 0.5644), 'time_taken': 9.984982736905415, 'micro': (0.6948, 0.6944, 0.6946), 'test_error': 0.32951733717075238})
+
+
+Now testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Features Removed : ', ['state'])
+('Train dataset : ', (73221, 239), (73221, 8))
+('Test dataset : ', (30509, 239), (30509, 8))
+('Validation Dataset : ', (18306, 239), (18306, 8))
+('Epoch : ', 0)
+('Epoch : ', 100)
+('Epoch : ', 200)
+('Epoch : ', 300)
+('Epoch : ', 400)
+('Epoch : ', 500)
+('Epoch : ', 600)
+('Epoch : ', 700)
+('Epoch : ', 800)
+('Epoch : ', 900)
+('Epoch : ', 1000)
+Training Completed in 10.0535661181 minute
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 10.0667544484 minutes
+
+('Train Error : ', 0.043800284536891679)
+('Test Error : ', 0.32984930035713073)
+('Validation error is : ', 0.30155027)
+('Validation Accuracy : ', 0.6984497308731079)
+('MACRO - Precision, Recall and F-score : ', (0.5772, 0.5669, 0.5713))
+('MICRO - Precision, Recall and F-score : ', (0.7048, 0.7057, 0.7053))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7046, 0.7057, 0.7044))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 10.1060979327 minutes
+
+-------------------------
+-------------------------
+{'state': 0.30155027}
+---------------------------
+____________________________________________________________________________
+____________________________________________________________________________
+python -m himanshu.nn.sklearn_train -state=22 -label=1 --rand_forest
+Using Random Forest Classifier
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.06375384330749512)
+('Keep one Label time taken : ', 0.688370943069458)
+('Features Removed : ', ['state'])
+('Train : ', (30794, 239), (30794,))
+('Test : ', (8798, 239), (8798,))
+('Valid : ', (4400, 239), (4400,))
+Model Training Time taken : 0.0517623821894 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.85792225505796771)
+('Test Accuracy : ', 0.1420777449420323)
+('MACRO - Precision, Recall and F-score : ', (0.8588, 0.8579, 0.8578))
+('MICRO - Precision, Recall and F-score : ', (0.8579, 0.8579, 0.8579))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8588, 0.8579, 0.8578))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0739213665326 minutes
+
+-------------------------
+-------------------------
+{'state': 0.85792225505796771}
+---------------------------
+python -m himanshu.nn.sklearn_train -state=22 -label=2 --rand_forest
+Using Random Forest Classifier
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.06764793395996094)
+('Keep one Label time taken : ', 0.9919190406799316)
+('Features Removed : ', ['state'])
+('Train : ', (32292, 239), (32292,))
+('Test : ', (9226, 239), (9226,))
+('Valid : ', (4614, 239), (4614,))
+Model Training Time taken : 0.0555821180344 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.84251029698677649)
+('Test Accuracy : ', 0.15748970301322351)
+('MACRO - Precision, Recall and F-score : ', (0.8466, 0.8426, 0.8421))
+('MICRO - Precision, Recall and F-score : ', (0.8425, 0.8425, 0.8425))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8466, 0.8425, 0.8421))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0823627352715 minutes
+
+-------------------------
+-------------------------
+{'state': 0.84251029698677649}
+---------------------------
+python -m himanshu.nn.sklearn_train -state=22 -label=3 --rand_forest
+Using Random Forest Classifier
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.059465885162353516)
+('Keep one Label time taken : ', 0.4645371437072754)
+('Features Removed : ', ['state'])
+('Train : ', (8545, 239), (8545,))
+('Test : ', (2441, 239), (2441,))
+('Valid : ', (1222, 239), (1222,))
+Model Training Time taken : 0.011224814256 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.81401065137238837)
+('Test Accuracy : ', 0.18598934862761163)
+('MACRO - Precision, Recall and F-score : ', (0.8176, 0.8148, 0.8137))
+('MICRO - Precision, Recall and F-score : ', (0.814, 0.814, 0.814))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8181, 0.814, 0.8136))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.024452551206 minutes
+
+-------------------------
+-------------------------
+{'state': 0.81401065137238837}
+---------------------------
+python -m himanshu.nn.sklearn_train -state=22 -label=4 --rand_forest
+Using Random Forest Classifier
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05804800987243652)
+('Keep one Label time taken : ', 0.5897641181945801)
+('Features Removed : ', ['state'])
+('Train : ', (23633, 239), (23633,))
+('Test : ', (6752, 239), (6752,))
+('Valid : ', (3377, 239), (3377,))
+Model Training Time taken : 0.0339529673258 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.89588270142180093)
+('Test Accuracy : ', 0.10411729857819907)
+('MACRO - Precision, Recall and F-score : ', (0.896, 0.896, 0.8959))
+('MICRO - Precision, Recall and F-score : ', (0.8959, 0.8959, 0.8959))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8961, 0.8959, 0.8959))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0517554521561 minutes
+
+-------------------------
+-------------------------
+{'state': 0.89588270142180093}
+---------------------------
+python -m himanshu.nn.sklearn_train -state=22 -label=5 --rand_forest
+Using Random Forest Classifier
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05726909637451172)
+('Keep one Label time taken : ', 0.5409300327301025)
+('Features Removed : ', ['state'])
+('Train : ', (10327, 239), (10327,))
+('Test : ', (2950, 239), (2950,))
+('Valid : ', (1477, 239), (1477,))
+Model Training Time taken : 0.0129146019618 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.81762711864406779)
+('Test Accuracy : ', 0.18237288135593221)
+('MACRO - Precision, Recall and F-score : ', (0.8181, 0.818, 0.8176))
+('MICRO - Precision, Recall and F-score : ', (0.8176, 0.8176, 0.8176))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8184, 0.8176, 0.8176))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.028160182635 minutes
+
+-------------------------
+-------------------------
+{'state': 0.81762711864406779}
+---------------------------
+python -m himanshu.nn.sklearn_train -state=22 -label=6 --rand_forest
+Using Random Forest Classifier
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.0692300796508789)
+('Keep one Label time taken : ', 1.0285670757293701)
+('Features Removed : ', ['state'])
+('Train : ', (35707, 239), (35707,))
+('Test : ', (10202, 239), (10202,))
+('Valid : ', (5101, 239), (5101,))
+Model Training Time taken : 0.062157869339 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.88296412468143504)
+('Test Accuracy : ', 0.11703587531856496)
+('MACRO - Precision, Recall and F-score : ', (0.8842, 0.8834, 0.8829))
+('MICRO - Precision, Recall and F-score : ', (0.883, 0.883, 0.883))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8845, 0.883, 0.8829))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0904835979144 minutes
+
+-------------------------
+-------------------------
+{'state': 0.88296412468143504}
+---------------------------
+python -m himanshu.nn.sklearn_train -state=22 -label=7 --rand_forest
+Using Random Forest Classifier
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.06241488456726074)
+('Keep one Label time taken : ', 0.6601128578186035)
+('Features Removed : ', ['state'])
+('Train : ', (29549, 239), (29549,))
+('Test : ', (8442, 239), (8442,))
+('Valid : ', (4223, 239), (4223,))
+Model Training Time taken : 0.0501034498215 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.85524757166548215)
+('Test Accuracy : ', 0.14475242833451785)
+('MACRO - Precision, Recall and F-score : ', (0.8573, 0.8556, 0.8551))
+('MICRO - Precision, Recall and F-score : ', (0.8552, 0.8552, 0.8552))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8575, 0.8552, 0.8551))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0706315994263 minutes
+
+-------------------------
+-------------------------
+{'state': 0.85524757166548215}
+____________________________________________________________________________
+____________________________________________________________________________
+---------------------------
+python -m himanshu.nn.sklearn_train -state=22 -label=1
+Using Logistic Regression Classifier
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.06342101097106934)
+('Keep one Label time taken : ', 0.966649055480957)
+('Features Removed : ', ['state'])
+('Train : ', (30794, 239), (30794,))
+('Test : ', (8798, 239), (8798,))
+('Valid : ', (4400, 239), (4400,))
+Model Training Time taken : 0.0686749696732 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.73607638099568085)
+('Test Accuracy : ', 0.26392361900431915)
+('MACRO - Precision, Recall and F-score : ', (0.7363, 0.7359, 0.7359))
+('MICRO - Precision, Recall and F-score : ', (0.7361, 0.7361, 0.7361))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7363, 0.7361, 0.736))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0921235481898 minutes
+
+-------------------------
+-------------------------
+{'state': 0.73607638099568085}
+---------------------------
+python -m himanshu.nn.sklearn_train -state=22 -label=2
+Using Logistic Regression Classifier
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.06669402122497559)
+('Keep one Label time taken : ', 0.9702401161193848)
+('Features Removed : ', ['state'])
+('Train : ', (32292, 239), (32292,))
+('Test : ', (9226, 239), (9226,))
+('Valid : ', (4614, 239), (4614,))
+Model Training Time taken : 0.0473477522532 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.76577064816822027)
+('Test Accuracy : ', 0.23422935183177973)
+('MACRO - Precision, Recall and F-score : ', (0.7667, 0.7649, 0.7651))
+('MICRO - Precision, Recall and F-score : ', (0.7658, 0.7658, 0.7658))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7664, 0.7658, 0.7654))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0705606659253 minutes
+
+-------------------------
+-------------------------
+{'state': 0.76577064816822027}
+---------------------------
+python -m himanshu.nn.sklearn_train -state=22 -label=3
+Using Logistic Regression Classifier
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.059068918228149414)
+('Keep one Label time taken : ', 0.5022940635681152)
+('Features Removed : ', ['state'])
+('Train : ', (8545, 239), (8545,))
+('Test : ', (2441, 239), (2441,))
+('Valid : ', (1222, 239), (1222,))
+Model Training Time taken : 0.00867848396301 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.70258090946333474)
+('Test Accuracy : ', 0.29741909053666526)
+('MACRO - Precision, Recall and F-score : ', (0.7024, 0.7015, 0.7017))
+('MICRO - Precision, Recall and F-score : ', (0.7026, 0.7026, 0.7026))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7025, 0.7026, 0.7022))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0213073531787 minutes
+
+-------------------------
+-------------------------
+{'state': 0.70258090946333474}
+---------------------------
+python -m himanshu.nn.sklearn_train -state=22 -label=4
+Using Logistic Regression Classifier
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.06535887718200684)
+('Keep one Label time taken : ', 0.5879571437835693)
+('Features Removed : ', ['state'])
+('Train : ', (23633, 239), (23633,))
+('Test : ', (6752, 239), (6752,))
+('Valid : ', (3377, 239), (3377,))
+Model Training Time taken : 0.0285275499026 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.80746445497630337)
+('Test Accuracy : ', 0.19253554502369663)
+('MACRO - Precision, Recall and F-score : ', (0.8075, 0.8075, 0.8075))
+('MICRO - Precision, Recall and F-score : ', (0.8075, 0.8075, 0.8075))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8076, 0.8075, 0.8075))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0447199662526 minutes
+
+-------------------------
+-------------------------
+{'state': 0.80746445497630337}
+---------------------------
+python -m himanshu.nn.sklearn_train -state=22 -label=5
+Using Logistic Regression Classifier
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.06081700325012207)
+('Keep one Label time taken : ', 0.4949178695678711)
+('Features Removed : ', ['state'])
+('Train : ', (10327, 239), (10327,))
+('Test : ', (2950, 239), (2950,))
+('Valid : ', (1477, 239), (1477,))
+Model Training Time taken : 0.00667281548182 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.74542372881355934)
+('Test Accuracy : ', 0.25457627118644066)
+('MACRO - Precision, Recall and F-score : ', (0.7455, 0.7454, 0.7454))
+('MICRO - Precision, Recall and F-score : ', (0.7454, 0.7454, 0.7454))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7455, 0.7454, 0.7454))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0201626181602 minutes
+
+-------------------------
+-------------------------
+{'state': 0.74542372881355934}
+---------------------------
+python -m himanshu.nn.sklearn_train -state=22 -label=6
+Using Logistic Regression Classifier
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.057663917541503906)
+('Keep one Label time taken : ', 0.6276400089263916)
+('Features Removed : ', ['state'])
+('Train : ', (35707, 239), (35707,))
+('Test : ', (10202, 239), (10202,))
+('Valid : ', (5101, 239), (5101,))
+Model Training Time taken : 0.0564647833506 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.82003528719858854)
+('Test Accuracy : ', 0.17996471280141146)
+('MACRO - Precision, Recall and F-score : ', (0.8212, 0.8197, 0.8197))
+('MICRO - Precision, Recall and F-score : ', (0.82, 0.82, 0.82))
+('WEIGHTED - Precision, Recall and F-score : ', (0.821, 0.82, 0.8198))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0725163499514 minutes
+
+-------------------------
+-------------------------
+{'state': 0.82003528719858854}
+---------------------------
+python -m himanshu.nn.sklearn_train -state=22 -label=7
+Using Logistic Regression Classifier
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (122036, 240), (122036, 1))
+('Replace Labels time taken : ', 0.05956101417541504)
+('Keep one Label time taken : ', 0.6709139347076416)
+('Features Removed : ', ['state'])
+('Train : ', (29549, 239), (29549,))
+('Test : ', (8442, 239), (8442,))
+('Valid : ', (4223, 239), (4223,))
+Model Training Time taken : 0.0598431825638 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.76451077943615253)
+('Test Accuracy : ', 0.23548922056384747)
+('MACRO - Precision, Recall and F-score : ', (0.7653, 0.7646, 0.7644))
+('MICRO - Precision, Recall and F-score : ', (0.7645, 0.7645, 0.7645))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7653, 0.7645, 0.7644))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.0764260490735 minutes
+
+-------------------------
+-------------------------
+{'state': 0.76451077943615253}
+---------------------------
+____________________________________________________________________________
+____________________________________________________________________________
+python -m himanshu.nn.sklearn_hotcold -state=22 --rand_forest
+Using Random Forest Classifier
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+Initially doing on Full Dataset
+('Train dataset : ', (73221, 240), (73221,))
+('Test dataset : ', (30509, 240), (30509,))
+('Validation Dataset : ', (18306, 240), (18306,))
+Model Training Time taken : 0.209288581212 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.77983545838932777)
+('Test Accuracy : ', 0.22016454161067223)
+('MACRO - Precision, Recall and F-score : ', (0.8041, 0.7313, 0.7554))
+('MICRO - Precision, Recall and F-score : ', (0.7798, 0.7798, 0.7798))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7858, 0.7798, 0.7773))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (122036, 240), (122036, 1))
+('Features Removed : ', ['state'])
+('Train dataset : ', (73221, 239), (73221,))
+('Test dataset : ', (30509, 239), (30509,))
+('Validation Dataset : ', (18306, 239), (18306,))
+Model Training Time taken : 0.225907317797 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.77940935461667049)
+('Test Accuracy : ', 0.2205906453833295)
+('MACRO - Precision, Recall and F-score : ', (0.8052, 0.7307, 0.7553))
+('MICRO - Precision, Recall and F-score : ', (0.7794, 0.7794, 0.7794))
+('WEIGHTED - Precision, Recall and F-score : ', (0.7857, 0.7794, 0.7769))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 0.254912749926 minutes
+
+-------------------------
+-------------------------
+{'state': 0.77940935461667049}
+---------------------------
+python -m himanshu.nn.sklearn_hotcold -state=22
+Using Logistic Regression Classifier
+('Dataset Used : ', '22/22_AHS_COMB_diag_hotData.csv')
+('Labels Used : ', '22/22_AHS_COMB_diag_col.csv')
+Initially doing on Full Dataset
+('Train dataset : ', (73221, 240), (73221,))
+('Test dataset : ', (30509, 240), (30509,))
+('Validation Dataset : ', (18306, 240), (18306,))
+Model Training Time taken : 1.45993169943 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.53197417155593429)
+('Test Accuracy : ', 0.4680258284440657)
+('MACRO - Precision, Recall and F-score : ', (0.5073, 0.4526, 0.4504))
+('MICRO - Precision, Recall and F-score : ', (0.532, 0.532, 0.532))
+('WEIGHTED - Precision, Recall and F-score : ', (0.5236, 0.532, 0.5111))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (122036, 240), (122036, 1))
+('Features Removed : ', ['state'])
+('Train dataset : ', (73221, 239), (73221,))
+('Test dataset : ', (30509, 239), (30509,))
+('Validation Dataset : ', (18306, 239), (18306,))
+Model Training Time taken : 1.43372781674 minutes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+('Test Error : ', 0.53197417155593429)
+('Test Accuracy : ', 0.4680258284440657)
+('MACRO - Precision, Recall and F-score : ', (0.5058, 0.4525, 0.4501))
+('MICRO - Precision, Recall and F-score : ', (0.532, 0.532, 0.532))
+('WEIGHTED - Precision, Recall and F-score : ', (0.5231, 0.532, 0.511))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 1.44894779921 minutes
+
+-------------------------
+-------------------------
+{'state': 0.53197417155593429}
+---------------------------
+____________________________________________________________________________
+____________________________________________________________________________
+python -m himanshu.nn.nn_feature_binary_arg -state=22 -label=1
+---------------------------
+python -m himanshu.nn.nn_feature_binary_arg -state=22 -label=2
+---------------------------
+python -m himanshu.nn.nn_feature_binary_arg -state=22 -label=3
+---------------------------
+python -m himanshu.nn.nn_feature_binary_arg -state=22 -label=4
+---------------------------
+python -m himanshu.nn.nn_feature_binary_arg -state=22 -label=5
+---------------------------
+python -m himanshu.nn.nn_feature_binary_arg -state=22 -label=6
+---------------------------
+python -m himanshu.nn.nn_feature_binary_arg -state=22 -label=7
+--------------------------
+____________________________________________________________________________
+____________________________________________________________________________

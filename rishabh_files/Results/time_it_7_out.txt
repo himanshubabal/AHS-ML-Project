@@ -1,0 +1,86 @@
+===============================
+334653.hn1.hpc.iitd.ac.in
+gpu113.hpc.iitd.ac.in
+===============================
+python -m himanshu.nn.nn_feature_binary_arg -state=9 -label=1 --include_0
+----------------------------
+python -m himanshu.nn.nn_feature_binary_arg -state=9 -label=2 --include_0
+----------------------------
+python -m himanshu.nn.nn_feature_binary_arg -state=9 -label=3 --include_0
+('LABEL : ', 3.0, 'state : ', 9, '  Include 0 : ', True)
+('EPOCHS : ', 1001, '  BATCH_SIZE : ', 1024)
+
+
+Testing by removing one feature each time
+-------------------------------------------------------
+('current feature to be ablated : ', 'state')
+('Original : ', (1133702, 312), (1133702, 1))
+('Replace Labels time taken : ', 0.5503151416778564)
+('Keep one Label time taken : ', 106.01232481002808)
+('Features Removed : ', ['state'])
+('Train : ', (32862, 311), (32862, 2))
+('Test : ', (9389, 311), (9389, 2))
+('Valid : ', (4695, 311), (4695, 2))
+('Epoch : ', 0)
+('Epoch : ', 100)
+('Epoch : ', 200)
+('Epoch : ', 300)
+('Epoch : ', 400)
+('Epoch : ', 500)
+('Epoch : ', 600)
+('Epoch : ', 700)
+('Epoch : ', 800)
+('Epoch : ', 900)
+('Epoch : ', 1000)
+Training Completed in 3.33864345153 minute
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.34946443637 minutes
+
+('Train Error : ', 0.013223136490525603)
+('Test Error : ', 0.16425346396305227)
+('Validation error is : ', 0.16306314)
+('Validation Accuracy : ', 0.8369368612766266)
+('MACRO - Precision, Recall and F-score : ', (0.8369, 0.8369, 0.8369))
+('MICRO - Precision, Recall and F-score : ', (0.8369, 0.8369, 0.8369))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8369, 0.8369, 0.8369))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 6.36908508142 minutes
+-------------------------------------------------------
+('current feature to be ablated : ', 'district')
+('Original : ', (1133702, 312), (1133702, 1))
+('Replace Labels time taken : ', 0.5529499053955078)
+('Keep one Label time taken : ', 121.22533392906189)
+('Features Removed : ', ['district'])
+('Train : ', (32862, 311), (32862, 2))
+('Test : ', (9389, 311), (9389, 2))
+('Valid : ', (4695, 311), (4695, 2))
+('Epoch : ', 0)
+('Epoch : ', 100)
+('Epoch : ', 200)
+('Epoch : ', 300)
+('Epoch : ', 400)
+('Epoch : ', 500)
+('Epoch : ', 600)
+('Epoch : ', 700)
+('Epoch : ', 800)
+('Epoch : ', 900)
+('Epoch : ', 1000)
+Training Completed in 3.35569709937 minute
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time taken : 3.37459493478 minutes
+
+('Train Error : ', 0.015825687669185653)
+('Test Error : ', 0.17664856701106815)
+('Validation error is : ', 0.174779)
+('Validation Accuracy : ', 0.8252210021018982)
+('MACRO - Precision, Recall and F-score : ', (0.8254, 0.8252, 0.8252))
+('MICRO - Precision, Recall and F-score : ', (0.8252, 0.8252, 0.8252))
+('WEIGHTED - Precision, Recall and F-score : ', (0.8254, 0.8252, 0.8252))
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Time Taken - full : 7.04944980145 minutes
+
+-------------------------
+-------------------------
+{'state': 0.16306314, 'district': 0.174779}
+----------------------------
+python -m himanshu.nn.nn_feature_binary_arg -state=9 -label=4 --include_0

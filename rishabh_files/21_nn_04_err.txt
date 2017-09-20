@@ -1,0 +1,1192 @@
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: Tesla K40m
+major: 3 minor: 5 memoryClockRate (GHz) 0.745
+pciBusID 0000:84:00.0
+Total memory: 11.25GiB
+Free memory: 11.12GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+/var/spool/PBS/mom_priv/jobs/337520.hn1.hpc.iitd.ac.in.SC: line 31: 17494 Segmentation fault      (core dumped) python -m himanshu.nn.nn_feature_binary_arg -state=21 -label=4 --include_0
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.7.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.7.0 locally
+Using TensorFlow backend.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: Tesla K40m
+major: 3 minor: 5 memoryClockRate (GHz) 0.745
+pciBusID 0000:84:00.0
+Total memory: 11.25GiB
+Free memory: 11.12GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:84:00.0)
+*** glibc detected *** python: double free or corruption (!prev): 0x0000000001e8b880 ***
+======= Backtrace: =========
+/lib64/libc.so.6[0x30c6675e66]
+/lib64/libc.so.6[0x30c66789b3]
+python[0x506216]
+python[0x50fe6b]
+python[0x44d4eb]
+python[0x421b0b]
+python[0x44b7e7]
+python(PyDict_SetItem+0x89)[0x44ede9]
+python(_PyModule_Clear+0x14e)[0x45061e]
+python(PyImport_Cleanup+0x437)[0x4bd9e7]
+python(Py_Finalize+0xff)[0x4cb9ef]
+python(Py_Main+0x533)[0x414b23]
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x30c661ed5d]
+python[0x4141f9]
+======= Memory map: ========
+00400000-0057a000 r-xp 00000000 b5:84fa2 144118302715685793              /home/physics/btech/ph1140797/python/bin/python2.7
+0077a000-007b6000 rw-p 0017a000 b5:84fa2 144118302715685793              /home/physics/btech/ph1140797/python/bin/python2.7
+007b6000-007d7000 rw-p 00000000 00:00 0 
+01d9e000-45aa0000 rw-p 00000000 00:00 0                                  [heap]
+200000000-200100000 rw-s b66a36000 00:05 18226                           /dev/nvidiactl
+200100000-204100000 ---p 00000000 00:00 0 
+204100000-204200000 rw-s 948760000 00:05 18226                           /dev/nvidiactl
+204200000-204300000 ---p 00000000 00:00 0 
+204300000-204400000 rw-s f4410e000 00:05 18226                           /dev/nvidiactl
+204400000-204500000 ---p 00000000 00:00 0 
+204500000-204600000 rw-s 00000000 00:04 120953648                        /dev/zero (deleted)
+204600000-204800000 rw-s 00000000 00:04 120958177                        /dev/zero (deleted)
+204800000-204c00000 rw-s 00000000 00:04 120958178                        /dev/zero (deleted)
+204c00000-1b00000000 ---p 00000000 00:00 0 
+30c5e00000-30c5e20000 r-xp 00000000 08:05 263071                         /lib64/ld-2.12.so
+30c601f000-30c6020000 r--p 0001f000 08:05 263071                         /lib64/ld-2.12.so
+30c6020000-30c6021000 rw-p 00020000 08:05 263071                         /lib64/ld-2.12.so
+30c6021000-30c6022000 rw-p 00000000 00:00 0 
+30c6200000-30c6202000 r-xp 00000000 08:05 262715                         /lib64/libdl-2.12.so
+30c6202000-30c6402000 ---p 00002000 08:05 262715                         /lib64/libdl-2.12.so
+30c6402000-30c6403000 r--p 00002000 08:05 262715                         /lib64/libdl-2.12.so
+30c6403000-30c6404000 rw-p 00003000 08:05 262715                         /lib64/libdl-2.12.so
+30c6600000-30c678a000 r-xp 00000000 08:05 263068                         /lib64/libc-2.12.so
+30c678a000-30c698a000 ---p 0018a000 08:05 263068                         /lib64/libc-2.12.so
+30c698a000-30c698e000 r--p 0018a000 08:05 263068                         /lib64/libc-2.12.so
+30c698e000-30c698f000 rw-p 0018e000 08:05 263068                         /lib64/libc-2.12.so
+30c698f000-30c6994000 rw-p 00000000 00:00 0 
+30c6a00000-30c6a17000 r-xp 00000000 08:05 262946                         /lib64/libpthread-2.12.so
+30c6a17000-30c6c17000 ---p 00017000 08:05 262946                         /lib64/libpthread-2.12.so
+30c6c17000-30c6c18000 r--p 00017000 08:05 262946                         /lib64/libpthread-2.12.so
+30c6c18000-30c6c19000 rw-p 00018000 08:05 262946                         /lib64/libpthread-2.12.so
+30c6c19000-30c6c1d000 rw-p 00000000 00:00 0 
+30c6e00000-30c6e83000 r-xp 00000000 08:05 263061                         /lib64/libm-2.12.so
+30c6e83000-30c7082000 ---p 00083000 08:05 263061                         /lib64/libm-2.12.so
+30c7082000-30c7083000 r--p 00082000 08:05 263061                         /lib64/libm-2.12.so
+30c7083000-30c7084000 rw-p 00083000 08:05 263061                         /lib64/libm-2.12.so
+30c7200000-30c7207000 r-xp 00000000 08:05 262761                         /lib64/librt-2.12.so
+30c7207000-30c7406000 ---p 00007000 08:05 262761                         /lib64/librt-2.12.so
+30c7406000-30c7407000 r--p 00006000 08:05 262761                         /lib64/librt-2.12.so
+30c7407000-30c7408000 rw-p 00007000 08:05 262761                         /lib64/librt-2.12.so
+30c7e00000-30c7e16000 r-xp 00000000 08:05 262951                         /lib64/libresolv-2.12.so
+30c7e16000-30c8016000 ---p 00016000 08:05 262951                         /lib64/libresolv-2.12.so
+30c8016000-30c8017000 r--p 00016000 08:05 262951                         /lib64/libresolv-2.12.so
+30c8017000-30c8018000 rw-p 00017000 08:05 262951                         /lib64/libresolv-2.12.so
+30c8018000-30c801a000 rw-p 00000000 00:00 0 
+30c8600000-30c861d000 r-xp 00000000 08:05 262973                         /lib64/libselinux.so.1
+30c861d000-30c881c000 ---p 0001d000 08:05 262973                         /lib64/libselinux.so.1
+30c881c000-30c881d000 r--p 0001c000 08:05 262973                         /lib64/libselinux.so.1
+30c881d000-30c881e000 rw-p 0001d000 08:05 262973                         /lib64/libselinux.so.1
+30c881e000-30c881f000 rw-p 00000000 00:00 0 
+30c8e00000-30c8e02000 r-xp 00000000 08:05 263045                         /lib64/libutil-2.12.so
+30c8e02000-30c9001000 ---p 00002000 08:05 263045                         /lib64/libutil-2.12.so
+30c9001000-30c9002000 r--p 00001000 08:05 263045                         /lib64/libutil-2.12.so
+30c9002000-30c9003000 rw-p 00002000 08:05 263045                         /lib64/libutil-2.12.so
+30c9e00000-30c9e04000 r-xp 00000000 08:05 262940                         /lib64/libuuid.so.1.3.0
+30c9e04000-30ca003000 ---p 00004000 08:05 262940                         /lib64/libuuid.so.1.3.0
+30ca003000-30ca004000 rw-p 00003000 08:05 262940                         /lib64/libuuid.so.1.3.0
+30cc200000-30cc203000 r-xp 00000000 08:05 262730                         /lib64/libcom_err.so.2.1
+30cc203000-30cc402000 ---p 00003000 08:05 262730                         /lib64/libcom_err.so.2.1
+30cc402000-30cc403000 r--p 00002000 08:05 262730                         /lib64/libcom_err.so.2.1
+30cc403000-30cc404000 rw-p 00003000 08:05 262730                         /lib64/libcom_err.so.2.1
+30cc600000-30cc7b9000 r-xp 00000000 08:05 140588                         /usr/lib64/libcrypto.so.1.0.1e
+30cc7b9000-30cc9b8000 ---p 001b9000 08:05 140588                         /usr/lib64/libcrypto.so.1.0.1e
+30cc9b8000-30cc9d3000 r--p 001b8000 08:05 140588                         /usr/lib64/libcrypto.so.1.0.1e
+30cc9d3000-30cc9df000 rw-p 001d3000 08:05 140588                         /usr/lib64/libcrypto.so.1.0.1e
+30cc9df000-30cc9e3000 rw-p 00000000 00:00 0 
+30cca00000-30cca02000 r-xp 00000000 08:05 262762                         /lib64/libkeyutils.so.1.3
+30cca02000-30ccc01000 ---p 00002000 08:05 262762                         /lib64/libkeyutils.so.1.3
+30ccc01000-30ccc02000 r--p 00001000 08:05 262762                         /lib64/libkeyutils.so.1.3
+30ccc02000-30ccc03000 rw-p 00002000 08:05 262762                         /lib64/libkeyutils.so.1.3
+30cd200000-30cd20a000 r-xp 00000000 08:05 262991                         /lib64/libkrb5support.so.0.1
+30cd20a000-30cd409000 ---p 0000a000 08:05 262991                         /lib64/libkrb5support.so.0.1
+30cd409000-30cd40a000 r--p 00009000 08:05 262991                         /lib64/libkrb5support.so.0.1
+30cd40a000-30cd40b000 rw-p 0000a000 08:05 262991                         /lib64/libkrb5support.so.0.1
+30cd600000-30cd629000 r-xp 00000000 08:05 262964                         /lib64/libk5crypto.so.3.1
+30cd629000-30cd829000 ---p 00029000 08:05 262964                         /lib64/libk5crypto.so.3.1
+30cd829000-30cd82a000 r--p 00029000 08:05 262964                         /lib64/libk5crypto.so.3.1
+30cd82a000-30cd82b000 rw-p 0002a000 08:05 262964                         /lib64/libk5crypto.so.3.1
+30cd82b000-30cd82c000 rw-p 00000000 00:00 0 
+30cda00000-30cdadb000 r-xp 00000000 08:05 263114                         /lib64/libkrb5.so.3.3
+30cdadb000-30cdcda000 ---p 000db000 08:05 263114                         /lib64/libkrb5.so.3.3
+30cdcda000-30cdce4000 r--p 000da000 08:05 263114                         /lib64/libkrb5.so.3.3
+30cdce4000-30cdce6000 rw-p 000e4000 08:05 263114                         /lib64/libkrb5.so.3.3
+30ce600000-30ce641000 r-xp 00000000 08:05 262741                         /lib64/libgssapi_krb5.so.2.2
+30ce641000-30ce841000 ---p 00041000 08:05 262741                         /lib64/libgssapi_krb5.so.2.2
+30ce841000-30ce842000 r--p 00041000 08:05 262741                         /lib64/libgssapi_krb5.so.2.2
+30ce842000-30ce844000 rw-p 00042000 08:05 262741                         /lib64/libgssapi_krb5.so.2.2
+30cf200000-30cf262000 r-xp 00000000 08:05 141241                         /usr/lib64/libssl.so.1.0.1e
+30cf262000-30cf461000 ---p 00062000 08:05 141241                         /usr/lib64/libssl.so.1.0.1e
+30cf461000-30cf465000 r--p 00061000 08:05 141241                         /usr/lib64/libssl.so.1.0.1e
+30cf465000-30cf46c000 rw-p 00065000 08:05 141241                         /usr/lib64/libssl.so.1.0.1e
+2ae2167d0000-2ae2167d1000 rw-p 00000000 00:00 0 
+2ae2167e3000-2ae2168a7000 rw-p 00000000 00:00 0 
+2ae216c67000-2ae216ca7000 rw-p 00000000 00:00 0 
+2ae216cd8000-2ae216d18000 rw-p 00000000 00:00 0 
+2ae216d18000-2ae216d1c000 r-xp 00000000 b5:84fa2 144118302715690610      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_locale.so
+2ae216d1c000-2ae216f1c000 ---p 00004000 b5:84fa2 144118302715690610      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_locale.so
+2ae216f1c000-2ae216f1d000 rw-p 00004000 b5:84fa2 144118302715690610      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_locale.so
+2ae216f1d000-2ae21cdae000 r--p 00000000 08:05 276132                     /usr/lib/locale/locale-archive
+2ae21cdae000-2ae21ce2e000 rw-p 00000000 00:00 0 
+2ae21ce2e000-2ae21ce32000 r-xp 00000000 b5:84fa2 144118302715690577      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/time.so
+2ae21ce32000-2ae21d031000 ---p 00004000 b5:84fa2 144118302715690577      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/time.so
+2ae21d031000-2ae21d033000 rw-p 00003000 b5:84fa2 144118302715690577      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/time.so
+2ae21d033000-2ae21d038000 r-xp 00000000 b5:84fa2 144118302715690634      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/strop.so
+2ae21d038000-2ae21d237000 ---p 00005000 b5:84fa2 144118302715690634      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/strop.so
+2ae21d237000-2ae21d239000 rw-p 00004000 b5:84fa2 144118302715690634      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/strop.so
+2ae21d239000-2ae21d241000 r-xp 00000000 b5:84fa2 144118302715690606      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/operator.so
+2ae21d241000-2ae21d441000 ---p 00008000 b5:84fa2 144118302715690606      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/operator.so
+2ae21d441000-2ae21d443000 rw-p 00008000 b5:84fa2 144118302715690606      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/operator.so
+2ae21d639000-2ae21d679000 rw-p 00000000 00:00 0 
+2ae21d679000-2ae21d67c000 r-xp 00000000 b5:84fa2 144118302715690596      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_functools.so
+2ae21d67c000-2ae21d87b000 ---p 00003000 b5:84fa2 144118302715690596      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_functools.so
+2ae21d87b000-2ae21d87c000 rw-p 00002000 b5:84fa2 144118302715690596      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_functools.so
+2ae21d87c000-2ae21d883000 r-xp 00000000 b5:84fa2 144118302715690602      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_struct.so
+2ae21d883000-2ae21da83000 ---p 00007000 b5:84fa2 144118302715690602      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_struct.so
+2ae21da83000-2ae21da85000 rw-p 00007000 b5:84fa2 144118302715690602      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_struct.so
+2ae21da85000-2ae21da8d000 r-xp 00000000 b5:84fa2 144118302715690582      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/math.so
+2ae21da8d000-2ae21dc8c000 ---p 00008000 b5:84fa2 144118302715690582      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/math.so
+2ae21dc8c000-2ae21dc8e000 rw-p 00007000 b5:84fa2 144118302715690582      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/math.so
+2ae21de85000-2ae21dec5000 rw-p 00000000 00:00 0 
+2ae21dec5000-2ae21e090000 r-xp 00000000 b5:84fa2 144121417439404867      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/core/multiarray.so
+2ae21e090000-2ae21e28f000 ---p 001cb000 b5:84fa2 144121417439404867      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/core/multiarray.so
+2ae21e28f000-2ae21e29f000 rw-p 001ca000 b5:84fa2 144121417439404867      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/core/multiarray.so
+2ae21e29f000-2ae21e2b1000 rw-p 00000000 00:00 0 
+2ae21e2b1000-2ae21e2b4000 rw-p 00911000 b5:84fa2 144121417439404867      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/core/multiarray.so
+2ae21e2b4000-2ae21e2b7000 rw-p 00914000 b5:84fa2 144121417439404867      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/core/multiarray.so
+2ae21e2b7000-2ae2205cb000 r-xp 00000000 b5:84fa2 144121417439405326      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/.libs/libopenblasp-r0-39a31c03.2.18.so
+2ae2205cb000-2ae2207ca000 ---p 02314000 b5:84fa2 144121417439405326      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/.libs/libopenblasp-r0-39a31c03.2.18.so
+2ae2207ca000-2ae2207e9000 rw-p 02313000 b5:84fa2 144121417439405326      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/.libs/libopenblasp-r0-39a31c03.2.18.so
+2ae2207e9000-2ae22084c000 rw-p 00000000 00:00 0 
+2ae22084c000-2ae22088a000 rw-p 02425000 b5:84fa2 144121417439405326      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/.libs/libopenblasp-r0-39a31c03.2.18.so
+2ae22088a000-2ae2208c8000 rw-p 02463000 b5:84fa2 144121417439405326      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/.libs/libopenblasp-r0-39a31c03.2.18.so
+2ae2208c8000-2ae2209b8000 r-xp 00000000 b5:84fa2 144121417439405328      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/.libs/libgfortran-ed201abd.so.3.0.0
+2ae2209b8000-2ae220bb7000 ---p 000f0000 b5:84fa2 144121417439405328      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/.libs/libgfortran-ed201abd.so.3.0.0
+2ae220bb7000-2ae220bb9000 rw-p 000ef000 b5:84fa2 144121417439405328      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/.libs/libgfortran-ed201abd.so.3.0.0
+2ae220bb9000-2ae220bba000 rw-p 00000000 00:00 0 
+2ae220bba000-2ae220bc1000 rw-p 000f2000 b5:84fa2 144121417439405328      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/.libs/libgfortran-ed201abd.so.3.0.0
+2ae220bc1000-2ae220bc2000 ---p 00000000 00:00 0 
+2ae220bc2000-2ae220dc2000 rwxp 00000000 00:00 0 
+2ae220dc2000-2ae222dc2000 rw-p 00000000 00:00 0 
+2ae222dc2000-2ae222dd4000 r-xp 00000000 b5:84fa2 144118302715690571      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/datetime.so
+2ae222dd4000-2ae222fd3000 ---p 00012000 b5:84fa2 144118302715690571      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/datetime.so
+2ae222fd3000-2ae222fd7000 rw-p 00011000 b5:84fa2 144118302715690571      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/datetime.so
+2ae222fd7000-2ae22316b000 r-xp 00000000 b5:84fa2 144121417439404959      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/core/umath.so
+2ae22316b000-2ae22336b000 ---p 00194000 b5:84fa2 144121417439404959      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/core/umath.so
+2ae22336b000-2ae223371000 rw-p 00194000 b5:84fa2 144121417439404959      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/core/umath.so
+2ae223371000-2ae223373000 rw-p 00000000 00:00 0 
+2ae223373000-2ae223394000 r-xp 00000000 b5:84fa2 144118302715690619      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_ctypes.so
+2ae223394000-2ae223593000 ---p 00021000 b5:84fa2 144118302715690619      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_ctypes.so
+2ae223593000-2ae223598000 rw-p 00020000 b5:84fa2 144118302715690619      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_ctypes.so
+2ae223773000-2ae2237b3000 rw-p 00000000 00:00 0 
+2ae2237b3000-2ae2237b4000 rwxp 00000000 00:00 0 
+2ae2237b4000-2ae2237f4000 rw-p 00000000 00:00 0 
+2ae2237f4000-2ae2237fb000 r-xp 00000000 b5:84fa2 144118302715690600      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_collections.so
+2ae2237fb000-2ae2239fa000 ---p 00007000 b5:84fa2 144118302715690600      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_collections.so
+2ae2239fa000-2ae2239fc000 rw-p 00006000 b5:84fa2 144118302715690600      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_collections.so
+2ae2239fc000-2ae223a06000 r-xp 00000000 b5:84fa2 144118302715690630      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/itertools.so
+2ae223a06000-2ae223c06000 ---p 0000a000 b5:84fa2 144118302715690630      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/itertools.so
+2ae223c06000-2ae223c0b000 rw-p 0000a000 b5:84fa2 144118302715690630      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/itertools.so
+2ae223c0b000-2ae223c0e000 r-xp 00000000 b5:84fa2 144118302715690613      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_heapq.so
+2ae223c0e000-2ae223e0e000 ---p 00003000 b5:84fa2 144118302715690613      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_heapq.so
+2ae223e0e000-2ae223e10000 rw-p 00003000 b5:84fa2 144118302715690613      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_heapq.so
+2ae223e10000-2ae223e23000 r-xp 00000000 b5:84fa2 144118302715690584      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/cPickle.so
+2ae223e23000-2ae224022000 ---p 00013000 b5:84fa2 144118302715690584      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/cPickle.so
+2ae224022000-2ae224024000 rw-p 00012000 b5:84fa2 144118302715690584      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/cPickle.so
+2ae224024000-2ae224028000 r-xp 00000000 b5:84fa2 144118302715690618      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/cStringIO.so
+2ae224028000-2ae224227000 ---p 00004000 b5:84fa2 144118302715690618      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/cStringIO.so
+2ae224227000-2ae224229000 rw-p 00003000 b5:84fa2 144118302715690618      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/cStringIO.so
+2ae224229000-2ae224269000 rw-p 00000000 00:00 0 
+2ae224269000-2ae22426b000 r-xp 00000000 b5:84fa2 144118302715690617      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/grp.so
+2ae22426b000-2ae22446a000 ---p 00002000 b5:84fa2 144118302715690617      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/grp.so
+2ae22446a000-2ae22446b000 rw-p 00001000 b5:84fa2 144118302715690617      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/grp.so
+2ae224669000-2ae2246e9000 rw-p 00000000 00:00 0 
+2ae2246e9000-2ae224707000 r-xp 00000000 b5:84fa2 144118302715690620      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_io.so
+2ae224707000-2ae224906000 ---p 0001e000 b5:84fa2 144118302715690620      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_io.so
+2ae224906000-2ae224910000 rw-p 0001d000 b5:84fa2 144118302715690620      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_io.so
+2ae224910000-2ae224950000 rw-p 00000000 00:00 0 
+2ae224950000-2ae224954000 r-xp 00000000 b5:84fa2 144118302715690605      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/binascii.so
+2ae224954000-2ae224b54000 ---p 00004000 b5:84fa2 144118302715690605      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/binascii.so
+2ae224b54000-2ae224b55000 rw-p 00004000 b5:84fa2 144118302715690605      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/binascii.so
+2ae224b55000-2ae224b70000 r-xp 00000000 b5:84fa2 144117197348800741      /home/apps/ZLIB/1.2.8/gnu/lib/libz.so.1.2.8
+2ae224b70000-2ae224d70000 ---p 0001b000 b5:84fa2 144117197348800741      /home/apps/ZLIB/1.2.8/gnu/lib/libz.so.1.2.8
+2ae224d70000-2ae224d71000 rw-p 0001b000 b5:84fa2 144117197348800741      /home/apps/ZLIB/1.2.8/gnu/lib/libz.so.1.2.8
+2ae224d71000-2ae224d75000 r-xp 00000000 b5:84fa2 144118302715690588      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_hashlib.so
+2ae224d75000-2ae224f75000 ---p 00004000 b5:84fa2 144118302715690588      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_hashlib.so
+2ae224f75000-2ae224f76000 rw-p 00004000 b5:84fa2 144118302715690588      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_hashlib.so
+2ae224f76000-2ae224f79000 r-xp 00000000 b5:84fa2 144118302715690576      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_random.so
+2ae224f79000-2ae225178000 ---p 00003000 b5:84fa2 144118302715690576      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_random.so
+2ae225178000-2ae225179000 rw-p 00002000 b5:84fa2 144118302715690576      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_random.so
+2ae225179000-2ae22517b000 r-xp 00000000 b5:84fa2 144118302715690611      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/fcntl.so
+2ae22517b000-2ae22537a000 ---p 00002000 b5:84fa2 144118302715690611      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/fcntl.so
+2ae22537a000-2ae22537c000 rw-p 00001000 b5:84fa2 144118302715690611      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/fcntl.so
+2ae22537c000-2ae225380000 r-xp 00000000 b5:84fa2 144121417439404014      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/linalg/lapack_lite.so
+2ae225380000-2ae225580000 ---p 00004000 b5:84fa2 144121417439404014      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/linalg/lapack_lite.so
+2ae225580000-2ae225581000 rw-p 00004000 b5:84fa2 144121417439404014      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/linalg/lapack_lite.so
+2ae225581000-2ae225582000 rw-p 00019000 b5:84fa2 144121417439404014      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/linalg/lapack_lite.so
+2ae225582000-2ae225583000 rw-p 0001a000 b5:84fa2 144121417439404014      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/linalg/lapack_lite.so
+2ae22577c000-2ae2257fc000 rw-p 00000000 00:00 0 
+2ae2257fc000-2ae225825000 r-xp 00000000 b5:84fa2 144121417439404010      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/linalg/_umath_linalg.so
+2ae225825000-2ae225a24000 ---p 00029000 b5:84fa2 144121417439404010      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/linalg/_umath_linalg.so
+2ae225a24000-2ae225a26000 rw-p 00028000 b5:84fa2 144121417439404010      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/linalg/_umath_linalg.so
+2ae225a26000-2ae225a27000 rw-p 000c4000 b5:84fa2 144121417439404010      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/linalg/_umath_linalg.so
+2ae225a27000-2ae225a28000 rw-p 000c5000 b5:84fa2 144121417439404010      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/linalg/_umath_linalg.so
+2ae225a28000-2ae225a29000 r-xp 00000000 b5:84fa2 144118302715690595      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/future_builtins.so
+2ae225a29000-2ae225c29000 ---p 00001000 b5:84fa2 144118302715690595      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/future_builtins.so
+2ae225c29000-2ae225c2a000 rw-p 00001000 b5:84fa2 144118302715690595      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/future_builtins.so
+2ae225c2a000-2ae225c33000 r-xp 00000000 b5:84fa2 144121417439404410      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/fft/fftpack_lite.so
+2ae225c33000-2ae225e32000 ---p 00009000 b5:84fa2 144121417439404410      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/fft/fftpack_lite.so
+2ae225e32000-2ae225e33000 rw-p 00008000 b5:84fa2 144121417439404410      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/fft/fftpack_lite.so
+2ae22602a000-2ae2260aa000 rw-p 00000000 00:00 0 
+2ae2260aa000-2ae226162000 r-xp 00000000 b5:84fa2 144121417439404372      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/random/mtrand.so
+2ae226162000-2ae226361000 ---p 000b8000 b5:84fa2 144121417439404372      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/random/mtrand.so
+2ae226361000-2ae226386000 rw-p 000b7000 b5:84fa2 144121417439404372      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/numpy/random/mtrand.so
+2ae226386000-2ae2263c8000 rw-p 00000000 00:00 0 
+2ae2263c8000-2ae2263cc000 r-xp 00000000 b5:84fa2 144118302715690597      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/select.so
+2ae2263cc000-2ae2265cc000 ---p 00004000 b5:84fa2 144118302715690597      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/select.so
+2ae2265cc000-2ae2265ce000 rw-p 00004000 b5:84fa2 144118302715690597      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/select.so
+2ae2267bf000-2ae22683f000 rw-p 00000000 00:00 0 
+2ae22683f000-2ae22cc02000 r-xp 00000000 b5:84fa2 144118302229228742      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/python/_pywrap_tensorflow.so
+2ae22cc02000-2ae22ce01000 ---p 063c3000 b5:84fa2 144118302229228742      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/python/_pywrap_tensorflow.so
+2ae22ce01000-2ae22cf16000 r--p 063c2000 b5:84fa2 144118302229228742      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/python/_pywrap_tensorflow.so
+2ae22cf16000-2ae22cf1b000 rw-p 064d7000 b5:84fa2 144118302229228742      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/python/_pywrap_tensorflow.so
+2ae22cf1b000-2ae22cf38000 rw-p 00000000 00:00 0 
+2ae22cf38000-2ae22cf91000 r-xp 00000000 b5:84fa2 144115318669738972      /home/soft/cuda-7.0/lib64/libcudart.so.7.0.28
+2ae22cf91000-2ae22d191000 ---p 00059000 b5:84fa2 144115318669738972      /home/soft/cuda-7.0/lib64/libcudart.so.7.0.28
+2ae22d191000-2ae22d194000 rw-p 00059000 b5:84fa2 144115318669738972      /home/soft/cuda-7.0/lib64/libcudart.so.7.0.28
+2ae22d194000-2ae22d195000 rw-p 00000000 00:00 0 
+2ae22d1a7000-2ae22d29a000 r-xp 00000000 b5:84fa2 144117235332416796      /home/soft/gcc-4.9.3/lib64/libstdc++.so.6.0.20
+2ae22d29a000-2ae22d499000 ---p 000f3000 b5:84fa2 144117235332416796      /home/soft/gcc-4.9.3/lib64/libstdc++.so.6.0.20
+2ae22d499000-2ae22d4a2000 r--p 000f2000 b5:84fa2 144117235332416796      /home/soft/gcc-4.9.3/lib64/libstdc++.so.6.0.20
+2ae22d4a2000-2ae22d4a4000 rw-p 000fb000 b5:84fa2 144117235332416796      /home/soft/gcc-4.9.3/lib64/libstdc++.so.6.0.20
+2ae22d4a4000-2ae22d4b9000 rw-p 00000000 00:00 0 
+2ae22d4b9000-2ae22d4cf000 r-xp 00000000 b5:84fa2 144117235332416028      /home/soft/gcc-4.9.3/lib64/libgcc_s.so.1
+2ae22d4cf000-2ae22d6ce000 ---p 00016000 b5:84fa2 144117235332416028      /home/soft/gcc-4.9.3/lib64/libgcc_s.so.1
+2ae22d6ce000-2ae22d6cf000 rw-p 00015000 b5:84fa2 144117235332416028      /home/soft/gcc-4.9.3/lib64/libgcc_s.so.1
+2ae22d6cf000-2ae22f458000 r-xp 00000000 b5:84fa2 144115318669739012      /home/soft/cuda-7.0/lib64/libcurand.so.7.0.28
+2ae22f458000-2ae22f657000 ---p 01d89000 b5:84fa2 144115318669739012      /home/soft/cuda-7.0/lib64/libcurand.so.7.0.28
+2ae22f657000-2ae230a28000 rw-p 01d88000 b5:84fa2 144115318669739012      /home/soft/cuda-7.0/lib64/libcurand.so.7.0.28
+2ae230a28000-2ae230f32000 rw-p 00000000 00:00 0 
+2ae230f32000-2ae231b14000 r-xp 00000000 08:05 141325                     /usr/lib64/libcuda.so.352.68
+2ae231b14000-2ae231d13000 ---p 00be2000 08:05 141325                     /usr/lib64/libcuda.so.352.68
+2ae231d13000-2ae231ed1000 rw-p 00be1000 08:05 141325                     /usr/lib64/libcuda.so.352.68
+2ae231ed1000-2ae231ee7000 rw-p 00000000 00:00 0 
+2ae231ee7000-2ae2359e4000 r-xp 00000000 b5:84fa2 144115318669739031      /home/soft/cuda-7.0/lib64/libcufft.so.7.0.28
+2ae2359e4000-2ae235be4000 ---p 03afd000 b5:84fa2 144115318669739031      /home/soft/cuda-7.0/lib64/libcufft.so.7.0.28
+2ae235be4000-2ae235c8f000 rw-p 03afd000 b5:84fa2 144115318669739031      /home/soft/cuda-7.0/lib64/libcufft.so.7.0.28
+2ae235c8f000-2ae235d9f000 rw-p 00000000 00:00 0 
+2ae235d9f000-2ae23adc1000 r-xp 00000000 b5:84fa2 144118302313135704      /home/apps/LIBCUDNN/5.1.10/precompiled/lib64/libcudnn.so.5.1.10
+2ae23adc1000-2ae23afc1000 ---p 05022000 b5:84fa2 144118302313135704      /home/apps/LIBCUDNN/5.1.10/precompiled/lib64/libcudnn.so.5.1.10
+2ae23afc1000-2ae23afe3000 rw-p 05022000 b5:84fa2 144118302313135704      /home/apps/LIBCUDNN/5.1.10/precompiled/lib64/libcudnn.so.5.1.10
+2ae23afe3000-2ae23b00e000 rw-p 00000000 00:00 0 
+2ae23b00e000-2ae23cdba000 r-xp 00000000 b5:84fa2 144115318669738992      /home/soft/cuda-7.0/lib64/libcublas.so.7.0.28
+2ae23cdba000-2ae23cfba000 ---p 01dac000 b5:84fa2 144115318669738992      /home/soft/cuda-7.0/lib64/libcublas.so.7.0.28
+2ae23cfba000-2ae23cfc5000 rw-p 01dac000 b5:84fa2 144115318669738992      /home/soft/cuda-7.0/lib64/libcublas.so.7.0.28
+2ae23cfc5000-2ae23cfd0000 rw-p 00000000 00:00 0 
+2ae23cfd0000-2ae23cfd5000 r-xp 00000000 b5:84fa2 144118302715690569      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/zlib.so
+2ae23cfd5000-2ae23d1d4000 ---p 00005000 b5:84fa2 144118302715690569      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/zlib.so
+2ae23d1d4000-2ae23d1d6000 rw-p 00004000 b5:84fa2 144118302715690569      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/zlib.so
+2ae23d1d6000-2ae23d216000 rw-p 00000000 00:00 0 
+2ae23d216000-2ae23d225000 r-xp 00000000 b5:84fa2 144118302715690578      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_socket.so
+2ae23d225000-2ae23d424000 ---p 0000f000 b5:84fa2 144118302715690578      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_socket.so
+2ae23d424000-2ae23d429000 rw-p 0000e000 b5:84fa2 144118302715690578      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_socket.so
+2ae23d616000-2ae23d656000 rw-p 00000000 00:00 0 
+2ae23d656000-2ae23d66a000 r-xp 00000000 b5:84fa2 144118302715690583      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_ssl.so
+2ae23d66a000-2ae23d869000 ---p 00014000 b5:84fa2 144118302715690583      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_ssl.so
+2ae23d869000-2ae23d86d000 rw-p 00013000 b5:84fa2 144118302715690583      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_ssl.so
+2ae23d86d000-2ae23d92d000 rw-p 00000000 00:00 0 
+2ae23d92d000-2ae23d93a000 r-xp 00000000 b5:84fa2 144118302715690592      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/parser.so
+2ae23d93a000-2ae23db3a000 ---p 0000d000 b5:84fa2 144118302715690592      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/parser.so
+2ae23db3a000-2ae23db3b000 rw-p 0000d000 b5:84fa2 144118302715690592      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/parser.so
+2ae23db3b000-2ae23dc3b000 rw-p 00000000 00:00 0 
+2ae23dfbb000-2ae23e27b000 rw-p 00000000 00:00 0 
+2ae23e63b000-2ae23e6bb000 rw-p 00000000 00:00 0 
+2ae23ea7b000-2ae23eafc000 rw-p 00000000 00:00 0 
+2ae23eb3b000-2ae23ee3b000 rw-p 00000000 00:00 0 
+2ae23f13b000-2ae23f23b000 rw-p 00000000 00:00 0 
+2ae23f5bb000-2ae23f6bb000 rw-p 00000000 00:00 0 
+2ae23f73b000-2ae23f7bb000 rw-p 00000000 00:00 0 
+2ae23fa3b000-2ae23fcbb000 rw-p 00000000 00:00 0 
+2ae24003b000-2ae24017b000 rw-p 00000000 00:00 0 
+2ae24053b000-2ae2405bb000 rw-p 00000000 00:00 0 
+2ae24097b000-2ae240d3c000 rw-p 00000000 00:00 0 
+2ae240e3b000-2ae240ebb000 rw-p 00000000 00:00 0 
+2ae240ebb000-2ae240ec3000 r-xp 00000000 b5:84fa2 144118302715690624      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_json.so
+2ae240ec3000-2ae2410c3000 ---p 00008000 b5:84fa2 144118302715690624      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_json.so
+2ae2410c3000-2ae2410c4000 rw-p 00008000 b5:84fa2 144118302715690624      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_json.so
+2ae2412bb000-2ae2414fb000 rw-p 00000000 00:00 0 
+2ae2418bb000-2ae24197b000 rw-p 00000000 00:00 0 
+2ae241d3b000-2ae241d7b000 rw-p 00000000 00:00 0 
+2ae241d7b000-2ae241d7d000 r-xp 00000000 b5:84fa2 144118302715690598      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_bisect.so
+2ae241d7d000-2ae241f7c000 ---p 00002000 b5:84fa2 144118302715690598      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_bisect.so
+2ae241f7c000-2ae241f7d000 rw-p 00001000 b5:84fa2 144118302715690598      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_bisect.so
+2ae241f7d000-2ae241fbd000 rw-p 00000000 00:00 0 
+2ae241fbd000-2ae242053000 r-xp 00000000 b5:84fa2 144118302715690608      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/unicodedata.so
+2ae242053000-2ae242252000 ---p 00096000 b5:84fa2 144118302715690608      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/unicodedata.so
+2ae242252000-2ae242266000 rw-p 00095000 b5:84fa2 144118302715690608      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/unicodedata.so
+2ae242266000-2ae24226e000 r-xp 00000000 b5:84fa2 144118302715690609      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/array.so
+2ae24226e000-2ae24246e000 ---p 00008000 b5:84fa2 144118302715690609      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/array.so
+2ae24246e000-2ae242471000 rw-p 00008000 b5:84fa2 144118302715690609      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/array.so
+2ae242471000-2ae2424d1000 r-xp 00000000 b5:84fa2 144118302715716087      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/hashtable.so
+2ae2424d1000-2ae2426d0000 ---p 00060000 b5:84fa2 144118302715716087      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/hashtable.so
+2ae2426d0000-2ae2426d5000 rw-p 0005f000 b5:84fa2 144118302715716087      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/hashtable.so
+2ae2426d5000-2ae2426d6000 rw-p 00000000 00:00 0 
+2ae242871000-2ae2428b1000 rw-p 00000000 00:00 0 
+2ae2428b1000-2ae242a3b000 r-xp 00000000 b5:84fa2 144118302715716117      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/tslib.so
+2ae242a3b000-2ae242c3a000 ---p 0018a000 b5:84fa2 144118302715716117      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/tslib.so
+2ae242c3a000-2ae242c4e000 rw-p 00189000 b5:84fa2 144118302715716117      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/tslib.so
+2ae242c4e000-2ae242c94000 rw-p 00000000 00:00 0 
+2ae242c94000-2ae242d9e000 r-xp 00000000 b5:84fa2 144118302715716089      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/lib.so
+2ae242d9e000-2ae242f9d000 ---p 0010a000 b5:84fa2 144118302715716089      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/lib.so
+2ae242f9d000-2ae242fab000 rw-p 00109000 b5:84fa2 144118302715716089      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/lib.so
+2ae242fab000-2ae242fae000 rw-p 00000000 00:00 0 
+2ae242fae000-2ae24314a000 r-xp 00000000 b5:84fa2 144118302715716093      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/algos.so
+2ae24314a000-2ae24334a000 ---p 0019c000 b5:84fa2 144118302715716093      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/algos.so
+2ae24334a000-2ae243357000 rw-p 0019c000 b5:84fa2 144118302715716093      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/algos.so
+2ae243357000-2ae24335b000 rw-p 00000000 00:00 0 
+2ae2433ae000-2ae24342e000 rw-p 00000000 00:00 0 
+2ae24342e000-2ae2434de000 r-xp 00000000 b5:84fa2 144118302715716115      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_join.so
+2ae2434de000-2ae2436de000 ---p 000b0000 b5:84fa2 144118302715716115      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_join.so
+2ae2436de000-2ae2436e2000 rw-p 000b0000 b5:84fa2 144118302715716115      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_join.so
+2ae2436e2000-2ae2436e3000 rw-p 00000000 00:00 0 
+2ae24382e000-2ae2438ae000 rw-p 00000000 00:00 0 
+2ae2438ae000-2ae2438ea000 r-xp 00000000 b5:84fa2 144118302715716103      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/index.so
+2ae2438ea000-2ae243aea000 ---p 0003c000 b5:84fa2 144118302715716103      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/index.so
+2ae243aea000-2ae243aed000 rw-p 0003c000 b5:84fa2 144118302715716103      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/index.so
+2ae243aed000-2ae243aee000 rw-p 00000000 00:00 0 
+2ae243cae000-2ae243d2e000 rw-p 00000000 00:00 0 
+2ae2440ee000-2ae24412e000 rw-p 00000000 00:00 0 
+2ae24412e000-2ae244133000 r-xp 00000000 b5:84fa2 144118302715690623      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_csv.so
+2ae244133000-2ae244332000 ---p 00005000 b5:84fa2 144118302715690623      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_csv.so
+2ae244332000-2ae244335000 rw-p 00004000 b5:84fa2 144118302715690623      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_csv.so
+2ae244335000-2ae244375000 rw-p 00000000 00:00 0 
+2ae244375000-2ae24437a000 r-xp 00000000 b5:84fa2 144118302715690585      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/mmap.so
+2ae24437a000-2ae24457a000 ---p 00005000 b5:84fa2 144118302715690585      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/mmap.so
+2ae24457a000-2ae24457b000 rw-p 00005000 b5:84fa2 144118302715690585      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/mmap.so
+2ae24457b000-2ae2445bb000 rw-p 00000000 00:00 0 
+2ae24497b000-2ae2449bb000 rw-p 00000000 00:00 0 
+2ae2449bb000-2ae244a21000 r-xp 00000000 b5:84fa2 144118302715716085      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_period.so
+2ae244a21000-2ae244c21000 ---p 00066000 b5:84fa2 144118302715716085      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_period.so
+2ae244c21000-2ae244c28000 rw-p 00066000 b5:84fa2 144118302715716085      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_period.so
+2ae244c28000-2ae244c69000 rw-p 00000000 00:00 0 
+2ae244c69000-2ae244d49000 r-xp 00000000 b5:84fa2 144118302715716083      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_sparse.so
+2ae244d49000-2ae244f49000 ---p 000e0000 b5:84fa2 144118302715716083      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_sparse.so
+2ae244f49000-2ae244f4e000 rw-p 000e0000 b5:84fa2 144118302715716083      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_sparse.so
+2ae245069000-2ae245169000 rw-p 00000000 00:00 0 
+2ae245169000-2ae2451fd000 r-xp 00000000 b5:84fa2 144118302715716109      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_window.so
+2ae2451fd000-2ae2453fd000 ---p 00094000 b5:84fa2 144118302715716109      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_window.so
+2ae2453fd000-2ae245404000 rw-p 00094000 b5:84fa2 144118302715716109      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_window.so
+2ae245404000-2ae245446000 rw-p 00000000 00:00 0 
+2ae245569000-2ae2455a9000 rw-p 00000000 00:00 0 
+2ae2455a9000-2ae2455ac000 r-xp 00000000 b5:84fa2 144118302715728004      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/_posixsubprocess.so
+2ae2455ac000-2ae2457ac000 ---p 00003000 b5:84fa2 144118302715728004      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/_posixsubprocess.so
+2ae2457ac000-2ae2457ad000 rw-p 00003000 b5:84fa2 144118302715728004      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/_posixsubprocess.so
+2ae2459a9000-2ae245a69000 rw-p 00000000 00:00 0 
+2ae245e29000-2ae245f69000 rw-p 00000000 00:00 0 
+2ae246329000-2ae2463a9000 rw-p 00000000 00:00 0 
+2ae246769000-2ae2467a9000 rw-p 00000000 00:00 0 
+2ae2467a9000-2ae2467d6000 r-xp 00000000 b5:84fa2 144118302715728200      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/matplotlib/_path.so
+2ae2467d6000-2ae2469d6000 ---p 0002d000 b5:84fa2 144118302715728200      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/matplotlib/_path.so
+2ae2469d6000-2ae2469d7000 rw-p 0002d000 b5:84fa2 144118302715728200      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/matplotlib/_path.so
+2ae2469d7000-2ae2469d8000 rw-p 00000000 00:00 0 
+2ae246ba9000-2ae246c69000 rw-p 00000000 00:00 0 
+2ae247029000-2ae2470e9000 rw-p 00000000 00:00 0 
+2ae2470e9000-2ae24716a000 r-xp 00000000 b5:84fa2 144118302715716101      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/parser.so
+2ae24716a000-2ae24736a000 ---p 00081000 b5:84fa2 144118302715716101      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/parser.so
+2ae24736a000-2ae247370000 rw-p 00081000 b5:84fa2 144118302715716101      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/parser.so
+2ae247370000-2ae247372000 rw-p 00000000 00:00 0 
+2ae2474e9000-2ae247529000 rw-p 00000000 00:00 0 
+2ae247529000-2ae24753f000 r-xp 00000000 b5:84fa2 144118302715716099      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/json.so
+2ae24753f000-2ae24773f000 ---p 00016000 b5:84fa2 144118302715716099      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/json.so
+2ae24773f000-2ae247740000 rw-p 00016000 b5:84fa2 144118302715716099      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/json.so
+2ae247740000-2ae24774f000 r-xp 00000000 b5:84fa2 144118302715716785      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/msgpack/_packer.so
+2ae24774f000-2ae24794f000 ---p 0000f000 b5:84fa2 144118302715716785      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/msgpack/_packer.so
+2ae24794f000-2ae247951000 rw-p 0000f000 b5:84fa2 144118302715716785      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/msgpack/_packer.so
+2ae247b40000-2ae247c00000 rw-p 00000000 00:00 0 
+2ae247c00000-2ae247c14000 r-xp 00000000 b5:84fa2 144118302715716781      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/msgpack/_unpacker.so
+2ae247c14000-2ae247e14000 ---p 00014000 b5:84fa2 144118302715716781      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/msgpack/_unpacker.so
+2ae247e14000-2ae247e16000 rw-p 00014000 b5:84fa2 144118302715716781      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/msgpack/_unpacker.so
+2ae247e16000-2ae247e17000 rw-p 00000000 00:00 0 
+2ae247e17000-2ae247e19000 r-xp 00000000 b5:84fa2 144118302715717173      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/util/_move.so
+2ae247e19000-2ae248018000 ---p 00002000 b5:84fa2 144118302715717173      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/util/_move.so
+2ae248018000-2ae248019000 rw-p 00001000 b5:84fa2 144118302715717173      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/util/_move.so
+2ae248019000-2ae24802b000 r-xp 00000000 b5:84fa2 144118302715716111      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_testing.so
+2ae24802b000-2ae24822a000 ---p 00012000 b5:84fa2 144118302715716111      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_testing.so
+2ae24822a000-2ae24822c000 rw-p 00011000 b5:84fa2 144118302715716111      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_testing.so
+2ae248419000-2ae248459000 rw-p 00000000 00:00 0 
+2ae248459000-2ae248463000 r-xp 00000000 b5:84fa2 144121417439405371      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_errors.so
+2ae248463000-2ae248663000 ---p 0000a000 b5:84fa2 144121417439405371      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_errors.so
+2ae248663000-2ae248664000 rw-p 0000a000 b5:84fa2 144121417439405371      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_errors.so
+2ae248664000-2ae248665000 rw-p 0002d000 b5:84fa2 144121417439405371      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_errors.so
+2ae248665000-2ae248666000 rw-p 0002e000 b5:84fa2 144121417439405371      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_errors.so
+2ae248859000-2ae2488d9000 rw-p 00000000 00:00 0 
+2ae2488d9000-2ae248bae000 r-xp 00000000 b5:84fa2 144121417439405579      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libhdf5-3b8fe93f.so.10.2.1
+2ae248bae000-2ae248dae000 ---p 002d5000 b5:84fa2 144121417439405579      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libhdf5-3b8fe93f.so.10.2.1
+2ae248dae000-2ae248db9000 rw-p 002d5000 b5:84fa2 144121417439405579      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libhdf5-3b8fe93f.so.10.2.1
+2ae248db9000-2ae248dbb000 rw-p 00000000 00:00 0 
+2ae248dbb000-2ae248dc7000 rw-p 0031f000 b5:84fa2 144121417439405579      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libhdf5-3b8fe93f.so.10.2.1
+2ae248dc7000-2ae248dd3000 rw-p 0032b000 b5:84fa2 144121417439405579      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libhdf5-3b8fe93f.so.10.2.1
+2ae248dd3000-2ae248ddf000 rw-p 00337000 b5:84fa2 144121417439405579      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libhdf5-3b8fe93f.so.10.2.1
+2ae248ddf000-2ae248deb000 rw-p 00343000 b5:84fa2 144121417439405579      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libhdf5-3b8fe93f.so.10.2.1
+2ae248deb000-2ae248e09000 r-xp 00000000 b5:84fa2 144121417439405573      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libhdf5_hl-6491d8e2.so.10.1.1
+2ae248e09000-2ae249009000 ---p 0001e000 b5:84fa2 144121417439405573      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libhdf5_hl-6491d8e2.so.10.1.1
+2ae249009000-2ae24900a000 rw-p 0001e000 b5:84fa2 144121417439405573      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libhdf5_hl-6491d8e2.so.10.1.1
+2ae24900a000-2ae24900b000 rw-p 00000000 00:00 0 
+2ae24900b000-2ae24900d000 rw-p 00024000 b5:84fa2 144121417439405573      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libhdf5_hl-6491d8e2.so.10.1.1
+2ae24900d000-2ae24900f000 rw-p 00026000 b5:84fa2 144121417439405573      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libhdf5_hl-6491d8e2.so.10.1.1
+2ae24900f000-2ae249011000 rw-p 00028000 b5:84fa2 144121417439405573      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libhdf5_hl-6491d8e2.so.10.1.1
+2ae249011000-2ae249013000 rw-p 0002a000 b5:84fa2 144121417439405573      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libhdf5_hl-6491d8e2.so.10.1.1
+2ae249013000-2ae249015000 rw-p 0002c000 b5:84fa2 144121417439405573      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libhdf5_hl-6491d8e2.so.10.1.1
+2ae249015000-2ae249017000 r-xp 00000000 b5:84fa2 144121417439405575      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libsz-08416a88.so.2.0.1
+2ae249017000-2ae249216000 ---p 00002000 b5:84fa2 144121417439405575      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libsz-08416a88.so.2.0.1
+2ae249216000-2ae249217000 rw-p 00001000 b5:84fa2 144121417439405575      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libsz-08416a88.so.2.0.1
+2ae249217000-2ae249218000 rw-p 00006000 b5:84fa2 144121417439405575      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libsz-08416a88.so.2.0.1
+2ae249218000-2ae249219000 rw-p 00007000 b5:84fa2 144121417439405575      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libsz-08416a88.so.2.0.1
+2ae249219000-2ae249220000 r-xp 00000000 b5:84fa2 144121417439405577      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libaec-39ca7337.so.0.0.4
+2ae249220000-2ae24941f000 ---p 00007000 b5:84fa2 144121417439405577      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libaec-39ca7337.so.0.0.4
+2ae24941f000-2ae249420000 rw-p 00006000 b5:84fa2 144121417439405577      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libaec-39ca7337.so.0.0.4
+2ae249420000-2ae249421000 rw-p 0001a000 b5:84fa2 144121417439405577      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libaec-39ca7337.so.0.0.4
+2ae249421000-2ae249435000 r-xp 00000000 b5:84fa2 144121417439405581      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libz-a147dcb0.so.1.2.3
+2ae249435000-2ae249634000 ---p 00014000 b5:84fa2 144121417439405581      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libz-a147dcb0.so.1.2.3
+2ae249634000-2ae249635000 rw-p 00013000 b5:84fa2 144121417439405581      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libz-a147dcb0.so.1.2.3
+2ae249635000-2ae249636000 rw-p 00015000 b5:84fa2 144121417439405581      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/.libs/libz-a147dcb0.so.1.2.3
+2ae249636000-2ae249647000 r-xp 00000000 b5:84fa2 144121417439405383      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_conv.so
+2ae249647000-2ae249847000 ---p 00011000 b5:84fa2 144121417439405383      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_conv.so
+2ae249847000-2ae249848000 rw-p 00011000 b5:84fa2 144121417439405383      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_conv.so
+2ae249848000-2ae249849000 rw-p 0005c000 b5:84fa2 144121417439405383      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_conv.so
+2ae249849000-2ae24984a000 rw-p 0005d000 b5:84fa2 144121417439405383      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_conv.so
+2ae24984a000-2ae249855000 r-xp 00000000 b5:84fa2 144121417439405367      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5r.so
+2ae249855000-2ae249a54000 ---p 0000b000 b5:84fa2 144121417439405367      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5r.so
+2ae249a54000-2ae249a56000 rw-p 0000a000 b5:84fa2 144121417439405367      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5r.so
+2ae249a56000-2ae249a57000 rw-p 00033000 b5:84fa2 144121417439405367      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5r.so
+2ae249a57000-2ae249a58000 rw-p 00034000 b5:84fa2 144121417439405367      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5r.so
+2ae249a58000-2ae249a73000 r-xp 00000000 b5:84fa2 144121417439405387      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_objects.so
+2ae249a73000-2ae249c73000 ---p 0001b000 b5:84fa2 144121417439405387      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_objects.so
+2ae249c73000-2ae249c76000 rw-p 0001b000 b5:84fa2 144121417439405387      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_objects.so
+2ae249c76000-2ae249c77000 rw-p 0007b000 b5:84fa2 144121417439405387      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_objects.so
+2ae249c77000-2ae249c78000 rw-p 0007c000 b5:84fa2 144121417439405387      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_objects.so
+2ae249c78000-2ae249ca7000 r-xp 00000000 b5:84fa2 144121417439405393      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/defs.so
+2ae249ca7000-2ae249ea7000 ---p 0002f000 b5:84fa2 144121417439405393      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/defs.so
+2ae249ea7000-2ae249ea9000 rw-p 0002f000 b5:84fa2 144121417439405393      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/defs.so
+2ae249ea9000-2ae249eab000 rw-p 000c7000 b5:84fa2 144121417439405393      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/defs.so
+2ae249eab000-2ae249ead000 rw-p 000c9000 b5:84fa2 144121417439405393      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/defs.so
+2ae249ead000-2ae249f0e000 r-xp 00000000 b5:84fa2 144121417439405377      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5t.so
+2ae249f0e000-2ae24a10e000 ---p 00061000 b5:84fa2 144121417439405377      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5t.so
+2ae24a10e000-2ae24a117000 rw-p 00061000 b5:84fa2 144121417439405377      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5t.so
+2ae24a117000-2ae24a119000 rw-p 00000000 00:00 0 
+2ae24a119000-2ae24a11a000 rw-p 001ca000 b5:84fa2 144121417439405377      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5t.so
+2ae24a11a000-2ae24a11b000 rw-p 001cb000 b5:84fa2 144121417439405377      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5t.so
+2ae24a11b000-2ae24a124000 r-xp 00000000 b5:84fa2 144121417439405389      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/utils.so
+2ae24a124000-2ae24a323000 ---p 00009000 b5:84fa2 144121417439405389      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/utils.so
+2ae24a323000-2ae24a324000 rw-p 00008000 b5:84fa2 144121417439405389      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/utils.so
+2ae24a324000-2ae24a325000 rw-p 00027000 b5:84fa2 144121417439405389      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/utils.so
+2ae24a325000-2ae24a326000 rw-p 00028000 b5:84fa2 144121417439405389      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/utils.so
+2ae24a326000-2ae24a338000 r-xp 00000000 b5:84fa2 144121417439405379      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5.so
+2ae24a338000-2ae24a537000 ---p 00012000 b5:84fa2 144121417439405379      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5.so
+2ae24a537000-2ae24a53a000 rw-p 00011000 b5:84fa2 144121417439405379      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5.so
+2ae24a53a000-2ae24a53b000 rw-p 00059000 b5:84fa2 144121417439405379      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5.so
+2ae24a53b000-2ae24a53c000 rw-p 0005a000 b5:84fa2 144121417439405379      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5.so
+2ae24a53c000-2ae24a57c000 rw-p 00000000 00:00 0 
+2ae24a57c000-2ae24a584000 r-xp 00000000 b5:84fa2 144121417439405357      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5z.so
+2ae24a584000-2ae24a783000 ---p 00008000 b5:84fa2 144121417439405357      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5z.so
+2ae24a783000-2ae24a785000 rw-p 00007000 b5:84fa2 144121417439405357      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5z.so
+2ae24a785000-2ae24a786000 rw-p 00025000 b5:84fa2 144121417439405357      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5z.so
+2ae24a786000-2ae24a787000 rw-p 00026000 b5:84fa2 144121417439405357      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5z.so
+2ae24a787000-2ae24a7a0000 r-xp 00000000 b5:84fa2 144121417439405373      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5a.so
+2ae24a7a0000-2ae24a99f000 ---p 00019000 b5:84fa2 144121417439405373      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5a.so
+2ae24a99f000-2ae24a9a2000 rw-p 00018000 b5:84fa2 144121417439405373      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5a.so
+2ae24a9a2000-2ae24a9a3000 rw-p 00000000 00:00 0 
+2ae24a9a3000-2ae24a9a4000 rw-p 00074000 b5:84fa2 144121417439405373      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5a.so
+2ae24a9a4000-2ae24a9a5000 rw-p 00075000 b5:84fa2 144121417439405373      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5a.so
+2ae24a9a5000-2ae24a9bc000 r-xp 00000000 b5:84fa2 144121417439405355      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5s.so
+2ae24a9bc000-2ae24abbb000 ---p 00017000 b5:84fa2 144121417439405355      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5s.so
+2ae24abbb000-2ae24abbf000 rw-p 00016000 b5:84fa2 144121417439405355      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5s.so
+2ae24abbf000-2ae24abc0000 rw-p 00068000 b5:84fa2 144121417439405355      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5s.so
+2ae24abc0000-2ae24abc1000 rw-p 00069000 b5:84fa2 144121417439405355      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5s.so
+2ae24abc1000-2ae24abee000 r-xp 00000000 b5:84fa2 144121417439405351      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5p.so
+2ae24abee000-2ae24adee000 ---p 0002d000 b5:84fa2 144121417439405351      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5p.so
+2ae24adee000-2ae24adf6000 rw-p 0002d000 b5:84fa2 144121417439405351      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5p.so
+2ae24adf6000-2ae24adf7000 rw-p 00000000 00:00 0 
+2ae24adf7000-2ae24adf8000 rw-p 000ce000 b5:84fa2 144121417439405351      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5p.so
+2ae24adf8000-2ae24adf9000 rw-p 000cf000 b5:84fa2 144121417439405351      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5p.so
+2ae24adf9000-2ae24ae02000 r-xp 00000000 b5:84fa2 144121417439405401      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5ac.so
+2ae24ae02000-2ae24b001000 ---p 00009000 b5:84fa2 144121417439405401      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5ac.so
+2ae24b001000-2ae24b002000 rw-p 00008000 b5:84fa2 144121417439405401      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5ac.so
+2ae24b002000-2ae24b003000 rw-p 00031000 b5:84fa2 144121417439405401      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5ac.so
+2ae24b003000-2ae24b004000 rw-p 00032000 b5:84fa2 144121417439405401      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5ac.so
+2ae24b004000-2ae24b00c000 r-xp 00000000 b5:84fa2 144121417439405407      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_proxy.so
+2ae24b00c000-2ae24b20c000 ---p 00008000 b5:84fa2 144121417439405407      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_proxy.so
+2ae24b20c000-2ae24b20d000 rw-p 00008000 b5:84fa2 144121417439405407      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_proxy.so
+2ae24b20d000-2ae24b20e000 rw-p 00027000 b5:84fa2 144121417439405407      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_proxy.so
+2ae24b20e000-2ae24b20f000 rw-p 00028000 b5:84fa2 144121417439405407      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/_proxy.so
+2ae24b20f000-2ae24b226000 r-xp 00000000 b5:84fa2 144121417439405391      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5d.so
+2ae24b226000-2ae24b425000 ---p 00017000 b5:84fa2 144121417439405391      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5d.so
+2ae24b425000-2ae24b428000 rw-p 00016000 b5:84fa2 144121417439405391      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5d.so
+2ae24b428000-2ae24b429000 rw-p 00069000 b5:84fa2 144121417439405391      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5d.so
+2ae24b429000-2ae24b42a000 rw-p 0006a000 b5:84fa2 144121417439405391      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5d.so
+2ae24b42a000-2ae24b437000 r-xp 00000000 b5:84fa2 144121417439405403      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5ds.so
+2ae24b437000-2ae24b636000 ---p 0000d000 b5:84fa2 144121417439405403      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5ds.so
+2ae24b636000-2ae24b638000 rw-p 0000c000 b5:84fa2 144121417439405403      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5ds.so
+2ae24b638000-2ae24b639000 rw-p 0003b000 b5:84fa2 144121417439405403      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5ds.so
+2ae24b639000-2ae24b63a000 rw-p 0003c000 b5:84fa2 144121417439405403      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5ds.so
+2ae24b63a000-2ae24b651000 r-xp 00000000 b5:84fa2 144121417439405361      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5f.so
+2ae24b651000-2ae24b850000 ---p 00017000 b5:84fa2 144121417439405361      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5f.so
+2ae24b850000-2ae24b854000 rw-p 00016000 b5:84fa2 144121417439405361      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5f.so
+2ae24b854000-2ae24b855000 rw-p 00068000 b5:84fa2 144121417439405361      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5f.so
+2ae24b855000-2ae24b856000 rw-p 00069000 b5:84fa2 144121417439405361      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5f.so
+2ae24b856000-2ae24b873000 r-xp 00000000 b5:84fa2 144121417439405399      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5g.so
+2ae24b873000-2ae24ba72000 ---p 0001d000 b5:84fa2 144121417439405399      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5g.so
+2ae24ba72000-2ae24ba75000 rw-p 0001c000 b5:84fa2 144121417439405399      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5g.so
+2ae24ba75000-2ae24ba76000 rw-p 00000000 00:00 0 
+2ae24ba76000-2ae24ba77000 rw-p 00087000 b5:84fa2 144121417439405399      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5g.so
+2ae24ba77000-2ae24ba78000 rw-p 00088000 b5:84fa2 144121417439405399      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5g.so
+2ae24ba78000-2ae24ba83000 r-xp 00000000 b5:84fa2 144121417439405375      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5i.so
+2ae24ba83000-2ae24bc83000 ---p 0000b000 b5:84fa2 144121417439405375      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5i.so
+2ae24bc83000-2ae24bc85000 rw-p 0000b000 b5:84fa2 144121417439405375      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5i.so
+2ae24bc85000-2ae24bc86000 rw-p 00036000 b5:84fa2 144121417439405375      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5i.so
+2ae24bc86000-2ae24bc87000 rw-p 00037000 b5:84fa2 144121417439405375      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5i.so
+2ae24bc87000-2ae24bc8b000 r-xp 00000000 b5:84fa2 144121417439405363      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5fd.so
+2ae24bc8b000-2ae24be8b000 ---p 00004000 b5:84fa2 144121417439405363      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5fd.so
+2ae24be8b000-2ae24be8c000 rw-p 00004000 b5:84fa2 144121417439405363      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5fd.so
+2ae24be8c000-2ae24be8d000 rw-p 00014000 b5:84fa2 144121417439405363      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5fd.so
+2ae24be8d000-2ae24be8e000 rw-p 00015000 b5:84fa2 144121417439405363      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5fd.so
+2ae24be8e000-2ae24bea0000 r-xp 00000000 b5:84fa2 144121417439405397      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5o.so
+2ae24bea0000-2ae24c09f000 ---p 00012000 b5:84fa2 144121417439405397      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5o.so
+2ae24c09f000-2ae24c0a3000 rw-p 00011000 b5:84fa2 144121417439405397      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5o.so
+2ae24c0a3000-2ae24c0a4000 rw-p 00057000 b5:84fa2 144121417439405397      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5o.so
+2ae24c0a4000-2ae24c0a5000 rw-p 00058000 b5:84fa2 144121417439405397      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5o.so
+2ae24c28e000-2ae24c2ce000 rw-p 00000000 00:00 0 
+2ae24c2ce000-2ae24c2de000 r-xp 00000000 b5:84fa2 144121417439405365      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5l.so
+2ae24c2de000-2ae24c4dd000 ---p 00010000 b5:84fa2 144121417439405365      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5l.so
+2ae24c4dd000-2ae24c4e0000 rw-p 0000f000 b5:84fa2 144121417439405365      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5l.so
+2ae24c4e0000-2ae24c4e1000 rw-p 0004c000 b5:84fa2 144121417439405365      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5l.so
+2ae24c4e1000-2ae24c4e2000 rw-p 0004d000 b5:84fa2 144121417439405365      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/h5py/h5l.so
+2ae24c4e2000-2ae24c562000 rw-p 00000000 00:00 0 
+2ae24c922000-2ae24c962000 rw-p 00000000 00:00 0 
+2ae24c962000-2ae24c968000 r-xp 00000000 b5:84fa2 144118302715690591      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_multiprocessing.so
+2ae24c968000-2ae24cb68000 ---p 00006000 b5:84fa2 144118302715690591      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_multiprocessing.so
+2ae24cb68000-2ae24cb69000 rw-p 00006000 b5:84fa2 144118302715690591      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/_multiprocessing.so
+2ae24cd62000-2ae24ce62000 rw-p 00000000 00:00 0 
+2ae24d222000-2ae24d362000 rw-p 00000000 00:00 0 
+2ae24d722000-2ae24d8a2000 rw-p 00000000 00:00 0 
+2ae24dca2000-2ae24dd22000 rw-p 00000000 00:00 0 
+2ae24dd22000-2ae24e06d000 r-xp 00000000 b5:84fa2 144118302229228570      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/rnn/python/ops/_gru_ops.so
+2ae24e06d000-2ae24e26d000 ---p 0034b000 b5:84fa2 144118302229228570      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/rnn/python/ops/_gru_ops.so
+2ae24e26d000-2ae24e280000 r--p 0034b000 b5:84fa2 144118302229228570      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/rnn/python/ops/_gru_ops.so
+2ae24e280000-2ae24e281000 rw-p 0035e000 b5:84fa2 144118302229228570      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/rnn/python/ops/_gru_ops.so
+2ae24e281000-2ae24e2c3000 rw-p 00000000 00:00 0 
+2ae24e2c3000-2ae24e669000 r-xp 00000000 b5:84fa2 144118302229228581      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/rnn/python/ops/_lstm_ops.so
+2ae24e669000-2ae24e868000 ---p 003a6000 b5:84fa2 144118302229228581      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/rnn/python/ops/_lstm_ops.so
+2ae24e868000-2ae24e87c000 r--p 003a5000 b5:84fa2 144118302229228581      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/rnn/python/ops/_lstm_ops.so
+2ae24e87c000-2ae24e87d000 rw-p 003b9000 b5:84fa2 144118302229228581      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/rnn/python/ops/_lstm_ops.so
+2ae24e87d000-2ae24e8bf000 rw-p 00000000 00:00 0 
+2ae24e8bf000-2ae24eb88000 r-xp 00000000 b5:84fa2 144118302229227970      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/layers/python/ops/_sparse_feature_cross_op.so
+2ae24eb88000-2ae24ed87000 ---p 002c9000 b5:84fa2 144118302229227970      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/layers/python/ops/_sparse_feature_cross_op.so
+2ae24ed87000-2ae24ed99000 r--p 002c8000 b5:84fa2 144118302229227970      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/layers/python/ops/_sparse_feature_cross_op.so
+2ae24ed99000-2ae24ed9a000 rw-p 002da000 b5:84fa2 144118302229227970      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/layers/python/ops/_sparse_feature_cross_op.so
+2ae24ed9a000-2ae24ee5c000 rw-p 00000000 00:00 0 
+2ae24ee5c000-2ae24f10b000 r-xp 00000000 b5:84fa2 144118302229227968      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/layers/python/ops/_bucketization_op.so
+2ae24f10b000-2ae24f30a000 ---p 002af000 b5:84fa2 144118302229227968      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/layers/python/ops/_bucketization_op.so
+2ae24f30a000-2ae24f31c000 r--p 002ae000 b5:84fa2 144118302229227968      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/layers/python/ops/_bucketization_op.so
+2ae24f31c000-2ae24f31d000 rw-p 002c0000 b5:84fa2 144118302229227968      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/layers/python/ops/_bucketization_op.so
+2ae24f31d000-2ae24f35f000 rw-p 00000000 00:00 0 
+2ae24f71f000-2ae24f7df000 rw-p 00000000 00:00 0 
+2ae24f7df000-2ae24fa9c000 r-xp 00000000 b5:84fa2 144118302229227497      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/cudnn_rnn/python/ops/_cudnn_rnn_ops.so
+2ae24fa9c000-2ae24fc9b000 ---p 002bd000 b5:84fa2 144118302229227497      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/cudnn_rnn/python/ops/_cudnn_rnn_ops.so
+2ae24fc9b000-2ae24fcad000 r--p 002bc000 b5:84fa2 144118302229227497      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/cudnn_rnn/python/ops/_cudnn_rnn_ops.so
+2ae24fcad000-2ae24fcae000 rw-p 002ce000 b5:84fa2 144118302229227497      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/cudnn_rnn/python/ops/_cudnn_rnn_ops.so
+2ae24fcae000-2ae24fd30000 rw-p 00000000 00:00 0 
+2ae24fd30000-2ae24ffea000 r-xp 00000000 b5:84fa2 144118302229228228      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/factorization/python/ops/_clustering_ops.so
+2ae24ffea000-2ae2501e9000 ---p 002ba000 b5:84fa2 144118302229228228      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/factorization/python/ops/_clustering_ops.so
+2ae2501e9000-2ae2501fb000 r--p 002b9000 b5:84fa2 144118302229228228      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/factorization/python/ops/_clustering_ops.so
+2ae2501fb000-2ae2501fc000 rw-p 002cb000 b5:84fa2 144118302229228228      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/factorization/python/ops/_clustering_ops.so
+2ae2501fc000-2ae2501fe000 rw-p 00000000 00:00 0 
+2ae2501fe000-2ae2504b5000 r-xp 00000000 b5:84fa2 144118302229228235      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/factorization/python/ops/_factorization_ops.so
+2ae2504b5000-2ae2506b4000 ---p 002b7000 b5:84fa2 144118302229228235      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/factorization/python/ops/_factorization_ops.so
+2ae2506b4000-2ae2506c6000 r--p 002b6000 b5:84fa2 144118302229228235      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/factorization/python/ops/_factorization_ops.so
+2ae2506c6000-2ae2506c7000 rw-p 002c8000 b5:84fa2 144118302229228235      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/factorization/python/ops/_factorization_ops.so
+2ae2506c7000-2ae2506c9000 rw-p 00000000 00:00 0 
+2ae2506c9000-2ae2506d0000 r-xp 00000000 b5:84fa2 144118302715690599      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/bz2.so
+2ae2506d0000-2ae2508cf000 ---p 00007000 b5:84fa2 144118302715690599      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/bz2.so
+2ae2508cf000-2ae2508d2000 rw-p 00006000 b5:84fa2 144118302715690599      /home/physics/btech/ph1140797/python/lib/python2.7/lib-dynload/bz2.so
+2ae250ac9000-2ae250b49000 rw-p 00000000 00:00 0 
+2ae250b49000-2ae250b59000 r-xp 00000000 08:05 263111                     /lib64/libbz2.so.1.0.4
+2ae250b59000-2ae250d58000 ---p 00010000 08:05 263111                     /lib64/libbz2.so.1.0.4
+2ae250d58000-2ae250d5a000 rw-p 0000f000 08:05 263111                     /lib64/libbz2.so.1.0.4
+2ae250d5a000-2ae250dda000 rw-p 00000000 00:00 0 
+2ae25119a000-2ae2512da000 rw-p 00000000 00:00 0 
+2ae2512da000-2ae2512e9000 r-xp 00000000 b5:84fa2 144121417439408051      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/_lib/_ccallback_c.so
+2ae2512e9000-2ae2514e9000 ---p 0000f000 b5:84fa2 144121417439408051      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/_lib/_ccallback_c.so
+2ae2514e9000-2ae2514eb000 rw-p 0000f000 b5:84fa2 144121417439408051      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/_lib/_ccallback_c.so
+2ae2514eb000-2ae251542000 r-xp 00000000 b5:84fa2 144121417439408627      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/fftpack/_fftpack.so
+2ae251542000-2ae251742000 ---p 00057000 b5:84fa2 144121417439408627      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/fftpack/_fftpack.so
+2ae251742000-2ae251749000 rw-p 00057000 b5:84fa2 144121417439408627      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/fftpack/_fftpack.so
+2ae251749000-2ae25174a000 rw-p 00000000 00:00 0 
+2ae25174a000-2ae25174b000 rw-p 000a1000 b5:84fa2 144121417439408627      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/fftpack/_fftpack.so
+2ae25174b000-2ae25174c000 rw-p 000a2000 b5:84fa2 144121417439408627      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/fftpack/_fftpack.so
+2ae25174c000-2ae251761000 r-xp 00000000 b5:84fa2 144121417439408635      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/fftpack/convolve.so
+2ae251761000-2ae251960000 ---p 00015000 b5:84fa2 144121417439408635      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/fftpack/convolve.so
+2ae251960000-2ae251962000 rw-p 00014000 b5:84fa2 144121417439408635      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/fftpack/convolve.so
+2ae251962000-2ae251963000 rw-p 0002e000 b5:84fa2 144121417439408635      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/fftpack/convolve.so
+2ae251963000-2ae251964000 rw-p 0002f000 b5:84fa2 144121417439408635      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/fftpack/convolve.so
+2ae251964000-2ae251974000 r-xp 00000000 b5:84fa2 144118302715716105      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_hash.so
+2ae251974000-2ae251b74000 ---p 00010000 b5:84fa2 144118302715716105      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_hash.so
+2ae251b74000-2ae251b75000 rw-p 00010000 b5:84fa2 144118302715716105      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/pandas/_hash.so
+2ae251b75000-2ae251b76000 rw-p 00000000 00:00 0 
+2ae251d64000-2ae251da4000 rw-p 00000000 00:00 0 
+2ae2521a4000-2ae2521e4000 rw-p 00000000 00:00 0 
+2ae2521e4000-2ae252491000 r-xp 00000000 b5:84fa2 144118302229228553      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/input_pipeline/python/ops/_input_pipeline_ops.so
+2ae252491000-2ae252690000 ---p 002ad000 b5:84fa2 144118302229228553      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/input_pipeline/python/ops/_input_pipeline_ops.so
+2ae252690000-2ae2526a2000 r--p 002ac000 b5:84fa2 144118302229228553      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/input_pipeline/python/ops/_input_pipeline_ops.so
+2ae2526a2000-2ae2526a3000 rw-p 002be000 b5:84fa2 144118302229228553      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/input_pipeline/python/ops/_input_pipeline_ops.so
+2ae2526a3000-2ae2526e5000 rw-p 00000000 00:00 0 
+2ae252aa5000-2ae252b65000 rw-p 00000000 00:00 0 
+2ae252f25000-2ae252fe5000 rw-p 00000000 00:00 0 
+2ae2533e5000-2ae253425000 rw-p 00000000 00:00 0 
+2ae253425000-2ae2536f1000 r-xp 00000000 b5:84fa2 144118302229228313      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/image/python/ops/_image_ops.so
+2ae2536f1000-2ae2538f0000 ---p 002cc000 b5:84fa2 144118302229228313      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/image/python/ops/_image_ops.so
+2ae2538f0000-2ae253902000 r--p 002cb000 b5:84fa2 144118302229228313      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/image/python/ops/_image_ops.so
+2ae253902000-2ae253903000 rw-p 002dd000 b5:84fa2 144118302229228313      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/image/python/ops/_image_ops.so
+2ae253903000-2ae2539c5000 rw-p 00000000 00:00 0 
+2ae253d85000-2ae253e45000 rw-p 00000000 00:00 0 
+2ae253e45000-2ae25412d000 r-xp 00000000 b5:84fa2 144118302229227626      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/tensor_forest/python/ops/_tensor_forest_ops.so
+2ae25412d000-2ae25432c000 ---p 002e8000 b5:84fa2 144118302229227626      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/tensor_forest/python/ops/_tensor_forest_ops.so
+2ae25432c000-2ae25433f000 r--p 002e7000 b5:84fa2 144118302229227626      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/tensor_forest/python/ops/_tensor_forest_ops.so
+2ae25433f000-2ae254340000 rw-p 002fa000 b5:84fa2 144118302229227626      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/tensor_forest/python/ops/_tensor_forest_ops.so
+2ae254340000-2ae2543c2000 rw-p 00000000 00:00 0 
+2ae2543c2000-2ae2547d1000 r-xp 00000000 b5:84fa2 144118302229227442      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/tfprof/python/tools/tfprof/_pywrap_tensorflow_print_model_analysis_lib.so
+2ae2547d1000-2ae2549d0000 ---p 0040f000 b5:84fa2 144118302229227442      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/tfprof/python/tools/tfprof/_pywrap_tensorflow_print_model_analysis_lib.so
+2ae2549d0000-2ae2549ee000 r--p 0040e000 b5:84fa2 144118302229227442      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/tfprof/python/tools/tfprof/_pywrap_tensorflow_print_model_analysis_lib.so
+2ae2549ee000-2ae2549ef000 rw-p 0042c000 b5:84fa2 144118302229227442      /home/apps/TENSORFLOW/1.0/gpu/lib/python2.7/site-packages/tensorflow/contrib/tfprof/python/tools/tfprof/_pywrap_tensorflow_print_model_analysis_lib.so
+2ae2549ef000-2ae254a35000 rw-p 00000000 00:00 0 
+2ae254a35000-2ae254a37000 r-xp 00000000 b5:84fa2 144118302229246011      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/__check_build/_check_build.so
+2ae254a37000-2ae254c37000 ---p 00002000 b5:84fa2 144118302229246011      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/__check_build/_check_build.so
+2ae254c37000-2ae254c38000 rw-p 00002000 b5:84fa2 144118302229246011      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/__check_build/_check_build.so
+2ae254e35000-2ae254eb5000 rw-p 00000000 00:00 0 
+2ae2552b5000-2ae2552f5000 rw-p 00000000 00:00 0 
+2ae2552f5000-2ae255693000 r-xp 00000000 b5:84fa2 144121417439408187      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/_sparsetools.so
+2ae255693000-2ae255892000 ---p 0039e000 b5:84fa2 144121417439408187      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/_sparsetools.so
+2ae255892000-2ae255898000 rw-p 0039d000 b5:84fa2 144121417439408187      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/_sparsetools.so
+2ae255898000-2ae255905000 r-xp 00000000 b5:84fa2 144121417439408201      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/_csparsetools.so
+2ae255905000-2ae255b05000 ---p 0006d000 b5:84fa2 144121417439408201      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/_csparsetools.so
+2ae255b05000-2ae255b0a000 rw-p 0006d000 b5:84fa2 144121417439408201      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/_csparsetools.so
+2ae255b0a000-2ae255b4b000 rw-p 00000000 00:00 0 
+2ae255b4b000-2ae255b84000 r-xp 00000000 b5:84fa2 144121417439408425      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/csgraph/_shortest_path.so
+2ae255b84000-2ae255d83000 ---p 00039000 b5:84fa2 144121417439408425      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/csgraph/_shortest_path.so
+2ae255d83000-2ae255d89000 rw-p 00038000 b5:84fa2 144121417439408425      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/csgraph/_shortest_path.so
+2ae255d89000-2ae255d8a000 rw-p 00000000 00:00 0 
+2ae255d8a000-2ae255dac000 r-xp 00000000 b5:84fa2 144121417439408417      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/csgraph/_tools.so
+2ae255dac000-2ae255fac000 ---p 00022000 b5:84fa2 144121417439408417      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/csgraph/_tools.so
+2ae255fac000-2ae255fb0000 rw-p 00022000 b5:84fa2 144121417439408417      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/csgraph/_tools.so
+2ae255fb0000-2ae255fcf000 r-xp 00000000 b5:84fa2 144121417439408419      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/csgraph/_traversal.so
+2ae255fcf000-2ae2561cf000 ---p 0001f000 b5:84fa2 144121417439408419      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/csgraph/_traversal.so
+2ae2561cf000-2ae2561d3000 rw-p 0001f000 b5:84fa2 144121417439408419      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/csgraph/_traversal.so
+2ae2561d3000-2ae2561fd000 r-xp 00000000 b5:84fa2 144121417439408421      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/csgraph/_min_spanning_tree.so
+2ae2561fd000-2ae2563fd000 ---p 0002a000 b5:84fa2 144121417439408421      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/csgraph/_min_spanning_tree.so
+2ae2563fd000-2ae256400000 rw-p 0002a000 b5:84fa2 144121417439408421      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/csgraph/_min_spanning_tree.so
+2ae256400000-2ae256401000 rw-p 00000000 00:00 0 
+2ae256401000-2ae25644b000 r-xp 00000000 b5:84fa2 144121417439408423      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/csgraph/_reordering.so
+2ae25644b000-2ae25664a000 ---p 0004a000 b5:84fa2 144121417439408423      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/csgraph/_reordering.so
+2ae25664a000-2ae25664f000 rw-p 00049000 b5:84fa2 144121417439408423      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/csgraph/_reordering.so
+2ae25664f000-2ae256690000 rw-p 00000000 00:00 0 
+2ae256690000-2ae2566a5000 r-xp 00000000 b5:84fa2 144118302229245737      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/utils/murmurhash.so
+2ae2566a5000-2ae2568a4000 ---p 00015000 b5:84fa2 144118302229245737      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/utils/murmurhash.so
+2ae2568a4000-2ae2568a6000 rw-p 00014000 b5:84fa2 144118302229245737      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/utils/murmurhash.so
+2ae2568a6000-2ae256a38000 r-xp 00000000 b5:84fa2 144121417439407817      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_ufuncs.so
+2ae256a38000-2ae256c37000 ---p 00192000 b5:84fa2 144121417439407817      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_ufuncs.so
+2ae256c37000-2ae256c42000 rw-p 00191000 b5:84fa2 144121417439407817      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_ufuncs.so
+2ae256c42000-2ae256c4b000 rw-p 00000000 00:00 0 
+2ae256c4b000-2ae256c4e000 rw-p 003a1000 b5:84fa2 144121417439407817      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_ufuncs.so
+2ae256c4e000-2ae256c51000 rw-p 003a4000 b5:84fa2 144121417439407817      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_ufuncs.so
+2ae256c51000-2ae256c54000 rw-p 003a7000 b5:84fa2 144121417439407817      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_ufuncs.so
+2ae256c54000-2ae256c72000 r-xp 00000000 b5:84fa2 144121417439407811      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_ufuncs_cxx.so
+2ae256c72000-2ae256e71000 ---p 0001e000 b5:84fa2 144121417439407811      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_ufuncs_cxx.so
+2ae256e71000-2ae256e73000 rw-p 0001d000 b5:84fa2 144121417439407811      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_ufuncs_cxx.so
+2ae256e73000-2ae256f3c000 r-xp 00000000 b5:84fa2 144121417439407819      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/specfun.so
+2ae256f3c000-2ae25713c000 ---p 000c9000 b5:84fa2 144121417439407819      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/specfun.so
+2ae25713c000-2ae257144000 rw-p 000c9000 b5:84fa2 144121417439407819      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/specfun.so
+2ae257144000-2ae257145000 rw-p 00113000 b5:84fa2 144121417439407819      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/specfun.so
+2ae257145000-2ae257146000 rw-p 00114000 b5:84fa2 144121417439407819      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/specfun.so
+2ae257146000-2ae257190000 r-xp 00000000 b5:84fa2 144121417439406762      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_fblas.so
+2ae257190000-2ae257390000 ---p 0004a000 b5:84fa2 144121417439406762      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_fblas.so
+2ae257390000-2ae2573a9000 rw-p 0004a000 b5:84fa2 144121417439406762      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_fblas.so
+2ae2573a9000-2ae2573aa000 rw-p 000e5000 b5:84fa2 144121417439406762      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_fblas.so
+2ae2573aa000-2ae2573ab000 rw-p 000e6000 b5:84fa2 144121417439406762      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_fblas.so
+2ae2573ab000-2ae2573ac000 rw-p 000e7000 b5:84fa2 144121417439406762      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_fblas.so
+2ae257546000-2ae257586000 rw-p 00000000 00:00 0 
+2ae257586000-2ae25764f000 r-xp 00000000 b5:84fa2 144121417439406776      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_flapack.so
+2ae25764f000-2ae25784e000 ---p 000c9000 b5:84fa2 144121417439406776      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_flapack.so
+2ae25784e000-2ae257896000 rw-p 000c8000 b5:84fa2 144121417439406776      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_flapack.so
+2ae257896000-2ae257898000 rw-p 0029b000 b5:84fa2 144121417439406776      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_flapack.so
+2ae257898000-2ae25789a000 rw-p 0029d000 b5:84fa2 144121417439406776      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_flapack.so
+2ae25789a000-2ae25789c000 rw-p 0029f000 b5:84fa2 144121417439406776      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_flapack.so
+2ae25789c000-2ae2578aa000 r-xp 00000000 b5:84fa2 144121417439406806      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_flinalg.so
+2ae2578aa000-2ae257aa9000 ---p 0000e000 b5:84fa2 144121417439406806      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_flinalg.so
+2ae257aa9000-2ae257aac000 rw-p 0000d000 b5:84fa2 144121417439406806      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_flinalg.so
+2ae257aac000-2ae257aad000 rw-p 0002a000 b5:84fa2 144121417439406806      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_flinalg.so
+2ae257aad000-2ae257aae000 rw-p 0002b000 b5:84fa2 144121417439406806      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_flinalg.so
+2ae257aae000-2ae257aaf000 rw-p 0002c000 b5:84fa2 144121417439406806      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_flinalg.so
+2ae257aaf000-2ae257aef000 rw-p 00000000 00:00 0 
+2ae257aef000-2ae257b23000 r-xp 00000000 b5:84fa2 144121417439406874      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_solve_toeplitz.so
+2ae257b23000-2ae257d23000 ---p 00034000 b5:84fa2 144121417439406874      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_solve_toeplitz.so
+2ae257d23000-2ae257d27000 rw-p 00034000 b5:84fa2 144121417439406874      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_solve_toeplitz.so
+2ae257d27000-2ae257d28000 rw-p 00000000 00:00 0 
+2ae257d28000-2ae257d72000 r-xp 00000000 b5:84fa2 144121417439406766      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_decomp_update.so
+2ae257d72000-2ae257f72000 ---p 0004a000 b5:84fa2 144121417439406766      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_decomp_update.so
+2ae257f72000-2ae257f78000 rw-p 0004a000 b5:84fa2 144121417439406766      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/_decomp_update.so
+2ae257f78000-2ae257f79000 rw-p 00000000 00:00 0 
+2ae257f79000-2ae257fb3000 r-xp 00000000 b5:84fa2 144121417439406770      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/cython_blas.so
+2ae257fb3000-2ae2581b2000 ---p 0003a000 b5:84fa2 144121417439406770      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/cython_blas.so
+2ae2581b2000-2ae2581b5000 rw-p 00039000 b5:84fa2 144121417439406770      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/cython_blas.so
+2ae2581b5000-2ae2581b6000 rw-p 00000000 00:00 0 
+2ae2581b6000-2ae2581b8000 rw-p 00113000 b5:84fa2 144121417439406770      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/cython_blas.so
+2ae2581b8000-2ae2581ba000 rw-p 00115000 b5:84fa2 144121417439406770      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/cython_blas.so
+2ae2581ba000-2ae2581bc000 rw-p 00117000 b5:84fa2 144121417439406770      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/cython_blas.so
+2ae2581bc000-2ae25824a000 r-xp 00000000 b5:84fa2 144121417439406802      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/cython_lapack.so
+2ae25824a000-2ae258449000 ---p 0008e000 b5:84fa2 144121417439406802      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/cython_lapack.so
+2ae258449000-2ae25844d000 rw-p 0008d000 b5:84fa2 144121417439406802      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/cython_lapack.so
+2ae25844d000-2ae258451000 rw-p 001d2000 b5:84fa2 144121417439406802      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/cython_lapack.so
+2ae258451000-2ae258455000 rw-p 001d6000 b5:84fa2 144121417439406802      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/cython_lapack.so
+2ae258455000-2ae258459000 rw-p 001da000 b5:84fa2 144121417439406802      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/linalg/cython_lapack.so
+2ae258459000-2ae258499000 rw-p 00000000 00:00 0 
+2ae258499000-2ae25849f000 r-xp 00000000 b5:84fa2 144121417439407825      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_comb.so
+2ae25849f000-2ae25869e000 ---p 00006000 b5:84fa2 144121417439407825      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_comb.so
+2ae25869e000-2ae25869f000 rw-p 00005000 b5:84fa2 144121417439407825      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_comb.so
+2ae25869f000-2ae2586b0000 r-xp 00000000 b5:84fa2 144121417439407861      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_ellip_harm_2.so
+2ae2586b0000-2ae2588af000 ---p 00011000 b5:84fa2 144121417439407861      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_ellip_harm_2.so
+2ae2588af000-2ae2588b1000 rw-p 00010000 b5:84fa2 144121417439407861      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_ellip_harm_2.so
+2ae2588b1000-2ae2588b2000 rw-p 0004f000 b5:84fa2 144121417439407861      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_ellip_harm_2.so
+2ae2588b2000-2ae2588b3000 rw-p 00050000 b5:84fa2 144121417439407861      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_ellip_harm_2.so
+2ae2588b3000-2ae2588b4000 rw-p 00051000 b5:84fa2 144121417439407861      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/special/_ellip_harm_2.so
+2ae2588b4000-2ae2588dd000 r-xp 00000000 b5:84fa2 144121417439408119      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/_odepack.so
+2ae2588dd000-2ae258adc000 ---p 00029000 b5:84fa2 144121417439408119      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/_odepack.so
+2ae258adc000-2ae258add000 rw-p 00028000 b5:84fa2 144121417439408119      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/_odepack.so
+2ae258add000-2ae258ade000 rw-p 00000000 00:00 0 
+2ae258ade000-2ae258adf000 rw-p 00037000 b5:84fa2 144121417439408119      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/_odepack.so
+2ae258adf000-2ae258ae0000 rw-p 00038000 b5:84fa2 144121417439408119      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/_odepack.so
+2ae258ae0000-2ae258ae1000 rw-p 00039000 b5:84fa2 144121417439408119      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/_odepack.so
+2ae258ae1000-2ae258afc000 r-xp 00000000 b5:84fa2 144121417439408121      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/_quadpack.so
+2ae258afc000-2ae258cfc000 ---p 0001b000 b5:84fa2 144121417439408121      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/_quadpack.so
+2ae258cfc000-2ae258cfd000 rw-p 0001b000 b5:84fa2 144121417439408121      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/_quadpack.so
+2ae258cfd000-2ae258cfe000 rw-p 00030000 b5:84fa2 144121417439408121      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/_quadpack.so
+2ae258cfe000-2ae258cff000 rw-p 00031000 b5:84fa2 144121417439408121      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/_quadpack.so
+2ae258cff000-2ae258d00000 rw-p 00032000 b5:84fa2 144121417439408121      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/_quadpack.so
+2ae258d00000-2ae258d32000 r-xp 00000000 b5:84fa2 144121417439408101      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/vode.so
+2ae258d32000-2ae258f32000 ---p 00032000 b5:84fa2 144121417439408101      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/vode.so
+2ae258f32000-2ae258f34000 rw-p 00032000 b5:84fa2 144121417439408101      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/vode.so
+2ae258f34000-2ae258f35000 rw-p 00000000 00:00 0 
+2ae258f35000-2ae258f36000 rw-p 00051000 b5:84fa2 144121417439408101      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/vode.so
+2ae258f36000-2ae258f37000 rw-p 00052000 b5:84fa2 144121417439408101      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/vode.so
+2ae258f37000-2ae258f39000 rw-p 00053000 b5:84fa2 144121417439408101      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/vode.so
+2ae258f39000-2ae258f54000 r-xp 00000000 b5:84fa2 144121417439408125      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/_dop.so
+2ae258f54000-2ae259154000 ---p 0001b000 b5:84fa2 144121417439408125      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/_dop.so
+2ae259154000-2ae259156000 rw-p 0001b000 b5:84fa2 144121417439408125      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/_dop.so
+2ae259156000-2ae259157000 rw-p 00037000 b5:84fa2 144121417439408125      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/_dop.so
+2ae259157000-2ae259158000 rw-p 00038000 b5:84fa2 144121417439408125      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/_dop.so
+2ae259158000-2ae259184000 r-xp 00000000 b5:84fa2 144121417439408123      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/lsoda.so
+2ae259184000-2ae259384000 ---p 0002c000 b5:84fa2 144121417439408123      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/lsoda.so
+2ae259384000-2ae259386000 rw-p 0002c000 b5:84fa2 144121417439408123      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/lsoda.so
+2ae259386000-2ae259387000 rw-p 00046000 b5:84fa2 144121417439408123      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/lsoda.so
+2ae259387000-2ae259388000 rw-p 00047000 b5:84fa2 144121417439408123      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/lsoda.so
+2ae259388000-2ae259389000 rw-p 00048000 b5:84fa2 144121417439408123      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/integrate/lsoda.so
+2ae259389000-2ae2593c0000 r-xp 00000000 b5:84fa2 144121417439408293      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/isolve/_iterative.so
+2ae2593c0000-2ae2595c0000 ---p 00037000 b5:84fa2 144121417439408293      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/isolve/_iterative.so
+2ae2595c0000-2ae2595c8000 rw-p 00037000 b5:84fa2 144121417439408293      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/isolve/_iterative.so
+2ae2595c8000-2ae2595ca000 rw-p 00000000 00:00 0 
+2ae2595ca000-2ae2595cb000 rw-p 0007d000 b5:84fa2 144121417439408293      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/isolve/_iterative.so
+2ae2595cb000-2ae2595cc000 rw-p 0007e000 b5:84fa2 144121417439408293      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/isolve/_iterative.so
+2ae2595cc000-2ae2595cd000 rw-p 0007f000 b5:84fa2 144121417439408293      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/isolve/_iterative.so
+2ae2595cd000-2ae25960d000 rw-p 00000000 00:00 0 
+2ae25960d000-2ae259660000 r-xp 00000000 b5:84fa2 144121417439408397      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/dsolve/_superlu.so
+2ae259660000-2ae259860000 ---p 00053000 b5:84fa2 144121417439408397      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/dsolve/_superlu.so
+2ae259860000-2ae259862000 rw-p 00053000 b5:84fa2 144121417439408397      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/dsolve/_superlu.so
+2ae259862000-2ae259864000 rw-p 00197000 b5:84fa2 144121417439408397      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/dsolve/_superlu.so
+2ae259864000-2ae259866000 rw-p 00199000 b5:84fa2 144121417439408397      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/dsolve/_superlu.so
+2ae259866000-2ae259868000 rw-p 0019b000 b5:84fa2 144121417439408397      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/dsolve/_superlu.so
+2ae259868000-2ae2598f4000 r-xp 00000000 b5:84fa2 144121417439408373      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/eigen/arpack/_arpack.so
+2ae2598f4000-2ae259af3000 ---p 0008c000 b5:84fa2 144121417439408373      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/eigen/arpack/_arpack.so
+2ae259af3000-2ae259aff000 rw-p 0008b000 b5:84fa2 144121417439408373      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/eigen/arpack/_arpack.so
+2ae259aff000-2ae259b00000 rw-p 00000000 00:00 0 
+2ae259b00000-2ae259b01000 rw-p 000d3000 b5:84fa2 144121417439408373      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/eigen/arpack/_arpack.so
+2ae259b01000-2ae259b02000 rw-p 000d4000 b5:84fa2 144121417439408373      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/eigen/arpack/_arpack.so
+2ae259b02000-2ae259b04000 rw-p 000d5000 b5:84fa2 144121417439408373      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/sparse/linalg/eigen/arpack/_arpack.so
+2ae259b04000-2ae259b44000 rw-p 00000000 00:00 0 
+2ae259b44000-2ae259b4d000 r-xp 00000000 b5:84fa2 144121417439408757      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/minpack2.so
+2ae259b4d000-2ae259d4d000 ---p 00009000 b5:84fa2 144121417439408757      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/minpack2.so
+2ae259d4d000-2ae259d4e000 rw-p 00009000 b5:84fa2 144121417439408757      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/minpack2.so
+2ae259d4e000-2ae259d4f000 rw-p 0001d000 b5:84fa2 144121417439408757      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/minpack2.so
+2ae259d4f000-2ae259d50000 rw-p 0001e000 b5:84fa2 144121417439408757      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/minpack2.so
+2ae259d50000-2ae259d90000 rw-p 00000000 00:00 0 
+2ae259d90000-2ae259dae000 r-xp 00000000 b5:84fa2 144121417439408733      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_lbfgsb.so
+2ae259dae000-2ae259fae000 ---p 0001e000 b5:84fa2 144121417439408733      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_lbfgsb.so
+2ae259fae000-2ae259faf000 rw-p 0001e000 b5:84fa2 144121417439408733      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_lbfgsb.so
+2ae259faf000-2ae259fb0000 rw-p 00035000 b5:84fa2 144121417439408733      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_lbfgsb.so
+2ae259fb0000-2ae259fb1000 rw-p 00036000 b5:84fa2 144121417439408733      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_lbfgsb.so
+2ae259fb1000-2ae259fb2000 rw-p 00037000 b5:84fa2 144121417439408733      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_lbfgsb.so
+2ae259fb2000-2ae259fbe000 r-xp 00000000 b5:84fa2 144121417439408787      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/moduleTNC.so
+2ae259fbe000-2ae25a1bd000 ---p 0000c000 b5:84fa2 144121417439408787      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/moduleTNC.so
+2ae25a1bd000-2ae25a1be000 rw-p 0000b000 b5:84fa2 144121417439408787      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/moduleTNC.so
+2ae25a1be000-2ae25a1dc000 r-xp 00000000 b5:84fa2 144121417439408725      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_cobyla.so
+2ae25a1dc000-2ae25a3dc000 ---p 0001e000 b5:84fa2 144121417439408725      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_cobyla.so
+2ae25a3dc000-2ae25a3dd000 rw-p 0001e000 b5:84fa2 144121417439408725      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_cobyla.so
+2ae25a3dd000-2ae25a3de000 rw-p 00035000 b5:84fa2 144121417439408725      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_cobyla.so
+2ae25a3de000-2ae25a3df000 rw-p 00036000 b5:84fa2 144121417439408725      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_cobyla.so
+2ae25a3df000-2ae25a3f6000 r-xp 00000000 b5:84fa2 144121417439408761      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_slsqp.so
+2ae25a3f6000-2ae25a5f6000 ---p 00017000 b5:84fa2 144121417439408761      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_slsqp.so
+2ae25a5f6000-2ae25a5f7000 rw-p 00017000 b5:84fa2 144121417439408761      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_slsqp.so
+2ae25a5f7000-2ae25a5f8000 rw-p 0002c000 b5:84fa2 144121417439408761      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_slsqp.so
+2ae25a5f8000-2ae25a5f9000 rw-p 0002d000 b5:84fa2 144121417439408761      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_slsqp.so
+2ae25a5f9000-2ae25a618000 r-xp 00000000 b5:84fa2 144121417439408723      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_minpack.so
+2ae25a618000-2ae25a818000 ---p 0001f000 b5:84fa2 144121417439408723      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_minpack.so
+2ae25a818000-2ae25a819000 rw-p 0001f000 b5:84fa2 144121417439408723      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_minpack.so
+2ae25a819000-2ae25a81a000 rw-p 00031000 b5:84fa2 144121417439408723      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_minpack.so
+2ae25a81a000-2ae25a81b000 rw-p 00032000 b5:84fa2 144121417439408723      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_minpack.so
+2ae25a81b000-2ae25a845000 r-xp 00000000 b5:84fa2 144121417439408777      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_group_columns.so
+2ae25a845000-2ae25aa45000 ---p 0002a000 b5:84fa2 144121417439408777      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_group_columns.so
+2ae25aa45000-2ae25aa48000 rw-p 0002a000 b5:84fa2 144121417439408777      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_group_columns.so
+2ae25aa48000-2ae25aa6a000 r-xp 00000000 b5:84fa2 144121417439408919      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_lsq/givens_elimination.so
+2ae25aa6a000-2ae25ac6a000 ---p 00022000 b5:84fa2 144121417439408919      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_lsq/givens_elimination.so
+2ae25ac6a000-2ae25ac6d000 rw-p 00022000 b5:84fa2 144121417439408919      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_lsq/givens_elimination.so
+2ae25ac6d000-2ae25ac70000 r-xp 00000000 b5:84fa2 144121417439408737      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_zeros.so
+2ae25ac70000-2ae25ae6f000 ---p 00003000 b5:84fa2 144121417439408737      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_zeros.so
+2ae25ae6f000-2ae25ae70000 rw-p 00002000 b5:84fa2 144121417439408737      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_zeros.so
+2ae25b06d000-2ae25b0ad000 rw-p 00000000 00:00 0 
+2ae25b0ad000-2ae25b0b7000 r-xp 00000000 b5:84fa2 144121417439408763      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_nnls.so
+2ae25b0b7000-2ae25b2b7000 ---p 0000a000 b5:84fa2 144121417439408763      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_nnls.so
+2ae25b2b7000-2ae25b2b8000 rw-p 0000a000 b5:84fa2 144121417439408763      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_nnls.so
+2ae25b2b8000-2ae25b2b9000 rw-p 0001c000 b5:84fa2 144121417439408763      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_nnls.so
+2ae25b2b9000-2ae25b2ba000 rw-p 0001d000 b5:84fa2 144121417439408763      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/optimize/_nnls.so
+2ae25b2ba000-2ae25b2ef000 r-xp 00000000 b5:84fa2 144121417439408983      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/_fitpack.so
+2ae25b2ef000-2ae25b4ef000 ---p 00035000 b5:84fa2 144121417439408983      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/_fitpack.so
+2ae25b4ef000-2ae25b4f0000 rw-p 00035000 b5:84fa2 144121417439408983      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/_fitpack.so
+2ae25b4f0000-2ae25b4f1000 rw-p 0004e000 b5:84fa2 144121417439408983      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/_fitpack.so
+2ae25b4f1000-2ae25b4f2000 rw-p 0004f000 b5:84fa2 144121417439408983      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/_fitpack.so
+2ae25b6ba000-2ae25b73a000 rw-p 00000000 00:00 0 
+2ae25b73a000-2ae25b79a000 r-xp 00000000 b5:84fa2 144121417439408977      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/dfitpack.so
+2ae25b79a000-2ae25b99a000 ---p 00060000 b5:84fa2 144121417439408977      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/dfitpack.so
+2ae25b99a000-2ae25b9a1000 rw-p 00060000 b5:84fa2 144121417439408977      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/dfitpack.so
+2ae25b9a1000-2ae25b9a2000 rw-p 000b1000 b5:84fa2 144121417439408977      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/dfitpack.so
+2ae25b9a2000-2ae25b9a3000 rw-p 000b2000 b5:84fa2 144121417439408977      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/dfitpack.so
+2ae25b9a3000-2ae25b9df000 r-xp 00000000 b5:84fa2 144121417439408999      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/_bspl.so
+2ae25b9df000-2ae25bbdf000 ---p 0003c000 b5:84fa2 144121417439408999      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/_bspl.so
+2ae25bbdf000-2ae25bbe4000 rw-p 0003c000 b5:84fa2 144121417439408999      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/_bspl.so
+2ae25bbe4000-2ae25bbe5000 rw-p 00000000 00:00 0 
+2ae25bbe5000-2ae25bbe6000 rw-p 00125000 b5:84fa2 144121417439408999      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/_bspl.so
+2ae25bbe6000-2ae25bbe7000 rw-p 00126000 b5:84fa2 144121417439408999      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/_bspl.so
+2ae25bbe7000-2ae25bc37000 r-xp 00000000 b5:84fa2 144121417439408995      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/_ppoly.so
+2ae25bc37000-2ae25be36000 ---p 00050000 b5:84fa2 144121417439408995      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/_ppoly.so
+2ae25be36000-2ae25be3c000 rw-p 0004f000 b5:84fa2 144121417439408995      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/_ppoly.so
+2ae25be3c000-2ae25be3d000 rw-p 00000000 00:00 0 
+2ae25be3d000-2ae25be3e000 rw-p 0017d000 b5:84fa2 144121417439408995      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/_ppoly.so
+2ae25be3e000-2ae25be3f000 rw-p 0017e000 b5:84fa2 144121417439408995      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/_ppoly.so
+2ae25be3f000-2ae25be40000 rw-p 0017f000 b5:84fa2 144121417439408995      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/_ppoly.so
+2ae25be40000-2ae25be8e000 r-xp 00000000 b5:84fa2 144121417439408993      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/interpnd.so
+2ae25be8e000-2ae25c08d000 ---p 0004e000 b5:84fa2 144121417439408993      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/interpnd.so
+2ae25c08d000-2ae25c092000 rw-p 0004d000 b5:84fa2 144121417439408993      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/interpolate/interpnd.so
+2ae25c092000-2ae25c0d3000 rw-p 00000000 00:00 0 
+2ae25c0d3000-2ae25c16a000 r-xp 00000000 b5:84fa2 144121417439409091      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/ckdtree.so
+2ae25c16a000-2ae25c36a000 ---p 00097000 b5:84fa2 144121417439409091      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/ckdtree.so
+2ae25c36a000-2ae25c372000 rw-p 00097000 b5:84fa2 144121417439409091      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/ckdtree.so
+2ae25c372000-2ae25c451000 r-xp 00000000 b5:84fa2 144121417439409089      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/qhull.so
+2ae25c451000-2ae25c650000 ---p 000df000 b5:84fa2 144121417439409089      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/qhull.so
+2ae25c650000-2ae25c659000 rw-p 000de000 b5:84fa2 144121417439409089      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/qhull.so
+2ae25c659000-2ae25c65b000 rw-p 00000000 00:00 0 
+2ae25c65b000-2ae25c65e000 rw-p 003bd000 b5:84fa2 144121417439409089      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/qhull.so
+2ae25c65e000-2ae25c661000 rw-p 003c0000 b5:84fa2 144121417439409089      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/qhull.so
+2ae25c661000-2ae25c664000 rw-p 003c3000 b5:84fa2 144121417439409089      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/qhull.so
+2ae25c664000-2ae25c68d000 r-xp 00000000 b5:84fa2 144121417439409063      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/_voronoi.so
+2ae25c68d000-2ae25c88d000 ---p 00029000 b5:84fa2 144121417439409063      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/_voronoi.so
+2ae25c88d000-2ae25c890000 rw-p 00029000 b5:84fa2 144121417439409063      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/_voronoi.so
+2ae25c890000-2ae25c8a6000 r-xp 00000000 b5:84fa2 144121417439409065      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/_distance_wrap.so
+2ae25c8a6000-2ae25caa6000 ---p 00016000 b5:84fa2 144121417439409065      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/_distance_wrap.so
+2ae25caa6000-2ae25caa7000 rw-p 00016000 b5:84fa2 144121417439409065      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/_distance_wrap.so
+2ae25caa7000-2ae25cad0000 r-xp 00000000 b5:84fa2 144121417439409075      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/_hausdorff.so
+2ae25cad0000-2ae25cccf000 ---p 00029000 b5:84fa2 144121417439409075      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/_hausdorff.so
+2ae25cccf000-2ae25ccd2000 rw-p 00028000 b5:84fa2 144121417439409075      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/spatial/_hausdorff.so
+2ae25ccd2000-2ae25ccd3000 rw-p 00000000 00:00 0 
+2ae25ccd3000-2ae25cd45000 r-xp 00000000 b5:84fa2 144121417439413103      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/_imaging.so
+2ae25cd45000-2ae25cf45000 ---p 00072000 b5:84fa2 144121417439413103      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/_imaging.so
+2ae25cf45000-2ae25cf4b000 rw-p 00072000 b5:84fa2 144121417439413103      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/_imaging.so
+2ae25cf4b000-2ae25cf4c000 rw-p 00000000 00:00 0 
+2ae25cf4c000-2ae25cf4f000 rw-p 001da000 b5:84fa2 144121417439413103      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/_imaging.so
+2ae25cf4f000-2ae25cf52000 rw-p 001dd000 b5:84fa2 144121417439413103      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/_imaging.so
+2ae25cf52000-2ae25cf55000 rw-p 001e0000 b5:84fa2 144121417439413103      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/_imaging.so
+2ae25cf55000-2ae25cf58000 rw-p 001e3000 b5:84fa2 144121417439413103      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/_imaging.so
+2ae25cf58000-2ae25cf5b000 rw-p 001e6000 b5:84fa2 144121417439413103      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/_imaging.so
+2ae25d0d3000-2ae25d113000 rw-p 00000000 00:00 0 
+2ae25d113000-2ae25d14d000 r-xp 00000000 b5:84fa2 144121417439413389      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/libjpeg-bcb94a84.so.9.2.0
+2ae25d14d000-2ae25d34d000 ---p 0003a000 b5:84fa2 144121417439413389      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/libjpeg-bcb94a84.so.9.2.0
+2ae25d34d000-2ae25d34e000 rw-p 0003a000 b5:84fa2 144121417439413389      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/libjpeg-bcb94a84.so.9.2.0
+2ae25d34e000-2ae25d34f000 rw-p 00146000 b5:84fa2 144121417439413389      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/libjpeg-bcb94a84.so.9.2.0
+2ae25d34f000-2ae25d396000 r-xp 00000000 b5:84fa2 144121417439413397      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/libopenjp2-59185378.so.2.1.0
+2ae25d396000-2ae25d596000 ---p 00047000 b5:84fa2 144121417439413397      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/libopenjp2-59185378.so.2.1.0
+2ae25d596000-2ae25d598000 rw-p 00047000 b5:84fa2 144121417439413397      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/libopenjp2-59185378.so.2.1.0
+2ae25d598000-2ae25d59a000 rw-p 00052000 b5:84fa2 144121417439413397      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/libopenjp2-59185378.so.2.1.0
+2ae25d59a000-2ae25d5fe000 r-xp 00000000 b5:84fa2 144121417439413387      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/libtiff-56518a27.so.5.2.5
+2ae25d5fe000-2ae25d7fd000 ---p 00064000 b5:84fa2 144121417439413387      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/libtiff-56518a27.so.5.2.5
+2ae25d7fd000-2ae25d801000 rw-p 00063000 b5:84fa2 144121417439413387      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/libtiff-56518a27.so.5.2.5
+2ae25d801000-2ae25d803000 rw-p 00194000 b5:84fa2 144121417439413387      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/libtiff-56518a27.so.5.2.5
+2ae25d803000-2ae25d805000 rw-p 00196000 b5:84fa2 144121417439413387      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/libtiff-56518a27.so.5.2.5
+2ae25d805000-2ae25d807000 rw-p 00198000 b5:84fa2 144121417439413387      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/libtiff-56518a27.so.5.2.5
+2ae25d807000-2ae25d809000 rw-p 0019a000 b5:84fa2 144121417439413387      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/libtiff-56518a27.so.5.2.5
+2ae25d809000-2ae25d82d000 r-xp 00000000 b5:84fa2 144121417439413391      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/liblzma-f444c404.so.5.2.2
+2ae25d82d000-2ae25da2d000 ---p 00024000 b5:84fa2 144121417439413391      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/liblzma-f444c404.so.5.2.2
+2ae25da2d000-2ae25da2e000 rw-p 00024000 b5:84fa2 144121417439413391      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/liblzma-f444c404.so.5.2.2
+2ae25da2e000-2ae25da2f000 rw-p 000d3000 b5:84fa2 144121417439413391      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/PIL/.libs/liblzma-f444c404.so.5.2.2
+2ae25da2f000-2ae25da95000 r-xp 00000000 b5:84fa2 144121417439407704      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/stats/_stats.so
+2ae25da95000-2ae25dc94000 ---p 00066000 b5:84fa2 144121417439407704      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/stats/_stats.so
+2ae25dc94000-2ae25dc99000 rw-p 00065000 b5:84fa2 144121417439407704      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/stats/_stats.so
+2ae25dc99000-2ae25dc9a000 rw-p 00000000 00:00 0 
+2ae25de2f000-2ae25dfef000 rw-p 00000000 00:00 0 
+2ae25dfef000-2ae25dffa000 r-xp 00000000 b5:84fa2 144121417439407676      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/stats/statlib.so
+2ae25dffa000-2ae25e1f9000 ---p 0000b000 b5:84fa2 144121417439407676      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/stats/statlib.so
+2ae25e1f9000-2ae25e1fb000 rw-p 0000a000 b5:84fa2 144121417439407676      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/stats/statlib.so
+2ae25e1fb000-2ae25e1fc000 rw-p 0001e000 b5:84fa2 144121417439407676      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/stats/statlib.so
+2ae25e1fc000-2ae25e1fd000 rw-p 0001f000 b5:84fa2 144121417439407676      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/stats/statlib.so
+2ae25e1fd000-2ae25e23d000 rw-p 00000000 00:00 0 
+2ae25e23d000-2ae25e24e000 r-xp 00000000 b5:84fa2 144121417439407668      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/stats/mvn.so
+2ae25e24e000-2ae25e44d000 ---p 00011000 b5:84fa2 144121417439407668      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/stats/mvn.so
+2ae25e44d000-2ae25e44f000 rw-p 00010000 b5:84fa2 144121417439407668      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/stats/mvn.so
+2ae25e44f000-2ae25e546000 rw-p 00000000 00:00 0 
+2ae25e546000-2ae25e547000 rw-p 00025000 b5:84fa2 144121417439407668      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/stats/mvn.so
+2ae25e547000-2ae25e548000 rw-p 00026000 b5:84fa2 144121417439407668      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/scipy/stats/mvn.so
+2ae25e548000-2ae25e5c8000 rw-p 00000000 00:00 0 
+2ae25e988000-2ae25e9c8000 rw-p 00000000 00:00 0 
+2ae25e9c8000-2ae25e9d3000 r-xp 00000000 b5:84fa2 144118302229245691      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/utils/_logistic_sigmoid.so
+2ae25e9d3000-2ae25ebd3000 ---p 0000b000 b5:84fa2 144118302229245691      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/utils/_logistic_sigmoid.so
+2ae25ebd3000-2ae25ebd4000 rw-p 0000b000 b5:84fa2 144118302229245691      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/utils/_logistic_sigmoid.so
+2ae25ebd4000-2ae25ec3b000 r-xp 00000000 b5:84fa2 144118302229245679      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/utils/sparsefuncs_fast.so
+2ae25ec3b000-2ae25ee3b000 ---p 00067000 b5:84fa2 144118302229245679      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/utils/sparsefuncs_fast.so
+2ae25ee3b000-2ae25ee40000 rw-p 00067000 b5:84fa2 144118302229245679      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/utils/sparsefuncs_fast.so
+2ae25ee40000-2ae25ee81000 rw-p 00000000 00:00 0 
+2ae25ee81000-2ae25ee9c000 r-xp 00000000 b5:84fa2 144118302229244495      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/metrics/cluster/expected_mutual_info_fast.so
+2ae25ee9c000-2ae25f09b000 ---p 0001b000 b5:84fa2 144118302229244495      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/metrics/cluster/expected_mutual_info_fast.so
+2ae25f09b000-2ae25f09d000 rw-p 0001a000 b5:84fa2 144118302229244495      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/metrics/cluster/expected_mutual_info_fast.so
+2ae25f09d000-2ae25f0a0000 r-xp 00000000 b5:84fa2 144118302229245759      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/utils/lgamma.so
+2ae25f0a0000-2ae25f2a0000 ---p 00003000 b5:84fa2 144118302229245759      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/utils/lgamma.so
+2ae25f2a0000-2ae25f2a1000 rw-p 00003000 b5:84fa2 144118302229245759      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/utils/lgamma.so
+2ae25f2a1000-2ae25f2d6000 r-xp 00000000 b5:84fa2 144118302229244457      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/metrics/pairwise_fast.so
+2ae25f2d6000-2ae25f4d5000 ---p 00035000 b5:84fa2 144118302229244457      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/metrics/pairwise_fast.so
+2ae25f4d5000-2ae25f4d9000 rw-p 00034000 b5:84fa2 144118302229244457      /home/physics/btech/ph1140797/python/lib/python2.7/site-packages/sklearn/metrics/pairwise_fast.so
+2ae25f4d9000-2ae25f91a000 rw-p 00000000 00:00 0 
+2ae260d9c000-2ae260ddc000 rw-p 00000000 00:00 0 
+2ae260e5c000-2ae260e9c000 rw-p 00000000 00:00 0 
+2ae260edc000-2ae260f5c000 rw-p 00000000 00:00 0 
+2ae260f9c000-2ae26101c000 rw-p 00000000 00:00 0 
+2ae29f5a1000-2ae29f761000 rw-p 00000000 00:00 0 
+2ae29f861000-2ae29f8e1000 rw-p 00000000 00:00 0 
+2ae29f921000-2ae29f961000 rw-p 00000000 00:00 0 
+2ae29f9a1000-2ae29f9e1000 rw-p 00000000 00:00 0 
+2ae29fa21000-2ae29fae1000 rw-p 00000000 00:00 0 
+2ae29fb61000-2ae29fba1000 rw-p 00000000 00:00 0 
+2ae29fc21000-2ae29fc61000 rw-p 00000000 00:00 0 
+2ae29fca1000-2ae29fce1000 rw-p 00000000 00:00 0 
+2ae2a05a1000-2ae2a05e1000 rw-p 00000000 00:00 0 
+2ae2a270a000-2ae2a270b000 ---p 00000000 00:00 0 
+2ae2a270b000-2ae2a290b000 rwxp 00000000 00:00 0 
+2ae2a290b000-2ae2a290c000 r--s 96000000 00:05 18227                      /dev/nvidia0
+2ae2a290c000-2ae2a290d000 r--s c8000000 00:05 18229                      /dev/nvidia1
+2ae2a290d000-2ae2a290e000 ---p 00000000 00:00 0 
+2ae2a290e000-2ae2a2b0e000 rwxp 00000000 00:00 0 
+2ae2a4000000-2ae2a4021000 rw-p 00000000 00:00 0 
+2ae2a4021000-2ae2a8000000 ---p 00000000 00:00 0 
+2ae2ac000000-2ae2ac021000 rw-p 00000000 00:00 0 
+2ae2ac021000-2ae2b0000000 ---p 00000000 00:00 0 
+2ae2b0000000-2ae2b0021000 rw-p 00000000 00:00 0 
+2ae2b0021000-2ae2b4000000 ---p 00000000 00:00 0 
+2ae2b4000000-2ae2b4001000 ---p 00000000 00:00 0 
+2ae2b4001000-2ae2b4201000 rwxp 00000000 00:00 0 
+2ae2b4201000-2ae2b4205000 rw-s 3b800000000 00:05 18229                   /dev/nvidia1
+2ae2b4205000-2ae2b4605000 rw-s b6d94f000 00:05 18226                     /dev/nvidiactl
+2ae2b4605000-2ae2b4606000 rw-s d33175000 00:05 18226                     /dev/nvidiactl
+2ae2b4606000-2ae2b4607000 rw-s 3bbffd61000 00:05 18229                   /dev/nvidia1
+2ae2b4607000-2ae2b460b000 rw-s 3b800020000 00:05 18229                   /dev/nvidia1
+2ae2b460b000-2ae2b4a0b000 rw-s 9ce757000 00:05 18226                     /dev/nvidiactl
+2ae2b4a0b000-2ae2b4a0c000 rw-s 9d1247000 00:05 18226                     /dev/nvidiactl
+2ae2b4a0c000-2ae2b4a0d000 rw-s 3bbffd61000 00:05 18229                   /dev/nvidia1
+2ae2b4a0d000-2ae2b4a11000 rw-s 3b800040000 00:05 18229                   /dev/nvidia1
+2ae2b4a11000-2ae2b4e11000 rw-s df11ab000 00:05 18226                     /dev/nvidiactl
+2ae2b4e11000-2ae2b4e12000 rw-s f42bb3000 00:05 18226                     /dev/nvidiactl
+2ae2b4e12000-2ae2b4e13000 rw-s 3bbffd61000 00:05 18229                   /dev/nvidia1
+2ae2b4e13000-2ae2b4e17000 rw-s 3b800060000 00:05 18229                   /dev/nvidia1
+2ae2b4e17000-2ae2b5217000 rw-s b59b8b000 00:05 18226                     /dev/nvidiactl
+2ae2b5217000-2ae2b5218000 rw-s ee401b000 00:05 18226                     /dev/nvidiactl
+2ae2b5218000-2ae2b5219000 rw-s 3bbffd61000 00:05 18229                   /dev/nvidia1
+2ae2b5219000-2ae2b521d000 rw-s 3b800080000 00:05 18229                   /dev/nvidia1
+2ae2b521d000-2ae2b561d000 rw-s 942c4c000 00:05 18226                     /dev/nvidiactl
+2ae2b561d000-2ae2b561e000 rw-s f44098000 00:05 18226                     /dev/nvidiactl
+2ae2b561e000-2ae2b561f000 rw-s 3bbffd61000 00:05 18229                   /dev/nvidia1
+2ae2b561f000-2ae2b5623000 rw-s 3b8000a0000 00:05 18229                   /dev/nvidia1
+2ae2b5623000-2ae2b5a23000 rw-s e54c6a000 00:05 18226                     /dev/nvidiactl
+2ae2b5a23000-2ae2b5a24000 rw-s b67c1a000 00:05 18226                     /dev/nvidiactl
+2ae2b5a24000-2ae2b5a25000 rw-s 3bbffd61000 00:05 18229                   /dev/nvidia1
+2ae2b5a25000-2ae2b5a29000 rw-s 3b8000c0000 00:05 18229                   /dev/nvidia1
+2ae2b5a29000-2ae2b5e29000 rw-s efe05c000 00:05 18226                     /dev/nvidiactl
+2ae2b5e29000-2ae2b5e2a000 rw-s 9376be000 00:05 18226                     /dev/nvidiactl
+2ae2b5e2a000-2ae2b5e2b000 rw-s 3bbffd61000 00:05 18229                   /dev/nvidia1
+2ae2b5e2b000-2ae2b5e2f000 rw-s 3b8000e0000 00:05 18229                   /dev/nvidia1
+2ae2b5e2f000-2ae2b622f000 rw-s edf258000 00:05 18226                     /dev/nvidiactl
+2ae2b622f000-2ae2b6230000 rw-s 982c7e000 00:05 18226                     /dev/nvidiactl
+2ae2b6230000-2ae2b6231000 rw-s 3bbffd61000 00:05 18229                   /dev/nvidia1
+2ae2b6231000-2ae2b6235000 rw-s 3b800100000 00:05 18229                   /dev/nvidia1
+2ae2b6235000-2ae2b6635000 rw-s 8e97c6000 00:05 18226                     /dev/nvidiactl
+2ae2b6635000-2ae2b6636000 rw-s c14af8000 00:05 18226                     /dev/nvidiactl
+2ae2b6636000-2ae2b6637000 rw-s 3bbffd62000 00:05 18229                   /dev/nvidia1
+2ae2b6637000-2ae2b663b000 rw-s 3b800120000 00:05 18229                   /dev/nvidia1
+2ae2b663b000-2ae2b6a3b000 rw-s 9454ff000 00:05 18226                     /dev/nvidiactl
+2ae2b6a3b000-2ae2b6a3c000 rw-s d675f3000 00:05 18226                     /dev/nvidiactl
+2ae2b6a3c000-2ae2b6a3d000 rw-s 3bbffd62000 00:05 18229                   /dev/nvidia1
+2ae2b6a3d000-2ae2b6a41000 rw-s 3b800140000 00:05 18229                   /dev/nvidia1
+2ae2b6a41000-2ae2b6e41000 rw-s ed3b2d000 00:05 18226                     /dev/nvidiactl
+2ae2b6e41000-2ae2b6e42000 rw-s e322e3000 00:05 18226                     /dev/nvidiactl
+2ae2b6e42000-2ae2b6e43000 rw-s 3bbffd62000 00:05 18229                   /dev/nvidia1
+2ae2b6e43000-2ae2b6e47000 rw-s 3b800160000 00:05 18229                   /dev/nvidia1
+2ae2b6e47000-2ae2b7247000 rw-s a92ad7000 00:05 18226                     /dev/nvidiactl
+2ae2b7247000-2ae2b7248000 rw-s a2666d000 00:05 18226                     /dev/nvidiactl
+2ae2b7248000-2ae2b7249000 rw-s 3bbffd62000 00:05 18229                   /dev/nvidia1
+2ae2b7249000-2ae2b724d000 rw-s 3b800180000 00:05 18229                   /dev/nvidia1
+2ae2b724d000-2ae2b764d000 rw-s ee40eb000 00:05 18226                     /dev/nvidiactl
+2ae2b764d000-2ae2b764e000 rw-s e2095a000 00:05 18226                     /dev/nvidiactl
+2ae2b764e000-2ae2b764f000 rw-s 3bbffd62000 00:05 18229                   /dev/nvidia1
+2ae2b764f000-2ae2b7653000 rw-s 3b8001a0000 00:05 18229                   /dev/nvidia1
+2ae2b7653000-2ae2b7a53000 rw-s eb19d8000 00:05 18226                     /dev/nvidiactl
+2ae2b7a53000-2ae2b7a54000 rw-s a48a06000 00:05 18226                     /dev/nvidiactl
+2ae2b7a54000-2ae2b7a55000 rw-s 3bbffd62000 00:05 18229                   /dev/nvidia1
+2ae2b7a55000-2ae2b7a59000 rw-s 3b8001c0000 00:05 18229                   /dev/nvidia1
+2ae2b7a59000-2ae2b7e59000 rw-s 10574fd000 00:05 18226                    /dev/nvidiactl
+2ae2b7e59000-2ae2b7e5a000 rw-s ace743000 00:05 18226                     /dev/nvidiactl
+2ae2b7e5a000-2ae2b7e5b000 rw-s 3bbffd62000 00:05 18229                   /dev/nvidia1
+2ae2b7e5b000-2ae2b7e5f000 rw-s 3b8001e0000 00:05 18229                   /dev/nvidia1
+2ae2b8000000-2ae2b8021000 rw-p 00000000 00:00 0 
+2ae2b8021000-2ae2bc000000 ---p 00000000 00:00 0 
+2ae2bc000000-2ae2bc400000 rw-s 958345000 00:05 18226                     /dev/nvidiactl
+2ae2bc400000-2ae2bc401000 rw-s 9be7f7000 00:05 18226                     /dev/nvidiactl
+2ae2bc401000-2ae2bc402000 rw-s 3bbffd62000 00:05 18229                   /dev/nvidia1
+2ae2bc402000-2ae2bc502000 rw-s e8a104000 00:05 18226                     /dev/nvidiactl
+2ae2bc502000-2ae2bc602000 rw-s ecb305000 00:05 18226                     /dev/nvidiactl
+2ae2bc602000-2ae2bc702000 rw-s e8c042000 00:05 18226                     /dev/nvidiactl
+2ae2bc702000-2ae2bc784000 rw-s e7e94f000 00:05 18226                     /dev/nvidiactl
+2ae2bc784000-2ae2bc785000 ---p 00000000 00:00 0 
+2ae2bc785000-2ae2bc985000 rwxp 00000000 00:00 0 
+2ae2bc985000-2ae2bc986000 ---p 00000000 00:00 0 
+2ae2bc986000-2ae2bcb86000 rwxp 00000000 00:00 0 
+2ae2c0000000-2ae2c0021000 rw-p 00000000 00:00 0 
+2ae2c0021000-2ae2c4000000 ---p 00000000 00:00 0 
+2ae2c8000000-2ae2c8021000 rw-p 00000000 00:00 0 
+2ae2c8021000-2ae2cc000000 ---p 00000000 00:00 0 
+2ae2cc000000-2ae2d690f000 rw-p 00000000 00:00 0 
+2ae2d690f000-2ae2d6910000 ---p 00000000 00:00 0 
+2ae2d6910000-2ae2d6b10000 rwxp 00000000 00:00 0 
+2ae2d6b10000-2ae2d6b11000 ---p 00000000 00:00 0 
+2ae2d6b11000-2ae2d6d11000 rwxp 00000000 00:00 0 
+2ae2d8000000-2ae2dbc64000 rw-p 00000000 00:00 0 
+2ae2dbc64000-2ae2dc000000 ---p 00000000 00:00 0 
+2ae2dc480000-2ae2dc4c0000 rw-p 00000000 00:00 0 
+2ae2e0000000-2ae2e3eab000 rw-p 00000000 00:00 0 
+2ae2e3eab000-2ae2e4000000 ---p 00000000 00:00 0 
+2ae2e4000000-2ae2e6bad000 rw-p 00000000 00:00 0 
+2ae2e6bad000-2ae2e8000000 ---p 00000000 00:00 0 
+2ae2e8000000-2ae2e8001000 ---p 00000000 00:00 0 
+2ae2e8001000-2ae2e8201000 rwxp 00000000 00:00 0 
+2ae2ec000000-2ae2ec021000 rw-p 00000000 00:00 0 
+2ae2ec021000-2ae2f0000000 ---p 00000000 00:00 0 
+2ae2f1440000-2ae2f1480000 rw-p 00000000 00:00 0 
+2ae2f440a000-2ae2f448a000 rw-p 00000000 00:00 0 
+2ae2f480a000-2ae2f484a000 rw-p 00000000 00:00 0 
+2ae2f7854000-2ae2f7894000 rw-p 00000000 00:00 0 
+2ae336847000-2ae336887000 rw-p 00000000 00:00 0 
+2ae336ac7000-2ae336b07000 rw-p 00000000 00:00 0 
+2ae336bc7000-2ae336c07000 rw-p 00000000 00:00 0 
+7fffaaa2d000-7fffaaa4f000 rwxp 00000000 00:00 0                          [stack]
+7fffaaa4f000-7fffaaa53000 rw-p 00000000 00:00 0 
+7fffaab25000-7fffaab26000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+/var/spool/PBS/mom_priv/jobs/337520.hn1.hpc.iitd.ac.in.SC: line 37: 17915 Aborted                 (core dumped) python -m himanshu.nn.nn_feature_binary_arg -state=21 -label=4
