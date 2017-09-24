@@ -1,5 +1,0 @@
-===============================
-337527.hn1.hpc.iitd.ac.in
-gpu090.hpc.iitd.ac.in
-===============================
-State-9  |  binary - 7 |  include_0  |  nn
